@@ -1,0 +1,39 @@
+\sk
+En sciences de l'atmosphère, les coefficients de réflexion~$\rho$ et~$\rho_{\lambda}$ sont souvent désignés sous le nom respectivement d'\voc{albédo} noté~$A$ et d'albédo spectral noté~$A_{\lambda}$. Plus la surface réfléchit une grande partie du rayonnement électromagnétique incident, plus l'albédo est proche de~$1$. L'albédo spectral~$A_{\lambda}$ peut varier significativement en fonction de la longueur d'onde : voir l'exemple de la neige fraîche donné ci-dessus. 
+
+\sk
+De par la diversité des surfaces terrestres, et de la variabilité de la couverture nuageuse, les valeurs de l'albédo~$A$ varient fortement d'un point à l'autre du globe terrestre~: il est élevé pour de la neige fraîche et faible pour de la végétation et des roches sombres [table~\ref{tab:albedo}]. L'albédo de l'océan est faible, particulièrement pour des angles d'incidence rasants -- il dépend ainsi beaucoup de la distribution des vagues. 
+
+\begin{table}\label{tab:albedo}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Type & albédo~$A$ & Type & albédo~$A$ \\
+\hline
+Surface de lac & 0.02 à 0.04 & Surface de la mer & 0.05 à 0.15 \\
+Asphalte & 0.07 & Mer calme (soleil au zenith) & 0.10 \\
+Forêt équatoriale & 0.10 & Roches sombres, humus & 0.10 à 0.15 \\
+Ville & 0.10 à 0.30 & Forêt de conifères & 0.12 \\
+Cultures & 0.15 à 0.25 & Végétation basse, verte & 0.17 \\
+Béton & 0.20 & Sable mouillé & 0.25 \\
+Végétation sèche & 0.25 & Sable léger et sec & 0.25 à 0.45 \\
+Forêt avec neige au sol & 0.25 & Glace & 0.30 à 0.40 \\
+Neige tassée & 0.40 à 0.70 & Sommet de certains nuages & 0.70 \\
+Neige fraîche & 0.75 à 0.95 & & \\
+\hline
+\end{tabular}
+\caption{\emph{Quelques valeurs usuelles d'albédo (rayonnement visible). D'après mesures missions NASA et ESA.}}
+\end{center}
+\end{table}
+
+\sk
+L'\voc{albédo planétaire} est noté~$A\e{b}$ et défini comme la fraction moyenne de l'éclairement~$E$ au sommet de l'atmosphère (noté également~$\mathcal{F}\e{s}'$) qui est réfléchie vers l'espace~: il comprend donc la contribution des surfaces continentales, de l'océan et de l'atmosphère. Il vaut~$0.31$ pour la planète Terre~: une partie significative du rayonnement reçu du Soleil par la Terre est réfléchie vers l'espace\footnote{L'albédo planétaire est par exemple encore plus élevé sur Vénus ($0.75$) à cause de la couverture nuageuse permanente et très réfléchissante de cette planète.}. Ainsi le système Terre reçoit une densité de flux énergétique moyenne~$F\e{reçu}$ en W~m$^{-2}$ telle que
+\[ F\e{reçu} = (1-A\e{b}) \, \mathcal{F}\e{s}' \] 
+donc un flux énergétique~$\Phi\e{reçu}$ (en W) qui s'exprime
+\[ \Phi\e{reçu} = \pi \, R^2 \, (1-A\e{b}) \, \mathcal{F}\e{s} \]
+%L'albédo de Bond~ désigne l'albédo intégré sur toutes les longueurs d'onde et tous les angles d'incidence.
+
+\sk
+La valeur de~$30\%$ de l'albédo planétaire sur Terre est en fait majoritairement dû à l'atmosphère~:  seuls 4\% de l'énergie solaire incidente sont réfléchis par la surface terrestre comme indiqué sur la figure~\ref{fig:diffsep}. L'énergie réfléchie par l'atmosphère vers l'espace, responsable de plus de~$85\%$ de l'albedo planétaire, est diffusée par les molécules ou par des particules en suspension, gouttelettes nuageuses, gouttes de pluie ou aérosols.
+
+\figside{0.4}{0.15}{\figpayan/LP211_Chap2_Page_27_Image_0001.png}{L'énergie solaire incidente est réfléchie vers l'espace par la surface et l'atmosphère d'une planète. La figure montre les différentes contributions à l'albédo planétaire total.}{fig:diffsep}

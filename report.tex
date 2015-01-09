@@ -1,0 +1,86 @@
+\documentclass[
+	a4paper,
+	DIV16,
+	10pt,
+	cleardoublepage=empty,
+        twoside=yes,
+        BCOR=8.25mm
+	]{scrbook}
+
+%%% MOI
+\usepackage{scrpage2}
+\usepackage{my_latex}
+\usepackage{patch_french}
+\setcapindent{1em} %%% parce que sinon l'indentation "Figure ... -- texte" est trop grande
+
+%%% BANDEAU
+\deftripstyle{Vide}[0pt][.4pt]
+{}{}{}
+{}{}{}
+\deftripstyle{Bandeau}[0pt][.4pt]
+{LP211 - année 2013/2014}{Sciences de l'atmosphère}{Universit\'e Pierre et Marie Curie}
+{Notes préparées par Aymeric Spiga (UPMC/LMD)}{}{\pagemark} \pagestyle{scrheadings} \pagestyle{Bandeau}
+
+%%% DEBUT
+\begin{document}
+\frontmatter
+
+%%% PAGE DE GARDE
+\subject{LP211}
+\title{Introduction aux sciences de l'atmosphère}
+\subtitle{Cours niveau licence. Année universitaire 2013-2014.}
+\author{~\\ ~\\
+Aymeric SPIGA\\
+\small Maître de conférences à l'Université Pierre et Marie Curie\\
+\small Chercheur au Laboratoire de Météorologie Dynamique (Institut Pierre-Simon Laplace)
+}
+\date{}
+\publishers{
+\includegraphics[height=2cm]{/home/aymeric/Images/Logo/UPMC_cart-blanc-Q_7504-703-3.png}\\
+Contact: \email{aymeric.spiga@upmc.fr}\\Copie et usage interdits sans autorisation explicite de l'auteur.
+}
+
+%%%%% decommenter pour le mode book
+\dedication{Les chapitres 1, 2, 3, 4, 5, 6, 8 consistent en de multiples réorganisations, ajouts et modifications sur des notes existantes de Francis Codron et Sébastien Payan que je souhaite remercier pour leur aide. Les chapitres 7 et 9 sont entièrement originaux. Je remercie Jean-Baptiste Madeleine et Guillaume Angot pour leurs remarques constructives.\\ ~\\ ~\\ Dans l'éventualité où le lecteur trouverait des erreurs ou imprécisions dans ce cours, il est cordialement invité à les signaler à l'auteur à l'adresse \url{aymeric.spiga@upmc.fr}} \maketitle \tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% CHAPITRE 1
+%\def\thechapter{1} \title{Sciences de l'atmosphère\\ Chapitre \thechapter} \author{Aymeric SPIGA\\ ~\\  ~\\ \small Merci à Francis CODRON, Sébastien PAYAN,\\ \small Jean-Baptiste MADELEINE, Guillaume ANGOT \\ \small pour leur contribution.} \maketitle  %% commenter la ligne en mode livre complet
+%\input{1intro.tex}
+
+%%%% CHAPITRE 2
+%%\def\thechapter{2} \title{Sciences de l'atmosphère\\ Chapitre \thechapter} \author{Aymeric SPIGA\\ ~\\ \small Modifié et augmenté à partir des notes de Francis CODRON et Sébastien PAYAN.} \maketitle %% commenter la ligne en mode livre complet
+\input{2radiatif.tex}
+
+%%%% CHAPITRE 3
+%%\def\thechapter{3} \title{Sciences de l'atmosphère\\ Chapitre \thechapter} \author{Aymeric SPIGA\\ ~\\ \small Modifié et augmenté à partir des notes de Francis CODRON et Sébastien PAYAN.} \maketitle %% commenter la ligne en mode livre complet
+\input{3transfert.tex}
+
+%%%% CHAPITRE 4
+%%\def\thechapter{4} \title{Sciences de l'atmosphère\\ Chapitre \thechapter} \author{Aymeric SPIGA\\ ~\\ \small Modifié et augmenté à partir des notes de Francis CODRON et Sébastien PAYAN.} \maketitle %% commenter la ligne en mode livre complet
+\input{4bilan.tex}
+
+%%% CHAPITRE 5
+%%\def\thechapter{5} \title{Sciences de l'atmosphère\\ Chapitre \thechapter} \author{Aymeric SPIGA\\ ~\\ \small Modifié et augmenté à partir des notes de Francis CODRON.} \maketitle %% commenter la ligne en mode livre complet
+%\input{5thermsec.tex}
+
+%%%% CHAPITRE 6
+%%\def\thechapter{6} \title{Sciences de l'atmosphère\\ Chapitre \thechapter} \author{Aymeric SPIGA\\ ~\\ \small Modifié et augmenté à partir des notes de Francis CODRON.} \maketitle %% commenter la ligne en mode livre complet
+%\input{6thermhumide.tex}
+
+%%%% CHAPITRE 7
+%%\def\thechapter{7} \title{Sciences de l'atmosphère\\ Chapitre \thechapter} \author{Aymeric SPIGA\\ ~\\} \maketitle %% commenter la ligne en mode livre complet
+%\input{7nuages.tex}
+
+%%%% CHAPITRE 8
+%%\def\thechapter{8} \title{Sciences de l'atmosphère\\ Chapitre \thechapter} \author{Aymeric SPIGA\\ ~\\ \small Modifié et augmenté à partir des notes de Francis CODRON.} \maketitle %% commenter la ligne en mode livre complet
+%\input{8dyncirc.tex}
+	
+%%%% CHAPITRE 9
+%%\def\thechapter{9} \title{Sciences de l'atmosphère\\ Chapitre \thechapter} \author{Aymeric SPIGA\\ ~\\} \maketitle %% commenter la ligne en mode livre complet
+%\input{9climat.tex}
+
+\end{document}

@@ -1,0 +1,102 @@
+\documentclass[
+	a4paper,
+	DIV16,
+	10pt]{scrartcl}
+
+%%% MOI
+\usepackage{scrpage2}
+\usepackage{my_latex}
+\usepackage{patch_french}
+\setcapindent{1em} %%% parce que sinon l'indentation "Figure ... -- texte" est trop grande
+
+%%% BANDEAU
+\deftripstyle{Vide}[0pt][.4pt]
+{}{}{}
+{}{}{}
+\deftripstyle{Bandeau}[0pt][.4pt]
+{3T054}{}{Universit\'e Pierre et Marie Curie}
+{Aymeric Spiga (UPMC/LMD)}{Tous droits réservés}{\pagemark} \pagestyle{scrheadings} \pagestyle{Bandeau}
+
+%%% DEBUT
+\begin{document}
+
+\subject{\includegraphics[height=1.5cm]{/home/aymeric/Images/Logo/UPMC_cart-blanc-Q_7504-703-3.png}}
+\title{Transfert radiatif}
+\subtitle{UE 3T054. Fiches explicatives.}
+\author{Aymeric SPIGA}
+\date{\email{aymeric.spiga@upmc.fr}}
+\publishers{\small Copie et usage interdits sans autorisation explicite de l'auteur.}
+
+\maketitle
+
+
+\newpage
+\section{Le rôle central de l'énergie solaire}
+\input{energie_solaire_domine.tex}
+
+\newpage
+\section{Spectre électromagnétique}
+\input{spectre_electromagnetique.tex}
+
+\newpage
+\section{Rayonnement thermique et corps noir}
+\input{rayonnement_thermique_simple.tex}
+\input{corps_noir_definition.tex}
+
+\newpage
+\section{Loi de Planck}
+\input{corps_noir_loi_planck.tex}
+
+\newpage
+\section{Loi de Wien du corps noir}
+\input{corps_noir_loi_wien.tex}
+
+\newpage
+\section{Loi de Stefan-Boltzmann du corps noir}
+\input{corps_noir_loi_stefan.tex}
+
+\newpage
+\section{Corps gris et émissivité}
+\input{corps_noir_emissivite.tex}
+
+\newpage
+\section{Domaine de l'énergie solaire}
+\input{energie_solaire_domaine.tex}
+
+\newpage
+\section{Constante solaire}
+\input{constante_solaire.tex}
+%\input{constante_solaire_calcul.tex}
+
+\newpage 
+\section{Albédo} 
+\input{albedo.tex}
+
+\newpage
+\section{Bilan simple : température équivalente}
+\input{bilan_radiatif_flux_simple.tex}
+\input{bilan_radiatif_temperature_equivalente.tex}
+
+\newpage
+\section{Applications de la température équivalente}
+\input{bilan_radiatif_temperature_equivalente_applications.tex}
+
+\newpage
+\section{Absorption, réflexion, transmission}
+\input{transfert_radiatif_coefficients.tex}
+\input{transfert_radiatif_conservation.tex}
+
+\newpage
+\section{Absorption dans l'atmosphère}
+\input{transfert_radiatif_absorption_atmosphere.tex}
+\input{corps_noir_loi_kirchhoff.tex}
+
+%\newpage
+%\section{Effet de serre}
+%\input{bilan_radiatif_modele_a_une_couche.tex}
+%
+%\newpage
+%\section{Effet de serre : modèle plus fin et effet parasol}
+%\input{bilan_radiatif_modele_gris_a_une_couche.tex}
+
+\end{document}

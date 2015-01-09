@@ -1,0 +1,77 @@
+\chapter{Transfert radiatif}
+
+\dictum[Alberto Giacometti, 1949]{Le ciel n’est bleu que par convention, mais rouge en réalité.}
+
+\bk Lorsqu'il traverse l'atmosphère terrestre, la totalité du rayonnement thermique émis par le Soleil n'est pas transmise à la surface. On appelle \voc{transfert radiatif} les phénomènes qui régissent l'interaction entre rayonnement incident et matière. Dans ce chapitre, on aborde des éléments de éléments de transfert radiatif qui sont nécessaires pour effectuer le bilan énergétique de l'atmosphère et du système climatique.
+
+\mk \section{Réflexion, absorption, transmission}
+
+	\sk \subsection{Coefficients d'interaction et lois de Kirchhoff}
+
+		\input{transfert_radiatif_coefficients.tex}
+
+		\input{transfert_radiatif_conservation.tex}
+
+	\sk \subsection{Vocabulaire et mise en garde}
+
+		\input{transfert_radiatif_vocabulaire.tex}
+
+	\sk \subsection{Albédo}
+
+		\input{albedo.tex}
+
+	\sk \subsection{Remarque sur l'émissivité}
+
+		\input{corps_noir_loi_kirchhoff.tex}
+
+\mk \section{Bases pour aborder l'interaction entre le rayonnement électromagnétique et l'atmosphère}
+
+	\sk \subsection{Généralités}
+
+		\input{transfert_radiatif_photons.tex}
+
+	\sk \subsection{Section efficace}\label{sec:efficace}
+
+		\input{transfert_radiatif_section_efficace.tex}
+
+\mk \section{Diffusion}
+
+	\input{transfert_radiatif_diffusion.tex}
+
+
+\mk \section{Absorption} Au cours de leur pénétration dans l'atmosphère, les photons entrent en collision avec les molécules gazeuses et sont progressivement absorbés. L'étude de ces processus peut être extrêmement complexe, on donne donc ici uniquement les aspects les plus élémentaires pour comprendre les phénomènes en jeu.
+
+	\sk \subsection{Aspect macroscopique~: loi de Beer-Lambert-Bouguer}
+	
+		\input{transfert_radiatif_beer_lambert.tex}
+
+	\sk \subsection{Aspect microscopique~: absorption par les gaz et liaisons moléculaires}
+
+		\input{transfert_radiatif_absorption_micro.tex}
+
+		\input{transfert_radiatif_absorption_atmosphere.tex}
+
+
+
+\mk
+\section{Une rapide synthèse~: spectre solaire à la surface de la Terre}
+
+\sk
+La figure~\ref{fig:radiation} compare le rayonnement solaire incident au sommet de l'atmosphère et à la surface, en fonction de la longueur d'onde. Dans les longueurs d'ondes visibles, où se situe la majorité du rayonnement solaire incident, une fraction du rayonnement, appelée albédo, est réfléchie vers l'espace~: les molécules constituant l'atmosphère, les aérosols et nuages contribuent tous à cet albedo planétaire (voir également figure~\ref{fig:diffsep}). En analysant conjointement la figure~\ref{fig:atmspectrum}, on voit que le rayonnement ultraviolet est complètement absorbé par l'ozone et l'oxygène. Restent que ces gaz diatomiques simples (comme c'est le cas de H$_2$, N$_2$) constituent un milieu presque complètement transparent à la fois au rayonnement solaire [surtout visible, ou \ofg{ondes courtes}] et au rayonnement terrestre [surtout infrarouge, ou ondes longues]. En revanche, certains gaz composés (en particulier CO$_2$, H$_2$O, N$_2$O, CH$_4$, CO \ldots) ne sont que partiellement transparents, car, s'ils sont transparents au rayonnement courte longueur d’onde (et donc à une grande partie du rayonnement solaire), ils absorbent plus ou moins fortement le rayonnement grande longueur d’onde, notamment le rayonnement émis par la Terre. Ainsi, contrairement à ce qui prévaut dans les longueurs d'onde visible, l'atmosphère est très opaque dans l'infrarouge (longueurs d'onde quelques microns). On distingue seulement une fenêtre ente 8 et 12 microns où le rayonnement émis par la surface s'échappe en grande partie vers l'espace. Les principaux absorbants sont la vapeur d'eau et le CO$_2$, d'autres gaz comme le méthane ou l'ozone ayant des contributions plus faibles. La plupart des gaz absorbent dans des bandes étroites. La vapeur d'eau au contraire absorbe dans un domaine spectral très large. Le spectre donné en figure~\ref{fig:atmspectrum} est valable en ciel clair et ne tient pas compte de la présence de nuages. L'eau liquide (ou glace) est un très fort absorbant dans l'infrarouge à toutes les longueurs d'ondes, et un nuage même peu épais absorbera donc rapidement la quasi-totalité du rayonnement incident. 
+
+\figsup{0.49}{0.25}{\figpayan/LP211_Chap2b_Page_18_Image_0001.png}{\figpayan/LP211_Chap1_Page_07_Image_0004.png}{[Gauche] Spectre du rayonnement solaire (UV, Visible, IR) à l’extérieur de l’atmosphère terrestre et au niveau du sol (après traversée de l’atmosphère). Le rayonnement au sommet de l'atmosphère correspond à la courbe rouge. Le rayonnement diffusé par l'atmosphère correspond à la courbe bleu foncé. Le rayonnement absorbé par l'atmosphère correspond à la courbe bleu clair. Le rayonnement résultant au sol correspond à la courbe jaune. [Droite] Figure similaire, mais les espèces gazeuses responsables des bandes d'absorptions sont indiquées sur la figure.}{fig:radiation}
+
+%\end{document}
+
+%\mk \section{Synthèse : transfert radiatif dans l'infrarouge} On peut négliger la diffusion du rayonnement infrarouge dans l'atmosphère terrestre: la diffusion Rayleigh est très inefficace aux grandes longueurs d'onde, et les particules plus grosses (comme les gouttes d'eau) sont typiquement très absorbantes et donc peu diffusives.
+
+%\begin{figure}[tbp]
+%  \begin{center}
+%    \includegraphics[width=\figw]{\figfrancis/Schwartzschild}
+%  \end{center}
+%  \caption{Variation du rayonnement infrarouge montant incident sur une couche
+%  d'épaisseur $dz$: absorption et émission par la couche.}
+%  \label{fig:schwartzschild}
+%\end{figure}
+
+%On doit par contre considérer en plus de l'absorption de rayonnement, l'émission dans l'infrarouge par l'atmosphère (figure \ref{fig:schwartzschild}). Dans les conditions appelées \emph{équilibre thermodynamique local\footnote{Ces conditions sont vérifiées si les collisions entre molécules sont plus fréquentes que l'absorption ou émission de rayonnement. Les molécules émettrices ont alors la même température que leur environnement}}, qui sont valables jusque vers 60~km d'altitude environ, le rayonnement émis (vers le haut et vers le bas) par une couche mince d'atmosphère dépend de sa température et de son coefficient d'absorption suivant la loi de Kirchoff. Pour un faisceau lumineux traversant une couche mince d'atmosphère, la variation de luminance vaut alors: \[dL_\lambda=\left(-L_\lambda+B_\lambda(T)\right)\mu d\tau_\lambda\] Le premier terme du second membre représente l'absorption du rayonnement incident, le deuxième l'émission par les gaz de la couche. La loi de Kirchoff fait qu'ils sont multipliés par le même coefficient $\mu\tau_\lambda$ qui donne le coefficient d'absorption et d'émission de la couche. Cette équation est appelée \emph{équation de Schwartzschild}. Son intégration entre une altitude $z_0$ et l'infini (espace) donne: \[L_\lambda(\infty)=L_\lambda(z_0)e^{-\mu\tau_\lambda(z_0,\infty)}+\int_{z_0}^\infty B_\lambda(T)e^{-\mu\tau_\lambda(z,\infty)}\mu\rho_ak_\lambda dz\] Le rayonnement sortant qu sommet de l'atmosphère est donc la somme du rayonnement présent en $z_0$ diminué de l'absorption entre $z_0$ et le sommet de l'atmosphère (premier terme), et de l'intégrale de la contribution du rayonnement émis par chaque couche au dessus de $z_0$. Comme pour le transfert dans le visible, on peut montrer (en supposant que $T$ varie peu) que la contribution maximale au rayonnement sortant à une longueur d'onde $\lambda$ provient d'une épaisseur optique de $\tau_\lambda=1$ à partir du sommet de l'atmosphère.

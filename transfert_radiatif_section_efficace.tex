@@ -1,0 +1,23 @@
+\sk
+Que l'on s'intéresse à la diffusion ou l'absorption, l’interaction entre le rayonnement et la matière dépend de la rencontre entre les photons et les éléments (atomes, molécules, particules) du milieu considéré. La diffusion et l'absorption dépendent donc de la probabilité que le rayonnement, c'est-à-dire les photons qui le constituent, rencontre les éléments constitutifs de la matière. 
+
+\sk
+De façon évidente, cette probabilité est liée 
+\begin{citemize}
+\item au flux de photons~: la probabilité est plus élevée s'il y a un plus grand nombre de photons incidents, ou de façon équivalente une plus grande énergie radiative incidente ;
+\item au nombre d'éléments (atomes, molécules, particules) dans le milieu matériel~: la probabilité augmente avec le nombre d'éléments, autrement dit dans un milieu plus dense, le rayonnement aura une plus forte probabilité de rencontrer des éléments matériels avec lesquels interagir. 
+\end{citemize}
+Cependant, même si ces deux quantités sont élevées, la probabilité peut rester faible, car elle dépend également d'un paramètre qui traduit l'efficacité de la rencontre entre un photon de longueur d'onde donnée~$\lambda$ et l'espèce absorbante. Cette grandeur est appelée \voc{section efficace} et est décrite ci-dessous.
+
+\figun{0.5}{0.2}{\figfrancis/Beer_upside}{Variation du rayonnement incident avec un angle $\theta$ sur une couche d'épaisseur $dz$}{fig:beer}
+
+\sk
+On considère la situation décrite dans la figure~\ref{fig:beer}. Soit une tranche d'atmosphère horizontale\footnote{On dit qu'on fait l'approximation plan-parallèle car on néglige la courbure de la Terre ainsi que les variations horizontales des paramètres géophysiques (température et profils de gaz).} d'épaisseur élémentaire~$\dd z$ qui reçoit un rayonnement monochromatique de longueur d'onde~$\lambda$ caractérisé par sa luminance énergétique spectrale~$L_\lambda$. Le rayonnement incident traverse la tranche d'atmosphère en faisant un angle~$\theta$ par rapport à la verticale. La distance parcourue par le rayonnement à travers la fine couche d'épaisseur~$\dd z$ vaut\footnote{On parle d'abscisse curviligne pour qualifier~$s$.} 
+\[ \dd s = \frac{1}{\cos\theta} \, \dd z \]
+%%%% OK avec Beer_upside
+autrement dit l'inclinaison du rayonnement impose un chemin optique plus grand. A la sortie de la tranche d'atmosphère, le rayonnement a subi une extinction à cause des phénomènes de diffusion et absorption dans la tranche d'atmosphère. On caractérise alors l'extinction causée par la diffusion et l'absorption par une quantité appelée section efficace~$\Sigma_\lambda$ qui a la dimension d'une surface, exprimée en m$^2$. A la sortie de la tranche d'atmosphère, la luminance spectrale est~$L_\lambda + \dd L_\lambda$ avec 
+\[ \dd L_\lambda = - L_\lambda(s) \, \Sigma_\lambda(s) \, N \, \dd s \qquad \textrm{ou de manière équivalente} \qquad \boxed{ \dd L_\lambda = - L_\lambda(z) \, \Sigma_\lambda(z) \, N \, \frac{1}{\cos\theta} \, \dd z } \]
+où $N$ est le nombre de particules par unité de volume. La section efficace~$\Sigma_{\lambda}$ prend en compte l'extinction causée par les phénomènes d'absorption et de diffusion~: plus la section efficace est grande, plus l'extinction du rayonnement incident est élevée. Il est possible de séparer les deux contributions en définissant une section efficace d'absorption~$\Sigma_\lambda^a$ et une section efficace de diffusion/réflexion~$\Sigma_\lambda^r$ telles que~$\Sigma_{\lambda} = \Sigma_\lambda^a + \Sigma_\lambda^r$. La section efficace dépend de la longueur d'onde et de la nature physico-chimique du milieu absorbant~: par exemple, la composition de l'air dans le cas de l'atmosphère, ou la température dans le cas de la majorité des matériaux. Ainsi, en toute généralité, elle n'a pas de raison particulière de rester constante pour les différentes parties du milieu matériel traversé.
+
+%Ce n'est pas le but de ce cours que de proposer une vision complète du transfert radiatif, mais le lecteur intéressé peut noter que l'équation complète du transfert radiatif dans l'atmosphère prend la forme indiquée précédemment avec cependant l'ajout des deux termes \ofg{sources} précités \[ \dd L_\lambda = - L_\lambda(s) \, \Sigma_\lambda(s) \, N \, \dd s + \textrm{émission thermique} + \textrm{diffusion multiple} \]
+

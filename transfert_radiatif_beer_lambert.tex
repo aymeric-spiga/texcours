@@ -1,0 +1,70 @@
+\sk
+L’étude de l’absorption du rayonnement par un milieu repose sur deux relations établies au XVIIIe siècle qui comparent la luminance spectrale~$L_\lambda(0)$ d'un faisceau incident monochromatique pénétrant sous incidence normale dans un milieu matériel absorbant, à la luminance~$L_\lambda(\ell)$ après traversée du milieu de longueur~$\ell$.
+\begin{citemize}
+\item D'une part, le faisceau incident subit une extinction telle que le rapport~$\log \frac{L_\lambda(\ell)}{L_\lambda(0)}$ est proportionnel à la longueur~$\ell$ parcourue par le rayonnement dans le milieu absorbant (relation de Bouguer-Lambert).  
+\item D'autre part, dans un milieu de concentration molaire effective~$[X]$ en espèce absorbante X, le faisceau incident subit une extinction telle que le rapport~$\log \frac{L_\lambda(\ell)}{L_\lambda(0)}$ est proportionnel à la concentration~$[X]$ (relation de Beer). Le facteur de proportionnalité dépend de l'épaisseur du milieu traversé, de sa nature, de sa composition, de la température et de la longueur d'onde du rayonnement incident.
+\end{citemize}
+Le logarithme indique que les variations relatives d'énergie radiative au cours de la propagation dans le milieu sont proportionnelles à la longueur parcourue et à la concentration d'espèces absorbantes.
+
+\sk
+Les deux lois historiques décrites ci-dessus décrivent exactement la situation de la section~\ref{sec:efficace} si l'on néglige la diffusion. Par rapport à la section~\ref{sec:efficace}, la seule hypothèse supplémentaire est que la section efficace d'absorption~$\Sigma_\lambda^a$ ne dépend que de la longueur d'onde et du matériau, elle est considérée comme uniforme sur toute la longueur traversée. Si l'on reprend la situation de la figure~\ref{fig:beer} avec cette hypothèse, on a 
+\[ \dd L_\lambda = - L_\lambda(z) \, \Sigma_\lambda^a \, N_X \, \frac{1}{\cos\theta} \, \dd z \]
+où $N_X$ est la concentration de l'espèce absorbante exprimée sous la forme d'un nombre de molécule par unité de volume (au lieu de $[X]$ en mol~L$^{-1}$).
+La variation de flux au cours de la traversée du milieu matériel est donc
+\[ \frac{\dd L_\lambda}{L_\lambda} = - \Sigma_\lambda^a \, N_X \, \frac{1}{\cos\theta} \, \dd z \]
+Par intégration, si l'on suppose que~$z=0$ repère l'entrée dans le milieu matériel et~$z=\ell$ la sortie, on obtient
+\[ \int_{z=0}^{z=\ell} \, \frac{\dd L_\lambda}{L_\lambda} = - \Sigma_\lambda^a \, N_X \, \frac{1}{\cos\theta} \, \int_{z=0}^{z=\ell} \dd z \]
+d'où la valeur de la luminance spectrale à la sortie du milieu traversé, donnée par deux relations équivalentes
+\[ \boxed{ \log \frac{L_\lambda(\ell)}{L_\lambda(0)} = - \zeta \, \ell } \qquad \textrm{et} \qquad \boxed{ L_\lambda(\ell) = L_\lambda(0) \, e^{- \zeta \, \ell} } \qquad \textrm{avec la constante en m}^{-1} \qquad \zeta = \Sigma_\lambda^a \, N_X \, \frac{1}{\cos\theta} \]
+Cette loi reprend les résultats historiques présentés précédemment et porte le nom de \voc{loi de Beer-Lambert-Bouguer}. Elle indique la décroissance exponentielle du flux incident lors de sa traversée du milieu, d'autant plus importante que la longueur traversée~$\ell$ est grande et que la concentration en absorbant~$N_X$ du milieu est grande. La loi de Beer-Lambert-Bouguer peut également être appliquée sous la même forme avec l'éclairement. Le coefficient~$\zeta$ porte parfois le nom de coefficient d'extinction linéique. 
+%Nous ferons l’hypothèse par la suite que cette dépendance est linéaire, ce qui est vrai pour l’air.
+On donne quelques ordres de grandeur ci-dessous pour la valeur de~$\zeta$
+\begin{citemize}
+\item atmosphère pour un rayonnement visible dans le jaune $\zeta = 1 \times 10^{-5}$~m$^{-1}$ 
+\item atmosphère pour un rayonnement visible dans le violet $\zeta = 4 \times 10^{-5}$~m$^{-1}$
+\item verre $\zeta = 0.2$~m$^{-1}$
+\item nuage bas $\zeta = 1 \times 10^{-3}$~m$^{-1}$
+\end{citemize}
+En remarquant que le rapport~$L_\lambda(\ell) / L_\lambda(0)$ définit justement la coefficient de transmission spectral~$\tau_\lambda$ \emph{en l'absence de diffusion}, on arrive à
+\[ \tau_\lambda = e^{- \zeta \, \ell} \qquad \textrm{et} \qquad \alpha_\lambda = 1 - e^{- \zeta \, \ell} \]
+On peut vérifier que l'expression est conforme à l'intuition : si la longueur de la traversée est particulièrement grande ($\ell \rightarrow \infty$), et/ou que l'espèce absorbante~X est très concentrée ($N_X \rightarrow \infty$), alors presque tout le rayonnement incident est absorbé~$\alpha_\lambda \rightarrow 1$ et une partie négligeable de ce rayonnement est transmise~$\tau_\lambda \rightarrow 0$. 
+
+\sk
+En sciences de l'atmosphère, on utilise souvent une forme plus générale de la loi de Beer-Lambert-Bouguer. On écrit la relation intermédiaire (non intégrée) qui conduit à cette loi sous la forme 
+\[ \frac{\dd L_\lambda}{L_\lambda} = \, \rho_X \, k_\lambda \, \frac{1}{\cos\theta}  dz \]
+où $k_\lambda$ est un coefficient d'absorption massique en m$^2$~kg$^{-1}$ et $\rho_X(z)$ est la densité d'absorbant~X, qui dépend de~$z$ comme ce peut être le cas dans l'atmosphère. Cette relation peut être intégrée sur une couche épaisse située entre les niveaux~$z_1$ et~$z_2$. On obtient 
+\[ L_\lambda(z_1) = L_\lambda(z_2) \, e^{- \frac{t_\lambda}{\cos\theta}} \]
+où 
+\[ t_\lambda = \int_{z_1}^{z_2} \, k_\lambda \, \rho_X \, \dd z \]
+est appelée l'épaisseur optique de la couche. Si l'extinction est uniquement due à de l'absorption, sans diffusion, on a une relation directe entre l'épaisseur optique et le coefficient d'absorption de la couche: 
+\[\alpha_\lambda = 1 - e^{- \frac{t_\lambda}{\cos\theta}} \]
+%Dans le cas particulier où la densité d'absorbant est de la forme
+%\[\rho_a=\rho_a^0e^{-z/H_a}\]
+%ce qui est le cas par exemple d'un gaz bien mélangé dans l'atmosphère, ou de
+%la vapeur d'eau, on peut calculer l'altitude du taux d'extinction
+%$dL_\lambda/dz$ maximum: on a alors également d'après la définition de
+%$\tau_\lambda$
+%\[\tau_\lambda=\tau_\lambda^0e^{-z/H_a}\]
+%et $d\tau_\lambda/dz=-\tau_\lambda/H_a$. D'autre part, le taux d'extinction vaut 
+%\[dL_\lambda/dz=-L_\lambda\mu d\tau_\lambda/dz=L_\lambda^\infty
+%e^{-\mu\tau_\lambda}\mu\tau_\lambda/H_a\]
+%Ce taux est maximal pour 
+%\[d\left(\tau_\lambda\mu e^{-\tau_\lambda\mu}\right)=0\]
+%soit pour $\mu\tau_\lambda=1$. On a donc un maximum d'extinction (absorption
+%ou diffusion) du rayonnement incident pour une épaisseur optique de 1
+%traversée à partir du sommet de l'atmosphère. Pour des épaisseurs optiques
+%plus faibles, on a peu d'extinction car la densité d'absorbants est faible.
+%Pour des épaisseurs optiques plus grandes, on a beaucoup d'absorbants mais la
+%luminance résiduelle est petite (figure \ref{fig:absrate}).
+% 
+%\begin{figure}[tbp]
+%  \begin{center}
+%    \includegraphics{\figfrancis/WH_abs_max}
+%  \end{center}
+%  \caption{Comparaison des structures verticales de la densité de
+%  l'atmosphère $\rho$, de la luminance d'un rayonnement incident $L_\lambda$
+%  et de sa dérivée verticale. L'échelle horizontale est linéaire pour chaque
+%  grandeur.}
+%  \label{fig:absrate}
+%\end{figure}
+

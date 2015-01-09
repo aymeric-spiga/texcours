@@ -1,0 +1,218 @@
+\chapter{Changements de phase et (in)stabilité}
+
+\dictum[René Char, 1934]{Il faut être l'homme de la pluie et l'enfant du beau temps.}
+
+\bk
+Le cycle de l'eau est une composante essentielle du système climatique terrestre. Bien que les quantités présentes dans l'atmosphère font de l'eau un composant minoritaire, son rôle climatique et météorologique est de première importance. Pour se préparer à l'étude de ces questions, notamment la formation des nuages abordée au chapitre suivant, on s'intéresse dans ce chapitre à l'évolution d'une parcelle d'air de manière plus approfondie qu'au chapitre précédent en introduisant d'une part les changements d'état de l'eau et d'autre part la notion de stabilité de la parcelle par rapport à son environnement.
+
+\mk
+\section{Air humide, air saturé}
+
+\sk
+L'eau est présente dans l'atmosphère sous trois phases différentes, de la moins à la plus ordonnée~: gazeuse (vapeur d'eau), liquide (fines gouttelettes en suspension formant les nuages, précipitations pluvieuses), solide (cristaux de glace dans les fins nuages de haute altitude, intempéries de type neige et grêle). On s'intéresse principalement aux phases liquide et gazeuse afin de préfigurer l'étude des nuages sur Terre. Des raisonnements similaires sont possibles, avec quelques subtilités, pour la phase solide afin de décrire les nuages formés de cristaux de glace lorsque la température de l'atmosphère est suffisamment basse.
+
+\sk
+\subsection{Quantification de la vapeur d'eau dans l'atmosphère}\label{rappmel}
+
+\sk
+Soit une parcelle contenant un mélange de gaz parfaits notés~$i$, dont un est la vapeur d'eau. On a défini la \voc{pression partielle}~$P_i$ et le \voc{rapport de mélange massique}~$r_i = \frac{m\e{gaz i}}{m\e{air}}$ dans le chapitre introductif. Ces deux quantités peuvent servir à définir la quantité de vapeur d'eau présente dans la parcelle d'air. Pour simplifier, on note
+\[ P\e{vapeur d'eau} = e \qquad \text{et} \qquad r\e{vapeur d'eau} = \frac{m\e{vapeur d'eau}}{m\e{air}} = r \] 
+%La quantité~$q$ est également appelée \voc{humidité spécifique}. 
+Le rapport de mélange en vapeur d'eau~$r$ est conservé dans la parcelle si il n'y a pas de changement de phase.
+
+\sk
+La pression partielle de l'air sec est~$P - e$. Comme mentionné dans le chapitre d'introduction, la vapeur d'eau vérifie l'équation d'état des gaz parfaits tout comme l'air sec, mélange de gaz parfaits, d'où
+\[  e \, V = \frac{m\e{vapeur d'eau}}{M\e{vapeur d'eau}} \, R^* \, T  \qquad \qquad \qquad (P-e) \, V = \frac{m\e{air sec}}{M\e{air sec}} \, R^* \, T  \]
+On forme le rapport des deux expressions pour obtenir une expression en fonction de paramètres intensifs et ne dépendant pas de la température
+\[ \frac{e}{P-e} = \frac{m\e{vapeur d'eau}}{m\e{air sec}} \, \frac{M\e{air sec}}{M\e{vapeur d'eau}} \]
+
+\sk
+L'expression ci-dessus peut être grandement simplifiée. L'eau est un composant minoritaire dans l'atmosphère terrestre~: l'ordre de grandeur de~$r$ est de l'ordre de~$0$ à~$20$~g~kg$^{-1}$. On a donc toujours~$r \ll 1$ et~$e \ll P$, soit~$P-e \simeq P$. Ainsi la masse d'air sec~$m\e{air sec}$ dans la parcelle est en très bonne approximation égale à la masse d'air~$m\e{air}$ dans la parcelle, ce qui vaut également pour la masse molaire. Le rapport de mélange en vapeur d'eau s'écrit alors~$r = \frac{m\e{vapeur d'eau}}{m\e{air}} \simeq \frac{m\e{vapeur d'eau}}{m\e{air sec}}$. L'expression ci-dessus se simplifie donc en
+\[ r = \frac{M\e{vapeur d'eau}}{M\e{air}} \, \frac{e}{P} \qquad \Rightarrow \qquad \boxed{ r \simeq 0.622 \, \frac{e}{P} } \]
+Cette équation signifie que, pour une pression~$P$ donnée, le rapport de mélange de vapeur d'eau~$r$ est en bonne approximation proportionnel à la pression partielle de vapeur d'eau~$e$.
+
+\sk
+%\subsection{Évaporation, Saturation}
+\subsection{Equilibre liquide / vapeur}
+
+\sk
+L'\voc{évaporation} est l'échappement de molécules d'eau depuis une phase liquide vers une phase gazeuse. A l'interface liquide-gaz, sous l'effet de l'agitation thermique, certaines molécules d'eau dans le liquide vont voir les liaisons hydrogène rompues avec leurs plus proches voisins. L'échappement est ainsi plus facile pour des molécules ayant une énergie cinétique importante~: le taux d'évaporation~$\mathcal{E}$ à partir d'une surface dépend donc de la température de l'eau. 
+
+\sk
+La \voc{condensation} est le passage de molécules d'eau de la phase gazeuse à la phase liquide. A l'interface liquide-gaz, certaines molécules d'eau dans le gaz vont se lier à des molécules d'eau dans le liquide par le biais de liaisons hydrogène. Le taux de condensation~$\mathcal{C}$ dépend de la pression de la phase gazeuse, à savoir~$e$ dans le cas de la vapeur d'eau. 
+
+\sk
+Soit une enceinte remplie d'air totalement sec, c'est-à-dire qui ne contient aucune molécule d'eau sous forme vapeur. On introduit dans cette enceinte une quantité donnée d'eau liquide. Comme décrit ci-dessus, il va y avoir spontanément évaporation avec un taux d'évaporation~$\mathcal{E}$ (supposé constant) à la surface du liquide, d'autant plus que la température de l'eau est élevée. Des molécules d'eau s'échappent donc dans l'espace au-dessus du liquide et forment une phase gazeuse dont la pression partielle~$e$ augmente peu à peu. Des molécules de cette phase gazeuse subissent à leur tour un phénomène de condensation et repassent en phase liquide. Le taux de condensation~$\mathcal{C}$ est, au début de l'expérience, très petit devant~$\mathcal{E}$ car la pression partielle~$e$ est extrêmement faible. Puisque l'évaporation domine la condensation, le bilan est donc en faveur d'une augmentation des molécules sous forme gazeuse. Néanmoins, plus le nombre de molécules d'eau sous forme gazeuse augmente, plus la pression partielle~$e$ augmente, donc plus le taux de condensation~$\mathcal{C}$ augmente. Ce phénomène va continuer jusqu'à atteindre un équilibre stationnaire où les taux de condensation~$\mathcal{C}$ et~$\mathcal{E}$ se compensent. Cet équilibre est appelé \voc{équilibre liquide-vapeur}, on parle également souvent, par abus de langage, de \voc{\ofg{saturation}}.% ou de \voc{\ofg{conditions saturées}}. 
+
+\sk
+\subsection{Grandeurs saturantes}
+
+\sk
+\subsubsection{Définition}
+
+\sk
+La pression partielle~$e$ pour laquelle l'équilibre liquide-vapeur est atteint est appelée \voc{pression de vapeur saturante} que l'on note~$e\e{sat}$. Tant que~$e<e\e{sat}$, les échanges par évaporation dominent les échanges par condensation et $e$ augmente jusqu'à atteindre~$e\e{sat}$. Lorsque~$e=e\e{sat}$, la quantité de vapeur d'eau dans l'enceinte n'augmente plus\footnote{Il est important de noter que cet état stationnaire n'est pas dénué d'échanges entre les phases liquide et gaz par condensation et évaporation. Par analogie, on peut penser au remplissage d'une baignoire équipée d'un siphon~: le niveau de l'eau est constant à l'état stationnaire bien qu'il y ait en permanence un apport d'eau par le robinet et une perte d'eau par le siphon -- l'état stationnaire signifie juste que ces échanges se compensent.}. Ainsi, si l'on considère une enceinte avec de l'eau sous forme vapeur et liquide
+\begin{citemize}
+\item si la pression partielle de vapeur d'eau~$e$ dans l'enceinte est supérieure à la pression de vapeur saturante~$e\e{sat}$, il y a condensation jusqu'à ce que~$e=e\e{sat}$.
+\item si la pression partielle de vapeur d'eau~$e$ dans l'enceinte est inférieure à la pression de vapeur saturante~$e\e{sat}$, il y a évaporation jusqu'à ce que~$e=e\e{sat}$.
+\end{citemize}
+Si l'on considère une enceinte contenant de l'eau sous forme vapeur uniquement, le premier point est toujours valable alors que le second point n'est pas vrai~: si la pression partielle de vapeur d'eau~$e$ dans l'enceinte est inférieure à la pression de vapeur saturante~$e\e{sat}$, rien ne se passe, car aucune phase liquide ne peut être évaporée. La pression partielle de vapeur d'eau~$e$ est donc toujours inférieure ou égale à la pression de vapeur saturante~$e\e{sat}$. 
+
+\sk
+Le rapport de mélange~$r\e{sat}$ correspondant à l'équilibre liquide/vapeur où $e=e\e{sat}$ est appelé \voc{rapport de mélange saturant}. D'après l'équation encadrée à la section précédente, on a 
+\[ r\e{sat} \simeq 0.622 \, \frac{e\e{sat}}{P} \]
+Les mêmes raisonnements qu'avec les pressions partielles~$e$ et~$e\e{sat}$ peuvent être faits avec les rapports de mélange~$r$ et~$r\e{sat}$. Ces quantités servent à définir l'\voc{humidité relative}~$H$
+\[ \boxed{ H = \frac{e}{e\e{sat}} = \frac{r}{r\e{sat}} } \]
+De ce qui précède, on déduit que l'humidité~$H$ est toujours inférieure à~$1$ ($100\%$) et que, lorsqu'il y a équilibre liquide/vapeur (\ofg{conditions saturées}), $H$ vaut~$1$ ($100\%$).
+
+\sk
+\subsubsection{Variation avec la température}
+
+\sk
+La pression de vapeur saturante~$e\e{sat}$ augmente exponentiellement avec la température~$T$ du gaz d'après la \voc{relation de Clausius-Clapeyron}\footnote{La pression de vapeur saturante est proportionnelle à la probabilité de rupture d'une liaison, elle-même variant exponentiellement suivant la température.}. Ainsi elle double pour une élévation de température de~$10$~K. Plus le gaz dans l'enceinte est chaud, plus la quantité de vapeur d'eau au terme de l'expérience est élevée. En pratique, le terme~$e\e{sat}$, qui varie exponentiellement avec la température~$T$, domine très fréquemment les variations de pression~$P$. Ainsi, en bonne approximation, le rapport de mélange saturant~$r\e{sat}$ varie également exponentiellement avec la température~$T$. 
+
+\sk
+La dépendance de~$e\e{sat}$ avec~$T$ permet par ailleurs de définir la \voc{température de rosée}~$T\e{rosée}$ associée à une valeur donnée de la pression partielle~$e$ de l'eau. Il s'agit de la température~$T\e{rosée}$ à laquelle la pression partielle~$e$ devient saturante, c'est-à-dire qui vérifie
+\[ \boxed{ e\e{sat}(T\e{rosée}) = e } \]
+
+%\subsection{Ébullition} L'ébullition est un cas particulier: des bulles de gaz se forment à l'{\em intérieur} du liquide bouillant. Dans le cas de l'eau, ce gaz est donc de la vapeur d'eau. La pression dans ces bulles est égale à celle du liquide, soit à peu près la pression atmosphérique si le liquide est en contact avec l'air. Les bulles sont d'autre part stables si leur pression est supérieure à la pression saturante. L'ébullition se produit donc à une température $T_b$ telle que \[e_{sat}(T_b)=P_{atm}\]
+
+\sk
+\subsection{Déplacement d'équilibre et application aux gouttelettes nuageuses}
+
+\sk
+On applique ici les raisonnements de la section précédente pour une interface plane liquide/vapeur à une goutte sphérique comme rencontrée dans les brouillards ou les nuages. La réalité est un peu plus complexe et fait intervenir les concepts de noyaux de condensation et de sursaturation, qui ne sont pas abordés dans ce cours. Les raisonnements présentés ci-dessous restent cependant valables au premier ordre.
+%%Dans l'atmosphère, loin de la surface, il n'y a pas d'interface liquide/gaz permanente. Si $e<e_{sat}$, il n'y a ni condensation ni évaporation. Si $e$ devient supérieure à $e_{sat}$, il y a condensation sous forme de gouttes d'eau liquide (qui se forment plus vite qu'elles ne s'évaporent). Ces gouttes s'évaporent dès que $e<e_{sat}$
+
+\sk
+Soit une parcelle d'air à la température~$T_0$ et à la pression~$P$. Elle contient de la vapeur d'eau en équilibre avec des gouttelettes d'eau en suspension, en pratique cela correspond à une parcelle dans laquelle des gouttelettes nuageuses se sont formées. A l'équilibre liquide-vapeur, la pression partielle de vapeur d'eau dans la parcelle vaut~$e=e\e{sat}(T_0)$, le rapport de mélange de vapeur d'eau vaut~$r=r\e{sat}(T_0)$ et l'humidité~$H$ vaut~$100\%$. Si la température de la parcelle change, il y a déplacement de l'équilibre liquide/vapeur\footnote{Par abus de langage, on dit parfois que \ofg{l'air chaud peut contenir plus de vapeur d'eau que l'air froid}. Il est autorisé de garder cette phrase en tête en tant que moyen mnémotechnique, cependant elle est incorrecte physiquement car elle ne rend pas compte de l'équilibre liquide/vapeur.}.
+\begin{finger}
+\item
+Supposons que l'on \underline{chauffe la parcelle} à une température~$T\e{c}>T_0$. Sa pression partielle en vapeur d'eau~$e$ est toujours proche de~$e\e{sat}(T_0)$, mais la pression de vapeur saturante~$e\e{sat}$ a augmenté de façon exponentielle de~$e\e{sat}(T_0)$ à~$e\e{sat}(T\e{c})$. On est alors dans la situation où~$e < e\e{sat}(T\e{c})$, donc~$H < 1$. Il y a alors évaporation d'eau liquide jusqu'à ce qu'un nouvel équilibre liquide/vapeur soit atteint, où~$e = e\e{sat}(T\e{c})$. Une façon équivalente de décrire ce déplacement d'équilibre est de dire que, lorsque la parcelle chauffe, la quantité de vapeur d'eau~$r=r\e{sat}(T_0)$ devient très inférieure à la quantité de vapeur d'eau à saturation~$r\e{sat}(T\e{c})$. De l'eau liquide doit passer sous forme gazeuse par évaporation pour compenser ce déséquilibre, de manière à ce que la quantité de vapeur d'eau~$r$ dans la parcelle augmente à~$r\e{sat}(T\e{c})$. Ainsi lorsque l'on chauffe la parcelle, des gouttelettes nuageuses disparaissent, le nuage se dissipe.
+\item
+Supposons à l'inverse que l'on \underline{refroidisse la parcelle} à une température~$T\e{f}<T_0$. La pression de vapeur saturante~$e\e{sat}$ a diminué de façon exponentielle de~$e\e{sat}(T_0)$ à~$e\e{sat}(T\e{f})$. On est alors dans la situation où~$e > e\e{sat}(T\e{f})$, donc~$H > 1$, qui est impossible. Il y a alors condensation d'eau liquide jusqu'à ce qu'un nouvel équilibre liquide/vapeur soit atteint, où~$e = e\e{sat}(T\e{f})$. Autrement dit, lorsque la parcelle refroidit, la quantité de vapeur d'eau~$r=r\e{sat}(T_0)$ devient très supérieure à la quantité de vapeur d'eau à saturation~$r\e{sat}(T\e{f})$. De l'eau sous forme gazeuse doit passer sous forme liquide par condensation pour compenser ce déséquilibre, de manière à ce que la quantité de vapeur d'eau~$r$ dans la parcelle diminue à~$r\e{sat}(T\e{f})$. Ainsi lorsque l'on refroidit la parcelle, de nouvelles gouttelettes nuageuses apparaissent, le nuage s'épaissit.
+\end{finger}
+
+\sk
+Le second point s'applique également au cas d'une parcelle d'air ne contenant pas initialement de gouttelettes nuageuses. 
+
+\sk
+Le chapitre précédent a proposé une expression du premier principe qui distingue deux manières de faire varier la température d'une parcelle atmosphérique d'air sec~: transformations isobares et transformations adiabatiques. On peut désormais illustrer la formation de nuages associée à chacune des transformations appliquée à une parcelle de rapport de mélange en vapeur d'eau~$r \neq 0$ qui reste constant au cours de la transformation.
+\begin{finger}
+\item Lorsqu'une parcelle d'air proche de la surface subit un refroidissement isobare à la tombée de la nuit, sous l'influence du flux radiatif infrarouge, des gouttelettes nuageuses se forment car le rapport de mélange saturant~$r\e{sat}$ diminue jusqu'à devenir plus faible que~$r$. Il s'agit du brouillard nocturne~; la formation de rosée obéit à un principe similaire. La température de rosée~$T\e{rosée}$ peut ainsi être définie comme la température à laquelle la condensation se produit suite à un refroidissement isobare. 
+\item Lorsqu'une parcelle d'air subit une élévation adiabatique, à cause par exemple de la présence d'une montagne, elle se refroidit et le rapport de mélange saturant~$r\e{sat}$ diminue. Le rapport de mélange~$r$ peut alors éventuellement devenir supérieur à~$r\e{sat}$ et des gouttelettes se forment pour que~$r=r\e{sat}$. Ceci explique par exemple que les montagnes soient souvent couvertes de nuages.
+\end{finger}
+Le chapitre suivant se propose de reprendre avec plus de précisions la formation des nuages.
+
+\mk
+\section{Evolution hors équilibre d'une parcelle d'air}
+
+\sk
+\subsection{Transformations pseudo-adiabatiques}
+
+\sk
+On considère tout d'abord une parcelle d'air (contenant de la vapeur d'eau) en évolution isobare. Le premier principe appliqué à la parcelle indique donc
+\[ \dd T = \frac{1}{C_P} \, \delta q \]
+Lors de l'évaporation, les molécules d'eau liquide voient les liaisons hydrogène avec leurs proches voisins être brisées. Le passage de l'eau de la phase liquide à la phase vapeur consomme donc de l'énergie\footnote{On peut s'en convaincre en notant la sensation de froid immédiate que provoque la sortie d'un bain à cause de l'évaporation de l'eau liquide sur le corps mouillé~; ou en se souvenant que lorsque l'on souffle sur la soupe pour la refroidir, c'est précisément pour favoriser l'évaporation et la refroidir efficacement.}~: pour l'air qui compose la parcelle, $\delta q < 0$ et il y a refroidissement. 
+A l'inverse, lors de la condensation, les molécules d'eau sous forme gazeuse créent des liaisons hydrogène avec les molécules d'eau de la phase liquide pour atteindre un état énergétique plus faible. Le passage de l'eau de la phase vapeur à la phase liquide libère donc de l'énergie~: pour l'air qui compose la parcelle, $\delta q > 0$ et il y a chauffage.
+
+\sk
+L'énergie~$\delta q$ consommée ou libérée par les changements d'état s'appelle~\voc{chaleur latente}, on la note~$\delta q\e{latent}$. Si une masse de vapeur~$\dd m\e{vapeur d'eau}$ est condensée ou évaporée, on a
+\[ \delta q\e{latent} = \frac{- L \, \dd m\e{vapeur d'eau}}{m\e{air sec}} \qquad \Rightarrow \qquad \boxed{ \delta q\e{latent} = - L \, \dd r } \]
+où~$L$ est la chaleur latente massique en~J~kg$^{-1}$. La formule ci-dessus comporte un signe négatif. La quantité~$\delta q\e{latent}$ est positive lorsqu'il y a condensation (le rapport de mélange en vapeur d'eau diminue $\dd r < 0$) et négative lorsqu'il y a évaporation (le rapport de mélange en vapeur d'eau augmente $\dd r > 0$).
+
+\sk
+On considère désormais une parcelle d'air en évolution adiabatique, à l'exception des échanges de chaleur latente~: $\delta q = \delta q\e{latent}$. On appelle une telle transformation \voc{pseudo-adiabatique} ou encore \voc{adiabatique saturée}. On fait l'approximation que la chaleur latente consommée ou dégagée est seulement échangée avec l'air sec~:
+\begin{citemize}
+\item La chaleur latente consommée/dégagée n'est pas utilisée pour refroidir/chauffer les gouttes d'eau présentes.
+\item On néglige les pertes de masse par précipitation~: la masse d'air sec considérée est constante.
+\end{citemize}
+Pour une telle transformation, la variation de température s'écrit ainsi
+\[ \dd T = \frac{R}{C_P} \, \frac{T}{P} \, \dd P - \frac{L}{C_P} \, \dd r \]
+
+\sk
+\subsection{Profil vertical saturé}
+
+\sk
+Considérons une parcelle en ascension adiabatique saturée (et non plus sèche comme dans la section~\ref{adiabsec}). Pour une parcelle saturée, c'est-à-dire à l'équilibre liquide/vapeur, l'équation qui précède peut s'écrire, en utilisant l'équilibre hydrostatique
+\[ C_P \, \dd T + g \, \dd z + L \, \dd r = 0 \]
+Or, puisque la parcelle est saturée, on a~$r = r\e{sat}(T)$ et on peut écrire $\dd r\e{sat} = \ddf{r\e{sat}}{T} \, \dd T$. On a alors
+\[ \left( C_P + L \, \ddf{r\e{sat}}{T} \right) \dd T + g \, \dd z = 0\]
+Cette expression est similaire au cas sec, à l'exception notable du terme supplémentaire~$L \, \ddf{r\e{sat}}{T}$ lié aux échanges latents. On peut alors obtenir le profil vertical adopté dans l'atmosphère saturée par une parcelle ne subissant pas d'échange de chaleur avec l'extérieur autre que les échanges de chaleur latente
+\[  \ddf{T}{z}  = \Gamma\e{saturé} \qquad \text{avec} \qquad \Gamma\e{saturé} = \frac{-g}{C_P+L \, \ddf{r\e{sat}}{T} } \]
+On a vu que $\ddf{r\e{sat}}{T}$ est toujours positif, on en déduit donc
+\[ \boxed{ \Gamma\e{saturé} > \Gamma\e{sec} \qquad \text{ou} \qquad |\Gamma\e{saturé}| < |\Gamma\e{sec}| } \]
+A cause du dégagement de chaleur latente, la température diminue moins vite pour une parcelle saturée en ascension que pour une parcelle non saturée. Le calcul pour l'atmosphère terrestre montre que
+\[ \Gamma\e{saturé} = -6.5 \, \text{K~km}^{-1} \] 
+ce qui correspond à la valeur observée dans la troposphère [Figure~\ref{fig:tempvert}].
+
+\sk
+La constatation que~$\Gamma\e{saturé}$ correspond au profil d'environnement effectivement mesuré dans la troposphère appelle un commentaire important. Les profils verticaux secs ou saturés sont ceux suivis par une parcelle en ascension~: autrement dit, ils donnent les variations de~$T\e{p}$ avec l'altitude~$z$. D'un point de vue instantané, ils ne correspondent pas aux profils d'environnement~$T\e{e}$ tels qu'ils peuvent être par exemple mesurés par des ballons-sonde lâchés dans l'atmosphère. La parcelle n'est pas nécessairement à l'équilibre thermique avec l'environnement. On peut néanmoins constater sur la figure~\ref{fig:tempvert} que la température de l'environnement diminue avec une pente très proche de~$\Gamma\e{saturé}$. Ceci s'explique par le fait que cette figure montre une moyenne sur tout le globe à toutes les saisons. La situation moyenne ainsi décrite correspond aux mouvements d'une multitude de parcelles en ascension qui finissent par définir l'environnement atmosphérique\footnote{Ce phénomène porte le nom d'ajustement convectif.}. Pour comprendre la formation des nuages, et plus généralement les mouvements atmosphériques, il faut néanmoins se placer dans le cas local où l'équilibre thermique n'est pas vérifié. C'est l'objet de la section suivante.
+%Comme pour le cas adiabatique, on peut aussi intégrer l'équation pour obtenir:
+%\begin{equation} e_h=C_PT+gz+Lr=cste \label{estath} \end{equation}  
+%La quantité $e_h$ est appelée {\em énergie statique humide} et est conservée
+%pour des mouvements adiabatiques ($r$ et $e_s$ sont séparément conservés) ou
+%saturés (pseudo-adiabatiques).
+
+\mk
+\section{Stabilité et instabilité verticale}
+
+\sk
+\subsection{Force de flottaison}
+
+\sk
+Soit une parcelle dont la température $T\e{p}$ n'est pas égale à celle de l'environnement~$T\e{e}$, que ce soit sous l'effet d'un chauffage diabatique (par exemple~: chaleur latente, effets radiatifs) ou d'une compression / détente adiabatique. On reprend le calcul réalisé précédemment pour l'équilibre hydrostatique, avec la différence notable que l'on n'est plus dans le cas statique~: on étudie le mouvement vertical d'une parcelle. 
+
+\sk
+La somme des forces massiques s'exerçant sur la parcelle suivant la verticale est
+\[ - g  - \frac{1}{\rho\e{p}}  \, \Dp{P\e{e}}{z} \]
+où~$\rho\e{p}$ est la masse volumique de la parcelle. L'environnement est à l'équilibre hydrostatique donc
+\[ \Dp{P\e{e}}{z} = - \rho\e{e} \, g \]
+Ainsi la résultante~$F_z$ des forces massiques qui s'exercent sur la parcelle selon la verticale vaut
+\[ F_z = g \, \left( \frac{\rho\e{e}}{\rho\e{p}} - 1 \right) = g \, \frac{\rho\e{e}-\rho\e{p}}{\rho\e{p}} \]
+En utilisant l'équation du gaz parfait pour la parcelle~$\rho\e{p}=P/RT\e{p}$ et l'environnement~$\rho\e{e}=P/RT\e{e}$, on a
+\[ \boxed{ F_z = g \, \frac{T\e{p}-T\e{e}}{T\e{e}} } \]
+La résultante des forces est donc dirigée vers le haut, donc la parcelle s'élève, si la parcelle est plus chaude (donc moins dense) que son environnement. 
+Elle est dirigée vers le bas si la parcelle est plus froide (donc plus dense) que son environnement.
+En d'autres termes, on écrit ici la version météorologique de la force ascendante ou descendante 
+provoquée par la poussée d'Archimède, également appelée \voc{force de flottaison}.
+
+\sk
+\subsection{Stabilité et instabilité}
+
+\sk
+Ces considérations permettent de définir le concept de stabilité et instabilité verticale de l'atmosphère.
+On considère l'atmosphère à un endroit donné de la planète, à une saison donnée, à une heure donnée de la journée.
+On suppose que la température de l'environnement varie linéairement avec l'altitude
+\[ \ddf{T\e{e}}{z} = \Gamma\e{env} \]
+A une altitude~$z_0$ proche de la surface, la température de l'environnement est~$T\e{e}(z_0)=T_0$.
+
+\sk
+On considère une parcelle initialement à l'altitude~$z_0$ dont la température initiale~$T\e{p}(z_0)$ est également~$T_0$. On suppose que la parcelle subit une ascension verticale d'amplitude~$\delta z > 0$. Le profil de température suivi par la parcelle lors de son ascension est
+\[ \ddf{T\e{p}}{z} = \Gamma\e{parcelle} \]
+\begin{citemize}
+\item Si la parcelle est non saturée, elle suit un profil adiabatique sec tel que $\Gamma\e{parcelle} = \Gamma\e{sec} \simeq - 10 \, \text{K/km}$.
+\item Si elle est saturée, elle suit un profil adiabatique saturé tel que $\Gamma\e{parcelle} = \Gamma\e{saturé} \simeq - 6.5 \, \text{K/km}$. 
+\end{citemize}
+On rappelle qu'en général, à l'échelle où l'on étudie les mouvements de la parcelle
+\[ \Gamma\e{parcelle} \neq \Gamma\e{env} \]
+
+\sk
+Quel est l'effet de la perturbation~$\delta z > 0$ sur le mouvement de la parcelle~? A l'altitude~$z_0 + \delta z$, les températures de la parcelle et de l'environnement sont respectivement
+\[ T\e{p}(z_0 + \delta z) = T_0 + \Gamma\e{parcelle} \, \delta z 
+\qquad \text{et} \qquad
+T\e{e}(z_0 + \delta z) = T_0 + \Gamma\e{env} \, \delta z \]
+\begin{finger}
+\item Si $\Gamma\e{parcelle} > \Gamma\e{env}$, la température~$T\e{e}$ de l'environnement décroît plus vite que la température~$T\e{p}$ de la parcelle. Il en résulte que~$T\e{p}(z_0 + \delta z) > T\e{e}(z_0 + \delta z)$ et le mouvement de la parcelle est ascendant. La perturbation initiale est donc amplifiée par les forces de flottabilité. On parle de \voc{situation instable}. La situation est d'autant plus instable que la température de l'environnement décroît rapidement avec l'altitude. Lorsque la situation est instable, les mouvements verticaux sont amplifiés~: on parle parfois de \voc{situation convective}.
+\item Si $\Gamma\e{parcelle} < \Gamma\e{env}$, la température~$T\e{e}$ de l'environnement décroît moins vite que la température~$T\e{p}$ de la parcelle. Il en résulte que~$T\e{p}(z_0 + \delta z) < T\e{e}(z_0 + \delta z)$ et le mouvement de la parcelle est descendant. La perturbation initiale n'est donc pas amplifiée et la parcelle revient à son état initial. On parle de \voc{situation stable}. La stabilité est d'autant plus grande que la température de l'environnement décroît lentement (ou augmente, dans le cas d'une inversion de température). Lorsque la situation est stable, les mouvements verticaux sont inhibés.
+\end{finger}
+La résultante des forces verticales s'exerçant sur la parcelle peut s'écrire en fonction des taux de variation~$\Gamma$ de la température
+\[ F_z = g \, \frac{\Gamma\e{parcelle}-\Gamma\e{env}}{T\e{env}} \, \delta z \]
+
+\sk
+On peut illustrer la stabilité/instabilité atmosphérique dans le cas des polluants émis proche de la surface par les activités humaines [Figure~\ref{fig:pollution}]. Dans l'après-midi, du fait que le sol est chaud, le profil d'environnement est tel que la situation est très instable~: les mouvements verticaux qui transportent les polluants plus haut dans l'atmosphère sont encouragés et les polluants ne restent pas proches de la surface. A l'inverse, en soirée, du fait que le sol refroidit radiativement, le profil d'environnement est tel que la situation est stable~: les mouvements verticaux qui pourraient transporter les polluants plus haut dans l'atmosphère sont inhibés et les polluants sont confinés proche de la surface. Pour être moins exposé aux polluants dans les zones urbaines, il est donc préférable d'y effectuer son jogging en fin de matinée plutôt qu'en soirée !
+
+\figside{0.65}{0.25}{decouverte/cours_meteo/inversion-temperature.png}{Stabilité et pollution atmosphérique. On notera que cette figure est très illustrative, mais présente une situation simplifiée. Le transport vertical de polluants dans l'atmosphère est en réalité inhibé dès que la couche atmosphérique est stable, ce qui est plus général que considérer uniquement une inversion thermique comme à droite de la figure. Source~: Airparif}{fig:pollution} 
+
+
+

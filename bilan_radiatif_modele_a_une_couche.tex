@@ -1,0 +1,20 @@
+\sk
+Quelle température de surface est prédite par le modèle à une couche décrit par la figure~\ref{fig:modun} ? On considère toujours une planète d'albédo planétaire $A\e{b}$ recevant l'éclairement moyen $\mathcal{F}\e{s}'$ du Soleil. Ce bilan correspond à la partie visible de la figure~\ref{fig:modun}. L'atmosphère est considérée comme transparente dans ce domaine de longueur d'onde. Dans la partie infrarouge, au contraire on ne néglige plus l'absorption, par les gaz à effet de serre présents dans l'atmosphère, du rayonnement infrarouge émis par la surface de la planète à la température~$T\e{s}$~: on représente ainsi l'atmosphère par une couche isotherme de température~$T\e{a}$, parfaitement absorbante dans l'infrarouge. Le rayonnement infrarouge émis par la surface est complètement absorbé dans l'atmosphère, qui émet à son tour~$\sigma {T\e{a}}^4$ à la fois vers l'espace et vers la surface comme indiqué dans le domaine infrarouge de la figure~\ref{fig:modun}. Une partie du rayonnement infrarouge émis par la Terre n'est donc pas évacuée vers l'espace et reste \ofg{piégée} dans le système atmosphère~+~surface, contribuant ainsi à élever la température de la surface~$T\e{s}$.
+
+\figside{0.6}{0.2}{decouverte/cours_meteo/une_couche.png}{Modèle à une couche~: schéma des flux échangés dans le visible et dans l'infrarouge pour une planète dont l'atmosphère de température~$T\e{a}$ est opaque dans l'infrarouge.}{fig:modun}
+
+\sk
+Il s'agit ensuite d'effectuer le bilan des flux reçus et cédés en chacune des interfaces en rassemblant les termes des deux domaines visible et infrarouge.
+%%\footnote{Les modèles du type de celui présenté ici sont parfois également appelés modèles aux puissances échangées}
+\begin{finger}
+\item pour l'atmosphère
+\[ \underbrace{\sigma \, {T\e{s}}^4}_{\text{bilan des flux reçus}} = \underbrace{\sigma \, {T\e{a}}^4 + \sigma \, {T\e{a}}^4}_{\text{bilan des flux cédés}} \] 
+On note que le rayonnement visible reçu du Soleil n'intervient pas dans le bilan pour l'atmosphère, ce qui est normal puisque l'absorption est négligée. Ainsi, comme indiqué sur le schéma~\ref{fig:modun}, l'atmosphère reçoit un rayonnement~$\mathcal{F}\e{s}'$ dont la partie~$\mathcal{F}\e{s}'\,(1-A\e{b})$ qui n'est pas réfléchie/diffusée est entièrement transmise à la surface. Tout se passe comme si l'atmosphère recevait~$\mathcal{F}\e{s}'$ et cédait~$\mathcal{F}\e{s}'\,(1-A\e{b})$ à la surface et~$\mathcal{F}\e{s}'\,A\e{b}$ à l'espace~; son bilan d'énergie dans le visible est donc nul puisque tous ces termes se compensent.
+\item pour la surface
+\[ \underbrace{\mathcal{F}\e{s}'\,(1-A\e{b}) + \sigma \, {T\e{a}}^4}_{\text{bilan des flux reçus}} = \underbrace{\sigma \, {T\e{s}}^4}_{\text{bilan des flux cédés}} \]
+\end{finger}
+On dispose alors de deux équations qui permettent de déterminer les deux inconnues~$T\e{a}$ et~$T\e{s}$. Ainsi la température à la surface de la planète dans le modèle à une couche est 
+\[ \boxed{ T\e{s} = \bigg[ \frac{ 2 \, \mathcal{F}\e{s}'\,(1-A\e{b}) }{ \sigma } \bigg]^{\frac{1}{4}} = \sqrt[4]{2} \, T\e{eq} } \]
+
+\sk
+Le calcul numérique donne une température de~$303$~K (environ~$30^{\circ}$C) pour la Terre, une valeur à la fois bien supérieure à~$T\e{eq}$, qui vaut~$255$~K, et plus proche de la température effectivement constatée à la surface, quoiqu'un peu surévaluée. Ainsi les gaz à effet de serre présents dans l'atmosphère contribuent à réchauffer significativement la surface d'une planète. Le modèle à une couche est le modèle le plus simple de l'effet de serre qui permet d'en rendre compte qualitativement et, dans une certaine mesure, quantitativement.
