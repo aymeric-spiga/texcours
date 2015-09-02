@@ -1,0 +1,68 @@
+\documentclass[
+	a4paper,
+	DIV16,
+	10pt,
+	cleardoublepage=empty,
+        twoside=yes,
+        BCOR=8.25mm
+	]{scrbook}
+
+%%% MOI
+\usepackage{scrpage2}
+\usepackage{my_latex}
+\usepackage{patch_french}
+\setcapindent{1em} %%% parce que sinon l'indentation "Figure ... -- texte" est trop grande
+
+%%% BANDEAU
+\deftripstyle{Vide}[0pt][.4pt]
+{}{}{}
+{}{}{}
+\deftripstyle{Bandeau}[0pt][.4pt]
+{Sciences de l'atmosphère et de l'océan}{}{UPMC}
+{2C046 - année 2015-2016}{}{\pagemark} \pagestyle{scrheadings} \pagestyle{Bandeau}
+
+%%% DEBUT
+\begin{document}
+\frontmatter
+
+%%% PAGE DE GARDE
+\subject{2C046 -- Sciences de l'atmosphère et de l'océan}
+\title{Partie ``Rayonnement, thermodynamique \\ et dynamique de l'atmosphère''}
+\subtitle{Cours niveau licence. Année universitaire 2015-2016.}
+\author{~\\ ~\\
+\Large Partie enseignée par Jean-Baptiste MADELEINE\\
+\small Laboratoire de Météorologie Dynamique (Institut Pierre-Simon Laplace)
+}
+\date{}
+\publishers{
+\includegraphics[height=1.5cm]{decouverte/logos/UPMC_cart-blanc-Q_7504-703-3.png}\\
+Contact: \email{jean-baptiste.madeleine@upmc.fr}
+}
+
+%%%%% decommenter pour le mode book
+\dedication{Note de l'auteur: Les chapitres 1, 2, 3 et 5 consistent en de multiples 
+réorganisations, ajouts et modifications sur des notes existantes de Francis Codron que je souhaite 
+remercier pour son aide. Le chapitre 4 est entièrement original. Je remercie Jean-Baptiste Madeleine 
+pour ses remarques constructives.\\ ~\\ ~\\ Dans l'éventualité où le lecteur trouverait des erreurs 
+ou imprécisions dans ce cours, il est cordialement invité à les signaler à l'auteur Aymeric Spiga à l'adresse 
+\url{aymeric.spiga@upmc.fr}} \maketitle \tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\figside{0.75}{0.35}{decouverte/cours_meteo/joussaume_pluri.png}{Schéma du système climatique présentant les différentes composantes du système : atmosphère, océans, cryosphère, biosphère et lithosphère, leurs constantes de temps et leurs interactions en termes d’échanges d’énergie, d’eau et de carbone. Source~:~S.~Joussaume \emph{in} Le Climat à Découvert, CNRS éditions, 2011}{fig:pluri}
+
+\figsup{0.48}{0.35}{\figfrancis/WH_vert_struct}{\figpayan/LP211_Chap1_Page_03_Image_0001.png}{[Gauche] Structure verticale de la pression, la densité et du libre parcours moyen des molécules (distance moyenne parcourue par une molécule avant de subir un choc sur une autre molécule). Noter l'échelle logarithmique en abscisse : les variations des quantités selon le logarithme de~$z$ sont approximativement des droites, donc les variations avec $z$ sont proches d'exponentielles. [Droite] Plus haut dans l'atmosphère, la variation verticale de la pression est dépendante pour plusieurs ordres de grandeur avec l'activité solaire. Les courbes indiquées correspondent respectivement à une très faible activité solaire (température de la thermopause de 600 K) et une très forte activité solaire (température de la thermopause de 2000K).}{fig:presvert}
+
+\figsup{0.49}{0.3}{\figfrancis/WH_stdatm}{\figpayan/LP211_Chap1_Page_05_Image_0001.png}{Structure verticale idéalisée de la température correspondant au profil moyenné global annuel. Voir figure~\ref{fig:presvert} pour la distinction entre figure de gauche et figure de droite}{fig:tempvert}
+
+\figside{0.7}{0.35}{decouverte/cours_dyn/absorption.png}{Spectres d'absorption de l'atmosphère en fonction de la longueur d'onde. [Haut] Courbes d'émittance normalisée de corps noirs à 5780~K (rayonnement solaire) et 255~K (rayonnement terrestre). [Bas] Coefficients d'absorption (en~$\%$) entre le sommet de l'atmosphère et la surface. Les principaux gaz responsables de l'absorption à différentes longueurs d'onde sont indiqués en bas. Source: McBride and Gilmour, An Introduction to the Solar System, 2004 ; d'après Goody and Yung, Atmospheric radiation, 1989}{fig:atmspectrum}
+
+\input{archives/2radiatif.tex}
+\input{archives/4bilan.tex}
+\input{archives/5thermsec.tex}
+\input{archives/6thermhumide.tex}
+\input{archives/8dyncirc.tex}
+	
+\end{document}
