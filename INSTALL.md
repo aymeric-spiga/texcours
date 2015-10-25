@@ -17,4 +17,7 @@ Ajouter également les dossiers de texcours pour une utilisation aisée
 	TEXINPUTS=$TEXINPUTS:$texcours/fiches
         TEXINPUTS=$TEXINPUTS:$texcours/pkg
 	export TEXINPUTS
-	
+
+## Template
+
+Voir exemple template.tex dans cours/	
