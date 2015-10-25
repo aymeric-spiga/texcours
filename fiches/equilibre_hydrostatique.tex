@@ -1,0 +1,23 @@
+\sk
+On considère une parcelle d'air cubique de dimensions élémentaires~$(\dd x,\dd y, \dd z)$, au repos et située à une altitude~$z$. La pression atmosphérique vaut~$P(z)$ sur la face du dessous et~$P(z+\dd z)$ sur la face du dessus. Pour le moment, on ne considère pas de variations de pression~$P$ selon l'horizontale\footnote{En pratique, les variations de pression selon l'horizontale sont effectivement négligeables par rapport aux variations de pression selon la verticale. On revient sur ce point dans le chapitre consacré à la dynamique}. Il y a équilibre des forces s'exerçant sur cette parcelle. On appelle \voc{équilibre hydrostatique} l'équilibre des forces selon la verticale, à savoir~:
+\begin{citemize}
+\item Son poids de module\footnote{On néglige les variations de~$g$ avec~$z$.}~$m \, g$ (où~$m = \rho \, \dd x \, \dd y \, \dd z$) dirigé vers le bas
+\item La force de pression sur la face du dessous de module~$P(z) \, \dd x \, \dd y$ dirigée vers le haut
+\item La force de pression sur la face du dessus de module~$P(z+\dd z) \, \dd x \, \dd y$ dirigée vers le bas
+\item La force de viscosité qui est négligée
+\end{citemize}
+On note que, contrairement au poids qui s'applique de façon homogène sur tout le volume de la parcelle d'air, les forces de pression s'appliquent sur les surfaces frontières de la parcelle d'air. 
+Pour une parcelle au repos, la résultante selon la verticale des forces de pression exercées par le fluide environnant (ici, l'air) n'est autre que la poussée d'Archimède.
+%%Par ailleurs, l'équilibre hydrostatique suppose implicitement que la parcelle est à l'équilibre thermique avec son environnement~$T\e{p} = T\e{e}$ soit~$\rho\e{p} = \rho\e{e}$. On aborde le cas général où~$T\e{p} \neq T\e{e}$ dans le chapitre suivant pour définir les notions de stabilité.
+
+\sk
+L'équilibre hydrostatique de la parcelle s'écrit donc
+\[ - \rho \, g \, \dd x \, \dd y \, \dd z + P(z) \, \dd x \, \dd y - P(z+\dd z) \, \dd x \, \dd y = 0 \qquad \Rightarrow \qquad - \rho \, g \, \dd z + P(z) - P(z+\dd z) = 0 \]
+soit en introduisant la dérivée partielle suivant~$z$ de~$P$
+\[ \frac{P(z+\dd z) - P(z)}{\dd z} = \boxed{ \Dp{P}{z} = - \rho \, g } \]
+Cette relation est appelée \voc{équation hydrostatique} (ou relation de l'équilibre hydrostatique). Elle indique que, pour la parcelle considérée, la résultante des forces de pression selon la verticale équilibre la force de gravité. En principe, cette équation est valable pour une parcelle au repos. Par extension, elle est valable lorsque l'accélération verticale d'une parcelle est négligeable devant les autres forces. L'équation hydrostatique est en excellente approximation valable pour les mouvements atmosphériques de grande échelle. 
+
+\sk
+Si l'on intègre la relation hydrostatique entre deux niveaux~$z_1$ et~$z_2$ où la pression est~$P_1$ et~$P_2$, on obtient
+\[ \Delta P = P_2 - P_1 = - g \, \int_{z_1}^{z_2} \rho \, \dd z \]
+L'équilibre hydrostatique peut donc s'interpréter de la façon éclairante suivante~: la différence de pression entre deux niveaux verticaux est proportionnelle à la masse d'air (par unité de surface) entre ces niveaux. Une autre façon équivalente de formuler cela est de dire que la pression atmosphérique à une altitude~$z$ correspond au poids de la colonne d'air située au-dessus de l'altitude~$z$, exercé sur une surface unité de~$1$~m$^2$. Il s'ensuit que la pression atmosphérique~$P$ est décroissante selon l'altitude~$z$. Ainsi, la pression peut être utilisée pour repérer une position verticale à la place de l'altitude. En sciences de l'atmosphère, la pression atmosphérique est une coordonnée verticale plus naturelle que l'altitude~: non seulement elle est directement reliée à la masse atmosphérique par l'équilibre hydrostatique, mais elle est également plus aisée à mesurer.

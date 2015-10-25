@@ -1,0 +1,13 @@
+\sk
+En exprimant la densité~$\rho$ en fonction de l'équation des gaz parfaits, l'équilibre hydrostatique s'écrit
+\[ \Dp{P}{z} = - g \, \frac{P}{RT} \]
+On peut intégrer cette équation si on suppose que l'on connaît les variations de~$T$ en fonction de $P$ ou $z$. On suppose ici que l'on peut négliger les variations de pression selon l'horizontale devant les variations suivant la verticale, donc transformer les dérivées partielles~$\partial$ en dérivées simples~$\dd$. On effectue ensuite une séparation des variables
+\[R \, T \, \frac{\dd P}{P} = - g \, \dd z\]
+
+\sk
+Cette équation peut s'écrire sous une forme dimensionnelle simple à retenir
+\[ \boxed{ \frac{\dd P}{P} = - \frac{\dd z}{H(z)} \qquad \text{avec} \qquad H(z) = \frac{R \, T(z)}{g} } \]
+La grandeur~$H$ se dénomme l'\voc{échelle de hauteur} et dépend des variations de la température~$T$ avec l'altitude~$z$. L'équation ci-dessus indique bien que la pression décroît avec l'altitude selon une loi exponentielle comme observé en pratique. Cette loi peut être plus ou moins complexe selon la fonction~$T(z)$. On peut néanmoins fournir une illustration simple du résultat de l'intégration dans le cas d'une atmosphère isotherme~$T(z)=T_0$
+\[ P(z) = P(z=0) \, e^{-z/H} \qquad \text{avec} \qquad H = R \, T_0 / g \]
+
+

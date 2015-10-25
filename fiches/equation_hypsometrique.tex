@@ -1,0 +1,19 @@
+\sk
+Dans l'équation de l'échelle de hauteur, faire l'hypothèse isotherme est très simpliste et rarement rencontré en pratique dans l'atmosphère. On se place dans le cas plus général, bien que toujours simplifié, de deux niveaux atmosphériques~$a$ et~$b$ entre lesquels la température ne varie pas trop brusquement avec l'altitude~$z$. On réalise alors l'intégration entre les deux niveaux~$a$ et~$b$
+\[R \, T \, \frac{\dd P}{P} = - g \, \dd z \qquad \Rightarrow \qquad R \, \int_a^b T\, \frac{\dd P}{P} = - g \, \int_a^b dz\]
+puis on définit la température moyenne de la couche atmosphérique entre~$a$ et~$b$ avec une moyenne pondérée
+\[ \langle T \rangle = \frac{\int_a^b T \, \frac{\dd P}{P}}{\int_a^b \frac{\dd P}{P}} \]
+pour obtenir finalement
+\[R \, \langle T \rangle \, \int_a^b \frac{\dd P}{P} = - g \, \int_a^b dz
+\qquad \Rightarrow \qquad \boxed{ g \, (z_a - z_b) = R \, \langle T \rangle \ln \left( \frac{P_b}{P_a} \right) } \]
+Cette relation est appelée \voc{équation hypsométrique}. Elle correspond à une formulation utile en météorologie du principe que \ofg{l'air chaud se dilate}. Les conséquences de l'équation hypsométrique peuvent s'exprimer de diverses façons équivalentes.
+\begin{citemize}
+\item Pour une masse d'air donnée, une couche d'air chaud est plus épaisse.
+\item La distance entre deux isobares est plus grande si l'air est chaud.
+\item La pression diminue plus vite selon l'altitude dans une couche d'air froid.
+\end{citemize}
+En passant le résultat précédent au logarithme, on note que l'on retrouve toujours le fait que la pression diminue avec l'altitude selon une loi exponentielle. En notant l'échelle de hauteur moyenne~$\langle H \rangle$, on a
+\[ P_b = P_a \, e^{ - \frac{z_b - z_a}{\langle H \rangle}} \qquad \text{avec} \qquad \langle H \rangle = \frac{R \, \langle T \rangle}{g} \]
+
+
+

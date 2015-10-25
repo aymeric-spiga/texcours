@@ -13,17 +13,7 @@ En filigrane des chapitres précédents sur le bilan radiatif, il apparaît que 
 \sk
 \subsection{Définition et caractérisation}
 
-\sk
-On rappelle comme indiqué dans le chapitre d'introduction que l'atmosphère est composée d'un ensemble de molécules microscopiques et que l'on s'intéresse aux effets de comportement d'ensemble, qualifiés de \voc{macroscopiques}. Les variables thermodynamiques utilisées pour décrire l'atmosphère (pression~$P$, température~$T$, densité~$\rho$) sont des grandeurs macroscopiques \voc{intensives} dont la valeur ne dépend pas du volume d'air considéré. 
-%Une façon d'y parvenir est d'utiliser des grandeurs volumiques ou massiques.
-
-\sk
-Le système que l'on étudie est appelé \voc{parcelle d'air}. Il s'agit d'un volume d'air dont les dimensions sont %à la fois
-\begin{citemize}
-\item assez grandes pour contenir un grand nombre de molécules et pouvoir moyenner leur comportement, afin d'exprimer un équilibre thermodynamique~;
-\item assez petites par rapport au phénomène considéré, afin de décrire le fluide atmosphérique de façon continue~; la parcelle d'air peut donc être considérée comme un volume élémentaire.
-\end{citemize}
-On peut donc supposer que les variables macroscopiques d'intérêt sont quasiment constantes à l'échelle de la parcelle. Autrement dit, une parcelle est caractérisée par sa pression~$P$, sa température~$T$, sa densité~$\rho$. Les limites d'une parcelle sont arbitraires, mais ne correspondent pas en général à des barrières physiques. 
+	\input{parcelle.tex}
 
 \sk
 Tout le but de ce chapitre est de décrire les relations thermodynamiques qui lient les grandeurs intensives qui caractérisent l'état de la parcelle. Une première de ces relations a été obtenue en introduction~: il s'agit de l'équation des gaz parfaits pour l'air atmosphérique, qui relie les trois paramètres intensifs $P$, $T$ et $\rho$ 
@@ -33,12 +23,7 @@ avec la \voc{constante de l'air sec} $R=\frac{R^*}{M}$ où~$R^*$ est la constant
 \sk
 \subsection{Parcelle et environnement} \label{parcenv}
 
-\sk
-Une parcelle est en \voc{équilibre mécanique} avec son environnement, c'est-à-dire que la pression de la parcelle~$P\e{p}$ et la pression de l'environnement~$P\e{e}$ dans lequel elle se trouve sont égales
-\[ \boxed{P\e{p} = P\e{e}} \]
-Néanmoins, une parcelle n'est pas en général en \voc{équilibre thermique} avec son environnement, c'est-à-dire que la température de la parcelle et la température de l'environnement dans lequel elle se trouve ne sont pas nécessairement égales
-\[ \boxed{T\e{p} \neq T\e{e}} \]
-Cette dernière propriété provient du fait que l'air est un très bon isolant thermique\footnote{Une telle propriété est utilisée dans le principe du double vitrage}.
+	\input{parcelle_equilibre.tex}
 
 \mk
 \section{Équilibre hydrostatique}
@@ -49,29 +34,7 @@ Le chapitre d'introduction indique que la pression décroît exponentiellement a
 \sk
 \subsection{Bilan des forces}
 
-\sk
-On considère une parcelle d'air cubique de dimensions élémentaires~$(\dd x,\dd y, \dd z)$, au repos et située à une altitude~$z$. La pression atmosphérique vaut~$P(z)$ sur la face du dessous et~$P(z+\dd z)$ sur la face du dessus. Pour le moment, on ne considère pas de variations de pression~$P$ selon l'horizontale\footnote{En pratique, les variations de pression selon l'horizontale sont effectivement négligeables par rapport aux variations de pression selon la verticale. On revient sur ce point dans le chapitre consacré à la dynamique}. Il y a équilibre des forces s'exerçant sur cette parcelle. On appelle \voc{équilibre hydrostatique} l'équilibre des forces selon la verticale, à savoir~:
-\begin{citemize}
-\item Son poids de module\footnote{On néglige les variations de~$g$ avec~$z$.}~$m \, g$ (où~$m = \rho \, \dd x \, \dd y \, \dd z$) dirigé vers le bas
-\item La force de pression sur la face du dessous de module~$P(z) \, \dd x \, \dd y$ dirigée vers le haut
-\item La force de pression sur la face du dessus de module~$P(z+\dd z) \, \dd x \, \dd y$ dirigée vers le bas
-\item La force de viscosité qui est négligée
-\end{citemize}
-On note que, contrairement au poids qui s'applique de façon homogène sur tout le volume de la parcelle d'air, les forces de pression s'appliquent sur les surfaces frontières de la parcelle d'air. 
-Pour une parcelle au repos, la résultante selon la verticale des forces de pression exercées par le fluide environnant (ici, l'air) n'est autre que la poussée d'Archimède.
-%%Par ailleurs, l'équilibre hydrostatique suppose implicitement que la parcelle est à l'équilibre thermique avec son environnement~$T\e{p} = T\e{e}$ soit~$\rho\e{p} = \rho\e{e}$. On aborde le cas général où~$T\e{p} \neq T\e{e}$ dans le chapitre suivant pour définir les notions de stabilité.
-
-\sk
-L'équilibre hydrostatique de la parcelle s'écrit donc
-\[ - \rho \, g \, \dd x \, \dd y \, \dd z + P(z) \, \dd x \, \dd y - P(z+\dd z) \, \dd x \, \dd y = 0 \qquad \Rightarrow \qquad - \rho \, g \, \dd z + P(z) - P(z+\dd z) = 0 \]
-soit en introduisant la dérivée partielle suivant~$z$ de~$P$
-\[ \frac{P(z+\dd z) - P(z)}{\dd z} = \boxed{ \Dp{P}{z} = - \rho \, g } \]
-Cette relation est appelée \voc{équation hydrostatique} (ou relation de l'équilibre hydrostatique). Elle indique que, pour la parcelle considérée, la résultante des forces de pression selon la verticale équilibre la force de gravité. En principe, cette équation est valable pour une parcelle au repos. Par extension, elle est valable lorsque l'accélération verticale d'une parcelle est négligeable devant les autres forces. L'équation hydrostatique est donc approximativement valable pour les mouvements de grande échelle considérés dans toute la suite de ce cours. 
-
-\sk
-Si l'on intègre la relation hydrostatique entre deux niveaux~$z_1$ et~$z_2$ où la pression est~$P_1$ et~$P_2$, on obtient
-\[ \Delta P = P_2 - P_1 = - g \, \int_{z_1}^{z_2} \rho \, \dd z \]
-L'équilibre hydrostatique peut donc s'interpréter de la façon éclairante suivante~: la différence de pression entre deux niveaux verticaux est proportionnelle à la masse d'air (par unité de surface) entre ces niveaux. Une autre façon équivalente de formuler cela est de dire que la pression atmosphérique à une altitude~$z$ correspond au poids de la colonne d'air située au-dessus de l'altitude~$z$, exercé sur une surface unité de~$1$~m$^2$. Il s'ensuit que la pression atmosphérique~$P$ est décroissante selon l'altitude~$z$. Ainsi, la pression peut être utilisée pour repérer une position verticale à la place de l'altitude. En sciences de l'atmosphère, la pression atmosphérique est une coordonnée verticale plus naturelle que l'altitude~: non seulement elle est directement reliée à la masse atmosphérique par l'équilibre hydrostatique, mais elle est également plus aisée à mesurer.
+	\input{equilibre_hydrostatique.tex}
 
 \sk
 \subsection{\'Equation hypsométrique}
@@ -79,37 +42,12 @@ L'équilibre hydrostatique peut donc s'interpréter de la façon éclairante sui
 \sk
 \subsubsection{\'Echelle de hauteur}
 
-\sk
-En exprimant la densité~$\rho$ en fonction de l'équation des gaz parfaits, l'équilibre hydrostatique s'écrit
-\[ \Dp{P}{z} = - g \, \frac{P}{RT} \]
-On peut intégrer cette équation si on suppose que l'on connaît les variations de~$T$ en fonction de $P$ ou $z$. On considère que l'on peut négliger les variations de pression selon l'horizontale donc transformer les dérivées partielles~$\partial$ en dérivées simples~$\dd$. On effectue ensuite une séparation des variables
-\[R \, T \, \frac{\dd P}{P} = - g \, \dd z\]
-
-\sk
-Cette équation peut s'écrire sous une forme dimensionnelle simple à retenir
-\[ \boxed{ \frac{\dd P}{P} = - \frac{\dd z}{H(z)} \qquad \text{avec} \qquad H(z) = \frac{R \, T(z)}{g} } \]
-La grandeur~$H$ se dénomme l'\voc{échelle de hauteur} et dépend des variations de la température~$T$ avec l'altitude~$z$. L'équation ci-dessus indique bien que la pression décroît avec l'altitude selon une loi exponentielle (voir Figure~\ref{fig:presvert}). Cette loi peut être plus ou moins complexe selon la fonction~$T(z)$. On peut néanmoins fournir une illustration simple du résultat de l'intégration dans le cas d'une atmosphère isotherme~$T(z)=T_0$
-\[ P(z) = P(z=0) \, e^{-z/H} \qquad \text{avec} \qquad H = R \, T_0 / g \]
+	\input{echelle_hauteur.tex}
 
 \sk
 \subsubsection{\'Epaisseur des couches atmosphériques~: équation hypsométrique}
 
-\sk
-Le cas isotherme est simpliste et peu rencontré en pratique dans l'atmosphère. On se place dans le cas plus général, bien que toujours simplifié, de deux niveaux atmosphériques~$a$ et~$b$ entre lesquels la température ne varie pas trop brusquement avec l'altitude~$z$. On réalise alors l'intégration entre les deux niveaux~$a$ et~$b$
-\[R \, T \, \frac{\dd P}{P} = - g \, \dd z \qquad \Rightarrow \qquad R \, \int_a^b T\, \frac{\dd P}{P} = - g \, \int_a^b dz\]
-puis on définit la température moyenne de la couche atmosphérique entre~$a$ et~$b$ avec une moyenne pondérée
-\[ \langle T \rangle = \frac{\int_a^b T \, \frac{\dd P}{P}}{\int_a^b \frac{\dd P}{P}} \]
-pour obtenir finalement
-\[R \, \langle T \rangle \, \int_a^b \frac{\dd P}{P} = - g \, \int_a^b dz
-\qquad \Rightarrow \qquad \boxed{ g \, (z_a - z_b) = R \, \langle T \rangle \ln \left( \frac{P_b}{P_a} \right) } \]
-Cette relation est appelée \voc{équation hypsométrique}. Elle correspond à une formulation utile en météorologie du principe que \ofg{l'air chaud se dilate}. Les conséquences de l'équation hypsométrique peuvent s'exprimer de diverses façons équivalentes.
-\begin{citemize}
-\item Pour une masse d'air donnée, une couche d'air chaud est plus épaisse.
-\item La distance entre deux isobares est plus grande si l'air est chaud.
-\item La pression diminue plus vite selon l'altitude dans une couche d'air froid.
-\end{citemize}
-En passant le résultat précédent au logarithme, on note que l'on retrouve toujours le fait que la pression diminue avec l'altitude selon une loi exponentielle. En notant l'échelle de hauteur moyenne~$\langle H \rangle$, on a
-\[ P_b = P_a \, e^{ - \frac{z_b - z_a}{\langle H \rangle}} \qquad \text{avec} \qquad \langle H \rangle = \frac{R \, \langle T \rangle}{g} \]
+	\input{equation_hypsometrique.tex}
 
 \sk
 \subsection{Applications pratiques}
@@ -143,80 +81,24 @@ La carte météorologique sur la Figure~\ref{fig:press} bas est obtenue en emplo
 \section{Premier principe et thermodynamique de l'air sec} 
 
 \sk
-\subsection{\'Energie interne}
+\subsection{\'Energie interne, chaleurs molaires et enthalpie}
 
-\sk
-Un système thermodynamique possède, en plus de son énergie d'ensemble (cinétique, potentielle), une \voc{énergie interne}~$U$. Comme la température~$T$, l'énergie interne~$U$ est une grandeur macroscopique qui représente les phénomènes microscopiques au sein d'un gaz. Le premier principe indique que les variations d'énergie interne sont égales à la somme du travail et de
-la chaleur algébriquement reçus~:
-\[ \dd U = \delta W + \delta Q\]
-
-\sk
-Dans le cas d'un gaz parfait, l'énergie potentielle d'interaction des molécules du gaz est négligeable, et l'énergie interne est égale à l'énergie cinétique des molécules, qui dépend seulement de la température. On peut montrer que $U = n \, \frac{\zeta \, R^* \, T}{2}$ où $\zeta$ est le nombre de degrés de liberté des molécules. Pour un gaz (principalement) diatomique comme l'air, $\zeta = 5$. 
-
-\sk
-Dans le cas de variations quasi-statiques d'un gaz, ce qui est supposé être le cas dans l'atmosphère, le travail s'exprime en fonction de la pression~$P$ du gaz et de la variation de volume~$\dd V$
-\[ \delta W = - P \, \dd V \]
-
-\sk
-\subsection{Chaleurs molaires et enthalpie}
-
-\sk
-L'expérience montre que la quantité de chaleur échangée au cours d'une transformation à volume ou pression constant est proportionnelle à la variation de température du système~: $\delta Q = n \, C_V^* \, \dd T$ à volume constant, $\delta Q = n \, C_P^* \, \dd T$ à pression constante. $C_P^*, C_V^*$ sont les \voc{chaleurs molaires}, également appelées \voc{capacités calorifiques}. Il s'agit de l'énergie qu'il faut fournir à un gaz pour faire augmenter sa température de~$1$~K dans les conditions indiquées (à volume constant ou à pression constante). Pour une transformation à volume constant (isochore), $\dd U = \delta Q$ donc $C_V^*=\frac{\zeta \, R^*}{2}$.
-
-\sk
-Pour l'étude de l'atmosphère, toujours dans la logique de travailler sur des grandeurs intensives, il est  bien plus utile de s'intéresser aux variations de pression plutôt qu'à celles de volume. On utilise donc l'\voc{enthalpie}~$H = U + P \, V$. On a alors par dérivation $ \dd H = \dd U + \dd (P\,V) $ puis, en utilisant le premier principe
-\[ \dd H = V \, \dd P + \delta Q \]
-Pour une transformation à pression constante (isobare) on a $\dd H = \delta Q$. On en déduit pour une transformation quelconque\footnote{
-D'autre part, en utilisant conjointement la dérivation de l'équation d'état du gaz parfait~$\dd (P\,V) = n \, R^* \, \dd T$ et l'expression de l'énergie interne~$U = n \, C_V^* \, \dd T$, on obtient $\dd H = n \, C_V^* \, \dd T + n \, R^* \, \dd T$ pour une transformation quelconque. On en déduit la relation de Mayer \[ C_P^* = C_V^* + R^* = \frac{(\zeta+2) \, R^*}{2}\]
-} 
-que $\dd H = n \, C_P^* \, dT$, ce qui permet d'écrire
-\[ n \, C_P^* \, dT = V \, \dd P + \delta Q \]
+	\input{premier_principe.tex}
 
 \sk
 \subsection{Transformations dans l'atmosphère~: cas général}
 
-\sk
-Afin de travailler sur des grandeurs intensives, on divise la relation précédente par la masse~$m$ de la parcelle pour obtenir
-\[ C_P \, \dd T = \frac{\dd P}{\rho} + \delta q \]
-où $\delta q$ est la chaleur massique reçue et $C_P = C_P^* / M$ est la \voc{chaleur massique de l'air} ($C_P$=1004 J~K$^{-1}$~kg$^{-1}$). Nous disposons alors d'une autre version du premier principe, très utile en météorologie et valable pour une transformation quelconque d'une parcelle d'air
-\[ \boxed{ \underbrace{\textcolor{white}{\frac{R^2}{C_P}} \dd T \textcolor{white}{\frac{R}{C_P}}}_{\text{variation de température de la parcelle}} = \underbrace{\frac{R}{C_P} \, \frac{T}{P} \, \dd P}_{\text{travail expansion/compression}} + \underbrace{\frac{1}{C_P} \, \delta q}_{\text{chauffage diabatique}} } \]
-
-\sk
-Autrement dit, la température de la parcelle augmente si elle subit une compression ($\dd P > 0$) et/ou si on lui apporte de la chaleur ($\delta q > 0$). La température de la parcelle à l'inverse diminue si elle subit une détente ($\dd P < 0$) et/ou si elle cède de la chaleur à l'extérieur ($\delta q < 0$). Il est donc important de retenir que la température de la parcelle peut très bien varier quand bien même la parcelle n'échange aucune chaleur avec l'extérieur~: dans ce cas, $\delta q = 0$ et l'on parle de \voc{transformation adiabatique}. 
-
-\sk
-L'équation fondamentale ci-dessus est directement dérivée du premier principe, mais prend une forme plus pratique en sciences de l'atmosphère du fait que les transformations que subit une parcelle atmosphérique se réduisent en général aux transformations \voc{isobares} (à pression constante $\dd P = 0$) et aux transformations \voc{adiabatiques} (sans échanges de chaleur avec l'extérieur $\delta q = 0$). Les transformations isothermes, au cours de laquelle la température de la parcelle ne varie pas, sont très rarement rencontrées en sciences de l'atmosphère.
+	\input{premier_principe_atmosphere.tex}
 
 \sk
 \subsection{Transformations non adiabatiques}
 
-\sk
-Dans le cas où la transformation n'est pas adiabatique, les échanges de chaleur~$\delta q$ d'une parcelle d'air avec son environnement sont non nuls et peuvent s'effectuer par~:
-\begin{itemize}
-\item Transfert radiatif~: l'atmosphère se refroidit en émettant dans l'infrarouge, ou se réchauffe en absorbant du rayonnement électromagnétique dans l'infrarouge [cas des gaz à effet de serre] ou dans le visible [cas de l'ozone dans la stratosphère].
-%Ces échanges sont faibles et peuvent être négligés sauf à l'échelle de la circulation générale\footnote{Le refroidissement/réchauffement peut être localement élevé au sommet/à la base de nuages.}
-\item Condensation ou évaporation d'eau~: ce point est abordé dans le chapitre suivant (ceci n'a lieu que lorsque l'air est à saturation).
-\item Diffusion moléculaire (conduction thermique)~: ces transferts sont très négligeables sauf à quelques centimètres du sol.
-\end{itemize}
-Un cas notamment souvent cité en météorologie est celui d'une parcelle d'air située proche du sol, à la tombée de la nuit, qui subit peu de variations de pression ($\dd P \sim 0$) mais dont la température diminue sous l'effet du refroidissement radiatif ($\delta q < 0$). Ceci explique la présence de rosée sur le sol et de brouillard proche de la surface au petit matin, comme il est décrit plus en détail dans le chapitre suivant.
+	\input{transformations_non_adiabatiques.tex}
 
 \sk
 \subsection{Transformations adiabatiques}
 
-\sk
-Dans de nombreuses situations en sciences de l'atmosphère, on peut considérer que l'évolution de la parcelle est adiabatique et se fait sans échange de chaleur avec l'extérieur ($\delta q=0$). En vertu de l'équilibre hydrostatique qui relie pression~$P$ et altitude~$z$~:
-\begin{citemize}
-\item une parcelle dont l'altitude~$z$ augmente sans apport extérieur de chaleur, subit une \voc{ascendance} adiabatique, donc une détente telle que~$\dd P < 0$ et sa température diminue ;
-\item inversement, une parcelle dont l'altitude~$z$ diminue sans apport extérieur de chaleur, subit une \voc{subsidence} adiabatique, donc une compression telle que~$\dd P > 0$ et sa température augmente. 
-\end{citemize}
-
-\sk
-Dans le cas où la transformation est adiabatique, pression et température sont intimement liées en vetu du premier principe. La version du premier principe encadrée ci-dessus avec~$\delta q = 0$ indique
-\[ \dd T = \frac{R}{C_P} \, \frac{T}{P} \, \dd P\]
-\[ \Rightarrow \qquad \frac{\dd T}{T} - \frac{R}{C_P} \, \frac{\dd P}{P} = 0 \]
-soit par intégration
-\[ T \, P^{- \kappa} = \text{constante} \qquad \text{avec} \qquad \kappa = R / C_P \]
-Autrement dit, dans le cas où une parcelle subit une transformation adiabatique, sa température varie proportionnellement à~$P^{\kappa}$. Il s'agit d'une version, avec les grandeurs intensives utiles en sciences de l'atmosphère, de l'équation~$P\,V^{\gamma}$, avec $\gamma = C_P / C_V$, vue dans les cours de thermodynamique générale pour les transformations adiabatiques.
+	\input{transformations_adiabatiques.tex}
 
 %% La température ne nous donne pas des informations fiables sur les échanges de chaleur d'une parcelle avec l'extérieur. Pour ce faire, on se base sur la température potentielle.
 %On définit la {\em température potentielle} $\Theta$ par:
@@ -232,15 +114,9 @@ Autrement dit, dans le cas où une parcelle subit une transformation adiabatique
 \sk
 \subsection{Gradient adiabatique sec} \label{adiabsec}
 
-\sk
-Il s'ensuit directement une loi simple des variations de température avec l'altitude d'une parcelle qui ne subit que des transformations adiabatiques. Considérons le cas d'une parcelle subissant un déplacement vertical quasi-statique et adiabatique tel que~$\delta q = 0$. Elle vérifie en première approximation l'équilibre hydrostatique~$\dd P\e{p} / \rho = - g \, \dd z$. La version du premier principe encadrée ci-dessus indique alors que
-\[  \dd T\e{p}  = - \frac{g}{C_P} \, \dd z \]
-d'où on tire le profil vertical adopté dans l'atmosphère sèche par une parcelle ne subissant pas d'échange de chaleur avec l'extérieur
-\[  \boxed{ \ddf{T\e{p}}{z}  = \Gamma\e{sec} \qquad \text{avec} \qquad \Gamma\e{sec} = \frac{-g}{C_P} } \]
-On note qu'il ne s'agit pas nécessairement du profil vertical suivi par l'environnement (voir section~\ref{parcenv}).
+	\input{gradient_adiabatique_sec.tex}
 
-\sk
-Le résultat trouvé ci-dessus revêt une importance particulière en sciences de l'atmosphère. La température d'une parcelle en ascension adiabatique décroît avec l'altitude selon un taux de variation constant, indépendamment des effets de pression. La constante~$\Gamma\e{sec}$ est appelée le \voc{gradient adiabatique sec} de température. Il n'est valable que pour une parcelle d'air non saturée en vapeur d'eau. Le calcul pour la Terre donne un refroidissement de l'ordre de~$10^{\circ}$C/km (ou K/km). Pourquoi cette valeur est-elle en désaccord avec la décroissance de~$6.5^{\circ}$C/km effectivement constatée dans l'atmosphère terrestre~? Le chapitre suivant apporte des éléments de réponse à ce paradoxe apparent.
+Pourquoi cette valeur est-elle en désaccord avec la décroissance de~$6.5^{\circ}$C/km effectivement constatée dans l'atmosphère terrestre~? Le chapitre suivant apporte des éléments de réponse à ce paradoxe apparent.
 
 %On définit également l'{\em énergie statique}  \begin{equation}  e_s=C_PT+gz=cste  \label{estat} \end{equation} L'énergie statique est la somme de l'enthalpie et de l'énergie potentielle de gravitation par unité de masse, et est conservée pour des transformations adiabatiques\footnote{L'énergie cinétique est négligeable. Typiquement, $\delta e_c$=50m$^2$s$^{-2}$ (variation de 10m.s\mo) et $\delta e_s$=10 000m$^2$s$^{-2}$ (variation de 1000m ou 10\deg).}. Les variations ou différences de $e_s$ et $\Theta$ sont reliées par: \[de_s=C_PTd\ln\Theta\]
 

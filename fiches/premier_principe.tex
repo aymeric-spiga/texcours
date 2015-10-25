@@ -1,0 +1,26 @@
+\sk
+Un système thermodynamique possède, en plus de son énergie d'ensemble (cinétique, potentielle), une \voc{énergie interne}~$U$. Comme la température~$T$, l'énergie interne~$U$ est une grandeur macroscopique qui représente les phénomènes microscopiques au sein d'un gaz. Le premier principe indique que les variations d'énergie interne sont égales à la somme du travail et de
+la chaleur algébriquement reçus~:
+\[ \dd U = \delta W + \delta Q\]
+
+\sk
+Dans le cas d'un gaz parfait, l'énergie potentielle d'interaction des molécules du gaz est négligeable, et l'énergie interne est égale à l'énergie cinétique des molécules, qui dépend seulement de la température. On peut montrer que $U = n \, \frac{\zeta \, R^* \, T}{2}$ où $\zeta$ est le nombre de degrés de liberté des molécules. Pour un gaz (principalement) diatomique comme l'air, $\zeta = 5$. 
+
+\sk
+Dans le cas de variations quasi-statiques d'un gaz, ce qui est supposé être le cas dans l'atmosphère, le travail s'exprime en fonction de la pression~$P$ du gaz et de la variation de volume~$\dd V$
+\[ \delta W = - P \, \dd V \]
+
+\sk
+L'expérience montre que la quantité de chaleur échangée au cours d'une transformation à volume ou pression constant est proportionnelle à la variation de température du système~: $\delta Q = n \, C_V^* \, \dd T$ à volume constant, $\delta Q = n \, C_P^* \, \dd T$ à pression constante. $C_P^*, C_V^*$ sont les \voc{chaleurs molaires}, également appelées \voc{capacités calorifiques}. Il s'agit de l'énergie qu'il faut fournir à un gaz pour faire augmenter sa température de~$1$~K dans les conditions indiquées (à volume constant ou à pression constante). Pour une transformation à volume constant (isochore), $\dd U = \delta Q$ donc $C_V^*=\frac{\zeta \, R^*}{2}$.
+
+\sk
+Pour l'étude de l'atmosphère, toujours dans la logique de travailler sur des grandeurs intensives, il est  bien plus utile de s'intéresser aux variations de pression plutôt qu'à celles de volume. On utilise donc l'\voc{enthalpie}~$H = U + P \, V$. On a alors par dérivation $ \dd H = \dd U + \dd (P\,V) $ puis, en utilisant le premier principe
+\[ \dd H = V \, \dd P + \delta Q \]
+Pour une transformation à pression constante (isobare) on a $\dd H = \delta Q$. On en déduit pour une transformation quelconque\footnote{
+D'autre part, en utilisant conjointement la dérivation de l'équation d'état du gaz parfait~$\dd (P\,V) = n \, R^* \, \dd T$ et l'expression de l'énergie interne~$U = n \, C_V^* \, \dd T$, on obtient $\dd H = n \, C_V^* \, \dd T + n \, R^* \, \dd T$ pour une transformation quelconque. On en déduit la relation de Mayer \[ C_P^* = C_V^* + R^* = \frac{(\zeta+2) \, R^*}{2}\]
+} 
+que $\dd H = n \, C_P^* \, dT$, ce qui permet d'écrire
+\[ n \, C_P^* \, dT = V \, \dd P + \delta Q \]
+
+
+

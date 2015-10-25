@@ -1,11 +1,4 @@
-\documentclass[
-	a4paper,
-	DIV16,
-	10pt,
-	cleardoublepage=empty,
-        twoside=yes,
-        BCOR=8.25mm
-	]{scrbook}
+\documentclass[a4paper,DIV16,10pt]{scrartcl}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{texcours}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -24,12 +17,89 @@
 \begin{document} \inidoc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section{Parcelle}
+\input{atmosphere_parametres.tex}
+\input{parcelle.tex}
+\input{parcelle_equilibre.tex}
 
-
-%\newpage
+\newpage
 \section{Gaz parfait}
 \input{thermo_gaz_parfait.tex}
 
 \newpage
-\input{transfert_radiatif_coefficients.tex}
+\section{Equilibre hydrostatique}
+\input{equilibre_hydrostatique.tex}
+
+\newpage
+\section{\'Echelle de hauteur}
+\input{echelle_hauteur.tex}
+
+\newpage
+\section{Premier principe de la thermodynamique}
+\input{premier_principe.tex}
+
+\newpage
+\section{Premier principe de la thermodynamique (application)}
+\input{premier_principe_atmosphere.tex}
+
+\newpage
+\section{Types de transformations}
+\input{transformations_adiabatiques.tex}
+\input{transformations_non_adiabatiques.tex}
+
+\newpage
+\section{Gradient adiabatique sec}
+\input{gradient_adiabatique_sec.tex}
+
+\newpage
+\section{Rayonnement thermique et corps noir}
+\input{rayonnement_thermique_simple.tex}
+\input{corps_noir_definition.tex}
+
+\newpage
+\section{Loi de Planck}
+\input{corps_noir_loi_planck.tex}
+
+\newpage
+\section{Loi de Wien du corps noir}
+\input{corps_noir_loi_wien.tex}
+
+\newpage
+\section{Loi de Stefan-Boltzmann du corps noir}
+\input{corps_noir_loi_stefan.tex}
+
+\newpage
+\section{Corps gris et émissivité}
+\input{corps_noir_emissivite.tex}
+
+\newpage
+\section{Constante solaire}
+\input{constante_solaire.tex}
+\input{constante_solaire_calcul.tex}
+
+\newpage 
+\section{Albédo} 
+\input{albedo.tex}
+
+\newpage
+\section{Bilan simple : température équivalente}
+\input{bilan_radiatif_flux_simple.tex}
+\input{bilan_radiatif_temperature_equivalente.tex}
+
+\newpage
+\section{Applications de la température équivalente}
+\input{bilan_radiatif_temperature_equivalente_applications.tex}
+
+
+
+
+
+
+
+
+
+\newpage
+\section{\'Equation hypsométrique}
+\input{equation_hypsometrique.tex}
+
 \end{document}
