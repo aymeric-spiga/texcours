@@ -4,13 +4,15 @@
 \usepackage{patch_french}
 \setcapindent{1em} %%% parce que sinon l'indentation "Figure ... -- texte" est trop grande
 %%% INITIALIZE DOCUMENT
-\newcommand{\inidoc}%
-{% 
+\newcommand{\bandeau}%
+{%
   \deftripstyle{Bandeau}[0pt][.4pt]
   {\zcourse~(\zlevel)}{}{\zuniversity}
   {\zauthor}{}{\pagemark} 
   \pagestyle{scrheadings} \pagestyle{Bandeau}  
-  \frontmatter
+}
+\newcommand{\pagegarde}%
+{%
   \subject{\zlogo}
   \title{\zcode~\zcourse}
   \subtitle{\zlevel. \zsubtitle.}
@@ -18,7 +20,18 @@
   \date{Contact: \email{\zemail}}
   \publishers{\zdate \\ \zrights}
   \maketitle 
+}
+\newcommand{\inibook}%
+{% 
+  \bandeau
+  \frontmatter
+  \pagegarde
   \tableofcontents
   \mainmatter  
 }
-
+\newcommand{\inidoc}%
+{% 
+  \bandeau
+  \pagegarde
+  \newpage
+}
