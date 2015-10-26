@@ -1,0 +1,5 @@
+http://pandoc.org/demos.html
+pandoc -s GQE_cours1_notes.md -o GQE_cours1_notes.tex
+pandoc GQE_cours1_notes.md --latex-engine=pdflatex -o GQE_cours1_notes.pdf
+pandoc -s GQE_cours1_notes.md -o GQE_cours1_notes.html
+
