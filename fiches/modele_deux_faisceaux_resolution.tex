@@ -1,0 +1,81 @@
+\sk
+Le système d'équations~$[S^+]$ et~$[S^-]$ du modèle à deux faisceaux
+est plus simple à résoudre si l'on considère les deux quantités~$\Sigma(\tau)=F^{+}(\tau)+F^{-}(\tau)$ et~$\Delta(\tau)=F^{+}(\tau)-F^{-}(\tau)$ car on obtient
+\[
+\ddf{\Sigma}{\tau} = \Delta(\tau) \quad [E_\Sigma] 
+\qquad\qquad 
+\ddf{\Delta}{\tau} = \Sigma(\tau) - 2\,\epsilon\,\sigma\,T(\tau)^4 \quad [E_\Delta]
+\]
+\noindent Ensuite la résolution impose d'expliciter les conditions aux limites
+\begin{enumerate}[$\mathcal{C}_1$]
+\item on se place à l'équilibre radiatif donc le flux net~$\Delta$ est constant à tout niveau : $\ddf{\Delta}{\tau}=0$
+\item au sommet de l'atmosphère $F^+(\tau=0) = OLR$ (définition de $OLR$) et $F^-(\tau=0) = 0$ (contribution
+incidente négligeable du Soleil dans l'infra-rouge), ce qui s'écrit encore~$\Delta(\tau=0)=\Sigma(\tau=0)=OLR$
+\item à la surface de température~$T_s$ le bilan radiatif est le suivant : la surface reçoit l'intégralité du rayonnement
+solaire incident~$(1-A\e{b}) \, \mathcal{F}\e{s}'$ (visible) plus du rayonnement de l'atmosphère située
+juste au-dessus d'elle~$F^-(\tau=\tau_{\infty})$ (infra-rouge) ; de plus elle émet un rayonnement
+$\epsilon\,\sigma\,T\e{s}^4$ dans l'infra-rouge vers l'atmosphère\footnote{On a supposé ici pour simplifier les calculs que l'émissivité
+de la surface était similaire à l'émissivité de l'atmosphère}
+\item on rappelle que selon la relation \emph{TOA}, nous avons $OLR = (1-A\e{b}) \, \mathcal{F}\e{s}'$
+\end{enumerate}
+
+
+\sk
+Il est alors possible d'obtenir deux expressions différentes pour~$\Sigma(\tau)$.
+Premièrement, en utilisant $[E_\Sigma]$ avec $\mathcal{C}_1$ et $\mathcal{C}_2$, on obtient~$\Sigma(\tau)=OLR \, (1+\tau)$.
+Deuxièmement, en utilisant $[E_\Delta]$ avec $\mathcal{C}_1$, on obtient~$\Sigma(\tau)=2\,\epsilon\,\sigma\,T(\tau)^4$.
+\textbf{Conclusion 1} : on obtient le \voc{profil radiatif}, 
+c'est-à-dire le profil vertical de température\footnote{Suivant la géométrie
+équivalente choisie pour le modèle plan-parallèle, le terme $1+\tau$
+peut s'écrire un peu différemment, mais quoiqu'il en soit toujours sous une
+forme~$a+b\,\tau$ avec $a,b$ constants. Les conclusions énoncées ici ne sont pas
+modifiées.} imposé par les transferts radiatifs dans l'infrarouge
+\[
+T(\tau) = \sqrt[4]{\frac{OLR\,(1+\tau)}{2\,\sigma\,\epsilon}}
+\]
+
+\sk
+Reste à calculer la température de surface avec ce modèle. D'après $\mathcal{C}_3$, le bilan
+au sol s'écrit~$(1-A\e{b}) \, \mathcal{F}\e{s}' + F^-(\tau=\tau_{\infty}) = \epsilon\,\sigma\,T\e{s}^4$.
+Il faut donc exprimer les flux ascendant et descendant dans l'infrarouge.
+Du fait que $\mathcal{C}_1$ et $\mathcal{C}_2$ nous indiquent que~$\Delta=OLR$, on obtient aisément
+\[
+F^+(\tau) = \frac{\Sigma+\Delta}{2} = OLR \, (1+\frac{\tau}{2})
+\qquad \qquad
+F^-(\tau) = \frac{\Sigma-\Delta}{2} = OLR \, \frac{\tau}{2}
+\]
+\noindent On obtient alors l'expression liant $OLR$
+et température de surface~$T\e{s}$
+\[
+\boxed{\epsilon\,\sigma\,T\e{s}^4 = OLR \, \left( 1 + \frac{\tau_{\infty}}{2} \right)}
+\]
+\textbf{Conclusion 2} : on obtient une définition quantitative de \voc{l'effet de serre}
+\begin{citemize}
+\item Dans l'infrarouge, le rayonnement sortant au sommet de l'atmosphère ($OLR$)
+est inférieur au rayonnement émis par la surface ($\epsilon\,\sigma\,T\e{s}^4$).
+Une partie du rayonnement émis par la surface reste donc piégée par la planète.
+\item Avec un albédo et un rayonnement incident constant, donc à~$OLR$ constant (d'après $\mathcal{C}_4$),
+augmenter la quantité de gaz à effet de serre (donc augmenter~$\tau_{\infty}$)
+conduit à une augmentation de la température de surface~$T\e{s}$.
+\end{citemize}
+
+\sk
+Il est alors instructif de s'intéresser à la température atmosphérique 
+proche de la surface~$T(\tau_\infty)$
+donnée par le profil radiatif. Cette température ne dépend que de~$OLR$
+et s'obtient totalement indépendamment de la température de surface.
+On peut alors montrer que
+\[
+T\e{s} = T(\tau_\infty) \, \sqrt[4]{\frac{2+\tau_\infty}{1+\tau_\infty}} > T(\tau_\infty)
+\]
+\noindent \textbf{Conclusion 3} : tant que l'atmosphère n'est pas
+optiquement épaisse dans l'infrarouge (donc tant que~$\tau_\infty$ reste fini),
+il existe une discontinuité entre la surface et l'atmosphère, la surface
+étant toujours plus chaude que l'atmosphère. Cela implique que l'atmosphère
+est instable proche de la surface, donc que du mélange turbulent / convectif
+apparaît, donc que l'équilibre proche de la surface ne peut être simplement
+radiatif mais \voc{radiatif-convectif}. Notons que dans le cas où l'atmosphère est optiquement épaisse,
+$T\e{s} = T(\tau_\infty)$, ce qui est tout à fait représentatif des conditions sur Vénus.
+
+
+%%% figure Salby

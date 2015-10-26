@@ -1,0 +1,92 @@
+\sk
+Le modèle à deux faisceaux est un bon compromis entre simplicité
+et illustration de concepts importants. Ce modèle entend élucider
+les transferts de rayonnement dans l'infrarouge entre
+les couches qui composent la colonne atmosphérique. Les
+hypothèses simplificatrices suivantes sont réalisées
+\begin{citemize}
+\item couches atmosphériques plan-parallèle (sphéricité négligée)
+\item phénomènes d'absorption négligés dans le visible (transparence au visible)
+\item phénomènes de diffusion (\emph{scattering}) négligés dans l'infrarouge
+\item \emph{gray gas} dans l'infra-rouge : on considère que le coefficient d'absorption
+du gaz est indépendant de la longueur d'onde~$\lambda$ ($k_{\lambda} = k$ pour tout~$\lambda$),
+ce qui implique une hyothèse similaire pour l'épaisseur optique ($\tau_{\lambda} = \tau$ pour tout~$\lambda$).
+\end{citemize}
+En d'autres termes, on se cantonne dans ce modèle à deux types de phénomènes
+\begin{enumerate}
+\item Un faisceau de rayonnement infra-rouge de flux~$F$ traversant une couche 
+atmosphérique donnée
+subit une extinction à cause de l'absorption selon une loi de type Beer-Lambert
+\[
+\dd F = - F \dd \tau
+\]
+avec~$\tau$ l'épaisseur optique \emph{gray gas} 
+dans l'infra-rouge.
+\item Une couche atmosphérique émet un flux de rayonnement thermique~$M$ 
+calculé par la loi intégrée de Stefan-Boltzmann ($M=\epsilon\,\sigma\,T^4$)
+puisque la majorité de l'émittance est émise dans l'infrarouge pour les températures considérées.
+\end{enumerate}
+
+\sk
+L'épaisseur optique~$\tau$ peut servir de coordonnée verticale à la place de~$z$
+en utilisant la relation entre les deux quantités. La couche atmosphérique
+élémentaire considérée est ainsi d'épaisseur~$\dd\tau$ et située à une coordonnée
+verticale~$\tau$ qui croît avec l'altitude. 
+
+\sk
+Si l'on considère un faisceau ascendant~$F^+(\tau)$ au bas de la couche considérée,
+une fois la couche traversée son amplitude est
+\[
+F^+(\tau) - F^+(\tau) \dd\tau
+\]
+A ce flux au sommet de la couche, il convient d'ajouter
+la contribution de l'émission thermique de la couche vers 
+le haut, à savoir~$M\,\dd\tau$.
+Le flux total ascendant au sommet de la couche est donc
+\[
+F^+(\tau+\dd\tau) = F^+(\tau) - F^+(\tau) \dd\tau + M\dd\tau
+\]
+
+\sk
+Même raisonnement avec le flux descendant~$F^-(\tau+\dd\tau)$ au sommet de la couche considérée,
+une fois la couche traversée son amplitude est~$F^-(\tau+\dd\tau) - F^-(\tau) \dd\tau$, où 
+l'approximation du terme du second ordre~$F^-(\tau+\dd\tau) \dd\tau \simeq F^-(\tau) \dd\tau$
+a été effectuée.
+Le flux total descendant au bas de la couche est donc
+\[
+F^-(\tau+\dd\tau) = F^-(\tau) - F^-(\tau) \dd\tau + M\dd\tau
+\]
+
+\sk
+Les deux résultats qui précèdent peuvent être transformés 
+afin de faire apparaître une dérivée
+en utilisant le théorème des accroissements finis
+\[
+\ddf{F^+}{\tau} = \frac{F^+(\tau+\dd\tau) - F^+(\tau)}{\dd\tau}
+\]
+\noindent ce qui permet d'obtenir au final
+\[
+\ddf{F^+}{\tau} = - F^+(\tau) + \epsilon\,\sigma\,T(\tau)^4 \quad [S^+]
+\qquad\qquad 
+\ddf{F^-}{\tau} = F^-(\tau) - \epsilon\,\sigma\,T(\tau)^4 \quad [S^-]
+\]
+\noindent $[S^+]$ et~$[S^-]$ sont parfois appelées les relations de Schwarzschild à deux faisceaux.
+Il s'agit d'une version très simplifiée des équations de Schwarzschild du transfert radiatif.
+
+\sk
+Si l'on souhaite adopter la convention~$\tau=0$ au sommet de l'atmosphère,
+et $\tau=\tau_{\infty}$ à la surface en $z=0$, donc adopter un axe
+vertical d'épaisseur optique avec~$\tau$ croissant de haut en bas, il
+suffit de remplacer~$\tau$ par~$-\tau$ dans les équations précédentes pour obtenir
+\[
+\boxed{\ddf{F^+}{\tau} = F^+(\tau) - \epsilon\,\sigma\,T(\tau)^4 \quad [S^+]} 
+\qquad\qquad 
+\boxed{\ddf{F^-}{\tau} = -F^-(\tau) + \epsilon\,\sigma\,T(\tau)^4 \quad [S^-]}
+\]
+
+
+
+
+
+
+

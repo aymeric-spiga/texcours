@@ -7,13 +7,15 @@ F\e{reçu} = (1-A\e{b}) \, \mathcal{F}\e{s}'
 \] 
 La partie du rayonnement reçue du soleil qui est réfléchie vers l'espace est prise en compte via l'albédo planétaire noté~$A\e{b}$.
 
-\figsup{0.31}{0.17}{decouverte/cours_dyn/incoming.png}{decouverte/cours_dyn/emission.png}{Equilibre radiatif simple : à gauche, l'énergie reçue du Soleil par le système Terre ; à droite, l'énergie émise par le système Terre. Source~: McBride and Gilmour, \emph{An Introduction to the Solar System}, CUP 2004.}{fig:eqrad2}
-
 \sk
-Par ailleurs, le système Terre émet également du rayonnement principalement dans les longueurs d'onde infrarouge [figure \ref{fig:eqrad2}]. On fait l'hypothèse, assez réaliste en pratique, que la surface de la Terre est comme un corps noir, c'est-à-dire que son émissivité est très proche de~$1$ dans l'infrarouge où se trouve le maximum d'émission. D'après la loi de Stefan-Boltzmann, la densité de flux énergétique~$F\e{émis}$ émise par la Terre en W~m$^{-2}$ s'exprime
-\[ F\e{émis} = \sigma \, {T\e{eq}}^4 \]
-où~T\e{eq} est la \voc{température équivalente} du système Terre que l'on suppose uniforme sur toute la planète. Autrement dit, $T\e{eq}$ est la température équivalente d'un corps noir qui émettrait la quantité d'énergie~$F\e{émis}$. Le flux énergétique~$\Phi\e{émis}$ émis par la surface de la planète Terre s'exprime
-\[ \Phi\e{émis} = 4 \, \pi \, R^2 \, F\e{émis} = 4 \, \pi \, R^2 \, \sigma \, {T\e{eq}}^4 \]
-Contrairement au cas de l'énergie visible, il n'y a pas lieu de prendre en compte le contraste jour/nuit, car le rayonnement thermique émis par la Terre l'est à tout instant par l'intégralité de sa surface. La seule limite éventuellement discutable est l'uniformité de la température de la surface de la Terre, ce qui est irréaliste en pratique. On peut souligner cependant que, même dans le cas d'une planète n'ayant pas une température uniforme ou ne se comportant pas comme un corps noir, le rayonnement émis vers l'espace doit être égal en moyenne à $\sigma \, {T\e{eq}}^4$.
-%% CHANGER LES SLIDES, ne pas utiliser P
+Par ailleurs, le système Terre émet également du rayonnement principalement dans les longueurs d'onde infrarouge [figure \ref{fig:eqrad2}]. 
+Cette quantité de rayonnement émise au sommet de l'atmosphère radiative est notée $OLR$ pour \emph{Outgoing Longwave Radiation} en anglais.
+A l'équilibre, la planète Terre doit émettre vers l'espace autant d'énergie qu'elle en reçoit du Soleil, donc
+on obtient la relation générale appelée \emph{TOA} pour \emph{Top-Of-Atmosphere} en anglais, correspondant
+au bilan radiatif au sommet de l'atmosphère
+\[ 
+\boxed{OLR = (1-A\e{b}) \, \mathcal{F}\e{s}'}
+\] 
+La principale difficulté qui sous-tend les divers modèles pouvant être proposés réside dans l'expression du terme~$OLR$.
+
 
