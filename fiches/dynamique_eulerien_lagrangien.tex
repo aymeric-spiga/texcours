@@ -1,0 +1,20 @@
+\sk
+Comment caractériser un écoulement ?
+
+\sk
+\paragraph{Point de vue lagrangien} Le plus intuitif~:~Suivre les particules le long de leur trajectoire.
+\paragraph{Point de vue eulérien} Le plus pratique~:~Suivre le courant depuis un point géométrique. Les points sont fixés ce qui est plus aisé en première approche pour modéliser l'écoulement sur une grille.
+\centers{Variations lagrangiennes \quad = \quad Variations eulériennes \quad + \quad Terme d'advection}
+Le terme d'advection transport concentre le caractère non-linéaire de la dynamique atmosphérique
+
+\sk
+On passe de l'un à l'autre des formalismes avec la formule de la dérivée d'une fonction composée~$\mathcal{F}[x(t)]$ où~$x$ est la position.
+\[
+\underbrace{\derd{\mathcal{F}}{t}}_{\text{En suivant la particule}}
+= 
+\underbrace{\Dp{\mathcal{F}}{t}}_{\text{En un point géométrique}} 
++ 
+\underbrace{\left(\v U \cdot \v \nabla \right)\,\mathcal{F} }_{\text{Lié au déplacement de la particule}}
+\]
+
+

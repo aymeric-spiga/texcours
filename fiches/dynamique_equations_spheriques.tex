@@ -1,0 +1,41 @@
+\begin{center}
+\begin{tabular}{ccccccccc}
+%%%%%%
+%\BBB{\derd{u}{t}} & \CCC{-\dfrac{uv\tan\phi}{a}} & \ZZZ{+\dfrac{uw}{a}} & = & \AAA{\fcoriolis v} & \ZZZ{-\fcoriolis w\cos\phi} & \DDD{-\dfrac{1}{\rho}\der{p}{x}} & & \ZZZ{+Fr_x}\\
+\BBB{\derd{u}{t}} & \CCC{-\dfrac{uv\tan\phi}{a}} & \ZZZ{+\dfrac{uw}{a}} & = & \AAA{\fcoriolis v} & \ZZZ{-2\Omega \cos\phi w} & \DDD{-\dfrac{1}{\rho}\der{p}{x}} & & \ZZZ{+Fr_x}\\
+~\\
+%%%%%%
+%\BBB{\derd{v}{t}} & \CCC{+\dfrac{u^2\tan\phi}{a}} & \ZZZ{+\dfrac{wu}{a}} & = & \AAA{-\fcoriolis u} & & \DDD{-\dfrac{1}{\rho}\der{p}{y}} & & \ZZZ{+Fr_y}\\
+\BBB{\derd{v}{t}} & \CCC{+\dfrac{u^2\tan\phi}{a}} & \ZZZ{+\dfrac{vw}{a}} & = & \AAA{-\fcoriolis u} & & \DDD{-\dfrac{1}{\rho}\der{p}{y}} & & \ZZZ{+Fr_y}\\
+~\\
+%%%%%%
+%\ZZZ{\derd{w}{t}} & \ZZZ{-\dfrac{u^2+v^2}{a}}&&=&\ZZZ{\fcoriolis u} & & \DDD{-\dfrac{1}{\rho}\der{p}{z}}& \DDD{ -g}&\ZZZ{+Fr_z}   \\ 
+\ZZZ{\derd{w}{t}} & \ZZZ{-\dfrac{u^2+v^2}{a}}&&=&\ZZZ{2\Omega\cos\phi u} & & \DDD{-\dfrac{1}{\rho}\der{p}{z}}& \DDD{ -g}&\ZZZ{+Fr_z}   \\ 
+\end{tabular}
+\end{center}
+
+\begin{finger}
+\item \DDD{\bullet} ~ Equilibre hydrostatique
+\item \DDD{\bullet}\AAA{\bullet} ~ Equilibre g\'eostrophique
+\item \DDD{\bullet}\CCC{\bullet} ~ Equilibre cyclostrophique
+\item \DDD{\bullet}\AAA{\bullet}\CCC{\bullet} ~ Equilibre du vent gradient
+\item \DDD{\bullet}\AAA{\bullet}\BBB{\bullet} ~ Modèle quasi-g\'eostrophique
+\item \DDD{\bullet}\AAA{\bullet}\BBB{\bullet}\CCC{\bullet} ~ Equations primitives
+\end{finger}
+
+\sk
+Nombre de Rossby et validité de l'équilibre géostrophique
+\[
+R_o=\f{\text{accélération horizontale}}{\text{accélération de Coriolis}}\qquad\boxed{R_o=\frac{U}{L\,\Omega}}
+\]
+\begin{tabular}{cccc}
+$R_o \ll 1$ & \DDD{\bullet}\AAA{\bullet} & Equilibre g\'eostrophique & [Terre, Mars]\\
+$R_o \gg 1$ & \DDD{\bullet}\CCC{\bullet} & Equilibre cyclostrophique & [Vénus, Titan]\\
+$R_o$~tous & \DDD{\bullet}\AAA{\bullet}\CCC{\bullet} & Equilibre du vent gradient & [Toutes]\\
+~ & & & \\
+$R_o \ll 1$ & \DDD{\bullet}\AAA{\bullet}\BBB{\bullet} & Modèle quasi-g\'eostrophique & [Terre, Mars]\\
+$R_o$~tous & \DDD{\bullet}\AAA{\bullet}\BBB{\bullet}\CCC{\bullet} & Equations primitives  & [Toutes]
+\end{tabular}
+
+\sk
+Equilibre géostrophique: développement des équations du mouvement à l'ordre 1 en le nombre de Rossby, décrit un écoulement bidimensionnel, stationnaire et non divergent. A un ordre supérieur en $\textrm{Ro}$, l'évolution lente de la fonction de courant géostrophique peut être diagnostiquée par un nouvel équilibre dit quasi-géostrophique (modèle QG). Couplé à l'équation de conservation de la vorticité potentielle de Rossby, donne le modèle de Charney (premiers modèles de prévision numérique du temps).

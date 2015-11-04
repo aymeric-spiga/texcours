@@ -1,0 +1,34 @@
+\sk
+Bjerknes, 1904~:~6 équations pour 6 inconnues 
+\begin{finger}
+\item variables \textcolor{red}{dynamiques} ou \textcolor{brown}{thermodynamiques}
+\item ce qui dépend de la planète considérée~:~\textcolor{blue}{forçages} et \textcolor{green!75!black}{constantes planétaires} 
+\item rappel: formalisme eulérien vs. lagrangien $\derd{\mathcal{F}}{t}=\der{\mathcal{F}}{t}+\textcolor{red}{u}\der{\mathcal{F}}{x}+\textcolor{red}{v}\der{\mathcal{F}}{y}+\textcolor{red}{w}\der{\mathcal{F}}{z}$
+\end{finger}
+
+\sk
+\noindent Les 6 équations qui permettent d'évaluer l'évolution déterministe du fluide atmosphérique soumis aux forçages
+\begin{enumerate}
+\item Mouvement horizontal
+\[ \derd{\textcolor{red}{u}}{t} - \dfrac{\textcolor{red}{u}\textcolor{red}{v}\tan\phi}{\textcolor{green!75!black}{a}} = 2\textcolor{green!75!black}{\Omega}\sin\phi \, \textcolor{red}{v} - \dfrac{1}{\textcolor{brown}{\rho}} \, \der{\textcolor{brown}{p}}{x} + \textcolor{blue}{F_u} \]
+\[ \derd{\textcolor{red}{v}}{t} + \dfrac{\textcolor{red}{u}^2\tan\phi}{\textcolor{green!75!black}{a}} = -2\textcolor{green!75!black}{\Omega}\sin\phi \, \textcolor{red}{u} - \dfrac{1}{\textcolor{brown}{\rho}} \, \der{\textcolor{brown}{p}}{y} + \textcolor{blue}{F_v} \]
+\item Equilibre hydrostatique vertical
+\[
+ - \dfrac{1}{\textcolor{brown}{\rho}} \, \der{\textcolor{brown}{p}}{z} - \textcolor{green!75!black}{g} = 0
+\]
+\item Conservation de la masse
+\[
+\der{\textcolor{brown}{\rho} }{t} + \div\dep{\textcolor{brown}{\rho} \textcolor{red}{\vec{V}}}=0
+\]
+\item Premier principe 
+\[
+\f{\textcolor{green!75!black}{c_p}}{\theta} \, \derd{\theta}{t} = \f{\textcolor{blue}{\mathcal{Q}}}{\textcolor{brown}{T}}
+\qquad \text{avec} \qquad
+\theta=\textcolor{brown}{T} \, \left[ \f{\textcolor{green!75!black}{p_0}}{\textcolor{brown}{p}} \right]^{\textcolor{green!75!black}{\kappa}} 
+\]
+\item Gaz parfait
+\[
+\textcolor{brown}{p} = \textcolor{brown}{\rho} \, \textcolor{green!75!black}{R} \, \textcolor{brown}{T}
+\]
+\end{enumerate}
+

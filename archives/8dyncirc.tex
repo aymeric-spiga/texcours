@@ -11,36 +11,12 @@ Dans ce chapitre, on aborde de manière plus approfondie la circulation de l'atm
 \sk
 \subsection{Système de coordonnées et référentiel}
 
-\sk
-La position d'un point $M$ de l'atmosphère sera représentée dans un systèmes de coordonnées sphériques (figure~\ref{fig:repere}) par sa latitude $\varphi$, sa longitude $\lambda$, et son altitude~$z$ par rapport au niveau de la mer. Pour les déplacements horizontaux, on utilise le repère direct
-$\left(M,\mathbf{i},\mathbf{j},\mathbf{k}\right)$ où $\mathbf{i}$ et $\mathbf{j}$ sont les vecteurs unitaires vers l'est et le nord, et $\mathbf{k}$ est dirigé suivant la verticale vers le haut. La direction définie par~$\mathbf{i}$ est souvent qualifiée de \voc{zonale}, celle définie par~$\mathbf{j}$ de \voc{méridienne}. 
-%Pour des déplacements qui ne sont pas d'échelle planétaire, on utilisera également des distances horizontales vers l'est et le nord~$dx=a\, d\lambda\, \cos \varphi$ et~$dy=a\,d\varphi$ où~$a$ est le rayon de la Terre.
-%
-%\sk
-On distingue deux référentiels pour l'étude des mouvements de l'air:
-\begin{finger}
-\item Un \voc{référentiel tournant} lié à la Terre, en rotation autour de l'axe des pôles avec la vitesse angulaire $\Omega$. La \voc{vitesse relative} est mesurée dans le référentiel tournant, par rapport à la surface de la Terre et a pour composantes~$u,v,w$ suivant \v i,\v j,\v k. Il s'agit de ce que l'on appelle communément le \voc{vent} avec le point de vue d'humain attaché à la surface de la Terre, c'est-à-dire au référentiel tournant. La composante horizontale du vecteur vitesse relative est donc~$\mathbf{V} = u \, \mathbf{i} + v \, \mathbf{j}$ et la composante verticale~$w \, \mathbf{k}$.
-\item Un \voc{référentiel fixe} orienté suivant les directions de trois étoiles. La \voc{vitesse absolue} d'un point M est considérée dans le référentiel fixe et inclut donc le mouvement circulaire autour de l'axe des pôles. Ce référentiel peut être considéré comme galiléen. Il correspond à ce qu'on observerait depuis l'espace, lorsqu'on voit la Terre tourner au lieu d'être \ofg{attaché} à sa rotation.
-\end{finger}
-
-%\figun{0.4}{0.25}{\figfrancis/repere}{Schéma du système de coordonnées et du repère utilisés.}{fig:repere}
-\figside{0.45}{0.22}{\figfrancis/repere}{Système de coordonnées et repère utilisés.}{fig:repere}
+	\input{dynamique_referentiel.tex}
 
 \sk
 \subsection{Equations du mouvement horizontal}
 
-\sk
-L'équation de base pour le mouvement de masses d'air est la relation fondamentale de la dynamique $\Sigma \v F=m \, \v a$ (seconde loi de Newton).  Cette relation est cependant valable dans un référentiel galiléen, tel le référentiel fixe. On s'intéresse plutôt au vent, c'est-à-dire que l'on souhaite considérer des mouvements atmosphériques par rapport à la surface de la Terre qui est en rotation autour de l'axe des pôles. On va donc dans un premier temps projeter l'accélération dans le référentiel tournant, puis étudier les principales forces horizontales. Autrement dit, on se donne pour objectif d'exprimer l'accélération dans le référentiel tournant, qu'on souhaite connaître, en fonction de l'accélération dans le référentiel fixe, qui est égale à la somme des forces.
-
-\sk
-La relation entre vitesse absolue~$\v V_a$ dans le référentiel fixe et vitesse relative~$\v V_r$ dans le référentiel tournant s'écrit, avec le vecteur de rotation~$\v \Omega$ de module~$\Omega$ dirigé selon l'axe des pôles~:
-\[\v V_a = \v V_r + \vl{\Omega}\wedge\vl{CM}\]
-Il s'agit de la relation de composition des vitesses pour un référentiel tournant. Le terme $\vl{\Omega}\wedge\vl{CM}$ est la vitesse d'un point fixe par rapport au sol ($\v V_r=0$), il est appelé \voc{vitesse d'entrainement}.
-%La relation entre la dérivée temporelle d'un vecteur \v X dans le référentiel fixe (\emph{absolue}, $a$) et celle dans le référentiel tournant (\emph{relative}, $r$) s'écrit \[\frac{d\v X}{dt}_{|a}=\frac{d\v X}{dt}_{|r}+ \vl \Omega\wedge \v X\] En applicant au vecteur \vl{CM}, avec $\frac{d\vl{CM}}{dt}=\v V$, on a: \[\v V_a=\v V_r+\vl{\Omega}\wedge\vl{CM}\]
-La relation entre accélération absolue~$\v a_a$, égale à la somme des forces, et accélération relative~$\v V_r$ dans le référentiel tournant s'écrit
-\[ \v a_a=\Sigma\v F=\v a_r+2\vl{\Omega}\wedge\v V_r-\Omega^2\,\vl{HM} \]
-Le premier terme est l'accélération relative~$\v a_r$, le deuxième l'\voc{accélération de Coriolis}~$\v a_c$, le troisième est l'\voc{accélération d'entrainement}~$\v a_e$. Les termes de Coriolis et d'entraînement induisent des \voc{forces apparentes}~$\v F_c = -m \, \v a_c$ et~$\v F_e = -m \, \v a_e$ dans le référentiel tournant. On parle de forces apparentes car du point de vue du référentiel fixe, ces termes n'apparaissent pas comme des forces~: ils ne sont que des termes d'accélération causés par le caractère non galiléen du référentiel tournant.
-%En dérivant à nouveau $\v V_a$, on obtient: \[\v a_a=\left(\frac{d \v V_r}{dt}_{|r}+\vl{\Omega}\wedge\v V_r\right)+\vl{\Omega}\wedge \left(\v V_r+\vl{\Omega}\wedge\vl{CM}\right)\] soit en regroupant et avec $\vl{\Omega}\wedge(\vl{\Omega}\wedge\vl{CM})=-\Omega^2\cdot\vl{HM}$:
+	\input{dynamique_changement_referentiel.tex}
 
 \sk
 \subsection{Action des forces apparentes}
@@ -51,235 +27,38 @@ On peut rapidement interpréter les deux termes liés aux forces apparentes dans
 \sk
 \subsubsection{Accélération d'entraînement et pesanteur}
 
-\sk
-On considère un point M immobile par rapport à la surface de la Terre. Les forces (massiques) subies par M sont la force de gravitation \v G, dirigée vers le centre de la Terre, et \v R la réaction du sol dirigée perpendiculairement à la surface (figure \ref{fig:centrif}). Dans le référentiel fixe, l'accélération de M est celle du mouvement circulaire uniforme: $\v a_e = - \Omega^2 \, \vl{HM}$ (accélération d'entrainement). On doit donc avoir \[\v a_e=\v G+\v R\] 
-C'est impossible si la Terre est sphérique (sauf au pôle et à l'équateur): on aurait alors \v R et \v G colinéaires mais pas dans la direction de $\v a_e$. La Terre a en fait pris une forme aplatie, où la surface n'est pas perpendiculaire à~$\v G$. En posant $\v g=\v G-\v a_e$, l'équilibre devient: \[\v g+\v R=\v 0\] On a donc une gravité apparente \v g dirigée localement vers le bas (perpendiculairement à la surface) mais pas exactement vers le centre de la Terre. La gravité réelle \v G a elle une faible composante horizontale. Dans ce qui suit, on considère que l'accélération d'entraînement est inclus dans le terme~$\v g$.
-
-%\figside{0.55}{0.25}{\figfrancis/centrif}{Equilibre d'un point posé au sol. La forme réelle de la Terre est en trait continu, la sphère en pointillés.}{fig:centrif}
-\figside{0.45}{0.2}{\figfrancis/centrif}{Equilibre d'un point posé au sol. La forme réelle de la Terre est en trait continu, la sphère en pointillés.}{fig:centrif}
+	\input{dynamique_entrainement.tex}
 
 \sk
 \subsubsection{Accélération de Coriolis et déviation du mouvement}
 
-\sk
-L'accélération de Coriolis peut être interprétée comme une force apparente massique $\v F_C = - 2 \, \v \Omega\wedge\v V_r$. Cette force apparente étant orthogonale à la vitesse à cause de la présence du produit vectoriel, sa puissance est nulle~: la \voc{force de Coriolis} va dévier le mouvement relatif mais ne peut pas modifier la vitesse du vent ou de courants. Pour des mouvements relatifs horizontaux à la vitesse \v V, le module de la force apparente de Coriolis est~$2 \, \Omega \, \sin \phi \, V$ qui change de signe lorsqu'on change d'hémisphère en fonction de~$\sin \phi$. Dans l'hémisphère nord, où $\sin \phi>0$, la force de Coriolis est dirigée à $90^{\circ}$ à droite du vent. 
-
-\sk
-Afin de bien comprendre l'effet de la force de Coriolis, il est profitable sur une planète comme la Terre d'utiliser la conservation du moment cinétique\footnote{
-Puisque le moment cinétique~$\sigma$ se conserve on a \[ \ddf{\sigma}{t} = 0 = \ddf{r}{t} \, (\Omega \, r + u) + r \, \left( \Omega \ddf{r}{t}+\ddf{u}{t} \right) \qquad \Rightarrow \qquad \ddf{u}{t} = - \ddf{r}{t}  \, \left( 2\,\Omega + \frac{u}{r} \right) \] 
-Le terme en $u/r$ est dû à la courbure de la surface, mais seule la vitesse relative intervient, pas la rotation de la Terre. En pratique, ce terme est négligeable sur Terre devant~$2 \, \Omega$. L'équation ci-dessus montre donc que raisonner avec la conservation du moment cinétique permet de comprendre l'effet sur les vents de la force de Coriolis.
-}
-(l'équivalent pour les systèmes en rotation de la quantité de mouvement pour les systèmes en translation). En effet, la somme des forces étant dirigée vers H, M conserve son \voc{moment cinétique}~$\sigma$ par rapport à l'axe des pôles, qui s'exprime
-\[ \boxed{ \sigma = u_a \, r = (\Omega \, r + u) \, r } \]
-où~$r$ est la distance entre le point considéré et l'axe de rotation qui passe par les deux pôles.
-%\footnote{La conservation de $\sigma$ implique des variations de l'énergie cinétique $(\Omega r+u)^2$. C'est le travail de \v G (pour un mouvement sud-nord) qui en est l'origine.}. 
-
-\sk
-Pour illustrer les effets de cette force apparente de Coriolis, on considère une parcelle initialement au repos dans le référentiel tournant (c'est à dire~$u=0$ et~$v=0$ à~$t=0$) qui se déplacerait vers le Nord suivant l'axe~$\v j$. Elle se rapproche donc de l'axe des pôles et va voir sa vitesse absolue augmenter par conservation du moment cinétique: $\sigma$ est constant et~$r$ diminue, donc $u_a$ augmente. Dans le même temps, la vitesse d'entrainement locale~$u_e=\Omega \, r$ diminue sous l'effet de la diminution de la distance~$r$ à l'axe des pôles. La parcelle va donc acquérir une vitesse relative $u>0$ vers l'est\footnote{
-En fait, l'expression ci-dessus permet même de calculer la variation de vitesse associée. Pour un mouvement sud-nord, la vitesse est $v=a \, \ddf{\phi}{t}$. D'autre part $r=a \, \cos \phi$ donc~$\ddf{r}{t}=-a \, \ddf{\phi}{t} \, \sin \phi = - v \, \sin \phi$. L'équation de conservation du moment cinétique devient 
-\[ \ddf{u}{t} = v \, \sin \phi \, \left( 2 \, \Omega + \frac{u}{r} \right) \simeq 2 \, \Omega \, v \, \sin \phi \] 
-La parcelle est bien déviée vers l'est pour un déplacement vers le nord tel que~$v>0$.
-}
-comme indiqué sur le schéma \ref{fig:coriolisns}. 
-
-\figside{0.3}{0.2}{\figfrancis/coriolis_ns}{Déviation d'une parcelle se déplaçant vers le nord. Instant initial: vitesses d'entrainement $u_e$ et absolue $u_a$ égales. Instant final: vitesse d'entrainement $u_e'$ et absolue $u_a'$ augmentée par conservation du moment cinétique $\sigma$.}{fig:coriolisns}
-
-%\subsubsection{Force de Coriolis: mouvement vers l'est} On considère un point M en mouvement par rapport à la surface de la Terre. On rappelle que pour un mouvement circulaire, on doit avoir une accélération normale égale à $V^2/R$ dirigée vers le centre du cercle. On suppose que les forces réelles s'exerçant sur M sont les mêmes que pour un point fixe: $\Sigma \vec F=\v a_e$. La composante de la vitesse relative vers l'est (suivant \v i) est $u$, et $\dot{r}$ dans la direction \vl{HM}. La vitesse absolue de M vers l'est est $u_a=\Omega r+u$. La relation $\v a=\Sigma\v F$ s'écrit dans la direction $\v e_r$: \[-\frac{(\Omega r+u)^2}{r}+\ddot{r}=a_e=-\Omega^2r\] soit en développant: \[\ddot{r}=u\cdot(2\Omega+\frac{u}{r})\] Pour un mouvement relatif vers l'est ($u>0$), la vitesse absolue est supérieure à la vitesse d'entrainement, et la somme des forces est insuffisante pour compenser $V_a^2/r$. La parcelle va donc s'éloigner de l'axe de rotation (figure \ref{fig:coriolisew}). Elle va au contraire se rapprocher pour $u<0$ (mouvement vers l'ouest). Pour trouver l'accélération relative dans la direction sud-nord, on projette $\v e_r$ sur \v j: $\dot{v}=-\ddot{r}\sin \phi$. \[\dot{v}=-u\sin \phi\cdot(2\Omega+\frac{u}{r})\] M est donc dévié vers le sud pour un déplacement relatif vers l'est.
-%\begin{figure}[tbp] \begin{center} \includegraphics[width=12cm]{\figfrancis/coriolis_ew} \end{center} \caption{Déviation d'une parcelle ayant une vitesse relative initiale non nulle vers l'est (gauche) et l'ouest (droite). Un plan parallèle à l'équateur est représenté, vu depuis le pôle nord, l'axe de rotation est au centre. Les vitesse et accélération d'entrainement (égale à la somme des forces) sont en noir, la vitesse absolue en rouge. La trajectoire future de la parcelle est en pointillés.} \label{fig:coriolisew} \end{figure}
+	\input{dynamique_coriolis.tex}
 
 \sk
 \subsection{Forces de pression}
 
-\sk
-Les forces de pression horizontales se calculent comme la force de pression verticale dans la démonstration de l'équilibre hydrostatique. La force de pression s'exerçant sur une surface $S$ est normale à cette surface et vaut $P \, S$. Pour une parcelle d'air de volume $\delta x \, \delta y \, \delta z$ (figure \ref{fig:pres}), la force de pression totale dans la direction ($Ox$) vaut
-\[ F_P^* = P(x) \, \delta y \, \delta z - P(x+\delta x) \, \delta y \, \delta z = - \frac{\partial P}{\partial x} \, \delta x \, \delta y \, \delta z \]
-La force de pression {\em massique} est donc
-\[F_P = \frac{F_P^*}{\rho \delta x \delta y \delta z}=-\frac{1}{\rho}\frac{\partial P}{\partial x}\]
-On peut faire le même calcul sur ($Oy$). Finalement les deux composantes horizontales de la force de pression s'écrivent
-\[\v F_P^H = -\frac{1}{\rho} \, \binom{\frac{\partial P}{\partial x}}{\frac{\partial P}{\partial y}}\] %  =-\frac{1}{\rho}\vl{grad}P\]
-
-\sk
-La force de pression est donc opposée aux variations horizontales de pression données par les dérivées partielles, ce qui lui confère des propriétés importantes.
-\begin{citemize}
-\item La force de pression est dirigée des hautes vers les basses pressions, perpendiculairement aux isobares.
-\item La force de pression est inversement proportionelle à l'écartement des isobares.
-\end{citemize}
-Une région où la pression est particulièrement basse est appelée \voc{dépression}. Une région où la pression est particulièrement élevée est appelée \voc{anticyclone}.
-
-\figside{0.6}{0.2}{\figfrancis/pressure}{Forces de pression (suivant ($Ox$)) s'exerçant sur une parcelle.}{fig:pres}
-
-%\subsubsection{Équivalence avec le géopotentiel}
-%L'équilibre hydrostatique fait que la pression décroit toujours avec
-%l'altitude. Une pression localement élevée doit donc correspondre à une
-%altitude élevée des surfaces isobares.
-%\begin{figure}[htp]
-%  \begin{center}
-%    \includegraphics[width=\figwn]{\figfrancis/pres_geop}
-%  \end{center}
-%  \caption{Équivalence entre écarts de pression et d'altitude: les points A et
-%  B sont à la même altitude, A et C à la même pression. La pression en B est
-%  donc supérieure à celle en B.}
-%  \label{fig:pres_geop}
-%\end{figure}
-%Sur la figure \ref{fig:pres_geop}, la force de pression horizonale dans la
-%direction ($Ox$) est
-%$F_P=-\frac{1}{\rho}\frac{P_B-P_A}{\delta x}$. Or $A$ et $C$ sont à la même
-%pression, on a donc
-%\[F_P=-\frac{1}{\rho}\frac{P_B-P_C}{\delta x}=-\frac{1}{\rho}\frac{P_B-P_C}{\delta z}\cdot\frac{\delta z}{\delta x}\]
-%En utilisant
-%\[\frac{P_B-P_C}{\delta z}=-\frac{\partial P}{\partial z}=\rho g\]
-%on trouve 
-%\[F_P=-g\left(\frac{\delta z}{\delta x}\right)_P\]
-%On aurait une relation équivalente pour la direction ($Oy$), la
-%force de pression horizontale vaut donc finalement
-%\[\v F_P=-\frac{1}{\rho}\vl{grad}_Z(P)=-g\cdot\vl{grad}_P(Z)\]
-%On utilise plutôt le gradient de pression horizontal avec la pression au
-%niveau de la mer, et le gradient isobare de l'altitude $Z$ ou du
-%{\em géopotentiel} $gZ$ dans l'atmosphère libre.
-%Sur une carte d'une surface isobare, les lignes à $Z$ constant sont des
-%{\em isohypses}. La force de pression est donc dirigée des hautes vers les
-%basses valeurs de $Z$, perpendiculairement aux isohypses.
-
-\sk
-Les variations verticales de la pression sont données par l'équilibre hydrostatique comme indiqué dans les chapitres précédents. Cette propriété a deux conséquences importantes pour les variations de pression horizontales donc la force de pression horizontale. 
-\begin{finger}
-\item Une conséquence de cet équilibre est que la pression à une altitude $z$ est proportionelle à la masse de la colonne d'air située au dessus de $z$. Une diminution ou augmentation de cette masse dûe aux mouvements d'air horizontaux change donc la pression en dessous, en particulier à la surface.
-\item D'autre part, même pour une masse d'air totale de la colonne constante, des écarts de température horizontaux peuvent créer des gradients de pression en changeant la répartition verticale de cette masse. L'équation hypsométrique donne l'épaisseur d'une colonne d'air de masse constante entre deux niveaux de pression donnés (voir chapitres précédents)~: la pression décroît plus vite dans une couche d'air froid que dans une couche d'air chaud. Une variation horizontale de température induit donc une force de pression horizontale selon ce principe.
-\end{finger}
-
-%\begin{equation}
-%  g\cdot(Z_2-Z_1)=R<T>\ln{\frac{P_1}{P_2}}
-%  \label{eq:hypso}
-%\end{equation}
-%La différence entre les forces de pressions aux niveaux 1 et 2 sera donc: \[\v F_{P_2}-\v F_{P_1}=-R\cdot\vl{grad}<T>\cdot\ln{\frac{P_1}{P_2}}\]
+	\input{dynamique_pression.tex}
 
 \sk
 \subsection{Équilibres dynamiques}
 
-\sk
-L'équation complète de la quantité de mouvement pour les mouvements atmosphériques, qui résulte de l'application de la seconde loi de Newton, s'écrit~:
-%\begin{equation}
-%\ddf{\v V_r}{t} + 2 \, \v \Omega\wedge\v V_r = \v g + \v F_P + \vl{Fr} 
-\[   
-\ddf{\v V_r}{t} = \v g + \v F_P + \v F_C + \vl{Fr}
-\] %\frac{1}{\rho}\vl{grad}P  \]
-%  \label{eq:qtemvt}
-%\end{equation}
-Le terme~$\vl{Fr}$ représente les forces de friction qui sont négligées sauf lorsqu'on se trouve à proximité de la surface.
-
-\sk
-Tous les termes de l'équation du mouvement n'ont pas la même importance lorsqu'on considère des mouvements atmosphériques de grande échelle. On définit donc des échelles caractéristiques du mouvement étudié. Pour simplifier, on choisit des échelles qui sont des puissances de 10.
-\begin{description}
-\item[longueur] Les échelles de longueur sont $L$ sur l'horizontale, et $H$ sur la verticale. Pour des mouvements qui s'étendent sur la hauteur de la troposphère, $H\sim 10$~km. $L$ peut varier beaucoup, mais l'échelle dite synoptique $L=$1000~km, qui est celle des perturbations des latitudes moyennes, est d'un intérêt particulier. La dernière échelle de longueur est celle du rayon de la Terre~$a$, qui est de l'ordre de 10000~km. 
-\item[vitesse] Les échelles de vitesse horizontale et verticale sont notées $U$ et $W$. On a typiquement $U$=10~m~s$^{-1}$ dans l'atmosphère. Le rapport d'aspect du mouvement impose d'autre part que $W\le UH/L$.
-\item[temps] L'échelle de durée du mouvement est construite à partir de celles de vitesse et de longueur: $T=L/U$. L'autre échelle de temps est celle liée à la rotation de la Terre, qui apparait dans le terme de Coriolis.
-\item[variables thermodynamiques] Les variations des variables thermodynamiques $P,T,\rho$ sur la verticale sont celles des profils moyens donnés en introduction. En un point donné, les variations à l'échelle synoptique $\delta P,\delta T,\delta\rho$ sont de l'ordre de 1\% de la valeur moyenne.
-\end{description}
+	\input{dynamique_equation_fondamentale.tex}
+	\input{dynamique_echelles.tex}
 
 \sk
 \subsubsection{Mouvement vertical}
 
-\sk
-L'ordre de grandeur des termes de l'équation du mouvement 
-%\ref{eq:qtemvt} 
-projetée sur la verticale (dirigée suivant \v k) est indiqué dans la table \ref{tab:vqmouv}. On voit que l'équilibre hydrostatique est vérifié avec une très bonne approximation\footnote{On peut noter qu'on vérifie également l'équilibre hydrostatique entre des anomalies de densité et des anomalies de variations de pression sur la verticale. Les termes $\rho g$ et $\partial P/\partial z$ sont alors cent fois plus faibles que pour l'état moyen, mais toujours supérieurs aux autres termes de l'équation.}. Notamment la composante verticale de la force de Coriolis~$\v F_C$ est négligeable devant~\v g et les forces de pression. Le seul autre terme qui peut devenir important est l'accélération relative~$dw/dt$, lors de mouvements verticaux intenses à petite échelle, comme dans un nuage d'orage ou près de topographie raide.  
-%\begin{equation}
-%  \frac{\partial P}{\partial z}=-\rho  g
-%  \label{eq:hydro}
-%\end{equation}
-
-\begin{table}
-  \centering
-  \begin{tabular}{ccccccc}
-    \hline
-    Équation & $dw/dt$ & $-2\Omega u\cos\phi$ & $-\left(u^2+v^2\right)/a$ & = &
-    $-\rho^{-1}\partial P/\partial z$ & $-g$ \\
-    Échelle & $UW/L$ & $fU$ & $U^2/a$ && $P_0/(\rho_0H)$ & $g$ \\
-    m.s\md & 10$^{-7}$ & 10$^{-3}$ & 10$^{-5}$  && 10 & 10 \\ 
-    \hline
-  \end{tabular}
-  \caption{\emph{Analyse d'échelle de l'équation du mouvement vertical (avec
-  $L$=1000~km et $W$=1~cm.s\mo).}}
-  \label{tab:vqmouv}
-\end{table}
+	\input{dynamique_echelles_vertical.tex}
 
 \sk
 \subsubsection{Mouvement horizontal}
 
-\sk
-Le détail de l'équation horizontale projetée en coordonnées sphériques est donné dans la table \ref{tab:hqmouv} pour $L$=1000~km. Sur les composantes horizontales (\v i, \v j), l'expression de la force de Coriolis se réduit aux contributions des mouvements horizontaux dans la mesure où~$W<<U$ pour des mouvements d'échelle supérieure à 10~km. 
-\[\v F_C = \binom{f \, v}{-f \, u} \qquad \textrm{ou} \qquad \v F_C = -f \, \v k \wedge \v V_h \]
-où $\v V_h = u \v i + v \v j$ est la vitesse horizontale et 
-\[ \boxed{ f = 2 \, \Omega \, \sin \phi } \]
-est appelé \voc{facteur de Coriolis}. Aux moyennes latitudes ($\phi=45$\deg), la valeur de~$f$ est environ~$10^{-4}$~s$^{-1}$. 
-%Les composantes de la force de Coriolis sont \[\v F_C=-2\Omega\left(\begin{array}{c}0\\\cos\phi\\\sin\phi\end{array}\right) \wedge\left(\begin{array}{c}u\\v\\w\end{array}\right) =-2\Omega\left(\begin{array}{c}w\cos\phi-v\sin \phi\\u\sin \phi\\-u\cos \phi\end{array}\right)\]
-%\footnote{Pour des mouvements de
-%type ``chute libre'', la vitesse verticale $w$ domine. On peut alors mettre en
-%évidence une déviation vers l'est, mais qui reste très faible (de l'ordre de
-%1cm pour 80m de chute).} 
-
-\begin{table}
-  \centering
-  \begin{tabular}{cccccccc}
-    \hline
-    Équation-$x$ & $\frac{du}{dt}$ & $-2\Omega v\sin\phi$ & $+2\Omega
-    w\cos\phi$ & $+\frac{uw}{a}$ & $-\frac{uv\tan\phi}{a}$ &=&
-    $-\frac{1}{\rho}\frac{\partial P}{\partial x}$ \\
-    Équation-$y$ & $\frac{dv}{dt}$ & $+2\Omega u\sin\phi$ &&         
-                $+\frac{vw}{a}$ & $+\frac{u^2\tan\phi}{a}$ &=&
-    $-\frac{1}{\rho}\frac{\partial P}{\partial y}$ \\
-    Échelles & $U^2/L$ & $fU$ & $fW$ & $UW/a$ & $U^2/a$ && $\delta P/(\rho L)$
-    \\
-    m.s\md & 10$^{-4}$ & 10$^{-3}$ & 10$^{-6}$ & 10$^{-8}$ & 10$^{-5}$ &&
-    10$^{-3}$ \\
-    \hline
-  \end{tabular}
-  \caption{\emph{Analyse en ordre de grandeur de l'équation du mouvement
-  horizontale.}}
-  \label{tab:hqmouv}
-\end{table}
-
-\sk
-Sur un plan horizontal, les termes restants de l'équation du mouvement sont ainsi:
-%\begin{equation}
-\[  \frac{d\v V_h}{dt}+f\v k\wedge\v V_h=\v F_P  \]
-%  \label{eq:hqmouv}
-%\end{equation}
-avec $\v V_h$ la vitesse horizontale, et $\v F_P$ les forces de pression horizontales massiques. Pour évaluer lequel des deux termes à gauche domine, on définit le \voc{nombre de Rossby} $\mathcal{R}$, rapport entre accélération relative et de Coriolis
-\[ \mathcal{R} = \frac{U^2/L}{f\,U} = \frac{U}{f\,L} \]
-Avec $f$=10$^{-4}$~s$^{-1}$ aux moyennes latitudes et $U$=10~m~s$^{-1}$, on a $\mathcal{R}=0.1$ aux grandes échelles de la circulation terrestre ($L$=1000~km), donc Coriolis domine. Au contraire, à une échelle plus petite de $L$=10~km, $\mathcal{R}=10$ et Coriolis devient négligeable.
+	\input{dynamique_echelles_horizontal.tex}
 
 \sk
 \subsubsection{Equilibre géostrophique}
 
-\sk
-Dans le cas d'un nombre de Rossby petit (donc $L$>1000~km aux moyennes latitudes), on est proche d'un équilibre appelé \voc{équilibre géostrophique} entre les forces de Coriolis et de pression
-\[ \boxed{ \v F_C+\v F_P=\v 0 } \]
-qui s'écrit selon les deux composantes horizontales
-\[ \boxed{ \binom{f \, v}{-f \, u} = \binom{\frac{1}{\rho} \,\frac{\partial P}{\partial x}}{\frac{1}{\rho} \,\frac{\partial P}{\partial y}} } \]
-Le vent qui vérifie exactement cet équilibre est appelé \voc{vent géostrophique}~$\v V_g$. Sous forme vectorielle on a $f\v k\wedge\v V_g=\v F_P$ et sous forme projetée
-\[ \v V_g = \binom{u}{v} = \binom{- \frac{1}{\rho \, f} \, \frac{\partial P}{\partial y}}{\frac{1}{\rho \, f} \, \frac{\partial P}{\partial x}} \]
-%\begin{equation}
-%  \v V_g=\frac{1}{\rho f}\v k\wedge\vl{grad}_z(P)=\frac{g}{f}\v k\wedge\vl{grad}_P(Z)
-%  \label{eq:geost}
-%\end{equation}
-
-\figun{1.1}{0.3}{\figfrancis/geost}{Forces et vent dans l'équilibre géostrophique (hémisphère nord).}{fig:geost}
-
-\sk
-L'équilibre géostrophique peut s'illustrer graphiquement (voir figure~\ref{fig:geost}), formant ce que l'on appelle la loi de Buys-Ballot\footnote{Comme l'indique Buys-Ballot dans son article de 1857~: \emph{Note sur le rapport de l'intensité et de la direction du vent avec les écarts simultanés du baromètre ; [...] Ce n'est pas la girouette, mais c'est le baromètre d'après lequel on doit juger le vent [...] La grande force du vent est annoncée par une grande différence des écarts simultanés du baromètre dans les Pays-Bas [...] Pour un autre pays, on devra étudier les modifications.}}.
-\begin{description}
-\item[Direction] Comme la force de Coriolis est orthogonale au vecteur vitesse, et opposée à la force de pression, le vent géostrophique est lui-même orthogonal aux variations horizontales de pression donc parallèle aux isobares.
-\item[Sens] Dans l'hémisphère nord, les basses pressions sont à gauche du vent, à droite dans l'hémisphère sud.
-\item[Module] La vitesse du vent géostrophique est proportionnelle aux variations horizontales de pression~; autrement dit, plus les isobares sont resserrées, plus le vent est fort.
-\end{description}
-La carte de la pression et du vent en surface (figure \ref{fig:meteofrance}, voir aussi figure \ref{fig:SLPwind}) montre clairement que l'orientation et le module du vent sont dictés par l'équilibre géostrophique. Lorsque la friction est élevée proche de la surface, l'équilibre géostrophique est perturbé par la présence de la force de friction, ce qui a pour conséquence de donner un vent légèrement dévié vers l'intérieur des dépressions et vers l'extérieur des anticyclones. Quand le nombre de Rossby est grand (donc à petite échelle), l'équilibre géostrophique ne s'applique plus et le vent est accéléré des hautes vers les basses pressions. 
-%% PARLER DU LAVABO
-
-\figside
-%{0.85}{0.6}
-{0.65}{0.4}
-{decouverte/cours_dyn/carte_france.jpg}{Carte météorologique Météo-France construite à partir des données relevées dans les stations météorologiques indiquées par des points. Les lignes isobares montrent qu'une forte dépression se situe au nord du Royaumu-Uni. Les \ofg{drapeaux} accolés aux points d'observations représentent les vents mesurés à la surface (le nombre de barres indique la force du vent). La direction du vent part du drapeau vers le point considéré. On remarque que le vent est approximativement parallèle aux isobares et tourne dans le sens inverse des aiguilles d'une montre autour de la dépression. Ce comportement est typique de celui déduit pour l'hémisphère Nord par l'équilibre géostrophique entre forces de pression et force de Coriolis (voir figure~\ref{fig:geost}). Le vent est légèrement rentrant vers l'intérieur de la dépression, sous l'influence de la force de friction qui vient d'ajouter aux deux forces précitées.}{fig:meteofrance}
+	\input{dynamique_equilibre_geostrophique.tex}
 
 \mk
 \section{Circulation atmosphérique~: généralités}

@@ -1,0 +1,64 @@
+\sk
+Les forces de pression horizontales se calculent comme la force de pression verticale dans la démonstration de l'équilibre hydrostatique. La force de pression s'exerçant sur une surface $S$ est normale à cette surface et vaut $P \, S$. Pour une parcelle d'air de volume $\delta x \, \delta y \, \delta z$ (figure \ref{fig:pres}), la force de pression totale dans la direction ($Ox$) vaut
+\[ F_P^* = P(x) \, \delta y \, \delta z - P(x+\delta x) \, \delta y \, \delta z = - \frac{\partial P}{\partial x} \, \delta x \, \delta y \, \delta z \]
+La force de pression {\em massique} est donc
+\[F_P = \frac{F_P^*}{\rho \delta x \delta y \delta z}=-\frac{1}{\rho}\frac{\partial P}{\partial x}\]
+On peut faire le même calcul sur ($Oy$). Finalement les deux composantes horizontales de la force de pression s'écrivent
+\[\v F_P^H = -\frac{1}{\rho} \, \binom{\frac{\partial P}{\partial x}}{\frac{\partial P}{\partial y}}\] %  =-\frac{1}{\rho}\vl{grad}P\]
+
+\sk
+La force de pression est donc opposée aux variations horizontales de pression données par les dérivées partielles, ce qui lui confère des propriétés importantes.
+\begin{citemize}
+\item La force de pression est dirigée des hautes vers les basses pressions, perpendiculairement aux isobares.
+\item La force de pression est inversement proportionelle à l'écartement des isobares.
+\end{citemize}
+Une région où la pression est particulièrement basse est appelée \voc{dépression}. Une région où la pression est particulièrement élevée est appelée \voc{anticyclone}.
+
+\figside{0.6}{0.2}{\figfrancis/pressure}{Forces de pression (suivant ($Ox$)) s'exerçant sur une parcelle.}{fig:pres}
+
+%\subsubsection{Équivalence avec le géopotentiel}
+%L'équilibre hydrostatique fait que la pression décroit toujours avec
+%l'altitude. Une pression localement élevée doit donc correspondre à une
+%altitude élevée des surfaces isobares.
+%\begin{figure}[htp]
+%  \begin{center}
+%    \includegraphics[width=\figwn]{\figfrancis/pres_geop}
+%  \end{center}
+%  \caption{Équivalence entre écarts de pression et d'altitude: les points A et
+%  B sont à la même altitude, A et C à la même pression. La pression en B est
+%  donc supérieure à celle en B.}
+%  \label{fig:pres_geop}
+%\end{figure}
+%Sur la figure \ref{fig:pres_geop}, la force de pression horizonale dans la
+%direction ($Ox$) est
+%$F_P=-\frac{1}{\rho}\frac{P_B-P_A}{\delta x}$. Or $A$ et $C$ sont à la même
+%pression, on a donc
+%\[F_P=-\frac{1}{\rho}\frac{P_B-P_C}{\delta x}=-\frac{1}{\rho}\frac{P_B-P_C}{\delta z}\cdot\frac{\delta z}{\delta x}\]
+%En utilisant
+%\[\frac{P_B-P_C}{\delta z}=-\frac{\partial P}{\partial z}=\rho g\]
+%on trouve 
+%\[F_P=-g\left(\frac{\delta z}{\delta x}\right)_P\]
+%On aurait une relation équivalente pour la direction ($Oy$), la
+%force de pression horizontale vaut donc finalement
+%\[\v F_P=-\frac{1}{\rho}\vl{grad}_Z(P)=-g\cdot\vl{grad}_P(Z)\]
+%On utilise plutôt le gradient de pression horizontal avec la pression au
+%niveau de la mer, et le gradient isobare de l'altitude $Z$ ou du
+%{\em géopotentiel} $gZ$ dans l'atmosphère libre.
+%Sur une carte d'une surface isobare, les lignes à $Z$ constant sont des
+%{\em isohypses}. La force de pression est donc dirigée des hautes vers les
+%basses valeurs de $Z$, perpendiculairement aux isohypses.
+
+\sk
+Les variations verticales de la pression sont données par l'équilibre hydrostatique comme indiqué dans les chapitres précédents. Cette propriété a deux conséquences importantes pour les variations de pression horizontales donc la force de pression horizontale. 
+\begin{finger}
+\item Une conséquence de cet équilibre est que la pression à une altitude $z$ est proportionelle à la masse de la colonne d'air située au dessus de $z$. Une diminution ou augmentation de cette masse dûe aux mouvements d'air horizontaux change donc la pression en dessous, en particulier à la surface.
+\item D'autre part, même pour une masse d'air totale de la colonne constante, des écarts de température horizontaux peuvent créer des gradients de pression en changeant la répartition verticale de cette masse. L'équation hypsométrique donne l'épaisseur d'une colonne d'air de masse constante entre deux niveaux de pression donnés (voir chapitres précédents)~: la pression décroît plus vite dans une couche d'air froid que dans une couche d'air chaud. Une variation horizontale de température induit donc une force de pression horizontale selon ce principe.
+\end{finger}
+
+%\begin{equation}
+%  g\cdot(Z_2-Z_1)=R<T>\ln{\frac{P_1}{P_2}}
+%  \label{eq:hypso}
+%\end{equation}
+%La différence entre les forces de pressions aux niveaux 1 et 2 sera donc: \[\v F_{P_2}-\v F_{P_1}=-R\cdot\vl{grad}<T>\cdot\ln{\frac{P_1}{P_2}}\]
+
+

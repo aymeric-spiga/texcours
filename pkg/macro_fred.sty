@@ -1,0 +1,105 @@
+\def\derd#1#2{\frac{d#1}{d#2}}
+\def\fup{F^{\uparrow}}
+\def\fdn{F^{\downarrow}}
+
+\def\localdir{..}
+
+%termes lations
+%\def\m#1{^{-#1}}
+\def\ie{{\em i.~e.}}
+\def\etal{{\em et~al.}}
+\def\apriori{{\em a~priori}}
+\def\apost{{\em a~posteriori}}
+\def\afort{{\em a~fortiori}}
+\def\etc{{\em etc.}}
+\def\insitu{{\em in--situ}}
+\def\adoc{{\em ad~hoc}}
+
+% definitions pour les equtions dynamiques
+
+% definitions pour les formules mathematiques
+\newcommand{\dep}[1]{\left( #1 \right) }
+\newcommand{\depb}[1]{\left[ #1 \right] }
+\newcommand{\depc}[1]{\left\{ #1 \right\} }
+\newcommand{\deriv}[1]{\frac{\partial }{\partial #1} }
+\def\abs#1{\left| #1 \right|}
+%\renewcommand{\-}[1]{$^{-#1}$}
+
+% definitions pour la dynamique
+\newcommand{\dt}[1]{\frac{\partial #1}{\partial t}}
+\newcommand{\dsig}[1]{\deriv{\sigma} \dep{#1} }
+\newcommand{\diverg}[1]{\vec{\nabla}.\dep{#1 \vec{V}} }
+\newcommand{\der}[2]{\frac{\partial #1 }{\partial #2} }
+\def\ps{p_s}
+\def\t{\theta}
+\def\w{\dot{\sigma}}
+\def\cp{C_p}
+\def\p0{p_0}
+\def\rcp{\kappa}
+\def\s{ {\dep{\frac{p}{\p0}}}^{\rcp} }
+\newcommand{\adv}[1]{\diverg{\ps #1} + \dsig{\ps #1 \dot{\sigma}} }
+
+% definitions pour le transfert radiatif
+\def\dnw{^{\downarrow}}
+\def\co{\$CO_2\$}
+\def\dnu{{\Delta \nu}}
+\def\upw{^{\uparrow}}
+\def\dnw{^{\downarrow}}
+\def\co2band{bande \`a $15\mu m$ du $CO_2$}
+\def\voigt{Vo\"{\i}gt}
+\def\al{\alpha_L}
+\def\ad{\alpha_D}
+\def\aV{\alpha_V}
+\def\micr{$\mu$m}
+
+% quelques macros specifiques
+\def\acomp#1{{\Large #1}}
+\def\myinput#1{\input{\localdir/#1}}
+\def\resol#1#2#3{ {\em #1 longitudes $\times$
+#2 latitudes $\times$ #3  niveaux verticaux}}
+\def\these{/d2/hourdin/tex/these}
+\def\N{20}
+\def\mparam{mod\`ele \`a \N\ param\`etres}
+\def\LMD{Laboratoire de M\'et\'eorologie Dynamique}
+\def\ESA{Agence Spatiale Europ\'eenne}
+
+% cross-references
+\def\sc#1{Section~\ref{sc:#1}}
+\def\an#1{Annexe~\ref{an:#1}}
+\def\ch#1{Chapitre~\ref{ch:#1}}
+\def\fig#1{Fig.~\ref{fg:#1}}
+\def\fg#1{Fig.~\ref{fg:#1}}
+\def\figs#1{Figs.~\ref{fg:#1}}
+\def\eq#1{Eq.~\ref{eq:#1}}
+\def\eqs#1{Eqs.~\ref{eq:#1}}
+\def\tb#1{Table~\ref{tb:#1}}
+\newcommand{\av}[2]{{\overline{#1}}^{ #2 }}
+\newcommand{\avg}[1]{\left< #1 \right>}
+\def\cd{C_D}
+\def\dx{\delta_X}
+\def\dy{\delta_Y}
+\def\dz{\delta_Z}
+\def\div{\mbox{div}}
+\def\dix#1{$10^{#1}$}
+\def\ten#1{$\times 10^{#1}$}  %% seb
+\def\derd#1#2{\dfrac{d#1}{d#2}}
+\renewcommand{\der}[2]{\dfrac{\partial #1 }{\partial #2} }
+
+\def\fric{\vec{Fr}}
+
+\def\AAA#1{\textcolor{red}{$#1$}}
+\def\BBB#1{\textcolor{blue}{$#1$}}
+\def\CCC#1{\textcolor{brown}{$#1$}}
+%\def\DDD#1{\textcolor{orange}{$#1$}}
+\def\DDD#1{\textcolor{green!75!black}{$#1$}}
+\def\ZZZ#1{$#1$}
+
+\def\fcoriolis{2\Omega\sin\phi}
+
+\def\delx{\delta x}
+\def\dely{\delta y}
+\def\delz{\delta z}
+
+%\def\mred{\textcolor{red}{$\bullet$}}
+%\def\mblue{\textcolor{blue}{$\bullet$}}
+%\def\mgreen{\textcolor{green}{$\bullet$}}

@@ -1,0 +1,44 @@
+\sk
+Le détail de l'équation horizontale projetée en coordonnées sphériques est donné dans la table \ref{tab:hqmouv} pour $L$=1000~km. Sur les composantes horizontales (\v i, \v j), l'expression de la force de Coriolis se réduit aux contributions des mouvements horizontaux dans la mesure où~$W<<U$ pour des mouvements d'échelle supérieure à 10~km. 
+\[\v F_C = \binom{f \, v}{-f \, u} \qquad \textrm{ou} \qquad \v F_C = -f \, \v k \wedge \v V_h \]
+où $\v V_h = u \v i + v \v j$ est la vitesse horizontale et 
+\[ \boxed{ f = 2 \, \Omega \, \sin \phi } \]
+est appelé \voc{facteur de Coriolis}. Aux moyennes latitudes ($\phi=45$\deg), la valeur de~$f$ est environ~$10^{-4}$~s$^{-1}$. 
+%Les composantes de la force de Coriolis sont \[\v F_C=-2\Omega\left(\begin{array}{c}0\\\cos\phi\\\sin\phi\end{array}\right) \wedge\left(\begin{array}{c}u\\v\\w\end{array}\right) =-2\Omega\left(\begin{array}{c}w\cos\phi-v\sin \phi\\u\sin \phi\\-u\cos \phi\end{array}\right)\]
+%\footnote{Pour des mouvements de
+%type ``chute libre'', la vitesse verticale $w$ domine. On peut alors mettre en
+%évidence une déviation vers l'est, mais qui reste très faible (de l'ordre de
+%1cm pour 80m de chute).} 
+
+\begin{table}
+  \centering
+  \begin{tabular}{cccccccc}
+    \hline
+    Équation-$x$ & $\frac{du}{dt}$ & $-2\Omega v\sin\phi$ & $+2\Omega
+    w\cos\phi$ & $+\frac{uw}{a}$ & $-\frac{uv\tan\phi}{a}$ &=&
+    $-\frac{1}{\rho}\frac{\partial P}{\partial x}$ \\
+    Équation-$y$ & $\frac{dv}{dt}$ & $+2\Omega u\sin\phi$ &&         
+                $+\frac{vw}{a}$ & $+\frac{u^2\tan\phi}{a}$ &=&
+    $-\frac{1}{\rho}\frac{\partial P}{\partial y}$ \\
+    Échelles & $U^2/L$ & $fU$ & $fW$ & $UW/a$ & $U^2/a$ && $\delta P/(\rho L)$
+    \\
+    m.s\md & 10$^{-4}$ & 10$^{-3}$ & 10$^{-6}$ & 10$^{-8}$ & 10$^{-5}$ &&
+    10$^{-3}$ \\
+    \hline
+  \end{tabular}
+  \caption{\emph{Analyse en ordre de grandeur de l'équation du mouvement
+  horizontale.}}
+  \label{tab:hqmouv}
+\end{table}
+
+\sk
+Sur un plan horizontal, les termes restants de l'équation du mouvement sont ainsi:
+%\begin{equation}
+\[  \frac{d\v V_h}{dt}+f\v k\wedge\v V_h=\v F_P  \]
+%  \label{eq:hqmouv}
+%\end{equation}
+avec $\v V_h$ la vitesse horizontale, et $\v F_P$ les forces de pression horizontales massiques. Pour évaluer lequel des deux termes à gauche domine, on définit le \voc{nombre de Rossby} $\mathcal{R}$, rapport entre accélération relative et de Coriolis
+\[ \mathcal{R} = \frac{U^2/L}{f\,U} = \frac{U}{f\,L} \]
+Avec $f$=10$^{-4}$~s$^{-1}$ aux moyennes latitudes et $U$=10~m~s$^{-1}$, on a $\mathcal{R}=0.1$ aux grandes échelles de la circulation terrestre ($L$=1000~km), donc Coriolis domine. Au contraire, à une échelle plus petite de $L$=10~km, $\mathcal{R}=10$ et Coriolis devient négligeable.
+
+
