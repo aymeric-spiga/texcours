@@ -1,0 +1,34 @@
+\sk
+On cherche à relier simplement un équilibre entre température et vent. Si on suppose l'équilibre du vent gradient vérifié, il donne déjà une relation entre champ de vent et champ de pression, donc seules quelques transformations de cette relation sont nécessaires. On note~$x$ la coordonnée sur l'axe est-ouest (axe zonal), $y$ la coordonnée sur l'axe sud-nord (axe méridional), $P$ la pression atmosphérique. Cette dernière est utilisée comme coordonnée verticale en vertu de l'équilibre hydrostatique.
+
+\sk
+On définit le géopotentiel~$\Phi$ comme une fonction des coordonnées~$x$, $y$ et~$P$ qui s'écrit simplement
+\[ \Phi(x,y,P)=g \, z(x,y,P) \] 
+\noindent avec~$z$ l'altitude (également fonction des coordonnées~$x$, $y$ et~$P$) et~$g$ l'accélération de la gravité. Le vent géostrophique zonal~$u$ s'exprime comme une fonction de~$x$, $y$, $P$, tout comme la température atmosphérique~$T$ et la masse volumiquede l'air~$\rho$. Les dérivées partielles (notées~$\partial$) de ces fonctions de trois variables se comprennent comme les dérivées selon la coordonnée indiquée avec les deux autres fixées. Par exemple $\frac{\partial \Phi}{\partial y}$ est la dérivée du géopotentiel~$\Phi$ uniquement selon la coordonnée~$y$, en considérant que~$x$ et~$P$ ne varient pas. 
+%On rappelle que les dérivées partielles commutent, c'est-à-dire par exemple 
+%\[ \frac{\partial}{\partial P} \frac{\partial \Phi}{\partial y} = \frac{\partial}{\partial y} \frac{\partial \Phi}{\partial P} \]
+
+\sk
+On utilise tout d'abord l'équilibre hydrostatique pour exprimer très simplement la dérivée du géopotentiel~$\Phi$ en fonction de la coordonnée verticale~$P$
+\[ \frac{\partial \Phi}{\partial P} = g \, \frac{\partial z}{\partial P} = -\f{1}{\rho} \] 
+\noindent ce qui permet de relier simplement les variations verticales de géopotentiel (sur les lignes isobares) au champ de masse.
+On utilise directement ce résultat, combiné à une propriété de changement de coordonnée dans les dérivées partielles, pour exprimer très simplement la force de pression comme la dérivée spatiale du géopotentiel
+\[ \frac{\partial \Phi}{\partial y} = \frac{\partial \Phi}{\partial P} \, \frac{\partial P}{\partial y} = -\frac{1}{\rho} \, \frac{\partial P}{\partial y} \]
+
+\sk
+Munis de cette expression simple de la force de pression, on peut alors modifier l'équilibre du vent gradient
+\[ \dfrac{u^2\tan\phi}{a} + \fcoriolis u = -\dfrac{1}{\rho}\der{p}{y} = \frac{\partial \Phi}{\partial y} \]
+\noindent que l'on peut ensuite dériver par rapport à la coordonnée verticale pression~$P$ 
+\[ \left[ 2 \, u \, \dfrac{\tan\phi}{a} + \fcoriolis u \right] \der{u}{P} = \der{~}{P} \left[ \frac{\partial \Phi}{\partial y} \right] \]
+\noindent afin de pouvoir commuter les dérivées partielles puis utiliser la version de l'équilibre hydrostatique formulée ci-dessus avec le géopotentiel~$\Phi$
+\[ \left[ 2 \, u \, \dfrac{\tan\phi}{a} + \fcoriolis u \right] \der{u}{P} = \der{~}{y} \left[ \frac{\partial \Phi}{\partial P} \right] = \der{~}{y} \left[ \frac{1}{\rho} \right] \]
+\noindent Reste à employer l'équation d'état des gaz parfaits~$P=\rho\,R\,T$ pour faire apparaître la température
+\[ \left[ 2 \, u \, \dfrac{\tan\phi}{a} + \fcoriolis u \right] \der{u}{P} = R \, \frac{\partial}{\partial y} \left[ \frac{T}{P} \right] 
+\qquad \Rightarrow \qquad
+\boxed{ \left[ \textcolor{brown}{2\,u\,\frac{\tan\phi}{a}} + \textcolor{red}{\fcoriolis u} \right] \der{u}{P} = \frac{R}{P} \, \frac{\partial T}{\partial y} }
+\]
+\noindent L'expression encadrée de l'équilibre du vent thermique vient de la constatation finale que l'on peut sortir le terme en pression à l'intérieur de la dérivée à droite puisque~$P$ est une coordonnée supposée fixe par définition de la dérivée partielle suivant~$y$. Les termes sont colorés en fonction de l'équilibre dans lequel on se trouve : \textcolor{brown}{équilibre cyclostrophique} (exemple sur Vénus) ou \textcolor{red}{équilibre géostrophique} (exemple sur Mars ou la Terre). Dans le cas où la situation est ambigüe, il faut conserver les deux termes.
+
+\sk
+L'\voc{équilibre du vent thermique} exprime un lien diagnostique entre les variations verticales du vent zonal et les variations méridiennes de la température. Sur des planètes où la mesure de température est aisée à mesurer (e.g. par télédétection infrarouge) par rapport au vent, cet équilibre est employé pour calculer un champ de vent (appelé vent thermique) associé à un champ de température. Invariablement, l'équilibre du vent thermique peut permettre de déduire les variations de température associées à un vent donné. Il s'agit d'un équilibre entre deux champs~température$\leftrightarrow$vent, sans relation de causalité température$\rightarrow$vent ou vent$\rightarrow$température.
+

@@ -1,0 +1,48 @@
+\sk
+Vitesse dans le référentiel tournant 
+\[
+\vec{U_r} = u\,\vec{i} + v\,\vec{j} + w\,\vec{k}
+\]
+\noindent Accélération (dérivée lagrangienne)
+\[
+\gamma_r = \derd{\vec{U_r}}{t}=\derd{u}{t}\,\vec{i}+\derd{v}{t}\,\vec{j}+\derd{w}{t}\,\vec{k} +u\,\derd{\vec{i}}{t}+v\,\derd{\vec{j}}{t}+w\,\derd{\vec{k}}{t}
+\]
+
+\figsup{0.4}{0.2}{decouverte/cours_dyn/didt1.png}{decouverte/cours_dyn/didt2.png}{Axe méridional, axe zonal}{fig:spher}
+
+\sk
+Décomposition sur les trois axes (zonal, méridien et vertical)
+\[
+\derd{\vec{i}}{t} = \left[ \derd{\vec{i}}{t} \right]_u + \left[ \derd{\vec{i}}{t} \right]_v + \left[ \derd{\vec{i}}{t} \right]_w
+\]
+\noindent Axe vertical
+\[
+\left[ \derd{\vec{i}}{t} \right]_w = \left[ \derd{\vec{j}}{t} \right]_w = \left[ \derd{\vec{k}}{t} \right]_w = \vec{0}
+\]
+\noindent Axe méridien
+\[
+\left[ \derd{\vec{i}}{t} \right]_v = \vec{0}
+\]
+\[
+\left[ \derd{\vec{j}}{t} \right]_v = - \derd{\phi}{t} \, \vec{k} = - \dfrac{v}{a} \, \vec{k}
+\]
+\noindent Axe zonal
+\[
+\vec{j} = -\sin\phi \, \vec{m} + \cos\phi \, \vec{n} \qquad \vec{k} =  \cos\phi \, \vec{m} + \sin\phi \, \vec{n}
+\]
+\[
+\vec{m} = -\sin\phi \, \vec{j} + \cos\phi \, \vec{k}
+\]
+\[
+\left[ \derd{\vec{n}}{t} \right]_u = \vec{0} \qquad \left[ \derd{\vec{m}}{t} \right]_u = \derd{\lambda}{t} \, \vec{i}
+\]
+\[
+\left[ \derd{\vec{j}}{t} \right]_u = -\sin\phi \, \left[ \derd{\lambda}{t} \, \vec{i} \right] = \dfrac{-u}{a} \, \tan\phi \, \vec{i}
+\]
+\[
+\left[ \derd{\vec{k}}{t} \right]_u =  \cos\phi \, \left[ \derd{\lambda}{t} \, \vec{i} \right] = \dfrac{u}{a} \, \vec{i}
+\]
+\[
+\left[ \derd{\vec{i}}{t} \right]_u = - \derd{\lambda}{t} \, \vec{m} = \dfrac{u}{a} \tan\phi \, \vec{j} - \dfrac{u}{a} \,\vec{k}
+\]
+

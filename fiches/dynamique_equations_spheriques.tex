@@ -1,3 +1,7 @@
+\sk
+L'équation fondamentale de la dynamique des fluides géophysiques 
+en projection sur les coordonnées sphériques avec l'approximation de couche mince
+s'écrit finalement
 \begin{center}
 \begin{tabular}{ccccccccc}
 %%%%%%
@@ -14,20 +18,23 @@
 \end{tabular}
 \end{center}
 
-\begin{finger}
-\item \DDD{\bullet} ~ Equilibre hydrostatique
-\item \DDD{\bullet}\AAA{\bullet} ~ Equilibre g\'eostrophique
-\item \DDD{\bullet}\CCC{\bullet} ~ Equilibre cyclostrophique
-\item \DDD{\bullet}\AAA{\bullet}\CCC{\bullet} ~ Equilibre du vent gradient
-\item \DDD{\bullet}\AAA{\bullet}\BBB{\bullet} ~ Modèle quasi-g\'eostrophique
-\item \DDD{\bullet}\AAA{\bullet}\BBB{\bullet}\CCC{\bullet} ~ Equations primitives
-\end{finger}
-
 \sk
-Nombre de Rossby et validité de l'équilibre géostrophique
+Suivant les termes dominants, on peut définir un certain nombre d'équilibres (stationnaires) ou de modèles / équations (pouvant servir à la prédiction de l'écoulement au cours du temps):
+\begin{description}
+\item{Equilibre hydrostatique} \DDD{\bullet} 
+\item{Equilibre g\'eostrophique} \DDD{\bullet}\AAA{\bullet}
+\item{Equilibre cyclostrophique} \DDD{\bullet}\CCC{\bullet}
+\item{Equilibre du vent gradient} \DDD{\bullet}\AAA{\bullet}\CCC{\bullet}
+\item{Modèle quasi-g\'eostrophique} \DDD{\bullet}\AAA{\bullet}\BBB{\bullet}
+\item{Equations primitives} \DDD{\bullet}\AAA{\bullet}\BBB{\bullet}\CCC{\bullet}
+\end{description}
+
+\mk
+\paragraph{Nombre de Rossby} Le nombre de Rossby permet d'évaluer l'importance relative de l'accélération de Coriolis, impulsée par la rotation de la planète, par rapport aux autres mouvements de rotation. Il permet de savoir si l'on se trouve dans le domaine de validité de l'équilibre géostrophique ou de l'équilibre cyclostrophique
 \[
-R_o=\f{\text{accélération horizontale}}{\text{accélération de Coriolis}}\qquad\boxed{R_o=\frac{U}{L\,\Omega}}
+R_o=\f{\text{accélération horizontale (inertielle + sphéricité)}}{\text{accélération de Coriolis}}\qquad\boxed{R_o=\frac{U}{L\,\Omega}}
 \]
+\begin{table}[h!]
 \begin{tabular}{cccc}
 $R_o \ll 1$ & \DDD{\bullet}\AAA{\bullet} & Equilibre g\'eostrophique & [Terre, Mars]\\
 $R_o \gg 1$ & \DDD{\bullet}\CCC{\bullet} & Equilibre cyclostrophique & [Vénus, Titan]\\
@@ -36,6 +43,7 @@ $R_o$~tous & \DDD{\bullet}\AAA{\bullet}\CCC{\bullet} & Equilibre du vent gradien
 $R_o \ll 1$ & \DDD{\bullet}\AAA{\bullet}\BBB{\bullet} & Modèle quasi-g\'eostrophique & [Terre, Mars]\\
 $R_o$~tous & \DDD{\bullet}\AAA{\bullet}\BBB{\bullet}\CCC{\bullet} & Equations primitives  & [Toutes]
 \end{tabular}
+\end{table}
 
-\sk
-Equilibre géostrophique: développement des équations du mouvement à l'ordre 1 en le nombre de Rossby, décrit un écoulement bidimensionnel, stationnaire et non divergent. A un ordre supérieur en $\textrm{Ro}$, l'évolution lente de la fonction de courant géostrophique peut être diagnostiquée par un nouvel équilibre dit quasi-géostrophique (modèle QG). Couplé à l'équation de conservation de la vorticité potentielle de Rossby, donne le modèle de Charney (premiers modèles de prévision numérique du temps).
+\mk
+Sur les planètes à rotation rapide, l'équilibre géostrophique est le développement des équations du mouvement à l'ordre 1 en le nombre de Rossby, qui décrit un écoulement bidimensionnel, stationnaire et non divergent. A un ordre supérieur en $\textrm{Ro}$, l'évolution lente de la fonction de courant géostrophique peut être diagnostiquée par un nouvel équilibre dit quasi-géostrophique (QG). Couplé à l'équation de conservation de la vorticité potentielle de Rossby, le modèle approché QG a permis à Charney dans les années 50 de faire fonctionner sur un ordinateur le premier modèle de prévision numérique du temps.
