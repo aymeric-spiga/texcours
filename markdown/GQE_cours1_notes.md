@@ -113,11 +113,48 @@ Astéroïdes remarquables
 
 ### Comètes
 
+* comète = glaces + poussière
+<!--
+* queue de poussière vs. queue de gaz ionisée
+* réservoir : ceinture de Kuiper (30 UA) jusque nuage de Oort (10000 UA)
+* 67P : périhélie 1.24 UA, aphélie 5.68 UA, période 6.4 a, excentricité 0.6
+* 1986 Giotto+Vega : plongé dans la comète de halley (matière organique Kissel et al. Nature 1986)
+* 2004 Stardust : collecte de grains comète
+* 2005 Deep Impact : impact de Tempel 1
+* Whipple 1950 : une boule de neige sale (vs) Greenberg 1982 : un bloc de grains interstellaires
+* un tout petit peu de matière carbonée suffit à rendre une comète sombre
+-->
+* pourquoi les étudier ?
+    1. archives du ciel (formation conjointe au système solaire)
+    2. source de l'eau et de la matière organique sur la Terre primitive ?
 * 67P Churyumov-Gerassimenko : l'épopée de Rosetta et Philae
-* Suivi de l'activité de la comète par Rosetta
-* Forme en deux lobes : collision à faible vitesse de deux comètes
+<!--
+* Rapport D/H des comètes du nuage d'Oort : rapport D/H = 2 fois la Terre
+pour celles de la ceinture de Kuiper : celui de la Terre !
+mais... Tchouri... 3 fois le rapport D/H de la Terre
+* Rosetta (arrivée 09/2014) et Philae (landing 11/2014, 100 kg 1m par 1m)
+-->
+* Suivi de l'activité de la comète par Rosetta (passage au périhélie été 2015)
+* Forme en deux lobes : collision à faible vitesse de deux comètes (cf. strates et terrasses)
+* Surface très accidentée, chaotique (Thomas et al. Science 2015)
+    - terrains lisses (souvent poussiéreux)
+    - blocs de roches
+    - falaise Hathor, puits, fractures
+    - très peu de glace en surface (car couverte de poussière), quelques plaques
 * Détection d'organiques à la surface de la comète
-* Atterrissage(s) de Philae sur un corps de faible gravité et très poreux
+* Atterrissage(s) de Philae sur un corps de faible gravité et très poreux (pas plus dense que la neige, porosité 80%)
+<!--
+* Résultats de COSAC composés organiques, précurseurs de molécules importantes pour la vie Goesmann et al. Science 2015
+* Détection (surprenante !) d'oxygène moléculaire par spectroscopie de masse ROSINA sur Rosetta (Bieler et al. Nature 2015)
+* températures très variables de 20K à 200K en fonction de l'insolation
+* images de la caméra ROLIS de Philae pour la texture de la surface lors de l'atterrissage (voir aussi NAVCAM)
+* atteri sur Abydos (terrains très durs) plutôt que sur Agilkia (landing site prévu)
+* 3 ou 4 contacts et collision suivis par magnétomètre ROMAP cf. Auster et al. Science 2015
+* ROMAP: comète très peu magnétisée, forces magnétiques n'ont pas joué de rôle dans l'accrétion de matière lors de la formation du système solaire ?
+* CONSERT: la tête de la comète est bien creuse Kofman et al. Science 2015
+* CIVA: surface fracturée: choc thermiques, variations d'albédo Bibring et al. Science 2015
+* contacts très courts au début de l'été 2015, mais réveils ne permettent pas d'études scientifiques
+-->
 
 ## Corps sans atmosphères
 
