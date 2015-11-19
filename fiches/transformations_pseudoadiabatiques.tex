@@ -1,0 +1,19 @@
+\sk
+On considère tout d'abord une parcelle d'air (contenant de la vapeur d'eau) en évolution isobare. Le premier principe appliqué à la parcelle indique donc
+\[ \dd T = \frac{1}{C_P} \, \delta q \]
+Lors de l'évaporation, les molécules d'eau liquide voient les liaisons hydrogène avec leurs proches voisins être brisées. Le passage de l'eau de la phase liquide à la phase vapeur consomme donc de l'énergie\footnote{On peut s'en convaincre en notant la sensation de froid immédiate que provoque la sortie d'un bain à cause de l'évaporation de l'eau liquide sur le corps mouillé~; ou en se souvenant que lorsque l'on souffle sur la soupe pour la refroidir, c'est précisément pour favoriser l'évaporation et la refroidir efficacement.}~: pour l'air qui compose la parcelle, $\delta q < 0$ et il y a refroidissement. 
+A l'inverse, lors de la condensation, les molécules d'eau sous forme gazeuse créent des liaisons hydrogène avec les molécules d'eau de la phase liquide pour atteindre un état énergétique plus faible. Le passage de l'eau de la phase vapeur à la phase liquide libère donc de l'énergie~: pour l'air qui compose la parcelle, $\delta q > 0$ et il y a chauffage.
+
+\sk
+L'énergie~$\delta q$ consommée ou libérée par les changements d'état s'appelle~\voc{chaleur latente}, on la note~$\delta q\e{latent}$. Si une masse de vapeur~$\dd m\e{vapeur d'eau}$ est condensée ou évaporée, on a
+\[ \delta q\e{latent} = \frac{- L \, \dd m\e{vapeur d'eau}}{m\e{air sec}} \qquad \Rightarrow \qquad \boxed{ \delta q\e{latent} = - L \, \dd r } \]
+où~$L$ est la chaleur latente massique en~J~kg$^{-1}$. La formule ci-dessus comporte un signe négatif. La quantité~$\delta q\e{latent}$ est positive lorsqu'il y a condensation (le rapport de mélange en vapeur d'eau diminue $\dd r < 0$) et négative lorsqu'il y a évaporation (le rapport de mélange en vapeur d'eau augmente $\dd r > 0$).
+
+\sk
+On considère désormais une parcelle d'air en évolution adiabatique, à l'exception des échanges de chaleur latente~: $\delta q = \delta q\e{latent}$. On appelle une telle transformation \voc{pseudo-adiabatique} ou encore \voc{adiabatique saturée}. On fait l'approximation que la chaleur latente consommée ou dégagée est seulement échangée avec l'air sec~:
+\begin{citemize}
+\item La chaleur latente consommée/dégagée n'est pas utilisée pour refroidir/chauffer les gouttes d'eau présentes.
+\item On néglige les pertes de masse par précipitation~: la masse d'air sec considérée est constante.
+\end{citemize}
+Pour une telle transformation, la variation de température s'écrit ainsi
+\[ \dd T = \frac{R}{C_P} \, \frac{T}{P} \, \dd P - \frac{L}{C_P} \, \dd r \]

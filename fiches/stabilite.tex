@@ -1,0 +1,30 @@
+\sk
+Ces considérations permettent de définir le concept de stabilité et instabilité verticale de l'atmosphère.
+On considère l'atmosphère à un endroit donné de la planète, à une saison donnée, à une heure donnée de la journée.
+On suppose que la température de l'environnement varie linéairement avec l'altitude
+\[ \ddf{T\e{e}}{z} = \Gamma\e{env} \]
+A une altitude~$z_0$ proche de la surface, la température de l'environnement est~$T\e{e}(z_0)=T_0$.
+
+\sk
+On considère une parcelle initialement à l'altitude~$z_0$ dont la température initiale~$T\e{p}(z_0)$ est également~$T_0$. On suppose que la parcelle subit une ascension verticale d'amplitude~$\delta z > 0$. Le profil de température suivi par la parcelle lors de son ascension est
+\[ \ddf{T\e{p}}{z} = \Gamma\e{parcelle} \]
+\begin{citemize}
+\item Si la parcelle est non saturée, elle suit un profil adiabatique sec tel que $\Gamma\e{parcelle} = \Gamma\e{sec} \simeq - 10 \, \text{K/km}$.
+\item Si elle est saturée, elle suit un profil adiabatique saturé tel que $\Gamma\e{parcelle} = \Gamma\e{saturé} \simeq - 6.5 \, \text{K/km}$. 
+\end{citemize}
+On rappelle qu'en général, à l'échelle où l'on étudie les mouvements de la parcelle
+\[ \Gamma\e{parcelle} \neq \Gamma\e{env} \]
+
+\sk
+Quel est l'effet de la perturbation~$\delta z > 0$ sur le mouvement de la parcelle~? A l'altitude~$z_0 + \delta z$, les températures de la parcelle et de l'environnement sont respectivement
+\[ T\e{p}(z_0 + \delta z) = T_0 + \Gamma\e{parcelle} \, \delta z 
+\qquad \text{et} \qquad
+T\e{e}(z_0 + \delta z) = T_0 + \Gamma\e{env} \, \delta z \]
+\begin{finger}
+\item Si $\Gamma\e{parcelle} > \Gamma\e{env}$, la température~$T\e{e}$ de l'environnement décroît plus vite que la température~$T\e{p}$ de la parcelle. Il en résulte que~$T\e{p}(z_0 + \delta z) > T\e{e}(z_0 + \delta z)$ et le mouvement de la parcelle est ascendant. La perturbation initiale est donc amplifiée par les forces de flottabilité. On parle de \voc{situation instable}. La situation est d'autant plus instable que la température de l'environnement décroît rapidement avec l'altitude. Lorsque la situation est instable, les mouvements verticaux sont amplifiés~: on parle parfois de \voc{situation convective}.
+\item Si $\Gamma\e{parcelle} < \Gamma\e{env}$, la température~$T\e{e}$ de l'environnement décroît moins vite que la température~$T\e{p}$ de la parcelle. Il en résulte que~$T\e{p}(z_0 + \delta z) < T\e{e}(z_0 + \delta z)$ et le mouvement de la parcelle est descendant. La perturbation initiale n'est donc pas amplifiée et la parcelle revient à son état initial. On parle de \voc{situation stable}. La stabilité est d'autant plus grande que la température de l'environnement décroît lentement (ou augmente, dans le cas d'une inversion de température). Lorsque la situation est stable, les mouvements verticaux sont inhibés.
+\end{finger}
+La résultante des forces verticales s'exerçant sur la parcelle peut s'écrire en fonction des taux de variation~$\Gamma$ de la température
+\[ F_z = g \, \frac{\Gamma\e{parcelle}-\Gamma\e{env}}{T\e{env}} \, \delta z \]
+
+

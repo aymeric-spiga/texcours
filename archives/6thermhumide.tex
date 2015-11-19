@@ -110,49 +110,12 @@ Le chapitre suivant se propose de reprendre avec plus de précisions la formatio
 \sk
 \subsection{Transformations pseudo-adiabatiques}
 
-\sk
-On considère tout d'abord une parcelle d'air (contenant de la vapeur d'eau) en évolution isobare. Le premier principe appliqué à la parcelle indique donc
-\[ \dd T = \frac{1}{C_P} \, \delta q \]
-Lors de l'évaporation, les molécules d'eau liquide voient les liaisons hydrogène avec leurs proches voisins être brisées. Le passage de l'eau de la phase liquide à la phase vapeur consomme donc de l'énergie\footnote{On peut s'en convaincre en notant la sensation de froid immédiate que provoque la sortie d'un bain à cause de l'évaporation de l'eau liquide sur le corps mouillé~; ou en se souvenant que lorsque l'on souffle sur la soupe pour la refroidir, c'est précisément pour favoriser l'évaporation et la refroidir efficacement.}~: pour l'air qui compose la parcelle, $\delta q < 0$ et il y a refroidissement. 
-A l'inverse, lors de la condensation, les molécules d'eau sous forme gazeuse créent des liaisons hydrogène avec les molécules d'eau de la phase liquide pour atteindre un état énergétique plus faible. Le passage de l'eau de la phase vapeur à la phase liquide libère donc de l'énergie~: pour l'air qui compose la parcelle, $\delta q > 0$ et il y a chauffage.
-
-\sk
-L'énergie~$\delta q$ consommée ou libérée par les changements d'état s'appelle~\voc{chaleur latente}, on la note~$\delta q\e{latent}$. Si une masse de vapeur~$\dd m\e{vapeur d'eau}$ est condensée ou évaporée, on a
-\[ \delta q\e{latent} = \frac{- L \, \dd m\e{vapeur d'eau}}{m\e{air sec}} \qquad \Rightarrow \qquad \boxed{ \delta q\e{latent} = - L \, \dd r } \]
-où~$L$ est la chaleur latente massique en~J~kg$^{-1}$. La formule ci-dessus comporte un signe négatif. La quantité~$\delta q\e{latent}$ est positive lorsqu'il y a condensation (le rapport de mélange en vapeur d'eau diminue $\dd r < 0$) et négative lorsqu'il y a évaporation (le rapport de mélange en vapeur d'eau augmente $\dd r > 0$).
-
-\sk
-On considère désormais une parcelle d'air en évolution adiabatique, à l'exception des échanges de chaleur latente~: $\delta q = \delta q\e{latent}$. On appelle une telle transformation \voc{pseudo-adiabatique} ou encore \voc{adiabatique saturée}. On fait l'approximation que la chaleur latente consommée ou dégagée est seulement échangée avec l'air sec~:
-\begin{citemize}
-\item La chaleur latente consommée/dégagée n'est pas utilisée pour refroidir/chauffer les gouttes d'eau présentes.
-\item On néglige les pertes de masse par précipitation~: la masse d'air sec considérée est constante.
-\end{citemize}
-Pour une telle transformation, la variation de température s'écrit ainsi
-\[ \dd T = \frac{R}{C_P} \, \frac{T}{P} \, \dd P - \frac{L}{C_P} \, \dd r \]
+\input{transformations_pseudoadiabatiques.tex}
 
 \sk
 \subsection{Profil vertical saturé}
 
-\sk
-Considérons une parcelle en ascension adiabatique saturée (et non plus sèche comme dans la section~\ref{adiabsec}). Pour une parcelle saturée, c'est-à-dire à l'équilibre liquide/vapeur, l'équation qui précède peut s'écrire, en utilisant l'équilibre hydrostatique
-\[ C_P \, \dd T + g \, \dd z + L \, \dd r = 0 \]
-Or, puisque la parcelle est saturée, on a~$r = r\e{sat}(T)$ et on peut écrire $\dd r\e{sat} = \ddf{r\e{sat}}{T} \, \dd T$. On a alors
-\[ \left( C_P + L \, \ddf{r\e{sat}}{T} \right) \dd T + g \, \dd z = 0\]
-Cette expression est similaire au cas sec, à l'exception notable du terme supplémentaire~$L \, \ddf{r\e{sat}}{T}$ lié aux échanges latents. On peut alors obtenir le profil vertical adopté dans l'atmosphère saturée par une parcelle ne subissant pas d'échange de chaleur avec l'extérieur autre que les échanges de chaleur latente
-\[  \ddf{T}{z}  = \Gamma\e{saturé} \qquad \text{avec} \qquad \Gamma\e{saturé} = \frac{-g}{C_P+L \, \ddf{r\e{sat}}{T} } \]
-On a vu que $\ddf{r\e{sat}}{T}$ est toujours positif, on en déduit donc
-\[ \boxed{ \Gamma\e{saturé} > \Gamma\e{sec} \qquad \text{ou} \qquad |\Gamma\e{saturé}| < |\Gamma\e{sec}| } \]
-A cause du dégagement de chaleur latente, la température diminue moins vite pour une parcelle saturée en ascension que pour une parcelle non saturée. Le calcul pour l'atmosphère terrestre montre que
-\[ \Gamma\e{saturé} = -6.5 \, \text{K~km}^{-1} \] 
-ce qui correspond à la valeur observée dans la troposphère [Figure~\ref{fig:tempvert}].
-
-\sk
-La constatation que~$\Gamma\e{saturé}$ correspond au profil d'environnement effectivement mesuré dans la troposphère appelle un commentaire important. Les profils verticaux secs ou saturés sont ceux suivis par une parcelle en ascension~: autrement dit, ils donnent les variations de~$T\e{p}$ avec l'altitude~$z$. D'un point de vue instantané, ils ne correspondent pas aux profils d'environnement~$T\e{e}$ tels qu'ils peuvent être par exemple mesurés par des ballons-sonde lâchés dans l'atmosphère. La parcelle n'est pas nécessairement à l'équilibre thermique avec l'environnement. On peut néanmoins constater sur la figure~\ref{fig:tempvert} que la température de l'environnement diminue avec une pente très proche de~$\Gamma\e{saturé}$. Ceci s'explique par le fait que cette figure montre une moyenne sur tout le globe à toutes les saisons. La situation moyenne ainsi décrite correspond aux mouvements d'une multitude de parcelles en ascension qui finissent par définir l'environnement atmosphérique\footnote{Ce phénomène porte le nom d'ajustement convectif.}. Pour comprendre la formation des nuages, et plus généralement les mouvements atmosphériques, il faut néanmoins se placer dans le cas local où l'équilibre thermique n'est pas vérifié. C'est l'objet de la section suivante.
-%Comme pour le cas adiabatique, on peut aussi intégrer l'équation pour obtenir:
-%\begin{equation} e_h=C_PT+gz+Lr=cste \label{estath} \end{equation}  
-%La quantité $e_h$ est appelée {\em énergie statique humide} et est conservée
-%pour des mouvements adiabatiques ($r$ et $e_s$ sont séparément conservés) ou
-%saturés (pseudo-adiabatiques).
+\input{gradient_adiabatique_humide.tex}
 
 \mk
 \section{Stabilité et instabilité verticale}
@@ -160,59 +123,13 @@ La constatation que~$\Gamma\e{saturé}$ correspond au profil d'environnement eff
 \sk
 \subsection{Force de flottaison}
 
-\sk
-Soit une parcelle dont la température $T\e{p}$ n'est pas égale à celle de l'environnement~$T\e{e}$, que ce soit sous l'effet d'un chauffage diabatique (par exemple~: chaleur latente, effets radiatifs) ou d'une compression / détente adiabatique. On reprend le calcul réalisé précédemment pour l'équilibre hydrostatique, avec la différence notable que l'on n'est plus dans le cas statique~: on étudie le mouvement vertical d'une parcelle. 
-
-\sk
-La somme des forces massiques s'exerçant sur la parcelle suivant la verticale est
-\[ - g  - \frac{1}{\rho\e{p}}  \, \Dp{P\e{e}}{z} \]
-où~$\rho\e{p}$ est la masse volumique de la parcelle. L'environnement est à l'équilibre hydrostatique donc
-\[ \Dp{P\e{e}}{z} = - \rho\e{e} \, g \]
-Ainsi la résultante~$F_z$ des forces massiques qui s'exercent sur la parcelle selon la verticale vaut
-\[ F_z = g \, \left( \frac{\rho\e{e}}{\rho\e{p}} - 1 \right) = g \, \frac{\rho\e{e}-\rho\e{p}}{\rho\e{p}} \]
-En utilisant l'équation du gaz parfait pour la parcelle~$\rho\e{p}=P/RT\e{p}$ et l'environnement~$\rho\e{e}=P/RT\e{e}$, on a
-\[ \boxed{ F_z = g \, \frac{T\e{p}-T\e{e}}{T\e{e}} } \]
-La résultante des forces est donc dirigée vers le haut, donc la parcelle s'élève, si la parcelle est plus chaude (donc moins dense) que son environnement. 
-Elle est dirigée vers le bas si la parcelle est plus froide (donc plus dense) que son environnement.
-En d'autres termes, on écrit ici la version météorologique de la force ascendante ou descendante 
-provoquée par la poussée d'Archimède, également appelée \voc{force de flottaison}.
+\input{flottaison.tex}
 
 \sk
 \subsection{Stabilité et instabilité}
 
-\sk
-Ces considérations permettent de définir le concept de stabilité et instabilité verticale de l'atmosphère.
-On considère l'atmosphère à un endroit donné de la planète, à une saison donnée, à une heure donnée de la journée.
-On suppose que la température de l'environnement varie linéairement avec l'altitude
-\[ \ddf{T\e{e}}{z} = \Gamma\e{env} \]
-A une altitude~$z_0$ proche de la surface, la température de l'environnement est~$T\e{e}(z_0)=T_0$.
-
-\sk
-On considère une parcelle initialement à l'altitude~$z_0$ dont la température initiale~$T\e{p}(z_0)$ est également~$T_0$. On suppose que la parcelle subit une ascension verticale d'amplitude~$\delta z > 0$. Le profil de température suivi par la parcelle lors de son ascension est
-\[ \ddf{T\e{p}}{z} = \Gamma\e{parcelle} \]
-\begin{citemize}
-\item Si la parcelle est non saturée, elle suit un profil adiabatique sec tel que $\Gamma\e{parcelle} = \Gamma\e{sec} \simeq - 10 \, \text{K/km}$.
-\item Si elle est saturée, elle suit un profil adiabatique saturé tel que $\Gamma\e{parcelle} = \Gamma\e{saturé} \simeq - 6.5 \, \text{K/km}$. 
-\end{citemize}
-On rappelle qu'en général, à l'échelle où l'on étudie les mouvements de la parcelle
-\[ \Gamma\e{parcelle} \neq \Gamma\e{env} \]
-
-\sk
-Quel est l'effet de la perturbation~$\delta z > 0$ sur le mouvement de la parcelle~? A l'altitude~$z_0 + \delta z$, les températures de la parcelle et de l'environnement sont respectivement
-\[ T\e{p}(z_0 + \delta z) = T_0 + \Gamma\e{parcelle} \, \delta z 
-\qquad \text{et} \qquad
-T\e{e}(z_0 + \delta z) = T_0 + \Gamma\e{env} \, \delta z \]
-\begin{finger}
-\item Si $\Gamma\e{parcelle} > \Gamma\e{env}$, la température~$T\e{e}$ de l'environnement décroît plus vite que la température~$T\e{p}$ de la parcelle. Il en résulte que~$T\e{p}(z_0 + \delta z) > T\e{e}(z_0 + \delta z)$ et le mouvement de la parcelle est ascendant. La perturbation initiale est donc amplifiée par les forces de flottabilité. On parle de \voc{situation instable}. La situation est d'autant plus instable que la température de l'environnement décroît rapidement avec l'altitude. Lorsque la situation est instable, les mouvements verticaux sont amplifiés~: on parle parfois de \voc{situation convective}.
-\item Si $\Gamma\e{parcelle} < \Gamma\e{env}$, la température~$T\e{e}$ de l'environnement décroît moins vite que la température~$T\e{p}$ de la parcelle. Il en résulte que~$T\e{p}(z_0 + \delta z) < T\e{e}(z_0 + \delta z)$ et le mouvement de la parcelle est descendant. La perturbation initiale n'est donc pas amplifiée et la parcelle revient à son état initial. On parle de \voc{situation stable}. La stabilité est d'autant plus grande que la température de l'environnement décroît lentement (ou augmente, dans le cas d'une inversion de température). Lorsque la situation est stable, les mouvements verticaux sont inhibés.
-\end{finger}
-La résultante des forces verticales s'exerçant sur la parcelle peut s'écrire en fonction des taux de variation~$\Gamma$ de la température
-\[ F_z = g \, \frac{\Gamma\e{parcelle}-\Gamma\e{env}}{T\e{env}} \, \delta z \]
-
-\sk
-On peut illustrer la stabilité/instabilité atmosphérique dans le cas des polluants émis proche de la surface par les activités humaines [Figure~\ref{fig:pollution}]. Dans l'après-midi, du fait que le sol est chaud, le profil d'environnement est tel que la situation est très instable~: les mouvements verticaux qui transportent les polluants plus haut dans l'atmosphère sont encouragés et les polluants ne restent pas proches de la surface. A l'inverse, en soirée, du fait que le sol refroidit radiativement, le profil d'environnement est tel que la situation est stable~: les mouvements verticaux qui pourraient transporter les polluants plus haut dans l'atmosphère sont inhibés et les polluants sont confinés proche de la surface. Pour être moins exposé aux polluants dans les zones urbaines, il est donc préférable d'y effectuer son jogging en fin de matinée plutôt qu'en soirée !
-
-\figside{0.65}{0.25}{decouverte/cours_meteo/inversion-temperature.png}{Stabilité et pollution atmosphérique. On notera que cette figure est très illustrative, mais présente une situation simplifiée. Le transport vertical de polluants dans l'atmosphère est en réalité inhibé dès que la couche atmosphérique est stable, ce qui est plus général que considérer uniquement une inversion thermique comme à droite de la figure. Source~: Airparif}{fig:pollution} 
+\input{stabilite.tex}
+\input{polluants.tex}
 
 
 

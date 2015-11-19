@@ -1,0 +1,137 @@
+\sk
+Sur Mars comme sur Terre, les forçages radiatifs
+sont le moteur de la circulation de grande échelle.
+%
+L'énergie radiative absorbée dans le visible
+par le système \ofg{surface - atmosphère}
+subit de plus fortes variations latitudinales
+que l'énergie radiative émise dans l'\IR.
+%
+En moyenne annuelle, il en résulte un chauffage net 
+des régions équatoriales de la planète et
+un refroidissement net de ses régions polaires.
+%
+Ce contraste thermique induit des contrastes latitudinaux d'échelle de hauteur $H$,
+donc, d'après l'équation hypsométrique,
+un gradient de pression latitudinal qui augmente avec l'altitude.
+%
+Une telle force méridienne entraîne une circulation en altitude
+des régions équatoriales excédentaires en énergie
+aux hautes latitudes en déficit d'énergie.
+%
+De ce transport de masse résulte une augmentation de la pression de surface
+aux hautes latitudes et donc une circulation inversée proche du sol.
+%
+En moyenne zonale, ces mouvements sont conceptualisés par les
+\ofg{cellules de Hadley}.
+
+
+\sk
+La circulation précitée prend place
+dans un référentiel particulièrement non-galiléen :
+la planète en rotation sur elle-même.
+%
+Le moment cinétique absolu $\mathcal{M}$ 
+d'une particule d'air de masse $m$
+par rapport à l'axe de rotation de la planète
+est en coordonnées sphériques
+%
+\[
+\mathcal{M} = m \, (a \, \cos \varphi) (\Omega \, a \cos \varphi + u)
+\]
+%
+\noindent pour une particule située à la latitude $\varphi$. 
+%
+\noindent La conservation de ce moment cinétique
+impose à la particule d'air advectée vers
+les pôles, donc se rapprochant de son axe de rotation,
+d'accélérer en un vent prograde d'altitude (jets d'ouest)
+et à la particule d'air ramenée vers l'équateur de
+décélérer en un vent rétrograde de surface (alizés).
+%%les vents sont créés par transport de moment cinétique
+%
+La résultante $\vec{F\e{e}}$ des forces 
+d'entraînement centrifuge et de Coriolis
+%
+\[
+\vec{F\e{e}} = - m \, (2\,\Omega\,\sin\varphi\,u + \f{u^2\,\tan\varphi}{a}) \, \vec{y}
+\]
+%
+\noindent est alors dirigée vers l'équateur
+pour une particule animée d'un vent prograde
+$u > 0$,
+%tournant plus vite
+%que la planète (i.e. animée d'un vent d'ouest ), 
+et s'oppose au gradient de pression ayant donné
+naissance à la circulation de Hadley, limitant son extension.
+%
+Au-delà d'une certaine latitude, la conservation du moment cinétique
+autour de l'axe planétaire cesse d'être valable
+et les circulations non-axisymétriques
+prennent une part dominante dans le transport de moment cinétique.
+%
+%notamment les ondes stationnaires
+%et les ondes baroclines.
+%
+Dans ce cas, le vent ne peut plus être déterminé
+quantitativement par conservation du moment cinétique mais
+par son lien diagnostique à la structure thermique
+(équilibre du vent thermique)
+%
+\[
+- \Dp{\vec{v_H}}{p} = \f{R}{p \, f} \: \vec{z} \wedge \vec{\nabla_p} T
+\quad
+\textrm{(coord. isobares)}
+\]
+%
+\noindent qui combine l'équilibre vertical hydrostatique  
+avec l'équilibre horizontal géostrophique aux moyennes latitudes.
+%
+Le modèle conceptuel axisymétrique simple de \textit{Held et Hou} [1980]\nocite{Held:80}
+se base sur cette distinction entre deux régimes de vent pour en déduire
+l'extension latitudinale de la cellule de Hadley $\mathcal{L}$
+%et la vitesse
+%du vent zonal maximal $\mathcal{U}$
+%
+%\quad \textrm{et} \quad \mathcal{U} = \f{ \Omega \, \mathcal{L}^2 }{ a }
+%
+\[
+\mathcal{L} = \sqrt{ \f{ 5 \, \Delta \theta \, g \, H }{ 3 \, \Omega^2 \, \theta_0 } }
+\]
+%
+\noindent En utilisant les constantes planétaires de la Terre et Mars,
+et les contrastes thermiques typiques
+$\Delta \theta\e{T} = 40\U{K}$
+et $\Delta \theta\e{M} = 65\U{K}$,
+nous obtenons 
+$\mathcal{L}\e{M} \sim \mathcal{L}\e{T}$,
+soit une cellule de Hadley
+significativement plus étendue sur Mars
+de rayon deux fois plus petit que celui
+de la Terre.
+%
+Ce modèle reste néanmoins très simplifié et ne s'applique qu'aux 
+moyennes annuelles principalement, ce qui en limite fortement
+la portée sur des planètes aux saisons très marquées comme Mars.
+
+
+%La vitesse maximale peut être déterminée
+%à partir d'un arbitrage entre le vent
+%limite au sens de la conservation du moment cinétique
+%et le vent thermique; les valeurs 
+%données par \numeroref{eq:heldhou} donnent
+%ainsi $\mathcal{U}\e{T} \sim 55\U{m~s^{-1}}$
+%et $\mathcal{U}\e{M} \sim 85\U{m~s^{-1}}$, en
+%accord correct avec les résultats de modèles
+%plus élaborés.
+
+
+
+
+%%L'équilibre du vent thermique donne un 
+%%sens des vents conforme à ce qu'on pourrait
+%%déduire de la conservation du moment
+%%cinétique, sur la base qu'une particule
+%%se rapprochant de son axe de rotation
+%%est accélérée dans le sens prograde.
+
