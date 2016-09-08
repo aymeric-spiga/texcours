@@ -5,6 +5,7 @@
 ## Histoire récente
 
 * cycles Milankovic: on en parle sur Mars pour faire plus original que la Terre
+* variations d'obliquité : influence sur la stabilité de la glace au sol
 
 ## Histoire passée : atmosphère et histoire du système solaire
 
@@ -13,14 +14,13 @@
 
 ### Evolution de la composition 
 
-* Comment est connue la compositi ?
-  * 
+* Comment est connue la composition ? Inventaire initial.
 
 ### Divers facteurs d'évolution
 
 Rappel formation système solaire
 * effondrement lent du nuage (instabilité gravitaire) interstellaire en rotation lente
-* effondrement catastrophique, conservation du moment cinétique : formation d'un disque protosolaire et d'une protoétoile
+* effondrement catastrophique, conservation du moment cinétique : formation d'un disque protosolaire (HR Tauri par Alma) et d'une protoétoile
 * planétésimaux
 Origine des atmosphères ? Inventaire initial + ratios isotopiques
 
@@ -91,12 +91,9 @@ weathering: silicates + CO2 avec eau liq <> CaCO3 (carbonates) avec SiO2
 
 * On ajoute une dimension temporelle (plutôt que déplacer la Terre sur son orbite)
 * Avant de quitter la séquence principale, le Soleil sera 30% plus chaud
-* 
-
 * NB: fossé entre atmosphères secondaires et primaires dans le SS, mais pour exoplanètes Kepler voit un continuum!
 
 ### Recherche des biomarqueurs
-
 
 * difficile pour O2 de dominer une atmosphère planétaire car
   * chimiquement réactif

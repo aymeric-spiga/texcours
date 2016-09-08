@@ -232,7 +232,7 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
   * thermochimie : lessivage et érosion de la surface
   * mesures radar (e.g. Magellan) ont permis d'étudier la surface
   * cartes émissivité : jeunes basaltes non lessivés (vieux de quelques centaines d'années seulement ?)
-  * resurfaçage global il y a 300 à 500 millions d'années seulement
+  * resurfaçage global il y a 300 à 500 millions d'années seulement?
   * pas de petits cratères en raison de l'atmopshère trop épaisse
 * Intérieur
   * coeur de fer de 3000 km de rayon
@@ -353,3 +353,12 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
   * glaciers Sputnik composée de glace molle d'azote et monoxyde de carbone
   * montagnes de glace d'eau "dure" de 3.5km de haut
   * également aux pôles glaces de méthane + diazote
+
+#grand glaciers d'azote dans Sputnik, méthane et CO
+#sauf dans zones sombres tholins et glace d'eau
+#glace d'eau sur laquelle repose les dépôts précités
+#sur Sputnik la glace d'azote flotte sur la glace d'eau
+#au nord: glace de méthane plus épaisse au nord (car on ne voit pas la glace d'eau
+#à l'équateur (tholins) neige de méthane sur les montagnes
+#Grundy et al. bande d'azote (frost) Science 2016
+
