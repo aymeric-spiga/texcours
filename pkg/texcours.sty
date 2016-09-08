@@ -33,6 +33,20 @@
 {% 
   \bandeau
   \pagegarde
+}
+\newcommand{\inidocred}%
+{% 
+  \bandeau
+  \subject{\zlogo}
+  \title{\zcode~\zcourse}
+  \subtitle{\zlevel. \zsubtitle.}
+  \author{\zauthor \\ \zaffil}
+  \date{}
+  \maketitle
+}
+\newcommand{\inireport}%
+{% 
+  \inidoc
   \newpage
 }
 %%% DYNAMICS
