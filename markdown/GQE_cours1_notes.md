@@ -1,4 +1,5 @@
 # Exploration phénoménologique du système solaire
+*A. Spiga*
 
  * Exploration commence avec Galilée au XVIIe siècle
  * Désormais par des robots ou des satellites
@@ -8,7 +9,16 @@
 
 ### Le soleil
 
-* Etoile G, banale
+* Etoile G, naine jaune, banale
+<!--
+O 	> 25 000  K 	bleue 	azote, carbone, hélium et oxygène
+B 	10 000–25 000 K 	bleue-blanche 	hélium, hydrogène
+A 	7 500–10 000 K 	blanche 	hydrogène
+F 	6 000–7 500 K 	jaune-blanche 	métaux : fer, titane, calcium, strontium et magnésium
+G 	5 000–6 000 K 	jaune (comme le Soleil) 	calcium, hélium, hydrogène et métaux
+K 	3 500–5 000 K 	orange 	métaux et monoxyde de titane
+M 	< 3 500  K 	rouge 	métaux et monoxyde de titane
+-->
 * Formé en majorité d'hydrogène (92%) et d'hélium
 * Sphère géante de plasma (électrons + particules chargées qui se comportent comme un gaz)
 * Coeur 
@@ -65,6 +75,12 @@ En pratique
   * (si une chondrite fond, liquides silicatés et métalliques sont immiscibles)
   * seul Vesta est un exemple connu, et Cérès également?
 
+<!--
+chondrites : 82% des météorites (origine probable: ceinture d'astéroïdes)
+schéma composition vs. composition solaire. similaire sauf éléments légers. 
+comètes 1/3 cailloux, 1/3 organiques, 1/3 glace
+-->
+
 Localisation (cartes du Minor Planet Center de l'IAU)
 
  1. la plupart [plusieurs millions] dans la ceinture d'astéroïdes entre Mars et Jupiter
@@ -82,7 +98,7 @@ Localisation (cartes du Minor Planet Center de l'IAU)
     * principalement sur l'orbite de Jupiter, bloqués en des points de Lagrange (stabilité interactions gravitationnelles)
     * plus généralement sur l'orbite de planètes: Mars, Neptune, la Terre (découverte en 2011!)
 
- 4. ceinture de Kuiper 
+ 4. ceinture de Kuiper (30 UA vs. nuage Oort 10000 UA)
     * souvent riches en glace eau CO2 CH4, peuvent donner des comètes à courte période
     * certains sont des planètes naines : Pluton/Charon, Eris, Haumea, Makemake
 
@@ -283,12 +299,17 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
   * Neptune 13 (1) dont Triton aussi massif que Pluton et au comportement similaire
 
 ### Titan (Saturne)
+
 * Même taille que Mercure environ
 * Atterrisseur Huygens en 2004 puis nombreuses observations de la sonde Cassini
 * A l'atmosphère épaisse de diazote, qq % de CH4 et H2
 * Cycle du méthane très actif (nuages, lacs, précipitations)
-* Photochimie des hydrocarbures, brume photochimique qui empêche de voir la surface
-* Production continue par destruction de méthane de composés organiques s'accumulant à la surface depuis ~1000 ans
+* Photochimie des hydrocarbures, brume photochimique obscurcissant la surface
+* Production continue par destruction de méthane de composés organiques s'accumulant à la surface depuis ~1000-10^6 ans
+<!--
+photochimie hydrocarbures (éthane C2H6, acétylène C2H2), nitriles (HCN, CH3CN) et particules (photodissociation de N2 et CH4 par rayonnement solaire UV, réactions chimiques mènent à la formation d'hydrocarbures et de nitriles). 
+asymétrie NS de la brume, enrichissement de certains composés aux hautes latitudes hivernales
+-->
 
 ### Io (Jupiter)
 
@@ -344,21 +365,39 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
 
 * Découverte en 1930, désormais planète naine, diamètre 2370 km
 * Système double avec Charon de rayon 600 km (a pu se former par l'effet d'un impact sur Pluton) + 5 petites lunes
-* Atmosphère composée 90% N2 (équilibre de sublimation) 10% CO traces CH4
+* Atmosphère composée 99% N2 (équilibre de sublimation) 1% CO traces CH4
 * Composition interne inconnue (noyau rocheux ?)
 * Survol de New Horizons en juillet 2015 : révolution de notre vision de ce corps
 * Distinctions entre zones sombres craterisées (Cthulhu) et lisses très brillantes (Tombaugh)
 * "Coeur" (Tombaugh Regio) surface glacée
   * sans cratères, âge: 100 millions d'années maximum
-  * glaciers Sputnik composée de glace molle d'azote et monoxyde de carbone
-  * montagnes de glace d'eau "dure" de 3.5km de haut
+  * glaciers Sputnik composée de glace molle d'azote et monoxyde de carbone (+ méthane)
+  * montagnes de glace d'eau "dure" de 3.5km de haut (et glace eau flotte sur glace azote?)
   * également aux pôles glaces de méthane + diazote
+* zones sombres : a priori des tholins
+* geologically active throughout the epochs Sputnik Planum <10Myr, East Tombaugh ~1Gyr, Cthulu and highlands ~4Gyr (and Charon)
+* actual rate of loss is similar to the Earth's atmosphere (pre-New Horizons estimates wildly overestimated the loss of material from Pluto’s atmosphere and thought it was like a comet)
+* glaces: nitrogen-rich, methane-rich, water-rich
+<!--
+au nord: glace de méthane plus épaisse au nord (car on ne voit pas la glace d'eau
+à l'équateur (tholins) neige de méthane sur les montagnes
+Grundy et al. bande d'azote (frost) Science 2016
+http://www.nasa.gov/feature/science-papers-reveal-new-aspects-of-pluto-and-its-moons
+-->
 
-#grand glaciers d'azote dans Sputnik, méthane et CO
-#sauf dans zones sombres tholins et glace d'eau
-#glace d'eau sur laquelle repose les dépôts précités
-#sur Sputnik la glace d'azote flotte sur la glace d'eau
-#au nord: glace de méthane plus épaisse au nord (car on ne voit pas la glace d'eau
-#à l'équateur (tholins) neige de méthane sur les montagnes
-#Grundy et al. bande d'azote (frost) Science 2016
+### Planet Nine
 
+* 350 - 800 UA. env 3 rayons terrestres. env 10 masses terrestres
+* modèle théorique pour expliquer trois observations distinctes
+1. discovery of Sedna (période orbitale ~10000y), which was the first object discovered in the solar system whose orbit could only be explained by interaction with something besides the known planets
+2. Trujillo & Sheppard noted some unusual orbital alignments among distant (>2000y orbits) Kuiper belt objects (arguments of perihelion appeared clustered around zero)
+3. Gomes and colleagues proposed that an entirely separate set of objects were being influenced by some sort of distant planet. (orbits nearly perpendicular to the plane of the Kuiper belt)
+
+<!--
+ gravitational torques exerted onto the Kuiper belt by Planet Nine would induce long-period oscillations in the perihelion distances of the confined KBOs. This naturally generated detached orbits, such as those of Sedna and 2012 VP113. 
+1. A distant massive eccentric planet can capture eccentric Kuiper belt objects into elongated anti-aligned orbits like the ones we see.
+2. The Planet Nine hypothesis explains Sedna, and requires Sedna to exist.
+3. The existence of Planet Nine predicts the existence of elongated distant perpendicular Centaurs in specific locations and they are then found to exist.
+4. The Planet Nine hypothesis explains the unusual orbit of Drac and requires that objects with orbits like that will exist.
+5. The Planet Nine hypothesis explains why all of the distant objects which have been pulled away from the Kuiper belt are equally clustered.
+-->
