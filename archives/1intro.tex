@@ -2,117 +2,39 @@
 
 \dictum[Pierre-Simon de Laplace, 1797]{Un fluide rare, transparent, compressible et élastique, qui environne un corps, en appuyant sur lui, est ce que l'on nomme son atmosphère.}
 
-\bk
-La figure~\ref{fig:blue} illustre la présence d'une atmosphère très active sur Terre par les nuages qui y prennent naissance. Il ne s'agit que d'un exemple parmi tant d'autres pour appréhender l'atmosphère. C'est le but de ce chapitre d'introduction d'évoquer la diversité des points de vue pouvant être adoptés pour étudier l'atmosphère, un système complexe où se mêlent processus physiques, dynamiques, chimiques, biologiques, et même sociétaux. Sont également abordées dans ce chapitre quelques notions de base nécessaires pour la suite du cours.
+	\bk
+	\input{atmosphere_presence.tex}
 
-\figsup{0.45}{0.25}{decouverte/cours_meteo/blue_50.png}{decouverte/cours_meteo/blueclouds_50.png}{La planète Terre avec et sans les nuages de son atmosphère. Les nuages couvrent très souvent au moins la moitié du globe. Construit d'après une image \ofg{Blue Marble} NASA du projet \ofg{Visible Earth}. Des versions haute-résolution des images planes et des explications complètes peuvent être trouvées aux adresses suivantes \url{http://visibleearth.nasa.gov/view_rec.php?id=2430} et \url{http://visibleearth.nasa.gov/view_rec.php?id=2431}.}{fig:blue} %%%http://visibleearth.nasa.gov/view_rec.php?id=2429
-
-\mk
-\section{Quelques définitions et généralités}
+\mk \section{Quelques définitions et généralités}
 
 	\sk \subsection{Vocabulaire}
 	\input{climat_definitions.tex}
 
-
-\sk
-\subsection{Grandeurs utiles}
-
+	\sk \subsection{Grandeurs utiles}
 	\input{atmosphere_parametres.tex}
+	\input{atmosphere_parametres_variations.tex}
 
-\sk
-Les trois paramètres précités varient en théorie selon les trois directions de l'espace. On constate cependant que, pour une unité de longueur donnée, leurs variations selon la verticale sont beaucoup plus significatives que leurs variations selon l'horizontale. On peut donc définir une structure moyenne en fonction de l'altitude dont sera toujours relativement proche la structure verticale en chaque jour et chaque région de la planète. 
-
-\figsup{0.48}{0.35}{\figfrancis/WH_vert_struct}{\figpayan/LP211_Chap1_Page_03_Image_0001.png}{[Gauche] Structure verticale de la pression, la densité et du libre parcours moyen des molécules (distance moyenne parcourue par une molécule avant de subir un choc sur une autre molécule). Noter l'échelle logarithmique en abscisse : une droite sur ce schéma dénote donc une variation exponentielle des quantités avec l'altitude. [Droite] Plus haut dans l'atmosphère, la variation verticale de la pression est dépendante pour plusieurs ordres de grandeur avec l'activité solaire. Les courbes indiquées correspondent respectivement à une très faible activité solaire (température de la thermopause de 600 K) et une très forte activité solaire (température de la thermopause de 2000K).}{fig:presvert}
-
-\sk
-Pression et densité décroissent de façon approximativement exponentielle selon l'altitude~$z$ [figure \ref{fig:presvert}] $$ P\sim P_0 \, e^{-z/H} $$ où $H$ est appelée \voc{hauteur d'échelle} et~$P_0$ une valeur de pression de référence. Cette loi de variation découle du fait que la pression atmosphérique à une altitude~$z$ est due au poids de la colonne d'air située au-dessus de l'altitude~$z$. En pratique sur Terre, la pression est divisée par deux environ tous les 5 km. On évalue la masse de l'atmosphère terrestre à~$5 \times 10^{18}$~kg, soit environ un millionième de la masse de la Terre. La moitié de la masse de l'atmosphère se situe au dessous de~$5500$~m, les~$2/3$ au dessous de~$8400$~m, les~$3/4$ au dessous de~$10300$~m, les~9/10~au dessous de~$16100$~m. Si l'on considère que les neuf dixièmes de l’atmosphère sont situés dans les $16$~premiers kilomètres, l’atmosphère ne forme donc qu'une mince pellicule gazeuse en comparaison des $6367$~km du rayon terrestre. On dit que l'on peut faire l'\voc{approximation de la couche mince}.
-
-\sk
-\subsection{Structure verticale : couches atmosphériques}
-
-\sk
-Les variations verticales de température sont très différentes des variations de pression et de densité: la température décroît et augmente alternativement avec l'altitude, de façon quasi-linéaire [figure \ref{fig:tempvert}], en restant comprise entre environ~$200$ et~$300$~K. Cette structure verticale de la température permet de diviser l'atmosphère en un certain nombre de couches aux propriétés différentes, dont les noms comportent le suffixe \emph{-sphère}. La limite supérieure d'une couche atmosphérique donnée porte un nom similaire, où le suffixe \emph{-sphère} est remplacé par le suffixe \emph{-pause}. Par exemple, la limite entre la troposphère et la stratosphère s'appelle la \voc{tropopause}. Les couches atmosphériques en partant de la surface vers l'espace sont détaillées ci-dessous.
-
-\sk
-\begin{description} 
-\item[La \voc{troposphère}] s'étend jusqu'à environ 11 km d'altitude et contient 80\% de la masse de l'atmosphère. La température y décroit en moyenne de 6.5\deg C par kilomètre (nous verrons pourquoi dans un chapitre ultérieur). La troposphère est une couche relativement bien mélangée sur la verticale (échelle de temps de quelques jours), sauf en certaines couches minces, appelées \voc{inversions}, où la température décroit peu ou même augmente avec l'altitude. La troposphère est la couche où ont lieu la plupart des phénomènes météorologiques acessibles à l'expérience humaine (par exemple, les nuages montrés en figure~\ref{fig:blue}). La partie inférieure de la troposphère contient la \voc{couche limite atmosphérique} située juste au dessus de la surface, d'épaisseur variant de quelques centaines de~m à 3 km et définie comme la partie de l'atmosphère influencée par la surface sur de courtes échelles de temps (typiquement un cycle diurne). La couche limite atmosphérique est le siège de mouvements turbulents organisés au cours de l'après-midi qui opèrent un mélange des espèces chimiques qui y sont émises.
-\item[La \voc{stratosphère}] est située au dessus de la troposphère. L'altitude au-dessus du sol de la tropopause peut varier entre~$5$ et~$15$~km. Contrairement à la troposphère, la stratosphère contient très peu de vapeur d'eau (à cause des températures très basses rencontrées à la tropopause) mais la majorité de l'ozone~O$_3$. L'absorption par l'ozone du rayonnement solaire \voc{ultraviolet}, de longueur d'onde moindre que le rayonnement visible et plus énergétique, explique que la température dans la stratosphère est d'abord isotherme, puis augmente avec l'altitude jusqu'à un maximum à la stratopause. Cette structure verticale très stable inhibe fortement les mouvements verticaux, ce qui explique que la stratosphère soit organisée en couches horizontales (comme l'indique l'étymologie de son nom). Le temps de résidence de particules dans la stratosphère est très long à cause de l'absence de nuages et précipitations.
-\item[La \voc{mésosphère}] voit sa température décroître selon la verticale. Contrairement à la troposphère, elle ne contient pas de vapeur d'eau et contrairement à la stratosphère, elle ne contient que peu d'ozone. Elle se situe sur Terre à des altitudes entre~$50$ et~$85$~km. La mésopause est souvent le point le plus froid de l'atmosphère terrestre, la température peut y atteindre des valeurs aussi basses que~$130$~K. 
-\item[La \voc{thermosphère}] s'étend jusque des altitudes très élevées (800 km) et voit sa température contrôlée par l'absorption du rayonnement solaire ultraviolet. La température dans la thermosphère varie souvent d'un facteur deux suivant l'activité solaire et l'alternance jour-nuit. Les aurores surviennent dans cette couche atmosphérique. Les missions spatiales \ofg{basse orbite} telles que la Station Spatiale Internationale sont localisées au milieu de la thermosphère.
-\item[L'\voc{exosphère}] est située au-dessus de la thermosphère à partir d'une altitude d'environ~$800$~km sur Terre. Il s'agit de la zone où l'atmosphère subit un \voc{échappement} : les molécules peuvent s'échapper vers l'espace sans que des chocs avec d'autres molécules ne les renvoient dans l'atmosphère. L'exosphère constitue la dernière zone de transition entre l'atmosphère et l'espace.
-\end{description}
-
-\figsup{0.49}{0.3}{\figfrancis/WH_stdatm}{\figpayan/LP211_Chap1_Page_05_Image_0001.png}{Structure verticale idéalisée de la température correspondant au profil moyenné global annuel. Voir figure~\ref{fig:presvert} pour la distinction entre figure de gauche et figure de droite}{fig:tempvert}
-
-\sk
-\footnotesize
-D'autres couches atmosphériques sont définies non pas à partir de la température mais à partir des propriétés électriques de l'atmosphère terrestre. On fait référence ici au vent solaire, qui est un flux de particules chargées (ions et électrons) formant un plasma qui s’échappe en permanence du Soleil vers l’espace interplanétaire
-\begin{description}
-\item[L'ionosphère] Comme son étymologie l'indique, l’ionosphère est une région de notre haute atmosphère contenant des ions et des électrons formés par photo-ionisation des molécules neutres qui s’y trouvent. C’est le Soleil, et plus particulièrement ses rayonnements énergétiques ultraviolets et X, mais aussi les particules du vent solaire et le rayonnement cosmique, qui sont à l’origine de cette ionisation de la haute atmosphère. L’ionosphère se situe entre~$50$ et~$1000$ kilomètres d’altitude (elle s'étend donc de la mésosphère à la thermosphère). L’ionosphère est habituellement divisée horizontalement en différentes couches, baptisées D, E et F dans lesquelles l’ionisation croît avec l’altitude. Ces couches proviennent des différences de pénétration dans l’atmosphère des rayonnements solaires selon leur énergie.
-\item[La magnétosphère] Notre planète génère son propre champ magnétique, un peu à la manière d’une dynamo. C’est la différence de vitesse entre la rotation de la planète et de son coeur liquide qui, par induction, génère ce champ magnétique. Ce champ magnétique protège la Terre des agressions extérieures comme les rayons cosmiques et les particules énergétiques du vent solaire. Cette zone protégée s'appelle magnétosphère. Elle démarre au dessus de l’ionosphère, à plusieurs milliers de kilomètres de la surface du sol, et s’étend jusqu’à 70 000 kilomètres environ du côté du Soleil. Du côté opposé, la queue de la magnétosphère s’étire sur plusieurs millions de kilomètres. Les contours de la magnétosphère évoluent continuellement sous l’action du vent solaire et de sa variabilité.
-\end{description}
-\normalsize
+	\sk \subsection{Structure verticale : couches atmosphériques}
+	\input{couches_atmospheriques.tex}
+	\input{couches_atmospheriques_hautes.tex}
 
 \mk \section{Composition atmosphérique}
 	
 	\sk \subsection{Un mélange de gaz parfaits}
 	\input{thermo_gaz_parfait.tex}
 
-\sk
-\subsection{Composition moléculaire}
+	\sk \subsection{Composition moléculaire}
+	\input{atmcomposition_def.tex}
+	\input{atmcomposition_terre.tex}
+	\input{atmcomposition_terre_minoritaires.tex}
+	\input{atmcomposition_planetes.tex}
 
-\sk
-La concentration, au sens où elle est définie dans la plupart des cours de physique / chimie, est une quantité très peu utilisée en sciences de l'atmosphère. La composition chimique de l'atmosphère s'exprime préférentiellement en utilisant le \voc{rapport de mélange volumique}, soit la proportion d'un volume d'air occupée par un gaz particulier. L'air étant un gaz parfait, ce rapport de mélange volumique est simplement égal au rapport du nombre de molécules/atomes du gaz sur le nombre total de molécules d'air $$ \boxed{ r_i=\frac{n_i}{\Sigma n_k} } \qquad \textrm{\footnotesize (parfois également noté $q_i$)} $$ D'après la loi de Dalton, il correspond également au rapport entre la pression partielle du gaz considéré avec la pression totale du mélange. Le rapport de mélange n'est exprimé en pourcentage que pour les composés les plus abondants. Pour les \voc{gaz traces}, moins abondants, on exprime le rapport de mélange en parties par million (1 ppmv = $10^{-6}$), ou par milliards (1 ppbv = $10^{-9}$), voire le pptv tel que~1 pptv = $10^{-12}$. Dire que le rapport de mélange de CO$_2$ au sol est d’environ 380 ppmv signifie que sur un million de molécules d’air, 380 sont des molécules de CO$_2$. %On utilise également parfois le rapport de mélange massique, soit la proportion d'une masse d'air occupée par un gaz particulier. 
-
-\input{compoterre.tex}
-
-\sk
-L'azote et l'oxygène dominent largement la composition de l'atmosphère terrestre (tableau \ref{tab:compos}), suivis par l'argon et d'autres gaz rares beaucoup moins abondants. Les rapports de mélange de vapeur d'eau et d'ozone sont très variables : la vapeur d'eau est présente surtout dans la troposphère, avec un maximum près de la surface et dans les tropiques, alors que l'ozone est principalement présente dans la stratosphère. Un certain nombre de gaz traces sont émis régulièrement au niveau de la surface, par des phénomènes naturels ou les activités humaines. Leur répartition dépend alors beaucoup de leur \voc{durée de vie} dans l'atmosphère. Le CO$_2$ qui est très stable est bien mélangé. Le méthane, qui a une durée de vie d'une dizaine d'années, est bien réparti dans la troposphère mais son rapport de mélange varie dans la stratosphère. Des polluants à durée de vie courte (quelques jours) comme l'ozone troposphérique, se retrouveront surtout au voisinage des sources. Les activités humaines ont également contribué à modifier le rapport de mélange de certains de ces gaz (par exemple, le~CO$_2$).
-
-\sk
-\begin{finger}
-\item En employant les formules obtenues à la section précédente, et les informations ci-dessus sur la composition de l'atmosphère terrestre, il est possible de déterminer des valeurs numériques utiles pour la suite du cours
-\begin{citemize}
-\item La masse molaire de l'air est~$M = 28.966$~g~mol$^{-1}$ (on emploie souvent~$M \simeq 29$~g~mol$^{-1}$). 
-\item La constante de l'air sec est~$R = 287$~J~K$^{-1}$~kg$^{-1}$.
-\end{citemize}  
-\item Dans toute discussion de la composition atmosphérique, il est important de faire la distinction entre composés minoritaires et majoritaires [figure~\ref{fig:minor}]. Alors que les composés majoritaires suivent une distribution verticale en accord avec l'état énergétique et dynamique de l'atmosphère globale, les composés minoritaires peuvent avoir des comportements très différents qui dépendent à la fois des mécanismes photochimiques de production et de perte ainsi que des phénomènes de transport.
-\item La composition de l'air donnée ici est valide sur les premiers~$80$ à~$100$ kilomètres d'altitude, à part quelques constituants mineurs. On appelle cette région l'\voc{homosphère}, elle correspond approximativement à la troposphère, la stratosphère et la mésosphère (Figure \ref{fig:tempvert}). Dans l'homosphère, l'atmosphère est un mélange homogène de différents gaz. Au dessus de cette altitude, le libre parcours moyen des molécules devient très grand et on a une \ofg{décantation} où les éléments plus légers dominent progressivement aux altitudes élevées. On parle alors d'\voc{hétérosphère}; elle regroupe approximativement la thermosphère et l'exosphère. 
-\end{finger}
-%Au niveau du sol, l'atmosphère standard sèche est caractérisée par une pression d’environ 1013 hPa et une concentration totale de 2,69 x 1019 molécule~cm$^{-3}$ lorsque la température est de 273~K.
-
-\figun{0.9}{0.4}{\figpayan/LP211_Chap1_Page_06_Image_0001.png}{Composition de l’atmosphère~: des espèces en très faibles quantités jouent un rôle très important. Sur la figure sont données quelques mesures de constituants minoritaires dans l’homosphère. Les courbes en trait fin correspondent aux concentrations résultant de rapports de mélange volumiques constants de~$10^{-1}$ à~$10^{-13}$. (Source: Kockarts, Aéronomie, 2000).}{fig:minor}
-
-\figun{1}{0.35}{decouverte/cours_dyn/composition.png}{Objets du système solaire présentant une atmosphère substantielle et leurs caractéristiques.}{fig:composition}
-
-\sk
-Les compositions atmosphériques sont très distinctes selon les planètes du système solaire considérées [figure~\ref{fig:composition}]. L'atmosphère terrestre est unique parmi les atmosphères des autres planètes du système solaire. Elle est riche en azote et oxygène et pauvre en \carb, contrairement aux atmosphères de Venus et Mars, qui contiennent plus de~$90\%$ de \carb. On pourrait penser que la Terre a acquis son atmosphère pendant sa formation à partir des gaz présents dans la nébuleuse solaire. Une telle atmosphère serait alors primaire, et contiendrait des gaz de composition cosmique, c'est-à-dire similaire aux abondances chimiques du système solaire. Or, les gaz dominants dans le système solaire sont l'hydrogène et l'hélium. Ces gaz légers sont pratiquement absents dans notre atmosphère, car la gravitation terrestre est trop faible pour les retenir. Les planètes géantes comme Jupiter ou Saturne ont conservé ces gaz primordiaux dans leur atmosphère, au contraire des planètes internes du système solaire Venus, Terre et Mars qui ont des atmosphères de composition bien différente. Si la Terre a eu une telle atmosphère primaire pendant sa formation, elle l'a perdu rapidement. L'atmosphère actuelle doit donc être secondaire. L'évolution de sa composition résulte en partie de l'apparition de la vie [figure~\ref{fig:vie}].
-%% parler des puits de carbone et des carbonates. comparaison entre Vénus et Mars.
-
-\figun{0.75}{0.32}{\figpayan/vie.png}{Evolution parallèle de l’atmosphère et de la vie.}{fig:vie}
-
-\sk
-\subsection{Aérosols et hydrométéores}
-
-%%\footnote{Cette partie est inspirée d'éléments trouvés dans le cours de S. Jacquemoud de \emph{Méthodes physique en télédétection.}}
-
-\sk
-Les \voc{aérosols} sont constitués de petites particules solides ou liquides en suspension dans les basses couches de l’atmosphère. Environ trois milliards de tonnes de particules sont injectés chaque année dans l’atmosphère par les processus naturels ou les activités humaines. On distingue plusieurs types d'aérosols.
-\begin{citemize}
-\item[\emph{poussières d'origine désertique}] Il s'agit de la première source mondiale d’aérosols. Elles sont soulevées par des vents violents lors des tempêtes de sable. Les grosses particules retombent rapidement au sol alors que les plus petites forment un nuage sec qui peut s’élever jusqu’à 4-6 km d’altitude et s’étendre sur des milliers de kilomètres. On peut retrouver en Europe ou en Amérique des particules en provenance d'Afrique.
-\item[\emph{aérosols solubles dans l’eau}] Ils peuvent être d'origine naturelle (substances organiques émises par la végétation) ou liés à l'activité industrielle (sulfates, nitrates).
-\item[\emph{aérosols d'origine marine}] Ils sont formés à partir des bulles résultant du déferlement des vagues et des courants marins. Outre le dioxyde de carbone, les bulles transportent quantité de substances, notamment des particules de sel microscopiques (NaCl) qui participent à la formation de brumes. L'éclatement de ces bulles à la surface des océans donne naissance à un très grand nombre de gouttelettes (parfois une centaine pour une bulle d'un diamètre de l'ordre du millimètre) qui ne se brisent pas et sont à l'origine des aérosols marins (également appelés embruns).
-\item[\emph{aérosols carbonés}] Ils sont présents dans les régions tropicales et boréales en raison de nombreux feux de forêt. Par exemple les brûlis de la végétation intertropicale en période sèche occasionnent chaque année des brumes sèches qui disparaissent une fois les pluies revenues.
-\item[\emph{aérosols de sulfates}] Ils sont d'origine volcanique. Le dioxyde de soufre SO$_2$ émis lors des éruptions volcaniques produit ces fines particules d'acide sulfurique (SO$_2$ + H$_2$O~$\rightarrow$~H$_2$SO$_4$) qui s'entourent de glace et forment avec les cendres un écran empêchant le rayonnement solaire d'arriver jusqu'au sol.
-\end{citemize}
-La plupart des aérosols se trouvent dans la troposphère où ils résident en moyenne une semaine. En raison de leur petite taille, les aérosols peuvent être transportés sur de longues distances. Ils sont en général ramenés au sol par les précipitations (pluie, neige). Les aérosols de plus petite taille ($0.01-0.1$~$\mu$m) jouent un rôle important de \voc{noyaux de condensation} dans la formation des nuages en favorisant la condensation de vapeur d'eau en gouttelettes d'eau et/ou de cristaux de glace. Les aérosols de plus grande taille (0.1-1.0~$\mu$m), les plus nombreux, interceptent la lumière du Soleil. La stratosphère contient aussi des aérosols (principalement d'origine volcanique) jusqu'à 18-20 km d’altitude. Contrairement aux aérosols troposphériques, leur concentration est relativement uniforme et leur durée de vie beaucoup plus longue, de plusieurs mois à plusieurs années.  
-
-\sk
-Certaines molécules peuvent s’agréger pour former des particules liquides ou solides. Dans l'atmosphère terrestre, ceci concerne principalement l'eau à l'état liquide ou solide dans l'atmosphère qui participe à la formation d'\voc{hydrométéores}. Ce sont des particules d’eau liquide (gouttelettes d'eau) et/ou solide (cristaux de glace) suspendues dans l'atmosphère dont la taille varie de~$1$~$\mu$m à~$1$~cm. Les brumes et nuages sont formés de ces fines gouttelettes d'eau en suspension dans l'atmosphère, qui apparaissent dès que le seuil de saturation de l'air en vapeur d'eau est dépassé (ces mécanismes sont détaillés dans un chapitre ultérieur). Les nuages bas et intermédiaires sont constitués de gouttelettes d’eau liquide ; les nuages d’altitude de cristaux de glace de différentes formes géométriques. Certains sont accompagnés de précipitations lorsque les gouttes ou cristaux sont assez gros pour former de la pluie, neige, grêle ou verglas. %La figure~\ref{fig:droplet} donne un ordre d'idée des tailles respectives des noyaux de condensation, des gouttelettes nuageuses et des gouttes de pluie.
-%\figside{0.4}{0.15}{decouverte/cours_meteo/gouttes.png}{Taille comparée des noyaux de condensation (\emph{cloud condensation nuclei}), des gouttelettes de brume ou de nuage (\emph{moisture droplets}), des gouttes de pluie (\emph{raindrop})}{fig:droplet}
+	\sk \subsection{Aérosols et hydrométéores}
+	\input{aerosols.tex}
 
 
-\mk
+
+\mk 
 \section{Echanges énergétiques dans l'atmosphère}
 
 \sk

@@ -7,116 +7,56 @@ En filigrane des chapitres précédents sur le bilan radiatif, il apparaît que 
 
 %%% rappels GP, variables intensives, hauteur d'échelle
 
-\mk
-\section{Parcelle d'air}
+\mk \section{Parcelle d'air}
 
-\sk
-\subsection{Définition et caractérisation}
-
+	\sk \subsection{Définition et caractérisation}
 	\input{parcelle.tex}
+	\input{parcelle_rappels.tex}
 
-\sk
-Tout le but de ce chapitre est de décrire les relations thermodynamiques qui lient les grandeurs intensives qui caractérisent l'état de la parcelle. Une première de ces relations a été obtenue en introduction~: il s'agit de l'équation des gaz parfaits pour l'air atmosphérique, qui relie les trois paramètres intensifs $P$, $T$ et $\rho$ 
-\[ \boxed{ P = \rho \, R \,T } \] 
-avec la \voc{constante de l'air sec} $R=\frac{R^*}{M}$ où~$R^*$ est la constante des gaz parfaits et~$M$ est la masse molaire de l'air. On rappelle que sur Terre~$R = 287$~J~K$^{-1}$~kg$^{-1}$. L'état thermodynamique d'une parcelle d'air est donc déterminé uniquement par deux paramètres sur les trois~$P$, $T$, $\rho$. Pour les applications météorologiques, on caractérise en général l'état de la parcelle par sa pression~$P$ et sa température~$T$, plus aisées à mesurer, par exemple via des ballons-sondes, que la densité~$\rho$.
 
-\sk
-\subsection{Parcelle et environnement} \label{parcenv}
-
+	\sk \subsection{Parcelle et environnement} \label{parcenv}
 	\input{parcelle_equilibre.tex}
 
-\mk
-\section{Équilibre hydrostatique}
+\mk \section{Équilibre hydrostatique}
 
-\sk
-Le chapitre d'introduction indique que la pression décroît exponentiellement avec l'altitude. On en donne ici une démonstration, en obtenant une loi dite hydrostatique dont les implications sont nombreuses. 
+\sk Le chapitre d'introduction indique que la pression décroît exponentiellement avec l'altitude. On en donne ici une démonstration, en obtenant une loi dite hydrostatique dont les implications sont nombreuses. 
 
-\sk
-\subsection{Bilan des forces}
-
+	\sk \subsection{Bilan des forces}
 	\input{equilibre_hydrostatique.tex}
 
-\sk
-\subsection{\'Equation hypsométrique}
+	\sk \subsection{\'Equation hypsométrique}
 
-\sk
-\subsubsection{\'Echelle de hauteur}
+		\sk \subsubsection{\'Echelle de hauteur}
+		\input{echelle_hauteur.tex}
 
-	\input{echelle_hauteur.tex}
+		\sk \subsubsection{\'Epaisseur des couches atmosphériques~: équation hypsométrique}
+		\input{equation_hypsometrique.tex}
 
-\sk
-\subsubsection{\'Epaisseur des couches atmosphériques~: équation hypsométrique}
+	\sk \subsection{Applications pratiques}
 
-	\input{equation_hypsometrique.tex}
+		\sk \subsubsection{Expérience de Pascal}
+		\input{pression_pascal.tex}
 
-\sk
-\subsection{Applications pratiques}
+		\sk \subsubsection{Pression au niveau de la mer, altimétrie et cartes météorologiques}
+		\input{pression_niveau_mer.tex}
 
-\sk
-\subsubsection{Expérience de Pascal}
+\mk \section{Premier principe et thermodynamique de l'air sec} 
 
-\sk
-Depuis son invention en 1643 par Torricelli, disciple de Galilée, le \voc{baromètre} est l'instrument de référence pour mesurer la pression atmosphérique à la surface de l'atmosphère terrestre\footnote{Le but initial de Torricelli était de parvenir le premier à maintenir artificiellement en laboratoire une chambre sous vide. Néanmoins, il est également reporté que l'invention du baromètre découle des réflexions de Torricelli autour de l'impossibilité, constatée en pratique, de pomper l'eau d'un fleuve au-dessus d'un certain niveau.}. Trois ans après son invention, le baromètre était déjà utilisé pour sa première application en sciences de l'atmosphère~: donner une preuve expérimentale de l'équilibre hydrostatique qui gouverne la stratification en pression de l'atmosphère. Autrement dit, le baromètre est un moyen indirect de mesurer la masse de l'atmosphère à travers la pression de surface. Blaise Pascal montra ainsi, par des mesures respectivement sur la Tour Saint-Jacques à Paris ($ \Delta z = 52 \U{m} $ au-dessus du sol) et sur le Puy-de-Dôme en Auvergne ($ \Delta z = 1000 \U{m} $ au-dessus du sol), que la pression atmosphérique varie avec l'altitude\footnote{Le texte original du traité de Pascal est disponible sur Gallica~: \url{http://gallica.bnf.fr/ark:/12148/bpt6k105083f}}.
-
-\sk
-L'équation hypsométrique permet de retrouver l'écart relatif en pression mesuré par Blaise Pascal entre le sol et le haut de la Tour Saint-Jacques. Comme les variations mesurées sont petites, on peut les assimiler aux différentielles et on peut négliger les variations de température avec l'altitude. Les variations relatives de pression mesurées par Pascal peuvent alors s'écrire
-\[ \f{\Delta P}{P} \simeq \f{g}{R\,T} \, \Delta z \]
-L'application numérique avec~$T = 288$~K donne une variation~$\Delta P / P = 0.62 \%$. La variation de pression détectée par Blaise Pascal\footnote{On note que, par une heureuse coincidence, la variation de pression entre le pied et le sommet de la Tour Saint-Jacques est de l'ordre de grandeur de la pression atmosphérique à la surface de Mars, ce qui permet de se représenter la finesse de l'atmosphère sur cette planète, comparé à notre Terre.} est donc d'environ~$6$~hPa (avec la valeur standard de la pression de surface~$P_0 = 1013$~hPa). Bien que cette baisse de pression soit détectable à l'aide du tube de Torricelli, Blaise Pascal a reproduit l'expérience au Puy-de-Dôme avec un écart~$\Delta z$ plus grand pour une meilleure précision quantitative. 
-
-\sk
-\subsubsection{Pression au niveau de la mer, altimétrie et cartes météorologiques}
-
-\sk
-Comme le montre la figure~\ref{fig:press} (haut), la pression~$P$ à la surface de la Terre est au premier ordre sensible à l'altimétrie (hauteur topographique), puisque la pression correspond au poids de la colonne d'air située au-dessus du point considéré. Pour produire des cartes de prévision du temps, on souhaite éliminer du champ de pression~$P$ cette composante topographique de premier ordre et mettre en évidence les variations de second ordre digne d'intérêt en météorologie.
-
-\figsup{0.62}{0.32}{decouverte/cours_meteo/SURFPRESS/outputvar134_200.png}{decouverte/cours_meteo/SURFPRESS/outputvar151_200.png}{Champs de pression prédits au 01/09/2009 par les réanalyses ERA-INTERIM de l'ECMWF (Centre Européen de Prévision du Temps à Moyen Terme). La réprésentation graphique est basée sur une projection stéréographique polaire centrée sur le pôle Nord et les structures topographiques sont ajoutées dans le fond de la figure pour repérage. En haut, le champ de pression brut est tracé en hPa~: les valeurs de pression les plus basses correspondent aux reliefs topographiques les plus élevés. En bas, le champ de pression ramené au niveau de la mer est tracé en hPa~: la composante de premier ordre topographique sur le champ de pression a disparu pour laisser place aux composantes météorologiques de la pression~: dépressions (zones de basses pression) en bleu et anticyclones (zones de haute pression) en rouge. On peut d'ailleurs noter dans ce champ de pression normalisé l'activité ondulatoire de l'atmosphère aux moyennes latitudes. Les cartes de pression des bulletins météorologiques sont exclusivement des cartes de pression ramenées au niveau de la mer comme celle-ci.}{fig:press} 
-
-\sk
-Quand la pression de surface est mesurée à une station située à une altitude~$z \ll H$, on peut utiliser l'équation hypsométrique avec la température mesurée à la station pour déterminer une valeur approximative de la pression au niveau de la mer à~$z=0$. On suppose fréquemment que la température décroît linéairement avec l'altitude~$z$ selon un taux constant négatif~$\Gamma\e{e}$ en~$^{\circ}$C/km (ou K/km). On appelle d'ailleurs la loi~$T = T_0 + \Gamma\e{e} \, z$ le profil de l'atmosphère standard. En intégrant entre le niveau de la mer ($z=0, P=P_0$) et la station à ($z,P$), on obtient:
-\[ \ln \left( \frac{P_0}{P} \right) = \frac{g}{R \, \Gamma\e{e}} \, \ln \left( \frac{T_0 + \Gamma\e{e} \, z}{T_0} \right) \]
-\[ \Rightarrow \qquad P_0 = P \left( 1 + \frac{\Gamma\e{e} \, z}{T_0} \right)^{\frac{g}{R\,\Gamma\e{e}}} \]
-La carte météorologique sur la Figure~\ref{fig:press} bas est obtenue en employant cette équation. L'équation qui précède est aussi utilisée avec $P_0=1013.25$~hPa par les altimètres des avions de ligne pour convertir~$P$ mesurée en~$z$.
-
-\mk
-\section{Premier principe et thermodynamique de l'air sec} 
-
-\sk
-\subsection{\'Energie interne, chaleurs molaires et enthalpie}
-
+	\sk \subsection{\'Energie interne, chaleurs molaires et enthalpie}
 	\input{premier_principe.tex}
 
-\sk
-\subsection{Transformations dans l'atmosphère~: cas général}
-
+	\sk \subsection{Transformations dans l'atmosphère~: cas général}
 	\input{premier_principe_atmosphere.tex}
 
-\sk
-\subsection{Transformations non adiabatiques}
-
+	\sk \subsection{Transformations non adiabatiques}
 	\input{transformations_non_adiabatiques.tex}
 
-\sk
-\subsection{Transformations adiabatiques}
-
+	\sk \subsection{Transformations adiabatiques}
 	\input{transformations_adiabatiques.tex}
 
-%% La température ne nous donne pas des informations fiables sur les échanges de chaleur d'une parcelle avec l'extérieur. Pour ce faire, on se base sur la température potentielle.
-%On définit la {\em température potentielle} $\Theta$ par:
-%\begin{equation}
-%  \Theta=T\cdot\left(\frac{P}{P_0}\right)^{-\kappa}
-%  \label{theta}
-%\end{equation}
-%où $P_0$ est une pression de référence égale à 1000 hPa. $\Theta$ a donc la
-%dimension d'une température (on l'exprime en Kelvin), et est conservée au
-%cours de transformations adiabatiques. $\Theta$ est égale à la température
-%d'une parcelle ramenée de façon adiabatique à une pression $P_0$.
-
-\sk
-\subsection{Gradient adiabatique sec} \label{adiabsec}
-
+	\sk \subsection{Gradient adiabatique sec} \label{adiabsec}
 	\input{gradient_adiabatique_sec.tex}
 
-Pourquoi cette valeur est-elle en désaccord avec la décroissance de~$6.5^{\circ}$C/km effectivement constatée dans l'atmosphère terrestre~? Le chapitre suivant apporte des éléments de réponse à ce paradoxe apparent.
 
 %On définit également l'{\em énergie statique}  \begin{equation}  e_s=C_PT+gz=cste  \label{estat} \end{equation} L'énergie statique est la somme de l'enthalpie et de l'énergie potentielle de gravitation par unité de masse, et est conservée pour des transformations adiabatiques\footnote{L'énergie cinétique est négligeable. Typiquement, $\delta e_c$=50m$^2$s$^{-2}$ (variation de 10m.s\mo) et $\delta e_s$=10 000m$^2$s$^{-2}$ (variation de 1000m ou 10\deg).}. Les variations ou différences de $e_s$ et $\Theta$ sont reliées par: \[de_s=C_PTd\ln\Theta\]
 

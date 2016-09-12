@@ -1,0 +1,160 @@
+\documentclass[a4paper,DIV16,10pt]{scrartcl}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{texcours}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\zauthor}{Aymeric SPIGA}
+\newcommand{\zaffil}{Laboratoire de Météorologie Dynamique}
+\newcommand{\zemail}{aymeric.spiga@upmc.fr}
+\newcommand{\zcourse}{Physique, chimie, écologie de l'environnement}
+\newcommand{\zcode}{UE1}
+\newcommand{\zuniversity}{UPMC}
+\newcommand{\zlevel}{M1 Sciences et Politiques de l'Environnement}
+\newcommand{\zsubtitle}{Fiches complémentaires de cours}
+\newcommand{\zlogo}{\includegraphics[height=1.5cm]{decouverte/cours_meteo/UPMC_cart-blanc-Q_7504-703-3.png}}
+\newcommand{\zrights}{Copie et usage interdits sans autorisation explicite de l'auteur}
+\newcommand{\zdate}{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document} \inidoc
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage \input{atmosphere_presence.tex}
+
+\mk \section{Quelques définitions et généralités}
+
+	\sk \subsection{Vocabulaire}
+	\input{climat_definitions.tex}
+
+	\sk \subsection{Grandeurs utiles}
+	\input{atmosphere_parametres.tex}
+	\input{atmosphere_parametres_variations.tex}
+
+	\sk \subsection{Structure verticale : couches atmosphériques}
+	\input{couches_atmospheriques.tex}
+	\input{couches_atmospheriques_hautes.tex}
+
+\mk \section{Composition atmosphérique}
+	
+	\sk \subsection{Un mélange de gaz parfaits}
+	\input{thermo_gaz_parfait.tex}
+
+	\sk \subsection{Composition moléculaire}
+	\input{atmcomposition_def.tex}
+	\input{atmcomposition_terre.tex}
+	\input{atmcomposition_terre_minoritaires.tex}
+	\input{atmcomposition_planetes.tex}
+
+	\sk \subsection{Aérosols et hydrométéores}
+	\input{aerosols.tex}
+
+\mk \section{Parcelle d'air}
+
+	\sk \subsection{Définition et caractérisation}
+	\input{parcelle.tex}
+	\input{parcelle_rappels.tex}
+
+	\sk \subsection{Parcelle et environnement} \label{parcenv}
+	\input{parcelle_equilibre.tex}
+
+\mk \section{Équilibre hydrostatique}
+
+	\sk \subsection{Bilan des forces}
+	\input{equilibre_hydrostatique.tex}
+
+	\sk \subsection{\'Equation hypsométrique}
+
+		\sk \subsubsection{\'Echelle de hauteur}
+		\input{echelle_hauteur.tex}
+
+		\sk \subsubsection{\'Epaisseur des couches atmosphériques~: équation hypsométrique}
+		\input{equation_hypsometrique.tex}
+
+	\sk \subsection{Applications pratiques}
+
+		\sk \subsubsection{Expérience de Pascal}
+		\input{pression_pascal.tex}
+
+		\sk \subsubsection{Pression au niveau de la mer, altimétrie et cartes météorologiques}
+		\input{pression_niveau_mer.tex}
+
+\mk \section{Premier principe et thermodynamique de l'air sec} 
+
+	\sk \subsection{\'Energie interne, chaleurs molaires et enthalpie}
+	\input{premier_principe.tex}
+
+	\sk \subsection{Transformations dans l'atmosphère~: cas général}
+	\input{premier_principe_atmosphere.tex}
+
+	\sk \subsection{Transformations non adiabatiques}
+	\input{transformations_non_adiabatiques.tex}
+
+	\sk \subsection{Transformations adiabatiques}
+	\input{transformations_adiabatiques.tex}
+
+	\sk \subsection{Gradient adiabatique sec} \label{adiabsec}
+	\input{gradient_adiabatique_sec.tex}
+
+\mk \section{Evolution hors équilibre d'une parcelle d'air}
+
+	\sk \subsection{Transformations pseudo-adiabatiques}
+	\input{transformations_pseudoadiabatiques.tex}
+
+	\sk \subsection{Profil vertical saturé}
+	\input{gradient_adiabatique_humide.tex}
+
+\mk \section{Stabilité et instabilité verticale}
+
+	\sk \subsection{Force de flottaison}
+	\input{flottaison.tex}
+
+	\sk \subsection{Stabilité et instabilité}
+	\input{stabilite.tex}
+	\input{polluants.tex}
+
+\end{document}
+
+\newpage
+\section{Modèle à deux faisceaux : écriture}
+\input{modele_deux_faisceaux_hypotheses.tex}
+
+\newpage
+\section{Modèle à deux faisceaux : résolution}
+\input{modele_deux_faisceaux_resolution.tex}
+
+\newpage
+\section{Inertie thermique}
+\input{inertie_thermique.tex}
+
+\newpage
+\section{Eulérien vs. Lagrangien}
+\input{dynamique_eulerien_lagrangien.tex}
+
+\newpage
+\section{Passage aux coordonnées sphériques}
+\input{dynamique_passage_spheriques.tex}
+
+\newpage
+\section{Expression des forces en coordonnées sphériques}
+\input{dynamique_forces_spheriques.tex}
+
+\newpage
+\section{Equations complètes du mouvement}
+\input{dynamique_equations_spheriques.tex}
+
+\newpage
+\section{Système complet pour la modélisation}
+\input{dynamique_equations_bjerknes.tex}
+
+\newpage
+\section{Vent gradient}
+\input{dynamique_vent_gradient.tex}
+
+\newpage
+\section{Equilibre du vent thermique}
+\input{dynamique_vent_thermique.tex}
+
+\newpage
+\section{Instabilités barotropes et baroclines}
+\input{dynamique_instabilite_barocline_barotrope.tex}
+
+
+\end{document}
