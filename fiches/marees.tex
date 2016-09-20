@@ -1,0 +1,40 @@
+\sk
+La dépendance de la force gravitationnelle en $r^{-2}$ explique qu'un corps attracteur puisse exercer une force gravitationnelle différente en divers points d'un objet. Ce phénomène est appelé marée. L'effet de la force de marée sur un objet peut aller de la déformation simple, à la flexure produisant une chaleur interne, jusqu'à la destruction pure et simple de l'objet. Cette force est également responsable de certaines caractéristiques orbitales. L'action des marées explique que la Lune présente toujours la même face à la Terre, que la comète Shoemaker-Levy s'est détruite à l'approche de Jupiter, que Io soit le théâtre une activité volcanique soutenue, que les étoiles extrasolaires proches de leur étoile voient leur orbite perturbée. La formulation mathématique des marées en terme d'équilibre entre gravité et force centrifuge date de 1687 par Isaac Newton. 
+
+\sk
+L'accélération~$\vec{a}$ d'un objet de masse~$m$ sous l'action des forces~$\vec{F}$ vérifie la seconde loi de Newton~$m \vec{a} = \Sigma \vec{F}$. L'objet subit de la part d'un corps attracteur de masse~$M$ la force de gravitation
+\[ \vec{F_g} = -\mathcal{G} \frac{M\,m}{r^3} \vec{r} \]
+\noindent où~$\mathcal{G}$ est la constante de gravitation, $\vec{r}$ est le vecteur radial reliant les deux corps. 
+
+\sk
+L'objet ainsi dans le champ de gravitation du corps attracteur, à supposer que sa trajectoire soit fermée, décrit une ellipse d'excentricité~$e$ avec une certaine fréquence de rotation~$\Omega$. Dans le référentiel tournant, en interprétant les termes cinématiques liés au changement de référentiel comme des forces apparentes, on montre que l'objet de masse~$m$ subit une force d'entraînement (appelé communément, de manière un peu abusive, force centrifuge)
+\[ \vec{F_e} = m \, \Omega^2 \vec{r} \]
+
+\sk
+L'accélération est nulle en tout point de l'orbite, il y a équilibre entre force de gravitation et force centrifuge, ce qui permet de retrouver la troisième loi de Kepler
+\[ \Omega^2 \, r^3 = \mathcal{G} \, M  \]
+
+\sk
+L'action des marées se comprend en considérant que l'objet n'est pas un point matériel mais, par exemple, une planète de rayon~$R$. Au centre de masse~O de l'objet, fixe dans le référentiel tournant, l'équilibre entre force de gravitation et force centrifuge s'écrit
+\[ \mathcal{E}(r) = -\mathcal{G} \frac{M\,m}{r^2} + m \, \Omega^2 r = 0 \]
+Sur le lobe de l'objet le plus proche du corps attracteur (subplanétaire S), la force de gravitation domine la force centrifuge, attirant ledit lobe vers le corps attracteur : $\mathcal{E}(r-R) > 0$. Sur le lobe de l'objet le plus éloigné du corps attracteur (antiplanétaire A), l'inverse se produit, éloignant ledit lobe du corps attracteur : $\mathcal{E}(r+R) < 0$. Les forces de marées ont donc tendance à allonger le corps en lui conférant une forme avec deux lobes qui donne la périodicité semi-diurne des marées. Plus le corps attracteur est gros, plus l'effet est marqué, pouvant conduire jusqu'à la destruction du corps.
+
+\sk
+L'accélération résultante au point S est
+\[ -\mathcal{G} \frac{M}{(r-R)^2} + \Omega^2 (r-R) = -\mathcal{G} \frac{M}{(r-R)^2} + \mathcal{G} \, \frac{M}{r^3} \, (r-R) \]
+\noindent en notant~$\epsilon = R/r \ll 1$ et réalisant un développement limité au premier ordre
+\[ -\frac{\mathcal{G}\,M}{r^2} \left[ \frac{-1}{(1-\epsilon)^2} + 1-\epsilon \right] \sim - 3 \, \frac{\mathcal{G}\,M}{r^2} \,\epsilon \]
+La force de marée~$f_m$ exercée par unité de masse est donc
+\[ f_m = - 3 \, \frac{\mathcal{G}\,M\,R}{r^3} = \frac{-3\,\mathcal{G}}{R^2} \, \textcolor{blue}{ M \, \left[ \frac{R}{r} \right]^3 } \]
+\noindent Le terme en couleur, qui inclut à la fois la masse~$M$ de l'objet attracteur et le rapport~$R/r$ entre rayon planétaire et distance au corps attracteur, détermine l'intensité des forces de marées. Noter la puissance trois en le rapport~$R/r$ qui rend ce terme souvent prépondérant sur le terme~$M$. La Terre subit ainsi des forces de marée de la Lune bien plus intenses que de la part du Soleil bien que ce dernier soit plus massif.
+
+
+
+
+
+
+
+
+
+
+

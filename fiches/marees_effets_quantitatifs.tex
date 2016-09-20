@@ -1,0 +1,23 @@
+\sk
+\paragraph{Modification d'orbites (quantitatif)} Pour un objet de masse~$m$ suivant une orbite elliptique d'excentricité~$e$ sous l'effet de l'attraction d'un corps de masse~$M$, l'énergie totale~$E$ et le moment angulaire~$L_0$ sont conservés
+\[  E = - \frac{\mathcal{G}\,m\,M}{2\,a} \qquad L_0 = m \, \sqrt{\mathcal{G}\,M\,a\,(1-e^2)} \] 
+En éliminant~$M$ dans les deux équations qui précèdent, on obtient
+\[ E = - \frac{\mathcal{G}\,m\,L_0}{2\,\sqrt{\mathcal{G} \, m \, a^3 \, (1-e^2)}} \qquad \Rightarrow \qquad \ddf{E}{L_0} = - \frac{1}{2} \sqrt{ \frac{\mathcal{G}\,m}{a^3 \, (1-e^2)} } \]
+En introduisant~$\Gamma_m = \ddf{L_0}{t}$, le couple exercé par les forces de marée, on obtient la variation temporelle d'énergie orbitale par les forces de marée
+\[ \ddf{E}{t} = \ddf{E}{L} \ddf{L}{t} = - \frac{\Gamma_m}{2} \, \sqrt{ \frac{\mathcal{G}\,m}{a^3 \, (1-e^2) } } \]
+\noindent En exprimant la dérivée~$\ddf{E}{t}$
+\[
+\ddf{a}{t} \frac{\mathcal{G}\,m\,M}{2\,a^2} = \Gamma_m \, \sqrt{ \frac{\mathcal{G}\,m}{a^3 \, (1-e^2) } }
+\qquad \Rightarrow \qquad
+\ddf{a}{t} = \Gamma_m \, \frac{2\,\mathcal{G}^{-1/2}\,m^{-1/2}}{M \, a^{-1/2} \, (1-e^2) }
+\]
+\noindent En remplaçant par l'expression du couple des marées, et en supposant une orbite de faible excentricité~$r \simeq a$ et~$e \ll 1$, le changement de rayon orbital (contraction ou expansion) s'écrit
+\[
+\ddf{a}{t} = 3 \, \frac{k_T}{Q} \, \frac{\mathcal{G}^{1/2}\,M\,R^5}{m^{1/2} \, a^{11/2} } \, \textrm{sgn}(\omega-\Omega)
+\]
+Ce type de formule permet de déterminer que la Lune s'éloigne de la Terre à une vitesse d'environ 4~cm~an$^{-1}$.
+
+\sk
+\paragraph{Circularisation} Les forces de marée ont également pour effet de rendre les orbites circulaires en faisant tendre l'excentricité~$e$ vers~$0$. Si la révolution du corps autour du corps attracteur est excentrique, en supposant la rotation synchrone, la différence de vitesse orbitale entre le passage au périastre plus rapide que le passage à l'apoastre fait qu'un couple de force va s'exercer pour repousser le corps au périastre et l'attirer à l'apoastre, rendant ainsi l'orbite plus circulaire. La littérature (e.g. Peale 2003) fournit une formule quantitative de cet effet
+\[ \ddf{e}{t} = - \frac{21}{2} \, \frac{k_T}{Q} \, \frac{M}{m} \, \left( \frac{R}{a} \right)^5 \, e  \]
+\noindent ce qui indique que l'échelle de temps caractéristique~$\tau = \frac{-e}{\ddf{e}{t}} $ de la circularisation varie en~$\left( \frac{a}{R} \right)^5$, donc très abruptement avec le demi-grand axe~$a$. Ceci explique que les orbites des satellites des planètes géantes ont une faible excentricité, et que la plupart des exoplanètes ayant un demi-grand axe inférieur à $0.07$~UA ont des orbites circulaires.

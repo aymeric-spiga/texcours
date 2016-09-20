@@ -1,0 +1,102 @@
+\sk
+La région de l'atmosphère d'une planète soumise
+à l'échappement est appelée exosphère et sa base
+est l'exobase. Plus précisément, l'exobase est
+définie comme l'altitude à laquelle le libre
+parcours moyen d'une particule (distance qu'elle peut parcourir sans
+entrer en collision avec une autre particule)
+est égal à une échelle de hauteur atmosphérique.
+Sur Mercure ou la Lune, l'exobase est confondue avec la surface.
+
+\sk
+Les vitesses~$v$ des molécules de masse~$m$ 
+composant un gaz avec une densité particulaire~$N$,
+en équilibre thermique à la température~$T$, 
+suivent une distribution maxwellienne
+\[ f(v) \dd v = N 
+\, \left( \frac{2}{\pi} \right)^{1/2}
+\, \left( \frac{m}{k_B \, T} \right)^{3/2}
+v^2 \, e^{ \frac{-m\,v^2}{2\,k_B\,T}} \, \dd v \]
+\noindent En dessous de l'exobase, les collisions entre molécules
+assurent le caractère maxwellien de la distribution.
+Au dessus de l'exobase, les collisions sont beaucoup
+plus rares (trajectoires ballistiques) et les molécules 
+dans la queue de la distribution
+maxwellienne ayant une vitesse~$v > v_e$ peuvent s'échapper.
+La distribution maxwellienne des vitesses s'étend
+jusque l'infini, mais la distribution des molécules
+est plutôt gaussienne, ce qui implique en pratique
+que quasiment aucune molécule avec des vitesses
+plus grandes qu'environ 4 fois la vitesse thermique moyenne
+$v_0=\sqrt{\frac{2 k_B T}{m}}$.
+
+\sk
+Pour quantifier au premier ordre à quel point une planète
+peut retenir son atmosphère, on définit le paramètre d'échappement~$\lambda_e$,
+rapport entre
+vitesse d'échappement~$v\e{e} = \sqrt{\frac{2\,\mathcal{G}\,M\e{p}}{R+h}}$
+(vitesse d'une molécule permettant de se libérer 
+de l'attraction gravitationnelle de la planète)
+et vitesse thermique moyenne~$v_0$
+\[ \lambda\e{e} = \left( \frac{v_{e}}{v_0} \right)^2 = \frac{\mathcal{G}\,M\e{p}\,m}{k_B\,T\,(R+z)} \] %= \frac{R+z}{H(z)}
+\noindent Le paramètre d'échappement peut également être vu comme
+le rapport entre énergie potentielle et cinétique.
+Si le paramètre d'échappement~$\lambda\e{e}$ est significativement plus petit que 1 ($v_{e} < v_0$), 
+les molécules considérées sont susceptibles de s'échapper en nombre.
+Ainsi, seules les planètes froides et massives 
+peuvent retenir les éléments légers comme l'hydrogène.
+
+\sk
+En intégrant le flux de molécules avec une distribution
+maxwellienne des vitesses au-dessus de l'exobase,
+avec l'approximation d'une atmosphère en équilibre hydrostatique,
+on obtient le taux d'échappement thermique de Jeans (atomes par cm$^2$ par s)
+\[ \Phi_J = \frac{N_{ex} \, v_0}{2\,\sqrt{\pi}} \, (1+\lambda_e) \, e^{-\lambda_e} \]
+\noindent avec les indices $\emph{ex}$ pour l'exobase. Les paramètres typiques pour la Terre : $N\e{ex} = 10^5$~cm$^{-3}$, $T\e{ex} = 900$~K, $\lambda\e{e} \simeq 8$ pour l'hydrogène atomique, donnent~$\Phi\e{J} \simeq 6 \times 10^7$~cm$^{-2}$~s$^{-1}$.
+%Le flux hors la planète ne peut dépasser le flux limite imposé par la diffusion.
+%
+Les éléments ou isotopes les plus légers sont perdus par échappement
+à un taux bien plus élevé ; l'échappement de Jeans peut donc
+générer un fractionnement isotopique significatif.
+La présence ou non d'une atmosphère peut être prédite (au premier ordre)
+en évaluant le taux d'échappement de Jeans.
+Le temps caractéristique de stabilité d'une atmosphère peut
+être obtenu par~$\tau\e{e} = \frac{H \, N}{\Phi\e{e}}$.
+
+
+%Vitesse thermique $V_{th}$: Vitesse d'une molécule atmosphérique d'énergie cinétique~$\frac{3}{2}kT$
+%$$V_{th}=\sqrt{\frac{3RT}{M}}$$
+%\begin{itemize} \item \'Echappement thermique \begin{itemize} \item Négligeable uniquement si $\lambda = \left( \frac{V_{e}}{V_{th}}   \right) \gg 1$ \item Flux de Jeans : $\Phi_e = \frac{n_c}{2\sqrt{\pi}} V_{th} (1+\lambda) \exp (-\lambda)$ \item Inefficace sur Vénus \item Echappement de H, H$_2$ et D pour Mars, Titan et la Terre. \end{itemize} \item \'Echappement non thermique \begin{itemize} \item Processus majoritaires \item \'Echappement d'ions positifs excités. \item Excitations et ionisation par collisions (avec autres atomes ou électrons libres) et/ou photochimie. \end{itemize} \end{itemize}
+%\begin{tabular}{|c|c|c|c|c|}
+%\hline
+%                & Vénus & Terre & Mars & Titan \\
+%\hline
+%$V_{e}$ [km/s]  & 10,3  & 11,2  & 5,0  & 2,6   \\
+%\hline
+%$V_{th}$ [km/s] & 2,2   & 4,1   & 2,4  & 1,8   \\
+%\hline
+%\end{tabular}
+
+
+\figside{0.7}{0.2}{decouverte/cours_gqe/escape.png}{McBride and Gilmour, An Introduction to the Solar System, 2004}{echapplanete}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%% voir slides Emmanuel
+
+
