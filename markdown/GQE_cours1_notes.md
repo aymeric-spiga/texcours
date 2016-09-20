@@ -130,9 +130,9 @@ Astéroïdes remarquables
 ### Comètes
 
 * comète = glaces + poussière
+* réservoir : ceinture de Kuiper (30 UA) jusque nuage de Oort (10000 UA)
 <!--
 * queue de poussière vs. queue de gaz ionisée
-* réservoir : ceinture de Kuiper (30 UA) jusque nuage de Oort (10000 UA)
 * 67P : périhélie 1.24 UA, aphélie 5.68 UA, période 6.4 a, excentricité 0.6
 * 1986 Giotto+Vega : plongé dans la comète de halley (matière organique Kissel et al. Nature 1986)
 * 2004 Stardust : collecte de grains comète
@@ -155,7 +155,7 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
 * Surface très accidentée, chaotique (Thomas et al. Science 2015)
     - terrains lisses (souvent poussiéreux)
     - blocs de roches
-    - falaise Hathor, puits, fractures
+    - falaise Hathor, puits, fractures (à cause choc thermique)
     - très peu de glace en surface (car couverte de poussière), quelques plaques
 * Détection d'organiques à la surface de la comète
 * Atterrissage(s) de Philae sur un corps de faible gravité et très poreux (pas plus dense que la neige, porosité 80%)
@@ -244,7 +244,7 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
   * rotation rétrograde de la surface (lente: 243 Ed vs. 225-Ed year), super-rotation de l'atmosphère
   * couche de nuages corrosifs aux altitudes 45-70 km
 * Surface
-  * surface à 470degC à cause de l'effet de serre (thermochimie, fonte acier, survie des sondes <2h)
+  * surface à 470degC à cause de l'effet de serre (thermochimie, fonte acier, survie des sondes -2h)
   * thermochimie : lessivage et érosion de la surface
   * mesures radar (e.g. Magellan) ont permis d'étudier la surface
   * cartes émissivité : jeunes basaltes non lessivés (vieux de quelques centaines d'années seulement ?)
@@ -375,7 +375,7 @@ asymétrie NS de la brume, enrichissement de certains composés aux hautes latit
   * montagnes de glace d'eau "dure" de 3.5km de haut (et glace eau flotte sur glace azote?)
   * également aux pôles glaces de méthane + diazote
 * zones sombres : a priori des tholins
-* geologically active throughout the epochs Sputnik Planum <10Myr, East Tombaugh ~1Gyr, Cthulu and highlands ~4Gyr (and Charon)
+* geologically active throughout the epochs Sputnik Planum -10Myr, East Tombaugh ~1Gyr, Cthulu and highlands ~4Gyr (and Charon)
 * actual rate of loss is similar to the Earth's atmosphere (pre-New Horizons estimates wildly overestimated the loss of material from Pluto’s atmosphere and thought it was like a comet)
 * glaces: nitrogen-rich, methane-rich, water-rich
 <!--
