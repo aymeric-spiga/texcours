@@ -1,0 +1,56 @@
+
+
+
+%\figside{0.45}{0.3}{/home/aymeric/Big_Data/BOOKS/pierrehumbert_pics/9780521865562c03_fig005.jpg}{R. Pierrehumbert, Principles of Planetary Climates, CUP, 2010}{fig:effetserre1}
+
+\sk
+Nous présentons ici l'explication la plus simple (sans être simpliste) du déplacement
+d'équilibre radiatif qu'induit l'augmentation de gaz à effet de serre.
+%Le modèle à deux faisceaux ne nous aide pas énormément. diverge quand tau tend vers infini.
+
+\sk
+Il est possible de montrer par des calculs de transfert radiatif que le niveau
+d'émission équivalent au sommet de l'atmosphère est tel que~$\tau = 1$.
+Qualitativement, on comprend que les niveaux inférieurs sont optiquement
+épais donc ne sont que marginalement ``vus'' depuis l'espace dans les longueurs d'onde infrarouges.
+Ainsi dans l'équilibre TOA
+\[ OLR = (1-A\e{b}) \, \mathcal{F}\e{s}' \] 
+\noindent l'émission de rayonnement au niveau~$\tau=1$ 
+à la température~$T(\tau=1)$ domine OLR.
+
+\sk
+Appelons~$P\e{rad}$ la pression du niveau~$\tau=1$. 
+Pour relier
+les deux quantités, on emploie la définition de l'épaisseur optique
+$\dd \tau = \rho_X \kappa \dd z$ que l'on combine
+à l'équilibre hydrostatique pour obtenir
+par intégration~$\tau = \kappa \frac{P}{g} \, q_X$,
+avec $q_X$ le rapport de mélange massique 
+de l'espèce~$X$ absorbante dans l'infrarouge.
+Ainsi
+\[ P\e{rad} = \frac{g}{\kappa \, q_X} \]
+
+\figun{0.7}{0.25}{/home/aymeric/Big_Data/BOOKS/pierrehumbert_pics/9780521865562c03_fig006.jpg}{R. Pierrehumbert, Principles of Planetary Climates, CUP, 2010}{fig:effetserre2}
+
+\sk
+L'expression ci-dessus implique qu'une augmentation de
+gaz à effet de serre ($q_X$ augmente) implique une 
+élévation du niveau équivalent d'émission
+($p\e{rad}$ diminue).
+L'effet sur la température de surface se détermine alors
+en écrivant la conservation de la température potentielle
+dans la troposphère soumise à l'équilibre radiatif-convectif,
+entre la surface et le niveau équivalent d'émission
+\[ T_s = T\e{rad} \, \left( \frac{P\e{rad}}{P\e{s}} \right)^{-\frac{R}{c_p}} \]
+\noindent où~$P_s$ est la pression de surface.
+Une élévation du niveau équivalent d'émission
+se traduit donc par une augmentation
+de température (fournissant
+un modèle à la fois simple et fidèle du 
+changement climatique récent sur Terre, Figure~\ref{fig:effetserre2}). 
+Approximativement, $OLR \sim \sigma \, T(P\e{rad})^4$
+et~$P\e{rad}$ est alors défini par la 
+condition TOA qui s'écrit~$OLR = (1-A\e{b}) \, \mathcal{F}\e{s}'$.
+Le lien entre quantité de gaz à effet de serre~$q_X$
+et température de surface~$T\e{s}$ peut ainsi s'écrire
+\[ T\e{s} = \sqrt[4]{\frac{(1-A\e{b}) \, \mathcal{F}\e{s}'}{\sigma}} \, \left( \frac{\kappa \, q_X \,P\e{s}}{g} \right)^{\frac{R}{c_p}} \]

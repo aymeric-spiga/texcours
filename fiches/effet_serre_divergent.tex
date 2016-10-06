@@ -1,0 +1,88 @@
+
+%% http://www.skepticalscience.com/print.php?r=262
+
+\sk
+\paragraph{Approche rapide} Une augmentation de la température de surface~$T\e{s}$ 
+est donc associée à une augmentation de la quantité de gaz à effet de serre~$q_X$.
+Sur une planète pourvue d'océan,
+une augmentation de la température de surface
+provoque une augmentation de l'évaporation
+donc de la quantité de vapeur d'eau dans l'atmosphère, 
+par conséquent de l'effet de serre.
+Il s'agit d'une \voc{rétroaction positive}~:
+le système amplifie la perturbation initiale de température de surface.
+La quantité~$q_X$ de vapeur d'eau dans l'atmosphère
+peut donc virtuellement augmenter indéfiniment.
+Néanmoins, la pression du niveau équivalent~$P\e{rad} = \frac{g}{\kappa \, q_X}$
+ne peut diminuer indéfiniment, du moins continûment~:
+lorsque le sommet de la couche radiative de l'atmosphère
+est atteint $P\e{rad} \ll P\e{s}$ , la radiation sortante~OLR
+atteint une valeur maximale~$OLR\e{max}$.
+
+\sk
+\paragraph{Approche plus subtile} On peut inverser le point de vue et se demander quel est la valeur
+d'OLR qui correspond à une température de surface~$T\e{s}$.
+D'après le modèle simplifié combinant la hauteur équivalente
+d'émission et le profil radiatif-convectif dans la troposphère, nous avons
+\[ OLR  = \textcolor{magenta}{\sigma \, T\e{s}^4} \textcolor{blue}{\left( \frac{g}{\kappa \, q_X \, P\e{s}} \right)^{\frac{4 \, R}{c_p}}} \]
+Plaçons-nous toujours dans le cas d'une planète pourvue
+d'océan en évaporation.
+Pour les températures de surface relativement modérées,
+les variations de quantité de vapeur d'eau~$q_X$
+(et de pression de surface~$P\e{s}$)
+sont modérées et les variations d'OLR suivent 
+une loi en~$\sigma T\e{s}^4$ (terme en \textcolor{magenta}{magenta}).
+Néanmoins, plus la température de surface~$T\e{s}$
+augmente, plus la vapeur d'eau devient dominante
+dans l'atmosphère en influençant~$q_X$, mais
+surtout~$P\e{s}$ via la loi d'équilibre liquide-vapeur
+de Clausius-Clapeyron
+\[  P\e{s}(T\e{s}) = P_0 \, \exp{ \left[ -\frac{\ell}{R\,T\e{s}} \right] }   \]
+\noindent où~$\ell > 0$ est la chaleur latente de vaporisation.
+Si $T\e{s}$ augmente, $P\e{s}(T\e{s})$ augmente, et de manière exponentielle.
+Le terme en \textcolor{blue}{bleu}, qui décroît exponentiellement avec
+la température~$T\e{s}$, influence de façon dominante
+l'expression de l'OLR pour les température élevées.
+L'effet combiné des deux termes 
+(\textcolor{magenta}{magenta} et \textcolor{blue}{bleu})
+impose donc que l'OLR atteint une valeur maximale~$OLR\e{max}$,
+que l'on appelle limite de Komabayashi-Ingersoll
+(du nom de deux auteurs d'articles indépendants parus à la fin des années 60).
+
+\figside{0.4}{0.15}{/home/aymeric/Big_Data/BOOKS/pierrehumbert_pics/9780521865562c04_fig004.jpg}{R. Pierrehumbert, Principles of Planetary Climates, CUP, 2010}{fig:ki}
+
+\sk
+\paragraph{Effet de serre divergent} 
+Quelle que soit l'approche adoptée pour définir~$OLR\e{max}$,
+si l'on se place dans un contexte de variation
+(à l'échelle des temps géologiques) du flux incident
+solaire~$(1-A\e{b}) \, \mathcal{F}\e{s}'$,
+avec notamment une augmentation au cours du temps
+étant donné l'activité radioactive du Soleil,
+on constate que les valeurs du flux 
+incident~$\mathcal{F}\e{s}'$ peuvent
+dépasser~$OLR\e{max}$, ce qui signifie que
+l'équilibre TOA ne peut être satisfait et que
+l'atmosphère reçoit plus d'énergie qu'elle
+n'en émet. L'évaporation des océans peut alors
+survenir de manière abrupte et rapide (Figure~\ref{fig:ki}),
+dans ce que l'on appelle l'\voc{effet de serre divergent}
+(\emph{runaway greenhouse}). De fait, 
+l'équilibre radiatif type TOA peut n'être
+récupéré que pour des températures de surface 
+très élevées (valeurs de plus de~$1000-2000$~K,
+pour lesquelles l'intégralité des océans a disparu
+selon toute vraisemblance).
+Au-delà de telles valeurs de température de surface~$T\e{s}$,
+le flux sortant OLR se remet à augmenter avec~$T\e{s}$
+en raison de la contribution grandissante de l'émission
+thermique dans le visible (et de la moindre absorption
+de la vapeur d'eau dans ces longueurs d'onde).
+
+
+%%% KI : dépend de g
+
+
+%% Fs + when Ts + because increased absorption of solar rad by water vapor
+%% then - when Ts + because Rayleigh scattering
+
