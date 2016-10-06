@@ -1,0 +1,82 @@
+\documentclass[a4paper,DIV16,10pt]{scrartcl}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{texcours}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\zauthor}{Aymeric SPIGA}
+\newcommand{\zaffil}{Laboratoire de Météorologie Dynamique}
+\newcommand{\zemail}{aymeric.spiga@upmc.fr}
+\newcommand{\zcourse}{Physique, chimie, écologie de l'environnement}
+\newcommand{\zcode}{UE1}
+\newcommand{\zuniversity}{UPMC}
+\newcommand{\zlevel}{M1 Sciences et Politiques de l'Environnement}
+\newcommand{\zsubtitle}{CM5: Fiches complémentaires de cours}
+\newcommand{\zlogo}{\includegraphics[height=1.5cm]{decouverte/cours_meteo/UPMC_cart-blanc-Q_7504-703-3.png}}
+\newcommand{\zrights}{Copie et usage interdits sans autorisation explicite de l'auteur}
+\newcommand{\zdate}{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document} \inidoc
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\mk \section{Système de coordonnées et référentiel}
+	\input{dynamique_referentiel.tex}
+
+\mk \section{Equations du mouvement horizontal}
+	\input{dynamique_changement_referentiel.tex}
+
+\mk \section{Action des forces apparentes}
+
+	\sk \subsection{Accélération d'entraînement et pesanteur}
+	\input{dynamique_entrainement.tex}
+
+	\sk \subsection{Accélération de Coriolis et déviation du mouvement}
+	\input{dynamique_coriolis.tex}
+
+
+\end{document}
+
+\newpage
+\section{Modèle à deux faisceaux : écriture}
+\input{modele_deux_faisceaux_hypotheses.tex}
+
+\newpage
+\section{Modèle à deux faisceaux : résolution}
+\input{modele_deux_faisceaux_resolution.tex}
+
+\newpage
+\section{Inertie thermique}
+\input{inertie_thermique.tex}
+
+\newpage
+\section{Eulérien vs. Lagrangien}
+\input{dynamique_eulerien_lagrangien.tex}
+
+\newpage
+\section{Passage aux coordonnées sphériques}
+\input{dynamique_passage_spheriques.tex}
+
+\newpage
+\section{Expression des forces en coordonnées sphériques}
+\input{dynamique_forces_spheriques.tex}
+
+\newpage
+\section{Equations complètes du mouvement}
+\input{dynamique_equations_spheriques.tex}
+
+\newpage
+\section{Système complet pour la modélisation}
+\input{dynamique_equations_bjerknes.tex}
+
+\newpage
+\section{Vent gradient}
+\input{dynamique_vent_gradient.tex}
+
+\newpage
+\section{Equilibre du vent thermique}
+\input{dynamique_vent_thermique.tex}
+
+\newpage
+\section{Instabilités barotropes et baroclines}
+\input{dynamique_instabilite_barocline_barotrope.tex}
+
+
+\end{document}

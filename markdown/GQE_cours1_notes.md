@@ -276,6 +276,7 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
   * jusque 100.000 km de la planète, mais 10m d'épaisseur
   * forces de marées responsables de l'éclatement de satellites ? 
   * interactions entre satellites et anneaux (ex: Pandora *shepherding*, Mimas in Cassini division)
+* dynamique atmosphérique intéressante (hexagone, jet en super-rotation)
 
 ### Uranus
 
