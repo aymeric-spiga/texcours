@@ -1,0 +1,41 @@
+\sk
+Les transferts thermiques par conduction se font par diffusion thermique. L'énergie est transférée via les collisions entre molécules. Ce type de transfert est dominant dans les intérieurs planétaires et dans les hautes atmosphères (thermosphère). Dans le dernier cas, le libre parcours moyen est si long que les atomes / molécules peuvent se mouvoir très rapidement d'une localisation à une autre, résultant en une conduction très efficace et un profil en général proche de l'isotherme.
+
+\sk
+Par analogie avec la diffusion moléculaire, pour définir la diffusion thermique, il s'agit de définir une loi phénoménologique (loi de Fourier, analogue de la loi de Fick) et une équation de conservation dans un volume de contrôle (conservation de l'énergie, analogue de la conservation de la matière). On définit ainsi pour le cas de la diffusion thermique uni-dimensionnelle selon~$x$
+\begin{citemize}
+\item \textit{Cause} inhomogénéité spatiale : Différence de température~$T(x,t)$
+\item \textit{Conséquence} Densité de courant de chaleur~$\vec{J_Q}$ (W~m$^{-2}$)
+\item \textit{\'Echange} Chaleur~$\delta Q = J_Q \, S \, \dd t$
+\item \textit{Loi phénoménologique} Loi de Fourier~$J_Q = - \lambda\e{T} \, \Dp{T}{x}$
+\item \textit{Conductivité thermique} en W~m$^{-1}$~K$^{-1}$~: $\lambda\e{T,roche} = 1-2$, $\lambda\e{T,eau} = 0.5$, $\lambda\e{T,air} = 0.02$.
+\item \textit{Equation bilan locale} Conservation de l'énergie interne~$ \rho \, c_p \, \Dp{T}{t} + \Dp{J_Q}{x} = 0 $
+\end{citemize}
+
+\sk
+Les équations tridimensionnelles sont
+\[  
+\textrm{Loi de Fourier} \quad \vec{J_Q} = - \lambda\e{T} \, \nabla T 
+\qquad \qquad
+\textrm{Conservation de l'énergie} \quad \rho \, c_p \, \Dp{T}{t} + \nabla \cdot \vec{J_Q} = 0
+\]
+\noindent L'équation de conservation de l'énergie n'est rien d'autre que le premier principe appliqué à un volume de contrôle~: la variation temporelle d'énergie interne est égale à la divergence du flux de chaleur (flux sortant moins flux entrant).
+
+\sk
+Combiner loi phénoménologique et équation de conservation permet d'obtenir ce qui est communément appelé l'équation de la chaleur, ou plus précisément l'équation de diffusion thermique
+\[ \Dp{T}{t} = - D\e{T} \, \nabla^2 T \quad \textrm{[3D]} \qquad \qquad \Dp{T}{t} = - D\e{T} \, \DDp{T}{x} \quad \textrm{[1D]} \]
+\noindent où~$D\e{T}$ est la diffusivité thermique notée
+\[ D\e{T} = \frac{\lambda\e{T}}{\rho \, c_p} \]
+
+\sk
+Dans le cas unidimensionnel de la diffusion thermique dans un sol uniforme à la profondeur~$z$, en supposant un forçage périodique~$T(0,t) = T_0 + T_0' \, \cos \omega t$ ($\omega$ étant adapté au cas considéré selon si forçage diurne, saisonnier, \ldots), l'équation de diffusion thermique permet d'obtenir l'expression des variations spatiales et temporelles de~$T$
+\[ T(x,t) = T_0 + T_0' \, e^{-\frac{z}{\delta}} \, \cos (\omega t - \frac{z}{\delta}) \]
+\noindent où l'atténuation avec la profondeur est~$e^{-\frac{z}{\delta}}$ et le déphasage du maximum du forçage est~$\Delta t = \frac{z}{\omega \delta}$, avec~$\delta$ l'épaisseur de peau qui s'exprime
+\[ \delta = \frac{2\,D\e{T}}{\omega} \]
+\noindent En pratique, l'atténuation et le déphasage sont très marquées pour des profondeurs dans le sol même très modérées.
+
+
+
+
+
+
