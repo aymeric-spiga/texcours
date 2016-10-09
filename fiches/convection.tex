@@ -1,9 +1,33 @@
 
 \sk
-Dans les atmosphères denses, les intérieurs en fusion, et même les disques protoplanétaires, le transport d'énergie est souvent le plus efficace via les transports par le fluide sur de grandes échelles spatiales, notamment par convection. La \voc{convection} est le mouvement dans un fluide causé par des gradients de densité, survenant en raison de contrastes de température.
+Dans les atmosphères denses, les intérieurs en fusion, et même les disques protoplanétaires, le transport d'énergie est souvent le plus efficace via les transports par le fluide sur de grandes échelles spatiales, notamment par convection. La \voc{convection} est le mouvement dans un fluide causé par des gradients de densité, survenant en raison de contrastes de température. La force de flottaison cause les mouvements de convection.
 
 \sk
 Une parcelle atmosphérique plus chaude que son environnement ($T\e{p}>T\e{e}$) s'élève. Par équilibre mécanique, sa pression s'équilibre immédiatement avec l'environnement ($P\e{p}=P\e{e}$) donc diminue. En revanche, en raison de la mauvaise conductivité thermique de l'air, sa température~$T\e{p}$ suit des variations avec l'altitude (en conditions approximativement adiabatiques) distinctes de celles de l'environnement~$T\e{e}$. En fonction des variations de la température de l'environnement~$T\e{e}$ avec l'altitude, si celle-ci diminue suffisamment rapidement avec l'altitude, la parcelle atmosphérique va poursuivre son ascension. Il y aura un transport de chaleur vers le haut par convection.
 
 \sk
-Si le transport par convection domine une couche atmosphérique, sa structure thermique suit un gradient adiabatique. Autrement dit, l'action par convection d'une multitude de parcelles de température~$T\e{p} \neq T\e{e}$ finit par causer un profil d'environnement proche du profil adiabatique suivi par une parcelle individuelle.
+Si le transport par convection domine une couche atmosphérique, et cause un mélange du fluide sur cette couche, sa structure thermique suit un gradient adiabatique. Autrement dit, l'action par convection d'une multitude de parcelles de température~$T\e{p} \neq T\e{e}$ finit par causer un profil d'environnement proche du profil adiabatique 
+\[ \ddf{T\e{e}}{z} \sim \frac{-g}{c_p} \]
+
+\sk
+Pour que la convection opère, les forces de flottaison doivent dominer les autres forces, notamment les forces de friction (causées par la viscosité du fluide). Par ailleurs, la parcelle doit pouvoir monter par flottaison en raison des constrastes de température avec son environnement avant que la diffusion thermique n'ait pu homogénéiser la température entre la parcelle et son environnement. La question ne se pose en général pas pour les atmosphères car elles sont des fluides très peu visqueux et mauvais conducteurs de la chaleur. Dans d'autres cas plus ambigus, l'établissement de la convection est donné par le \voc{nombre de Rayleigh} adimensionnel qui compare la force de flottaison aux forces dissipatives
+\[ \mathcal{R}a = \frac{\alpha_T \, \Delta T \, g \, d^3}{D_{T}} \]
+\noindent où
+\begin{citemize}
+\item $d$ est l'épaisseur du fluide considérée, où s'exerce une différence de température~$\Delta T$
+\item $\alpha_T$ est le coefficient de dilatation thermique du milieu ($\sim 1/T$ pour un gaz parfait)
+\item $\nu = f(T)$ est la viscosité du milieu
+\item $D_T = f(T)$ est la diffusivité thermique (varie en~$1/T$ avec une petite contribution en~$T^{-3}$ lorsque le milieu n'est pas encore optiquement épais et peut transporter de la chaleur par rayonnement infra-rouge.
+\end{citemize}
+
+\sk
+Pour que la convection domine, le nombre de Rayleigh doit être au-dessus d'une valeur critique~$\mathcal{R}a\e{c}$ qui vaut $500-1000$ d'après des expériences de laboratoire. Si~$\mathcal{R}a > \mathcal{R}a\e{c}$, le milieu est soumis à des mouvements convectifs qui imposent au fluide de suivre un profil adiabatique dans la couche de mélange. Pour un fluide qui n'est pas un gaz parfait, dont le coefficient de dilatation thermique est~$\alpha_T \neq 1/T$, le profil suivi est
+\[ \ddf{T\e{e}}{z} \sim \frac{-g}{c_p} \, \alpha_T \, T \]
+
+\sk
+Le transport de chaleur dans la couche peut être quantifié par le nombre de Nusselt~$\mathcal{N}u$ qui compare le flux de chaleur~$F$ transporté dans la couche (qui peut être par exemple le flux de chaleur interne~$F\e{int}$ dans les planètes géantes) à celui attendu par conduction~$F\e{cond}$
+\[ \mathcal{N}u = \frac{F}{F\e{cond}} \]
+\noindent Dans le cas convectif avéré~$\mathcal{R}a \gg \mathcal{R}a\e{c}$, $\mathcal{N}u \sim \left( \frac{\mathcal{R}a}{\mathcal{R}a\e{c}} \right)^{0.3}$
+
+\sk
+La viscosité des roches dépend très fortement de la température. Elle est extrêmement élevée à basse température (la roche est solide) dans la lithosphère -- où l'énergie est donc transportée par conduction. Elle devient plus faible à partir de températures au-dessus de~$1100-1300$~K dans le manteau -- où l'énergie est principalement transportée par convection.
