@@ -1,0 +1,170 @@
+\documentclass[a4paper,DIV16,10pt]{scrartcl}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{texcours}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\zauthor}{Aymeric SPIGA}
+\newcommand{\zaffil}{Laboratoire de Météorologie Dynamique}
+\newcommand{\zemail}{aymeric.spiga@upmc.fr}
+\newcommand{\zcourse}{Planétologie}
+\newcommand{\zcode}{ENS}
+\newcommand{\zuniversity}{ENS / UPMC}
+\newcommand{\zlevel}{M1 Géosciences}
+\newcommand{\zsubtitle}{Fiches complémentaires de cours}
+\newcommand{\zlogo}{\includegraphics[height=1.5cm]{decouverte/cours_meteo/UPMC_cart-blanc-Q_7504-703-3.png}}
+\newcommand{\zrights}{Copie et usage interdits sans autorisation explicite de l'auteur}
+\newcommand{\zdate}{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document} \inidoc
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% citer la radioactivité
+
+\newpage
+\section{Chauffage par les marées}
+\input{marees_chauffage.tex}
+
+\newpage
+\section{Energie gravitationnelle}
+\input{energie_gravitationnelle.tex}
+
+\newpage
+\section{Conduction}
+\input{conduction.tex}
+
+\newpage
+\section{Inertie thermique}
+\input{inertie_thermique.tex}
+
+
+\begin{detail}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Parcelle et Gaz parfait}
+	\paragraph{Parcelle}
+		%\input{atmosphere_parametres.tex}
+		\input{parcelle.tex}
+		\input{parcelle_equilibre.tex}
+	\paragraph{Gaz parfait}
+		\input{thermo_gaz_parfait.tex}
+
+\newpage
+\section{Equilibre hydrostatique et Flottaison}
+	\paragraph{Equilibre hydrostatique}
+		\input{equilibre_hydrostatique.tex}
+		%\input{echelle_hauteur.tex}
+	\paragraph{Force de flottaison}
+		\input{flottaison.tex}
+
+\newpage
+\section{Equation de l'énergie}
+	\paragraph{Premier principe de la thermodynamique}
+		\input{premier_principe.tex}
+	\paragraph{Application au cas de l'atmosphère}
+		\input{premier_principe_atmosphere.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{detail}
+
+\newpage
+\section{Types de transformations : adiabatiques}
+\input{transformations_adiabatiques.tex}
+
+\newpage
+\section{Gradient adiabatique sec}
+\input{gradient_adiabatique_sec.tex}
+
+\newpage
+\section{Transformations pseudo-adiabatiques}
+\input{transformations_pseudoadiabatiques.tex}
+
+\newpage
+\section{Profil vertical saturé}
+\input{gradient_adiabatique_humide.tex}
+
+\newpage
+\section{(In)stabilité}
+\input{stabilite.tex}
+
+\newpage
+\section{Convection}
+\input{convection.tex}
+
+\newpage
+\section{Types de transformations : non adiabatiques}
+\input{transformations_non_adiabatiques.tex}
+
+\begin{detail} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Lois du corps noir I}
+	\paragraph{Rayonnement thermique et corps noir}
+		\input{rayonnement_thermique_simple.tex}
+		\input{corps_noir_definition.tex}
+
+	\paragraph{Loi de Planck}
+		\input{corps_noir_loi_planck.tex}
+
+	\paragraph{Loi de Wien du corps noir}
+		\input{corps_noir_loi_wien.tex}
+
+%\newpage
+%\section{Domaine de l'énergie solaire}
+%\input{energie_solaire_domaine.tex}
+
+\newpage
+\section{Lois du corps noir II}
+	\paragraph{Loi de Stefan-Boltzmann du corps noir}
+		\input{corps_noir_loi_stefan.tex}
+	\paragraph{Corps gris et émissivité}
+		\input{corps_noir_emissivite.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{detail}
+
+
+\newpage
+\section{Constante solaire}
+\input{constante_solaire.tex}
+\input{constante_solaire_calcul.tex}
+
+\newpage 
+\section{Albédo} 
+\input{albedo.tex}
+
+\newpage
+\section{\'Equilibre TOA}
+\input{bilan_radiatif_flux_simple.tex}
+
+\newpage
+\section{Bilan simple : température équivalente}
+\input{bilan_radiatif_temperature_equivalente.tex}
+
+\newpage
+\section{Applications de la température équivalente}
+\input{bilan_radiatif_temperature_equivalente_applications.tex}
+
+\newpage
+\section{\'Epaisseur optique}
+\input{epaisseur_optique.tex}
+
+\newpage
+\section{Modèle à deux faisceaux : écriture}
+\input{modele_deux_faisceaux_hypotheses.tex}
+
+\newpage
+\section{Modèle à deux faisceaux : résolution}
+\input{modele_deux_faisceaux_resolution.tex}
+
+\newpage
+\section{Profil radiatif convectif}
+\input{atmosphere_profil_radiatif_convectif.tex}
+
+\newpage
+\section{Effet de serre : déplacement d'équilibre}
+\input{effet_serre_chgt.tex}
+
+\newpage
+\section{Effet de serre divergent}
+\input{effet_serre_divergent.tex}
+
+
+
+\end{document}
