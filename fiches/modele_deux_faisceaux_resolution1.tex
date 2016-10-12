@@ -1,0 +1,20 @@
+\sk
+Le système d'équations~$[S^+]$ et~$[S^-]$ du modèle à deux faisceaux
+est plus simple à résoudre si l'on considère les deux quantités~$\Sigma(\tau)=F^{+}(\tau)+F^{-}(\tau)$ et~$\Delta(\tau)=F^{+}(\tau)-F^{-}(\tau)$ car on obtient
+\[
+\ddf{\Sigma}{\tau} = \Delta(\tau) \quad [E_\Sigma] 
+\qquad\qquad 
+\ddf{\Delta}{\tau} = \Sigma(\tau) - 2\,\epsilon\,\sigma\,T(\tau)^4 \quad [E_\Delta]
+\]
+\noindent Ensuite la résolution impose d'expliciter les conditions aux limites
+\begin{enumerate}[$\mathcal{C}_1$]
+\item on se place à l'équilibre radiatif donc le flux net~$\Delta$ est constant à tout niveau : $\ddf{\Delta}{\tau}=0$
+\item au sommet de l'atmosphère $F^+(\tau=0) = OLR$ (définition de $OLR$) et $F^-(\tau=0) = 0$ (contribution
+incidente négligeable du Soleil dans l'infra-rouge), ce qui s'écrit encore~$\Delta(\tau=0)=\Sigma(\tau=0)=OLR$
+\item à la surface de température~$T_s$ le bilan radiatif est le suivant : la surface reçoit l'intégralité du rayonnement
+solaire incident~$(1-A\e{b}) \, \mathcal{F}\e{s}'$ (visible) plus du rayonnement de l'atmosphère située
+juste au-dessus d'elle~$F^-(\tau=\tau_{\infty})$ (infra-rouge) ; de plus elle émet un rayonnement
+$\epsilon\,\sigma\,T\e{s}^4$ dans l'infra-rouge vers l'atmosphère\footnote{On a supposé ici pour simplifier les calculs que l'émissivité
+de la surface était similaire à l'émissivité de l'atmosphère}
+\item on rappelle que selon la relation \emph{TOA}, nous avons $OLR = (1-A\e{b}) \, \mathcal{F}\e{s}'$
+\end{enumerate}
