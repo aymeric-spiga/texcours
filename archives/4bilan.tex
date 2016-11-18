@@ -27,105 +27,17 @@
 
 		\input{bilan_radiatif_modele_gris_a_une_couche.tex}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mk \section{Description complète du bilan radiatif du système Terre}
 
-\mk
-\section{Description complète du bilan radiatif du système Terre}
+	\sk \subsection{Mesures en moyenne dans le temps et dans l'espace}
 
-\sk
-\subsection{Mesures en moyenne dans le temps et dans l'espace}
+		\input{bilan_radiatif_Terre_moyenne.tex}
 
-\sk
-Une représentation détaillée des différents flux échangés en moyenne temporelle et spatiale sur la Terre est présentée sur la figure~\ref{fig:bilflux}, qui est dérivée d'observations satellite les plus récentes. La figure est construite conformément à la séparation visible / infrarouge dictée par les résultats de la figure~\ref{fig:atmspectrum}. 
+	\sk \subsection{Variations géographiques}
 
-\sk
-\subsubsection{Domaine visible}
+		\input{bilan_radiatif_Terre_geographique.tex}
 
-\sk
-Seulement~$50\%$ du rayonnement solaire incident dans les longueurs d'onde visible parviennent à la surface à cause, d'une part, de la réflexion/diffusion sur les molécules de l'air (diffusion Rayleigh dans toutes les directions, responsable de la couleur bleue du ciel), sur les gouttelettes nuageuses (diffusion de Mie) et sur la surface, et d'autre part, de l'absorption du rayonnement solaire incident par les molécules\footnote{Dans la mésosphère, c'est l'oxygène qui absorbe les radiations les plus énergétiques~; dans la stratosphère, l'absorption des radiations dans l’ultraviolet est assurée par différentes bandes d'absorption de l'ozone~; cette absorption peut avoir lieu dans certaines bandes jusque dans la troposphère.} et les aérosols composant l'atmosphère [relativement modérée dans les longueurs d'onde visible]. On note que la partie du rayonnement visible diffusée vers l'espace par les molécules de l'air, les nuages et la surface définit l'albédo planétaire mentionné précédemment~: un albédo élevé contribue à refroidir la surface et l'atmosphère. L'absorption de la lumière ultraviolet/visible, quant à elle, réchauffe directement l'atmosphère (notamment dans la stratosphère, car la troposphère n'est que très faiblement chauffée par les radiations solaires) et contribue à refroidir la surface par extinction du flux solaire incident. Dans le domaine visible, l'extinction est causée principalement par la diffusion et moins par l'absorption. La partie du rayonnement qui parvient à la surface est absorbée par la surface et convertie en énergie interne, c'est-à-dire contribue à élever sa température. On remarque que la surface terrestre ne peut être considérée tout à fait comme un corps noir puisqu'elle n'absorbe pas toute l'énergie incidente~: une petite partie du rayonnement incident est réfléchie par la surface. Cette composante réfléchie par la surface dépend fortement de la nature des sols (océans, forêts, déserts, glace, \ldots) et de leur répartition géographique.
+	\sk \subsection{Moyennes annuelles~: cartes}
 
-\sk
-\subsubsection{Domaine infrarouge}
-
-\sk
-Chauffée par l'absorption du rayonnement solaire incident, la surface terrestre se refroidit en émettant du rayonnement surtout dans l'infrarouge d'après la loi de Wien. La troposphère est ainsi principalement chauffée par l'absorption, par les gaz à effet de serre et les nuages, du rayonnement infrarouge émis par la surface. Dans l'infrarouge, à part quelques fenêtres atmosphériques à des longueurs d'onde bien précises, seule une petite partie du flux total émis par la surface s'échappe directement vers l'espace. A leur tour, les gaz à effet de serre émettent du rayonnement dans l'infrarouge, à la fois vers l'espace et vers la surface, ce qui refroidit localement l'atmosphère mais réchauffe la surface par effet de serre comme décrit précédemment avec le modèle à une couche [figure~\ref{fig:modun}]. L'atmosphère piège ainsi~$150$~W~m$^{-2}$ par effet de serre, puisque le rayonnement infrarouge sortant est~$240$~W~m$^{-2}$. On ajoute que la stratosphère est également refroidie par émission infrarouge du gaz carbonique, principalement dans la bande d'absorption à~$15$~$\mu$m. Du point de vue de l'atmosphère, émission infrarouge et refroidissement sont donc intimement liés.
-%Émission nette par la vapeur d'eau, l'ozone, le CO2 et les autres gaz à effet de serre : Il s'agit du flux énergétique net émis sous forme de rayonnement énergétique (infrarouge) par l'ensemble des molécules de l'atmosphère. L'émission infrarouge est associée à un refroidissement local. Comme le Corps Noir, les molécules émettent un rayonnement pour se refroidir et équilibrer l'énergie absorbée. L'émission n'a lieu que dans les bandes d'absorption (ou d'émission). Il faut donc que la température locale soit celle du Corps Noir émettant à la longueur d'onde de la bande d'émission. Ainsi, plus on descend dans l'atmosphère plus l'émission se fera par les bandes centrées sur de faibles longueurs d'onde. Émission IR et refroidissement atmosphériques sont doncintimement liés. La stratosphère est principalement refroidie par l'émission IR du gaz carbonique. Ce refroidissement est associé à l'émission par la bande située à 15 μm. Dans la haute stratosphère, la bande d'émission de l'ozone à 9.6 μm permet l’émission IR et le refroidissement atmosphérique. Cependant l'ozone absorbe principalement les radiations solaires et ne peut être considérée comme un gaz à effet de serre (dans la stratosphère). La vapeur d'eau émet également dans la stratosphère dans la bande à 8 μm. La troposphère est principalement refroidie par l'émission de la vapeur d'eau dans la bande située à 6.3 micromètres.
-
-\sk
-\subsubsection{Autres échanges d'énergie}
-
-\sk
-Le bilan net en surface dans l'infrarouge de $65$~W~m$^{-2}$ est une petite différence entre le flux émis par la surface $\sigma \, {T\e{s}}^4$ et celui reçu depuis l'atmosphère. Si le bilan radiatif est bien équilibré au sommet de l'atmosphère, la surface gagne en moyenne de l'énergie et l'atmosphère en perd. En l'absence d'autres mécanismes de transfert d'énergie, cela conduirait à un refroidissement de l'atmosphère, et à une discontinuité de température à la surface entre le sol et l'air. En pratique, ce déséquilibre radiatif est compensé par des flux qui dépendent des mouvements et des changements de phase dans l'atmosphère
-\begin{citemize}
-\item de chaleur sensible (transport vertical de chaleur par la conduction et les mouvements de convection) 
-\item de chaleur latente (évaporation depuis la surface et condensation dans l'atmosphère) 
-\end{citemize}
-depuis la surface vers l'atmosphère. Du fait que le transfert d'énergie du sol vers l'atmosphère se fait également sous forme d'un flux de chaleur sensible et latente, le sol n'émet donc que~$396$~W~m$^{-2}$ (au lieu de~$495$~W~m$^{-2}$) ce qui équivaut à une température de~$15^{\circ}$C, soit la température moyenne de la surface terrestre effectivement constatée. En l'absence de convection et de changements d'état dans l'atmosphère, la température de la surface et des basses couches atmosphériques serait beaucoup plus élevée. 
-%%% les 240 W/m2 qui sortent sont les mêmes que dans la version sans atmosphère.
-%%% noter la fenêtre atmosphérique dans l'infrarouge
-
-%\figun{1.0}{0.4}{\figfrancis/bilan_rad_glob}{Schéma des flux moyens échangés entre la surface de la Terre, l'atmosphère, et l'espace: flux radiatifs ondes courtes (jaune) et infrarouge (rouge), et flux sensibles et latents (violet).}{fig:bilanrad}
-\figun{1.0}{0.45}{decouverte/meteo_terre/bilanflux00004.png}{Bilan énergétique moyen de la Terre (en W~m$^{-2}$)~: flux échangés entre la surface de la Terre, l'atmosphère et l'espace. On distingue les flux radiatifs ondes courtes (rayonnement visible, en jaune) des flux radiatifs ondes longues (rayonnement infrarouge, en rouge). Noter les flux sensibles et latents qui ne sont pas relatifs au transfert radiatif. Source~: Planton CNRS editions 2011 ; adapté de Trenberth et al. BAMS 2009}{fig:bilflux}
-
-%%% MANQUE UN TOPO SUR LE FORçAGE RADIATIF ????
-%%% POUR REBRANCHER SUR LE CHANGEMENT CLIMATIQUE. VOIR PAYAN 10-12.
-
-\sk
-\subsection{Variations géographiques}
-
-\sk
-\subsubsection{Influence de la latitude}
-
-\sk
-Localement, l'éclairement varie suivant la latitude et la saison, en plus de l'alternance jour/nuit: il est proportionnel à $\cos\theta$ où $\theta$ est l'angle d'incidence avec la surface.
-%[figure~\ref{fig:senslat1}]. 
-En moyenne annuelle, le maximum d'ensoleillement est donc aux latitudes tropicales, mais il varie au cours de l'année et est même maximal aux pôles pendant l'été local [figure~\ref{fig:senslat2}]~: la durée du jour de 24h fait plus que compenser l'angle d'incidence réduit dû à la latitude élevée (ce qui peut paraître de prime abord contre-intuitif).
-%\figside{0.3}{0.1}{\figfrancis/swcoslat.jpg}{Schéma de la relation entre densité de flux du rayonnement incident parallèle et éclairement de la surface suivant l'angle d'incidence.}{fig:senslat1}
-\figside{0.65}{0.25}{\figfrancis/swtoaseas}{Cycle saisonnier de l'éclairement dû au rayonnement solaire incident au sommet de l'atmosphère.}{fig:senslat2}
-%%%% http://www.energieplus-lesite.be/energieplus/page_16761.htm
-
-\sk
-\subsubsection{Rôle des nuages}
-
-\sk
-La présence de différents types de nuages est très variable, à la fois géographiquement et dans le temps. Ils ont pourtant une influence très grande sur le bilan radiatif, par deux mécanismes distincts [figure \ref{fig:schemacrf}].
-\begin{finger}
-\item Effet d'albédo~: les nuages réfléchissent une partie importante du rayonnement solaire incident (par rétro\-diffusion par les gouttes d'eau). Cet effet est d'autant plus fort que le nuage contient d'eau et que les gouttes sont fines. Un nuage très réfléchissant apparaitra sombre vu d'en dessous. Au total, les nuages sont responsables des 2/3 de l'albédo planétaire.
-\item Effet de serre~: Les gouttes d'eau (ou la glace) des nuages sont d'excellents absorbants dans l'infrarouge. Un nuage même peu épais absorbe donc très rapidement tout le rayonnement infrarouge provenant des couches plus basses. Il émet lui même vers le haut du rayonnement suivant sa propre température: $\sigma T_N^4$ où $T_N$ est la température au sommet du nuage. Un nuage au sommet élevé (donc froid) aura donc un effet de serre très important.
-\end{finger}
-Au final, l'effet d'albédo l'emporte pour les nuages bas (type stratus), qui sont typiquement épais (albédo élevé) et dont le sommet est chaud. Au contraire, les fins nuages d'altitude (cirrus) ont un albédo faible mais un sommet très froid donc ont un effet net réchauffant. Pour les nuages de type orageux, qui sont épais avec un sommet froid, les deux effets tendent à se compenser.
-\figside{0.6}{0.2}{\figfrancis/schema_crf}{Schema de l'influence des nuages sur le bilan radiatif: effet d'albédo dans le visible (jaune), et absorption et émission dans l'infrarouge (rouge). L'effet de serre vient du rayonnement émis vers l'espace plus faible que celui venant de la surface, qui est absorbé.}{fig:schemacrf}
-%% nuages comme les lunettes dans la caméra infrarouge. faire également référence à la vidéo tirée du satellite.
-
-\sk
-\subsection{Moyennes annuelles~: cartes}
-
-\sk
-On présente dans cette section des cartes des différents termes du bilan radiatif de la terre, tels qu'observés par satellite depuis l'espace. On observe un bilan moyen sur une année qui est variable en fonction de la position géographique : si l'on a, en moyenne, égalité entre absorption du rayonnement solaire incident et émission de la Terre vers l’espace, ce n’est plus vrai si on considère une région donnée. 
-\begin{finger}
-\item
-Le flux solaire absorbé (figure \ref{fig:swtoa}) montre essentiellement une dépendance en latitude. L'effet de l'ensoleil\-lement au sommet de l'atmosphère, plus fort dans les tropiques, est amplifié par un albédo élevé aux latitudes polaires à cause de la présence de neige et de glace au sol. En plus de ces variations en latitudes, on observe des différences locales dûes à l'albédo des régions nuageuses (zone de convergence intertropicale, bords est des océans) ou du sol (Sahara).
-\item
-Le flux infrarouge sortant au sommet de l'atmosphère (figure \ref{fig:olr}) a lui aussi une structure en latitude, mais moins marquée que pour les ondes courtes: les hautes latitudes, plus froides, émettent moins de rayonnement. On voit d'autre part nettement le flux sortant plus faible dans les régions humides des tropiques (continents et zone de convergence) où des nuages convectifs d'altitude élevée se forment.
-\item
-La signature des régions humides est nettement plus faible sur la carte du bilan net au sommet de l'atmosphère (figure \ref{fig:nettoa}); les effets de serre et d'albédo des nuages se compensant en grande partie. On retrouve par contre un bilan moins positif dans les régions où un albédo élevé provient du sol (Sahara) ou de nuages bas (Chili, Californie). D'autre part, on observe un gain net d'énergie dans les tropiques, et une perte dans les hautes latitudes; la distribution du bilan dans le visible qui est plus inégale que celle dans l'infrarouge détermine donc la structure globale. 
-\end{finger}
-
-\figside{0.65}{0.25}{\figfrancis/erbe_stoa_ann}{Rayonnement visible absorbé par la Terre, en moyenne annuelle (données ERBE).}{fig:swtoa}
-\figside{0.65}{0.25}{\figfrancis/erbe_olr_ann}{Rayonnement infrarouge sortant au sommet de l'atmosphère, en moyenne annuelle.}{fig:olr}
-\figside{0.65}{0.25}{\figfrancis/erbe_ntoa_ann}{Flux net absorbé par la Terre (visible  - infrarouge sortant) en moyenne annuelle.}{fig:nettoa}
-
-%• Disparités régionales :
-%o Sahara en été boréal : fort albédo + forte perte IR + capacité
-%calorifique faible + atmosphère sèche
-%o Océan : albédo faible compense la perte radiative IR + forte
-%capacité calorifique
-
-\sk
-Ces excès et déficit d'énergie locaux doivent, en moyenne, être compensés par des transports d'énergie par les circulations atmosphérique et océanique. Ils fournissent la source d'énergie pour la \voc{dynamique atmosphérique} qui va contribuer à répartir l'énergie des régions excédentaires en énergie vers les régions déficitaires en énergie~[figure~\ref{fig:hadley}].
-
-\figun{0.75}{0.35}{decouverte/cours_meteo/energiedyn.png}{Schéma représentant les latitudes où l'atmosphère est excédentaire ou, au contraire, déficitaire en énergie. La courbe bleue représente l'énergie radiative reçue du Soleil, principalement dans les courtes longueurs d'onde (noté \emph{shortwave} sur la figure, correspond au rayonnement visible et ultraviolet). La courbe rouge représente l'émission par la surface terrestre, principalement dans les longues longueurs d'onde (noté \emph{longwave} sur la figure, correspond au rayonnement infrarouge). Une circulation atmosphérique de grande échelle se met en place entre les régions excédentaires (équatoriales et tropicales) et déficitaires (hautes latitudes).}{fig:hadley}
-
-%\end{document}
-
+		\input{bilan_radiatif_Terre_geographique.tex}
 
