@@ -106,16 +106,46 @@ Astéroïdes remarquables
 
 * near-Earth asteroïd Itokawa visité en 2005 par la sonde japonaire Hayabusa (collecte d'échantillons)
 
-* Phobos et Deimos capturé par Mars
+* Phobos et Deimos capturé par Mars (mais étude 2016 possibilité de naissance par impact ?)
   trop peu massifs pour avoir être organisés sphériquement par le champ de gravité
 
 * Cérès visité par la sonde Dawn en 2015, lancée en 2007
   * avec Vesta, deux des plus grandes protoplanètes encore existantes (ont presque évoluées comme des planètes)
   * classé C mais... densité montre: 20-25% glace d'eau, probablement différencié en un coeur rocheux et un manteau de glace d'eau
   * de la même "lointaine" famille qu'Encelade et Pluton
+  * très cratérisé, -7.2 to 6.4 km of topography, a single mountain: 4km high Ahuna Mons (pas de scénario de formation évident... cryovolcan?)
   * *bright spots* dans le cratère Occator, dépôts récents : glace ? sels ? 
-  * des montagnes de 5 kilomètres de haut, pas de scénario de formation évident... glaciers ?
   * débat dans la communauté sur la présence ou non de vapeur d'eau
+
+<!--
+density 3.5 vs 2.2 g/cm3
+vesta basaltic differentiated
+Ceres icy+rocky differentiated?
+
+is it homogeneous? J2 measurement, less than expected for a sphere of constant density
+rheologically weak layer at depth, stringer near-surface layer
+water in the outer shell
+transition compatible with those observed on "icy" bodies
+neutron counts drop towards the poles: evidence for water ice at high latitudes (depth inf 1m)
+
+white/yellow crater, fresh with expansion fractures
+mapping spectrometer: huge Na-carbonate bands, sodium carbonates
+50 to 80% of carbonate
+bright material: bears similarities with Enceladus
+where ammonia, NaCl, NaHCO3 and Na2CO3 have been detected in plumes
+
+ahuna mons seems like a viscous cryovolcanic dome
+
+where did ceres form? in trans-neptunian disk then implanted in the asteroid belt?
+
+not completely differentiated
+extensive and pervasive aqueous alteration
+possible formation in colder regions of the solar system
+water played a critical role
+
+-->
+
+
 
 ### Météorites
 
@@ -140,7 +170,7 @@ Astéroïdes remarquables
 * Whipple 1950 : une boule de neige sale (vs) Greenberg 1982 : un bloc de grains interstellaires
 * un tout petit peu de matière carbonée suffit à rendre une comète sombre
 -->
-* pourquoi les étudier ?
+* pourquoi les étudier ? 
     1. archives du ciel (formation conjointe au système solaire)
     2. source de l'eau et de la matière organique sur la Terre primitive ?
 * 67P Churyumov-Gerassimenko : l'épopée de Rosetta et Philae
@@ -150,16 +180,22 @@ pour celles de la ceinture de Kuiper : celui de la Terre !
 mais... Tchouri... 3 fois le rapport D/H de la Terre
 * Rosetta (arrivée 09/2014) et Philae (landing 11/2014, 100 kg 1m par 1m)
 -->
-* Suivi de l'activité de la comète par Rosetta (passage au périhélie été 2015)
-* Forme en deux lobes : collision à faible vitesse de deux comètes (cf. strates et terrasses)
-* Surface très accidentée, chaotique (Thomas et al. Science 2015)
+* Suivi de l'activité de la comète par Rosetta (passage au périhélie été 2015, nombreux jets)
+* Forme en deux lobes : collision à faible vitesse de deux comètes (cf. strates et terrasses, Massironi et al. Nature 2015)
+* Albedo 4-6%. mix of compact, rubble piles and clusters of particles. fluffy particles less 1 kg/m3. bulk density 532 kg/m3.
+<!--
+* comet never been warm, forming cold. O2 and water inherited from pre-solar cloud
+* sublimation continues as comet goes into dark (because thermal inertia)
+-->
+* Surface très accidentée, chaotique (Thomas et al. Science 2015). grande diversité de structures de surface
     - terrains lisses (souvent poussiéreux)
-    - blocs de roches
+    - blocs de roches (consolidated)
     - falaise Hathor, puits, fractures (à cause choc thermique)
     - très peu de glace en surface (car couverte de poussière), quelques plaques
-* Détection d'organiques à la surface de la comète
+* Détection d'organiques à la surface de la comète (prebiotic molecules, could have been delivered to Earth)
 * Atterrissage(s) de Philae sur un corps de faible gravité et très poreux (pas plus dense que la neige, porosité 80%)
 <!--
+* observation du plasma
 * Résultats de COSAC composés organiques, précurseurs de molécules importantes pour la vie Goesmann et al. Science 2015
 * Détection (surprenante !) d'oxygène moléculaire par spectroscopie de masse ROSINA sur Rosetta (Bieler et al. Nature 2015)
 * températures très variables de 20K à 200K en fonction de l'insolation
@@ -169,7 +205,7 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
 * ROMAP: comète très peu magnétisée, forces magnétiques n'ont pas joué de rôle dans l'accrétion de matière lors de la formation du système solaire ?
 * CONSERT: la tête de la comète est bien creuse Kofman et al. Science 2015
 * CIVA: surface fracturée: choc thermiques, variations d'albédo Bibring et al. Science 2015
-* contacts très courts au début de l'été 2015, mais réveils ne permettent pas d'études scientifiques
+* contacts très courts au début de l'été 2015, mais réveils ne permettent pas d'études scientifiques. retrouvé en 09/2016 par Rosetta avant la fin.
 -->
 
 ## Corps sans atmosphères
@@ -244,12 +280,12 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
   * rotation rétrograde de la surface (lente: 243 Ed vs. 225-Ed year), super-rotation de l'atmosphère
   * couche de nuages corrosifs aux altitudes 45-70 km
 * Surface
-  * surface à 470degC à cause de l'effet de serre (thermochimie, fonte acier, survie des sondes -2h)
-  * thermochimie : lessivage et érosion de la surface
+  * surface à 470degC à cause de l'effet de serre (thermochimie érosive, fonte acier, survie des sondes -2h)
   * mesures radar (e.g. Magellan) ont permis d'étudier la surface
   * cartes émissivité : jeunes basaltes non lessivés (vieux de quelques centaines d'années seulement ?)
   * resurfaçage global il y a 300 à 500 millions d'années seulement?
   * pas de petits cratères en raison de l'atmopshère trop épaisse
+  * sites avec des lava flows, exemple Idunn Mons
 * Intérieur
   * coeur de fer de 3000 km de rayon
   * tectonique des plaques (a priori)
@@ -266,7 +302,7 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
 ### Jupiter
 
 * Agents chimiques responsables des couleurs observées encore non déterminés
-* Grande Tâche Rouge (anticyclone persistant depuis probablement 300 ans, en cours de rétrécissement)
+* Grande Tâche Rouge (anticyclone persistant depuis probablement 300 ans, en cours de rétrécissement... ou cycle?)
 * Anneaux fins de poussière météoritique
 
 ### Saturne
@@ -328,7 +364,7 @@ asymétrie NS de la brume, enrichissement de certains composés aux hautes latit
 ### Ganymède (Jupiter)
 
 * Plus grande lune du système solaire (plus grande que Mercure !)
-* Génère son propre champ magnétique
+* Différenciée et génère son propre champ magnétique
 * Différences d'âge des surfaces : resurfaçage par cryovolcanisme et tectonique ? *landslides* ?
 * Probable structure interne similaire à Europe
 
@@ -349,9 +385,11 @@ asymétrie NS de la brume, enrichissement de certains composés aux hautes latit
 * Un hémisphère très brillant, l'autre très sombre
 * Forme étrange en coquille de noix : impact récent responsable de la crête équatoriale ?
 
+<!--
 ### Miranda (Uranus)
 
 * Surface complexe (roches + glaces) avec une fusion partielle de l'intérieur et une dérive des pans gelés
+-->
 
 ## Objets transneptuniens
 
@@ -366,20 +404,30 @@ asymétrie NS de la brume, enrichissement de certains composés aux hautes latit
 
 * Découverte en 1930, désormais planète naine, diamètre 2370 km
 * Système double avec Charon de rayon 600 km (a pu se former par l'effet d'un impact sur Pluton) + 5 petites lunes
-* Atmosphère composée 99% N2 (équilibre de sublimation) 1% CO traces CH4
+* Atmosphère composée 99% N2 (équilibre de sublimation avec surface) 1% CO traces CH4
 * Composition interne inconnue (noyau rocheux ?)
+
 * Survol de New Horizons en juillet 2015 : révolution de notre vision de ce corps
 * Distinctions entre zones sombres craterisées (Cthulhu) et lisses très brillantes (Tombaugh)
+* geologically active throughout the epochs Sputnik Planum -10Myr, East Tombaugh ~1Gyr, Cthulu and highlands ~4Gyr (and Charon)
+* glaces: nitrogen-rich, methane-rich, water-rich 
+* zones sombres : a priori des tholins
+* volcanic summits?
+
 * "Coeur" (Tombaugh Regio) surface glacée
   * sans cratères, âge: 100 millions d'années maximum
-  * glaciers Sputnik composée de glace molle d'azote et monoxyde de carbone (+ méthane)
+  * glaciers Sputnik (dépression topo) remplie de glace molle d'azote et monoxyde de carbone (+ méthane)
+  * low-viscosity: solid-state convective motions and currents (N2 and CO)
   * montagnes de glace d'eau "dure" de 3.5km de haut (et glace eau flotte sur glace azote?)
-  * également aux pôles glaces de méthane + diazote
-* zones sombres : a priori des tholins
-* geologically active throughout the epochs Sputnik Planum -10Myr, East Tombaugh ~1Gyr, Cthulu and highlands ~4Gyr (and Charon)
-* actual rate of loss is similar to the Earth's atmosphere (pre-New Horizons estimates wildly overestimated the loss of material from Pluto’s atmosphere and thought it was like a comet)
-* glaces: nitrogen-rich, methane-rich, water-rich
+
+* actual rate of loss is similar to the Earth's atmosphere, slow Jeans escape 
+* pre-New Horizons estimates wildly overestimated the loss of material from Pluto’s atmosphere and thought it was like a comet
+* puzzling thermal structure. what is the coolant?
+
+* Charon: evidence of atmospheric transfer to Charon (polar stain), surface ages: all old, no detectable atmospheres
+* satellites ages ~3-4+ Gyr, old surfaces, uniformly high albedos, all rapid rotators (not tidally locked), crystalline H2O ice!
 <!--
+UV, RS, plasma, dust counter, camera, color imaging
 au nord: glace de méthane plus épaisse au nord (car on ne voit pas la glace d'eau
 à l'équateur (tholins) neige de méthane sur les montagnes
 Grundy et al. bande d'azote (frost) Science 2016
