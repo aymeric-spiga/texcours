@@ -1,0 +1,29 @@
+\sk
+L'équation fondamentale de la dynamique des fluides géophysiques 
+en projection sur les coordonnées sphériques avec l'approximation de couche mince
+s'écrit finalement
+\begin{center}
+\begin{tabular}{ccccccccc}
+%%%%%%
+%\BBB{\derd{u}{t}} & \CCC{-\dfrac{uv\tan\phi}{a}} & \ZZZ{+\dfrac{uw}{a}} & = & \AAA{\fcoriolis v} & \ZZZ{-\fcoriolis w\cos\phi} & \DDD{-\dfrac{1}{\rho}\der{p}{x}} & & \ZZZ{+Fr_x}\\
+\BBB{\derd{u}{t}} & \CCC{-\dfrac{uv\tan\phi}{a}} & \ZZZ{+\dfrac{uw}{a}} & = & \AAA{\fcoriolis v} & \ZZZ{-2\Omega \cos\phi w} & \DDD{-\dfrac{1}{\rho}\der{p}{x}} & & \ZZZ{+Fr_x}\\
+~\\
+%%%%%%
+%\BBB{\derd{v}{t}} & \CCC{+\dfrac{u^2\tan\phi}{a}} & \ZZZ{+\dfrac{wu}{a}} & = & \AAA{-\fcoriolis u} & & \DDD{-\dfrac{1}{\rho}\der{p}{y}} & & \ZZZ{+Fr_y}\\
+\BBB{\derd{v}{t}} & \CCC{+\dfrac{u^2\tan\phi}{a}} & \ZZZ{+\dfrac{vw}{a}} & = & \AAA{-\fcoriolis u} & & \DDD{-\dfrac{1}{\rho}\der{p}{y}} & & \ZZZ{+Fr_y}\\
+~\\
+%%%%%%
+%\ZZZ{\derd{w}{t}} & \ZZZ{-\dfrac{u^2+v^2}{a}}&&=&\ZZZ{\fcoriolis u} & & \DDD{-\dfrac{1}{\rho}\der{p}{z}}& \DDD{ -g}&\ZZZ{+Fr_z}   \\ 
+\ZZZ{\derd{w}{t}} & \ZZZ{-\dfrac{u^2+v^2}{a}}&&=&\ZZZ{2\Omega\cos\phi u} & & \DDD{-\dfrac{1}{\rho}\der{p}{z}}& \DDD{ -g}&\ZZZ{+Fr_z}   \\ 
+\end{tabular}
+\end{center}
+
+\sk
+Les termes s'interprètent comme suit
+\begin{citemize}
+\item{Pression} \DDD{\bullet} 
+\item{Coriolis} \AAA{\bullet}
+\item{Inertiels (sphéricité)} \CCC{\bullet}
+\item{Inertials (accélération)} \BBB{\bullet}
+\end{citemize}
+Les termes en noir sont liés au déplacements verticaux et sont en général négligeables quand on considère la circulation générale de l'atmosphère et de l'océan.

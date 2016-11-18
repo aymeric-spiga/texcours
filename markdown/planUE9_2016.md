@@ -25,23 +25,30 @@
 - Définition : troposphère vs. stratosphère
 - Autre modèle simple d'effet de serre
   --> hauteur (ou pression) équivalente d'émission + gradient adiabatique
-- rétroactions et effet de serre divergent
 
-<!--
 # Cours 2 : De la structure thermique aux circulations atmosphériques
 
+## Retour
+- rétroactions et effet de serre divergent
+- équilibre radiatif-convectif (géantes)
+
 ## Mouvements verticaux et équilibre radiatif-convectif
-- CAPE
 - Chaleur latente et modification du gradient adiabatique
+- CAPE
+<!--
 - modèle Budyko-Sellers : transitions climatiques
-- examen des profils sur planètes et corps célestes
+-->
+- examen des profils sur planètes (y compris Terre) et corps célestes
 
 ## Contrastes latitudinaux de température et mouvements horizontaux
 - différences d'insolation par sphéricité
 - délai temporel entre insolation et température
-  - inertie thermique des surfaces
+  - conduction, inertie thermique des surfaces
   - constante de temps radiative
+- équateur thermique : max insolation différent max température
 - contrastes latitudinaux T >>> contrastes P par EH+GP >>> cellules thermiques directes (cellules de Hadley)
+- brise de terre / mer sur Terre et brises de calotte sur Mars
+
 
 # Cours 3 : Dynamique atmosphérique
 
@@ -66,4 +73,4 @@
   - application aux circulations axisymétriques type cellule de Hadley
   - théorème de Hide: existence de super-rotation sur Vénus/Titan
     >>> circulations non axisymétriques doivent transporter du moment cinétique
--->
+- équation de la vorticité et ondes de Rossby

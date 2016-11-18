@@ -19,13 +19,13 @@ On utilise directement ce résultat, combiné à une propriété de changement d
 Munis de cette expression simple de la force de pression, on peut alors modifier l'équilibre du vent gradient
 \[ \dfrac{u^2\tan\phi}{a} + \fcoriolis u = -\dfrac{1}{\rho}\der{p}{y} = \frac{\partial \Phi}{\partial y} \]
 \noindent que l'on peut ensuite dériver par rapport à la coordonnée verticale pression~$P$ 
-\[ \left[ 2 \, u \, \dfrac{\tan\phi}{a} + \fcoriolis u \right] \der{u}{P} = \der{~}{P} \left[ \frac{\partial \Phi}{\partial y} \right] \]
+\[ \left[ 2 \, u \, \dfrac{\tan\phi}{a} + \fcoriolis \right] \der{u}{P} = \der{~}{P} \left[ \frac{\partial \Phi}{\partial y} \right] \]
 \noindent afin de pouvoir commuter les dérivées partielles puis utiliser la version de l'équilibre hydrostatique formulée ci-dessus avec le géopotentiel~$\Phi$
-\[ \left[ 2 \, u \, \dfrac{\tan\phi}{a} + \fcoriolis u \right] \der{u}{P} = \der{~}{y} \left[ \frac{\partial \Phi}{\partial P} \right] = \der{~}{y} \left[ \frac{1}{\rho} \right] \]
+\[ \left[ 2 \, u \, \dfrac{\tan\phi}{a} + \fcoriolis \right] \der{u}{P} = \der{~}{y} \left[ \frac{\partial \Phi}{\partial P} \right] = \der{~}{y} \left[ \frac{1}{\rho} \right] \]
 \noindent Reste à employer l'équation d'état des gaz parfaits~$P=\rho\,R\,T$ pour faire apparaître la température
-\[ \left[ 2 \, u \, \dfrac{\tan\phi}{a} + \fcoriolis u \right] \der{u}{P} = R \, \frac{\partial}{\partial y} \left[ \frac{T}{P} \right] 
+\[ \left[ 2 \, u \, \dfrac{\tan\phi}{a} + \fcoriolis \right] \der{u}{P} = R \, \frac{\partial}{\partial y} \left[ \frac{T}{P} \right] 
 \qquad \Rightarrow \qquad
-\boxed{ \left[ \textcolor{brown}{2\,u\,\frac{\tan\phi}{a}} + \textcolor{red}{\fcoriolis u} \right] \der{u}{P} = \frac{R}{P} \, \frac{\partial T}{\partial y} }
+\boxed{ \left[ \textcolor{brown}{2\,u\,\frac{\tan\phi}{a}} + \textcolor{red}{\fcoriolis} \right] \der{u}{P} = \frac{R}{P} \, \frac{\partial T}{\partial y} }
 \]
 \noindent L'expression encadrée de l'équilibre du vent thermique vient de la constatation finale que l'on peut sortir le terme en pression à l'intérieur de la dérivée à droite puisque~$P$ est une coordonnée supposée fixe par définition de la dérivée partielle suivant~$y$. Les termes sont colorés en fonction de l'équilibre dans lequel on se trouve : \textcolor{brown}{équilibre cyclostrophique} (exemple sur Vénus) ou \textcolor{red}{équilibre géostrophique} (exemple sur Mars ou la Terre). Dans le cas où la situation est ambigüe, il faut conserver les deux termes.
 
