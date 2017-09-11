@@ -1,0 +1,103 @@
+\documentclass[a4paper,DIV16,10pt]{scrartcl}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{texcours}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\zauthor}{Aymeric SPIGA}
+\newcommand{\zaffil}{Laboratoire de Météorologie Dynamique}
+\newcommand{\zemail}{aymeric.spiga@upmc.fr}
+\newcommand{\zcourse}{Planétologie}
+\newcommand{\zcode}{ENS}
+\newcommand{\zuniversity}{ENS / UPMC}
+\newcommand{\zlevel}{M1 Géosciences}
+\newcommand{\zsubtitle}{Fiches complémentaires de cours}
+\newcommand{\zlogo}{\includegraphics[height=1.5cm]{decouverte/cours_meteo/UPMC_cart-blanc-Q_7504-703-3.png}}
+\newcommand{\zrights}{Copie et usage interdits sans autorisation explicite de l'auteur}
+\newcommand{\zdate}{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document} \inidoc
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section{\'Equation hypsométrique}
+\input{equation_hypsometrique.tex}
+
+\newpage
+\section{Cellules de Hadley et Jets}
+\input{hadley.tex}
+
+\begin{detail} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Système et référentiel}
+	\input{dynamique_referentiel.tex}
+\section{Changement de référentiel}
+	\input{dynamique_changement_referentiel.tex}
+\section{Eulérien vs. Lagrangien}
+	\input{dynamique_eulerien_lagrangien.tex}
+\section{Accélération d'entraînement et pesanteur}
+	\input{dynamique_entrainement.tex}
+\section{Forces de pression}
+	\input{dynamique_pression.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{detail}
+
+
+\newpage
+\section{Accélération de Coriolis et déviation du mouvement}
+	\input{dynamique_coriolis.tex}
+
+	
+\begin{detail}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Equation fondamentale}
+	\input{dynamique_equation_fondamentale.tex}
+\section{Passage aux coordonnées sphériques}
+	\input{dynamique_passage_spheriques.tex}
+\section{Expression des forces en coordonnées sphériques}
+	\input{dynamique_forces_spheriques.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{detail}
+
+\newpage
+\section{Equations complètes du mouvement}
+\input{dynamique_equations_spheriques_termes.tex}
+
+\section{Système complet pour la modélisation}
+\input{dynamique_equations_bjerknes.tex}
+
+\newpage 
+\section{\'Echelles}
+\input{dynamique_echelles.tex}
+
+\newpage 
+\section{\'Echelles (évaluation)}
+
+	\sk \subsection{\'Echelles (mouvement vertical)}
+	\input{dynamique_echelles_vertical.tex}
+
+	\sk \subsection{\'Echelles (mouvement horizontal)}
+	\input{dynamique_echelles_horizontal.tex}
+
+
+\newpage
+\section{Grands équilibres}
+\input{dynamique_equations_spheriques_equilibres.tex}
+
+\newpage
+\section{Vent gradient}
+\input{dynamique_vent_gradient.tex}
+
+\newpage
+\section{Equilibre du vent thermique}
+\input{dynamique_vent_thermique.tex}
+
+\newpage
+\section{Retour sur cellule de Hadley}
+\input{hadley2.tex}
+
+\newpage
+\section{Instabilités barotropes et baroclines}
+\input{dynamique_instabilite_barocline_barotrope.tex}
+
+\end{document}
