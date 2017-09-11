@@ -19,18 +19,18 @@ G 	5 000–6 000 K 	jaune (comme le Soleil) 	calcium, hélium, hydrogène et mé
 K 	3 500–5 000 K 	orange 	métaux et monoxyde de titane
 M 	< 3 500  K 	rouge 	métaux et monoxyde de titane
 -->
-* Formé en majorité d'hydrogène (92%) et d'hélium
-* Sphère géante de plasma (électrons + particules chargées qui se comportent comme un gaz)
+    * Formé en majorité d'hydrogène (92% volume, 75% masse) et d'hélium
+    * Sphère géante de plasma (électrons + particules chargées qui se comportent comme un gaz)
 * Coeur 
-  * 15 millions degC 
-  * fusion nucléaire de protons en éléments légers
-  * E = mc^2 la perte de masse libère de l'énergie 
-  * Bilan énergie du soleil : perte d'énergie radiative compensée par pression du gaz d'électrons
+    * 15 millions degC 
+    * fusion nucléaire de protons en éléments légers
+    * E = mc^2 la perte de masse libère de l'énergie 
+    * Bilan énergie du soleil : perte d'énergie radiative compensée par pression du gaz d'électrons
 * Photosphère
-  * 6000 K environ
-  * d'où partent les photons et l'énergie radiative qui nous parvient
+    * 6000 K environ, sunspots, cycle de 11 ans
+    * d'où partent les photons et l'énergie radiative qui nous parvient
 * Le système solaire s'est formé il y 4.6 milliards d'années
-  * organisation de la pluralité des environnements (rocheuses vs. gazeuses, primaires vs. secondaires)
+    * organisation de la pluralité des environnements (rocheuses vs. gazeuses, primaires vs. secondaires)
 
 ### Définition et extension
 
@@ -39,17 +39,16 @@ Générale : toute entité sous influence du Soleil
 En pratique
 
  1. Tous les corps sous attraction gravitationnelle du Soleil
-
-   * les planètes et leur satellites
-   * les astéroïdes entre Mars et Jupiter
-   * les astéroïdes de la ceinture de Kuiper (au-delà de Neptune)
-   * les comètes
-   * les poussières interstellaires
-   * certains des objets glacés du nuage sphérique de Oort (au-delà de la ceinture de Kuiper)
+    * les planètes et leur satellites
+    * les astéroïdes entre Mars et Jupiter
+    * les astéroïdes de la ceinture de Kuiper (au-delà de Neptune)
+    * les comètes
+    * les poussières interstellaires
+    * certains des objets glacés du nuage sphérique de Oort (au-delà de la ceinture de Kuiper)
      qui peuvent être éjectés vers le Soleil
 
  2. Définition par l'héliosphère : 
-    * Du plasma solaire est éjecté à haute vitesse (vent solaire)
+    * Du plasma solaire est éjecté à haute vitesse (vent solaire) dans la haute atmosphère
     * Une onde de choc avec les gaz interstellaires se développe  
     * Là où le vent solaire est ralenti abruptement, choc terminal, peut être utilisé comme limite  
     * Traversé par Voyager 1 en 2004 Voyager 2 en 2007  
@@ -62,18 +61,20 @@ En pratique
 * restes après la formation du système solaire
 * masse totale n'excède pas celle de la Lune
 * grande diversité de taille et de formes, à titre d'exemple
-  * Cérès le plus gros (également planète naine) fait 950 km de diamètre
-  * certains font moins de 1 km de diamètre
+    * Cérès le plus gros (également planète naine, est presque devenue une planète) fait 950 km de diamètre
+    * certains font moins de 1 km de diamètre
 * type spectral et composition (ancienne classification, tentatives récentes : Tholen ou SMASS)
-  * type C (Carboné, 75%) argile + silicates (~ chondrites), sombres
-     * les plus anciens 4.5-4.6 milliards d'années, témoins de la formation du système solaire
-     * matière du disque protoplanétaire en cours de condensation
-     * non modifiées par la fusion et la différentiation
-  * type S (Silice, 17%) silicates + nickel / fer, brillants
-  * type M (Métalliques, nickel/fer), très brillants
+    * type C (Carboné, 75%) argile + silicates (~ chondrites), sombres
+        - les plus anciens 4.5-4.6 milliards d'années, témoins de la formation du système solaire
+        - matière du disque protoplanétaire en cours de condensation
+        - non modifiées par la fusion et la différentiation
+    * type S (Silice, 17%) silicates + nickel / fer, brillants
+    * type M (Métalliques, nickel/fer), très brillants
+    * composition potentiellement reliée à la distance de formation (par rapport Soleil)
 * certains partiellement en fusion et différenciés : métaux au centre, basaltes en surface
-  * (si une chondrite fond, liquides silicatés et métalliques sont immiscibles)
-  * seul Vesta est un exemple connu, et Cérès également?
+    * différentiation: séparation en enveloppes chimiques de composition différentes
+    * (si une chondrite fond, liquides silicatés et métalliques sont immiscibles)
+    * seul Vesta est un exemple connu, et Cérès également?
 
 <!--
 chondrites : 82% des météorites (origine probable: ceinture d'astéroïdes)
@@ -84,13 +85,12 @@ comètes 1/3 cailloux, 1/3 organiques, 1/3 glace
 Localisation (cartes du Minor Planet Center de l'IAU)
 
  1. la plupart [plusieurs millions] dans la ceinture d'astéroïdes entre Mars et Jupiter
-
-  * certains très gros : Vesta visité par la sonde Dawn, Cérès doit l'être en 2015
-  * peuvent être éjectés par Jupiter -- ou Mars si passe à proximité -- devenant des impacteurs potentiels
-  * scénario de formation : 
-     1. Jupiter nouvellement formée a mis fin à la formation de planétésimaux dans cette région, 
-     2. causant des collisions entre eux pour les fragmenter en les astéroïdes actuels
-  * perturbé par la suite par la migration de Jupiter vers le centre du système solaire (Late Heavy Bombardment)
+    * certains très gros : Vesta visité par la sonde Dawn, Cérès doit l'être en 2015
+    * peuvent être éjectés par Jupiter -- ou Mars si passe à proximité -- devenant des impacteurs potentiels
+    * scénario de formation : 
+        1. Jupiter nouvellement formée a mis fin à la formation de planétésimaux dans cette région, 
+        2. causant des collisions entre eux pour les fragmenter en les astéroïdes actuels
+    * perturbé par la suite par la migration de Jupiter vers le centre du système solaire (Late Heavy Bombardment)
 
  2. *near-Earth asteroïds* plus proches de la Terre ; environ 10000 dont 900 plus 1km de diamètre 
 
@@ -110,12 +110,12 @@ Astéroïdes remarquables
   trop peu massifs pour avoir être organisés sphériquement par le champ de gravité
 
 * Cérès visité par la sonde Dawn en 2015, lancée en 2007
-  * avec Vesta, deux des plus grandes protoplanètes encore existantes (ont presque évoluées comme des planètes)
-  * classé C mais... densité montre: 20-25% glace d'eau, probablement différencié en un coeur rocheux et un manteau de glace d'eau
-  * de la même "lointaine" famille qu'Encelade et Pluton
-  * très cratérisé, -7.2 to 6.4 km of topography, a single mountain: 4km high Ahuna Mons (pas de scénario de formation évident... cryovolcan?)
-  * *bright spots* dans le cratère Occator, dépôts récents : glace ? sels ? 
-  * débat dans la communauté sur la présence ou non de vapeur d'eau
+    * avec Vesta, deux des plus grandes protoplanètes encore existantes (ont presque évoluées comme des planètes)
+    * classé C mais... densité montre: 20-25% glace d'eau, probablement différencié en un coeur rocheux et un manteau de glace d'eau
+    * de la même "lointaine" famille qu'Encelade et Pluton
+    * très cratérisé, -7.2 to 6.4 km of topography, a single mountain: 4km high Ahuna Mons (pas de scénario de formation évident... cryovolcan?)
+    * *bright spots* dans le cratère Occator, dépôts récents : glace ? sels ? 
+    * débat dans la communauté sur la présence ou non de vapeur d'eau
 
 <!--
 density 3.5 vs 2.2 g/cm3
@@ -150,9 +150,9 @@ water played a critical role
 ### Météorites
 
 * matériel interplanétaire qui tombe sur Terre
-  * 99.8% sont des astéroïdes (également trouvé sur Mars par les rovers!)
-  * 0.2% sont formés de croûte de Mars ou La Lune arrachée par impact de météorites
-    * (une différence de cristallisation magmatique donne une différence de composition qui permet l'identification) 
+    * 99.8% sont des astéroïdes (également trouvé sur Mars par les rovers!)
+    * 0.2% sont formés de croûte de Mars ou La Lune arrachée par impact de météorites
+        * (une différence de cristallisation magmatique donne une différence de composition qui permet l'identification) 
 * extérieur fond à cause de la friction dans l'atmosphère
 * parfois en *meteor showers* / ex: Perséides au pic d'activité en août
 * beaucoup de larges météorites causent des destructions majeures (+ formation de cratères)
@@ -216,17 +216,17 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
 * pas d'atmosphère, une exosphère soumise à échappement
 * champ magnétique faible mais intenses orages magnétiques (proximité du vent solaire)
 * apparence de la surface façonnée par
-  * impacts (bassins, cratères)
-  * refroidissement et contraction (escarpements, falaises)
-  * volcanisme (resurfaçage très étendu)
+    * impacts (bassins, cratères)
+    * refroidissement et contraction (escarpements, falaises)
+    * volcanisme (resurfaçage très étendu)
 * coeur métallique partiellement fondu étendu sur 80% du rayon!
   théorie ?
     1. (classique) proximité du soleil = enrichissement en métal lors de l'accrétion
     2. (nouveau) évaporation dans le manteau des éléments légers
     3. (nouveau) effet d'un impact géant
 * découvertes de MESSENGER 2009-2011
-  * abondances élevées de soufre et de potassium
-  * glace d'eau sur les pentes dans l'ombre permanente des cratères
+    * abondances élevées de soufre et de potassium
+    * glace d'eau sur les pentes dans l'ombre permanente des cratères
 
 ### Lune
 
@@ -234,15 +234,15 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
   ... a pu contribuer à la (relative) stabilité du climat terrestre sur des milliards d'années
 * orbite synchrone
 * origine ? collision d'un impacteur de la taille de Mars avec la Terre il y a 4.5 milliards d'années
-  ... développement de fusion et même peut être une dynamo interne donc un champ magnétique
+  ... développement de fusion et même peut être une dynamo interne... donc un champ magnétique
 * morphologie de surface
-  * mers lunaires sombres : bassins d'impact emplis de lave sur la période 1.2-4.5 milliards d'années
-    ... traces de la cristallisation de la croûte primordiale à partir d'un océan de magma 
-  * *highlands* brillants
-  * poussière très fine en raison de nombreux impacts
+    * mers lunaires sombres : bassins d'impact emplis de lave sur la période 1.2-4.5 milliards d'années
+      ... traces de la cristallisation de la croûte primordiale à partir d'un océan de magma 
+    * *highlands* brillants
+    * poussière très fine en raison de nombreux impacts
 * récemment: retour de nombreuses missions depuis 1990
-  * découverte d'eau glacée par LRO+LCROSS (impact sur une zone en permanence dans l'ombre)
-  * gravimétrie par GRAIL : signe d'une possible ancienne tectonique des plaques (rifts)
+    * découverte d'eau glacée par LRO+LCROSS (impact sur une zone en permanence dans l'ombre)
+    * gravimétrie par GRAIL : signe d'une possible ancienne tectonique des plaques (rifts)
   
 ## Planètes telluriques
 
@@ -251,45 +251,45 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
 * 1965 Mariner 4 : Mars apparaît comme une planète morte (= Lune ?)
 * Fine atmosphère de CO2 très active
 * Altération de la surface
-  * volcanisme actif il y a 2-3 milliards d'années (Olympus Mons: Hawaï sans tectonique, *shield volcanoes*)
-  * cratères d'impact (Hellas 8km de profondeur)
-  * écoulements d'eau liquide ? par le passé : vallées fluviales
-  * déformations locales de la croûte -- possiblement catastrophiques: Valles Marineris
-  * atmosphère : érosion et tempêtes de poussière
+    * volcanisme actif il y a 2-3 milliards d'années (Olympus Mons: Hawaï sans tectonique, *shield volcanoes*)
+    * cratères d'impact (Hellas 8km de profondeur)
+    * écoulements d'eau liquide ? par le passé : vallées fluviales
+    * déformations locales de la croûte -- possiblement catastrophiques: Valles Marineris
+    * atmosphère : érosion et tempêtes de poussière
 * Changements saisonniers (NB: orbite très elliptique)
-  * croissance et retraite des calottes polaire de CO2+H2O  
-  * *polar layered deposits* enregistrent les changements climatiques passés
-* Quelques exemples de découvertes (non exhaustif !)
-  * Mars Odyssey : dépôts de glace d'eau souterrains (télédétection)
-  * Phoenix
-     * Confirmation de ces dépôts sous une fine couche de poussières
-     * Sols potentiellement favorables à une chimie organique
-  * Mars Exploration Rovers : sphérules + minéraux = eau liquide en abondance dans le passé
-  * Curiosity
-     * Veines de gypse + galets, mêmes conclusions
-     * Minéraux formés en présence d'eau liquide, chasse aux organiques
-  * Mars Reconnaissance Orbiter : *Recurring Slope Linae* écoulements actuels de saumures d'eau liquide
+    * croissance et retraite des calottes polaire de CO2+H2O  
+    * *polar layered deposits* enregistrent les changements climatiques passés
+* Quelques exemples de découvertes (non exhaustif !) l'eau sur Mars
+    * Mars Odyssey : dépôts de glace d'eau souterrains (télédétection)
+    * Phoenix
+        * Confirmation de ces dépôts sous une fine couche de poussières
+        * Sols potentiellement favorables à une chimie organique
+    * Mars Exploration Rovers : sphérules + minéraux = eau liquide en abondance dans le passé
+    * Curiosity
+        * Veines de gypse + galets, mêmes conclusions
+        * Minéraux formés en présence d'eau liquide, chasse aux organiques, conditions pour ancienne vie microbiale?
+    * Mars Reconnaissance Orbiter : *Recurring Slope Linae* écoulements actuels de saumures d'eau liquide
 * Pas de champ magnétique actuel... mais croûte magnétisée par rémanence : perte atmosphère ?
 
 ### Vénus
 
 * Cousine de la Terre : même taille, masse, densité, gravité !
 * Atmosphère
-  * atmosphère épaisse de 90 bars de CO2 (équivalent en pression d'une colonne d'eau de 2.5 km)
-  * eau à l'état de traces... évolution différente de la Terre
-  * rotation rétrograde de la surface (lente: 243 Ed vs. 225-Ed year), super-rotation de l'atmosphère
-  * couche de nuages corrosifs aux altitudes 45-70 km
+    * atmosphère épaisse de 90 bars de CO2 (équivalent en pression d'une colonne d'eau de 1 km)
+    * eau à l'état de traces... évolution différente de la Terre
+    * rotation rétrograde de la surface (lente: 243 Ed vs. 225-Ed year), super-rotation de l'atmosphère
+    * couche de nuages corrosifs aux altitudes 45-70 km
 * Surface
-  * surface à 470degC à cause de l'effet de serre (thermochimie érosive, fonte acier, survie des sondes -2h)
-  * mesures radar (e.g. Magellan) ont permis d'étudier la surface
-  * cartes émissivité : jeunes basaltes non lessivés (vieux de quelques centaines d'années seulement ?)
-  * resurfaçage global il y a 300 à 500 millions d'années seulement?
-  * pas de petits cratères en raison de l'atmopshère trop épaisse
-  * sites avec des lava flows, exemple Idunn Mons
+    * surface à 470degC à cause de l'effet de serre (thermochimie érosive, fonte acier, survie des sondes -2h)
+    * mesures radar (e.g. Magellan) ont permis d'étudier la surface
+    * cartes émissivité : jeunes basaltes non lessivés (vieux de quelques centaines d'années seulement ?)
+    * resurfaçage global il y a 300 à 500 millions d'années seulement?
+    * pas de petits cratères en raison de l'atmopshère trop épaisse
+    * sites avec des lava flows, exemple Idunn Mons
 * Intérieur
-  * coeur de fer de 3000 km de rayon
-  * tectonique des plaques (a priori)
-  * rotation propre trop lente pour générer un champ magnétique
+    * coeur de fer de 3000 km de rayon
+    * tectonique des plaques (a priori)
+    * rotation propre trop lente pour générer un champ magnétique
 
 ## Planètes géantes
 
@@ -302,22 +302,46 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
 ### Jupiter
 
 * Agents chimiques responsables des couleurs observées encore non déterminés
+<!--
+Deux origines possibles
+* chemicals come from beneath the cloud
+* chemicals broken apart by sunlight in the upper atm
+"creme brulee" model Baines DPS 2016
+Carlson, Baines, et al. Icarus August 2016
+ammonia NH3 and acetylene C2H2 with UV > red material
+massspec and IR spec: aliphatic azine, azo, and diazo compounds
+provides a good fit to Cassini VIMS
+scattering properties of reddish material
+provides a match if reddish material in upper atm
+(below white color)
+origine 1 pas possible sinon tache serait redder
+et marche pas avec ammonium hydrosulfide (produit vert)
+GRS extremely tall: reaches much higher altitudes
+and transports more ammonia ice above
++ being an anticyclone confines particles
+Sromovsky DPS 2016: chromophore peut en fait expliquer
+divers degrés de rouge sur Jupiter
+still controversial: pas assez C2H2, tps trop longs
+en plus gde qte a cause eclairs et ascendances?
+(mais pas de signature spectrale?)
+-->
 * Grande Tâche Rouge (anticyclone persistant depuis probablement 300 ans, en cours de rétrécissement... ou cycle?)
 * Anneaux fins de poussière météoritique
 
 ### Saturne
 
 * Anneaux caractéristiques
-  * surtout de petits noyaux de glace d'eau
-  * jusque 100.000 km de la planète, mais 10m d'épaisseur
-  * forces de marées responsables de l'éclatement de satellites ? 
-  * interactions entre satellites et anneaux (ex: Pandora *shepherding*, Mimas in Cassini division)
+    * surtout de petits noyaux de glace d'eau
+    * jusque 100.000 km de la planète, mais 10m d'épaisseur
+    * forces de marées responsables de l'éclatement de satellites ? 
+    * interactions entre satellites et anneaux (ex: Pandora *shepherding*, Mimas in Cassini division)
 * dynamique atmosphérique intéressante (hexagone, jet en super-rotation)
+* grandes tempêtes (telle celle de 2010) rares mais puissantes
 
 ### Uranus
 
 * Découverte en 1781, visitée par Voyager 2, anneaux 1977 (brillants)
-* Atmosphère H2, He en majorité ; + gaz volatils H2O NH3 CH4 (donne apparence bleue)
+* Atmosphère H2, He en majorité ; + gaz volatils H2O NH3 -- CH4 (donne apparence bleue)
 * Manteau glacé autour du noyau liquide étendu ? (*ice giant*)
 * Rotation inversée (obliquité 98deg) + champ magnétique incliné :  effet d'un impact ?
 
@@ -331,9 +355,9 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
 
 * Découverte allant des satellites galiléens de Jupiter au XVIIe siècle aux découvertes récentes de Hubble dans les 2000s
 * Grande diversité
-  * Jupiter 50 (17 attendent confirmation), Saturne 53 (9), beaucoup d'orbites elliptiques et rétrogrades
-  * Uranus 27 connus, 1/2 glacés, 1/2 rocheux, parfois les deux (Miranda). orbites perpendiculaires à l'écliptique.
-  * Neptune 13 (1) dont Triton aussi massif que Pluton et au comportement similaire
+    * Jupiter 50 (17 attendent confirmation), Saturne 53 (9), beaucoup d'orbites elliptiques et rétrogrades
+    * Uranus 27 connus, 1/2 glacés, 1/2 rocheux, parfois les deux (Miranda). orbites perpendiculaires à l'écliptique.
+    * Neptune 13 (1) dont Triton aussi massif que Pluton et au comportement similaire
 
 ### Titan (Saturne)
 
@@ -403,25 +427,25 @@ asymétrie NS de la brume, enrichissement de certains composés aux hautes latit
 ### Pluton
 
 * Découverte en 1930, désormais planète naine, diamètre 2370 km
-* Système double avec Charon de rayon 600 km (a pu se former par l'effet d'un impact sur Pluton) + 5 petites lunes
-* Atmosphère composée 99% N2 (équilibre de sublimation avec surface) 1% CO traces CH4
-* Composition interne inconnue (noyau rocheux ?)
+    * Système double avec Charon de rayon 600 km (a pu se former par l'effet d'un impact sur Pluton) + 5 petites lunes
+    * Atmosphère composée 99% N2 (équilibre de sublimation avec surface) 1% CO traces CH4
+    * Composition interne inconnue (noyau rocheux ?)
 
 * Survol de New Horizons en juillet 2015 : révolution de notre vision de ce corps
-* Distinctions entre zones sombres craterisées (Cthulhu) et lisses très brillantes (Tombaugh)
-* geologically active throughout the epochs Sputnik Planum -10Myr, East Tombaugh ~1Gyr, Cthulu and highlands ~4Gyr (and Charon)
-* glaces: nitrogen-rich, methane-rich, water-rich 
-* zones sombres : a priori des tholins
-* volcanic summits?
+    * Distinctions entre zones sombres craterisées (Cthulhu, tholins?) et lisses très brillantes (Tombaugh)
+    * geologically active throughout the epochs Sputnik Planum -10Myr, East Tombaugh ~1Gyr, Cthulu and highlands ~4Gyr (and Charon)
+    * glaces: nitrogen-rich, methane-rich, water-rich 
+    * volcanic summits?
 
 * "Coeur" (Tombaugh Regio) surface glacée
-  * sans cratères, âge: 100 millions d'années maximum
-  * glaciers Sputnik (dépression topo) remplie de glace molle d'azote et monoxyde de carbone (+ méthane)
-  * low-viscosity: solid-state convective motions and currents (N2 and CO)
-  * montagnes de glace d'eau "dure" de 3.5km de haut (et glace eau flotte sur glace azote?)
+    * sans cratères, âge: 100 millions d'années maximum
+    * glaciers Sputnik (dépression topo) remplie de glace molle d'azote et monoxyde de carbone (+ méthane)
+    * low-viscosity: solid-state convective motions and currents (N2 and CO)
+    * montagnes de glace d'eau "dure" de 3.5km de haut (et glace eau flotte sur glace azote?)
 
 * actual rate of loss is similar to the Earth's atmosphere, slow Jeans escape 
-* pre-New Horizons estimates wildly overestimated the loss of material from Pluto’s atmosphere and thought it was like a comet
+    * pre-New Horizons estimates wildly overestimated the loss of material from Pluto’s atmosphere and thought it was like a comet
+
 * puzzling thermal structure. what is the coolant?
 
 * Charon: evidence of atmospheric transfer to Charon (polar stain), surface ages: all old, no detectable atmospheres
@@ -436,11 +460,12 @@ http://www.nasa.gov/feature/science-papers-reveal-new-aspects-of-pluto-and-its-m
 
 ### Planet Nine
 
+* histoire qui rappelle un peu la découverte de Neptune (chasse aux observations)
 * 350 - 800 UA. env 3 rayons terrestres. env 10 masses terrestres
 * modèle théorique pour expliquer trois observations distinctes
-1. discovery of Sedna (période orbitale ~10000y), which was the first object discovered in the solar system whose orbit could only be explained by interaction with something besides the known planets
-2. Trujillo & Sheppard noted some unusual orbital alignments among distant (>2000y orbits) Kuiper belt objects (arguments of perihelion appeared clustered around zero)
-3. Gomes and colleagues proposed that an entirely separate set of objects were being influenced by some sort of distant planet. (orbits nearly perpendicular to the plane of the Kuiper belt)
+    1. discovery of Sedna (période orbitale ~10000y), which was the first object discovered in the solar system whose orbit could only be explained by interaction with something besides the known planets
+    2. Trujillo & Sheppard noted some unusual orbital alignments among distant (>2000y orbits) Kuiper belt objects (arguments of perihelion appeared clustered around zero)
+    3. Gomes and colleagues proposed that an entirely separate set of objects were being influenced by some sort of distant planet. (orbits nearly perpendicular to the plane of the Kuiper belt)
 
 <!--
  gravitational torques exerted onto the Kuiper belt by Planet Nine would induce long-period oscillations in the perihelion distances of the confined KBOs. This naturally generated detached orbits, such as those of Sedna and 2012 VP113. 
