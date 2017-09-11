@@ -10,6 +10,8 @@
 ### Le soleil
 
 * Etoile G, naine jaune, banale
+    * Formé en majorité d'hydrogène (92% volume, 75% masse) et d'hélium
+    * Sphère géante de plasma (électrons + particules chargées qui se comportent comme un gaz)
 <!--
 O 	> 25 000  K 	bleue 	azote, carbone, hélium et oxygène
 B 	10 000–25 000 K 	bleue-blanche 	hélium, hydrogène
@@ -19,12 +21,10 @@ G 	5 000–6 000 K 	jaune (comme le Soleil) 	calcium, hélium, hydrogène et mé
 K 	3 500–5 000 K 	orange 	métaux et monoxyde de titane
 M 	< 3 500  K 	rouge 	métaux et monoxyde de titane
 -->
-    * Formé en majorité d'hydrogène (92% volume, 75% masse) et d'hélium
-    * Sphère géante de plasma (électrons + particules chargées qui se comportent comme un gaz)
 * Coeur 
     * 15 millions degC 
     * fusion nucléaire de protons en éléments légers
-    * E = mc^2 la perte de masse libère de l'énergie 
+    * $E = mc^2$ la perte de masse libère de l'énergie 
     * Bilan énergie du soleil : perte d'énergie radiative compensée par pression du gaz d'électrons
 * Photosphère
     * 6000 K environ, sunspots, cycle de 11 ans
