@@ -57,8 +57,7 @@ A. Sources
    * ... ou délivrés ensuite par les impacts!
    * dégazage catastrophique vs. volcanisme
         - lors de différenciation vs. ensuite (au fur et à mesure)
-        - 
- : échelles de temps très différentes (+ long pour le second, release of species trapped after solidification)
+        -  échelles de temps très différentes (+ long pour le second, release of species trapped after solidification)
 
 B. Puits
 
@@ -84,17 +83,18 @@ B. Puits
 
 3. Elément important supplémentaire au point 2 : tectonique des plaques
 Pour recycler les composants piégés à la surface
-  1. Terre: 
-        - cycle carbonates-silicates qui a stabilisé le climat de la Terre
-        - weathering: silicates + CO2 avec eau liq <> CaCO3 (carbonates) avec SiO2
-        - +(-) températures +(-) weathering -(+) effet de serre du CO2 
-  2. Venus: pas de weathering possible... car eau liquide entièrement partie
-  3. Mars: des carbonates détectés à la surface mais n'expliquent pas tout (pas assez)
 
-<!-- la Terre a peu de carbone: habitabilité ? -->
+
+Exemples
+* Terre: 
+     - cycle carbonates-silicates qui a stabilisé le climat de la Terre
+     - weathering: silicates + CO2 avec eau liq <> CaCO3 (carbonates) avec SiO2
+     - +(-) températures +(-) weathering -(+) effet de serre du CO2 
+* Venus: pas de weathering possible... car eau liquide entièrement partie
+* Mars: des carbonates détectés à la surface mais n'expliquent pas tout (pas assez)
+
 
 ### Classification
-
 
 * exoplanètes : continuum de situations vu par Kepler 
 * pas de gap entre telluriques atm secondaires et icy giants avec H He accreted from protoplanetary disk)
