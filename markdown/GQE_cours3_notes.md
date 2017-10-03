@@ -123,7 +123,7 @@ Pour recycler les composants piégés à la surface
     - dépend fortement du mélange initial (ex: CO2 N2 peu efficace)
 
 * chimie prébiotique: ce que l'on sait faire "facilement": Acides aminés Sucres (ribose) Bases azotés (adenine, guanine…) Vésicules (membranes) [Cottin 23]
-* des précurseurs (briques) à la vie: plus difficile  <!-- transparent 23 Cottin -->
+* des précurseurs (briques) à la vie: plus difficile  
     - Associer les acides aminés pour faire des protéines
     - Associer les sucres, les bases azotées, les relier par des phosphates pour faire de l’ARN…
 * c'est précisément là que l'*eau liquide* [solvant] entre en scène: des premières molécules organiques à l'ADN et à la vie
