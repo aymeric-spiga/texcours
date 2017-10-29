@@ -1,17 +1,31 @@
+
+%% peut-être détailler : Etot = Egrav + Ecin L0= m*v*a Et on a Egrav avec Fgrav=-grad(E)
+
 \sk
-\paragraph{Modification d'orbites (quantitatif)} Pour un objet de masse~$m$ suivant une orbite elliptique d'excentricité~$e$ sous l'effet de l'attraction d'un corps de masse~$M$, l'énergie totale~$E$ et le moment angulaire~$L_0$ sont conservés
+\paragraph{Modification d'orbites (quantitatif)} Pour un objet de masse~$m$ suivant une orbite elliptique d'excentricité~$e$ sous l'effet de l'attraction d'un corps de masse~$M$, l'énergie totale~$E$ et le moment angulaire~$L_0$ sont conservés et s'écrivent\footnote{L'énergie totale~$E$ correspond à l'énergie cinétique
+plus l'énergie potentielle de gravitation.
+Le moment angulaire~$L_0$ se conserve car la force est centrale; 
+il s'obtient simplement à l'apoastre (point 2) et périastre (point 1)
+$L_0 = m v_1 r_1 = m v_2 r_2$, puis en utilisant
+l'équation de l'énergie~$\left( v_1^2 - v_2^2 \right) = 2 \mathcal{G} M \left( \frac{1}{r_1} - \frac{1}{r_2} \right)$
+on en déduit
+\[ \frac{L_0^2}{2 m^2} = \frac{\mathcal{G}M}{(\frac{1}{r_1}-\frac{1}{r_2})} \]
+puis le résultat~$L_0 = m \, \sqrt{\mathcal{G}\,M\,a\,(1-e^2)}$
+étant donné que~$r_1 = a (1-e)$ et~$r_2 = a (1+e)$.}
 \[  E = - \frac{\mathcal{G}\,m\,M}{2\,a} \qquad L_0 = m \, \sqrt{\mathcal{G}\,M\,a\,(1-e^2)} \] 
-En éliminant~$M$ dans les deux équations qui précèdent, on obtient
-\[ E = - \frac{\mathcal{G}\,m\,L_0}{2\,\sqrt{\mathcal{G} \, m \, a^3 \, (1-e^2)}} \qquad \Rightarrow \qquad \ddf{E}{L_0} = - \frac{1}{2} \sqrt{ \frac{\mathcal{G}\,m}{a^3 \, (1-e^2)} } \]
+En éliminant~$m$ dans les deux équations qui précèdent, on obtient une relation de proportionalité entre~$E$ et~$L_0$
+\[ E = - \frac{\mathcal{G}\,M}{2\,a\,\sqrt{\mathcal{G} \, M \, a \, (1-e^2)}} \,L_0 \qquad \Rightarrow \qquad \ddf{E}{L_0} = \frac{E}{L_0} = - \frac{1}{2} \sqrt{ \frac{\mathcal{G}\,M}{a^3 \, (1-e^2)} } \]
 En introduisant~$\Gamma_m = \ddf{L_0}{t}$, le couple exercé par les forces de marée, on obtient la variation temporelle d'énergie orbitale par les forces de marée
-\[ \ddf{E}{t} = \ddf{E}{L} \ddf{L}{t} = - \frac{\Gamma_m}{2} \, \sqrt{ \frac{\mathcal{G}\,m}{a^3 \, (1-e^2) } } \]
-\noindent En exprimant la dérivée~$\ddf{E}{t}$
+\[ \ddf{E}{t} = \ddf{E}{L_0} \ddf{L_0}{t} = - \frac{\Gamma_m}{2} \, \sqrt{ \frac{\mathcal{G}\,M}{a^3 \, (1-e^2) } } \]
+\noindent En exprimant par ailleurs la dérivée~$\ddf{E}{t}$
 \[
-\ddf{a}{t} \frac{\mathcal{G}\,m\,M}{2\,a^2} = \Gamma_m \, \sqrt{ \frac{\mathcal{G}\,m}{a^3 \, (1-e^2) } }
+\ddf{a}{t} \frac{\mathcal{G}\,m\,M}{2\,a^2} = \Gamma_m \, \sqrt{ \frac{\mathcal{G}\,M}{a^3 \, (1-e^2) } }
 \qquad \Rightarrow \qquad
 \ddf{a}{t} = \Gamma_m \, \frac{2\,\mathcal{G}^{-1/2}\,m^{-1/2}}{M \, a^{-1/2} \, (1-e^2) }
 \]
-\noindent En remplaçant par l'expression du couple des marées, et en supposant une orbite de faible excentricité~$r \simeq a$ et~$e \ll 1$, le changement de rayon orbital (contraction ou expansion) s'écrit
+\noindent En remplaçant par l'expression du couple des marées 
+\[ \Gamma_m = \frac{3}{2} \, \frac{k_T}{Q} \, \frac{\mathcal{G}\,M^2\,R^5}{r^6} \, \textrm{sgn}(\omega-\Omega) \]
+et en supposant une orbite de faible excentricité~$r \simeq a$ et~$e \ll 1$, le changement de rayon orbital (contraction ou expansion) s'écrit
 \[
 \ddf{a}{t} = 3 \, \frac{k_T}{Q} \, \frac{\mathcal{G}^{1/2}\,M\,R^5}{m^{1/2} \, a^{11/2} } \, \textrm{sgn}(\omega-\Omega)
 \]

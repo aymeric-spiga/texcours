@@ -1,5 +1,7 @@
+%% AlexBarbo: Faire un récapitulatif de toutes les notations ? Notamment à cause des risques de confusion M/m, R/r/a, surtout dans la partie limite de Roche
+
 \sk
-La dépendance de la force gravitationnelle en $r^{-2}$ explique qu'un corps attracteur puisse exercer une force gravitationnelle différente en divers points d'un objet. Ce phénomène est appelé marée. L'effet de la force de marée sur un objet peut aller de la déformation simple, à la flexure produisant une chaleur interne, jusqu'à la destruction pure et simple de l'objet. Cette force est également responsable de certaines caractéristiques orbitales. L'action des marées explique que la Lune présente toujours la même face à la Terre, que la comète Shoemaker-Levy s'est détruite à l'approche de Jupiter, que Io soit le théâtre une activité volcanique soutenue, que les étoiles extrasolaires proches de leur étoile voient leur orbite perturbée. La formulation mathématique des marées en terme d'équilibre entre gravité et force centrifuge date de 1687 par Isaac Newton. 
+La dépendance de la force gravitationnelle en $r^{-2}$ explique qu'un corps attracteur puisse exercer une force gravitationnelle différente en divers points d'un objet. Ce phénomène est appelé marée. L'effet de la force de marée sur un objet peut aller de la déformation simple, à la flexure produisant une chaleur interne, jusqu'à la destruction pure et simple de l'objet. Cette force est également responsable de certaines caractéristiques orbitales. L'action des marées explique que la Lune présente toujours la même face à la Terre, que la comète Shoemaker-Levy s'est détruite à l'approche de Jupiter, que Io soit le théâtre une activité volcanique soutenue, que les planètes extrasolaires proches de leur étoile voient leur orbite perturbée. La formulation mathématique des marées en terme d'équilibre entre gravité et force centrifuge date de 1687 par Isaac Newton. 
 
 \sk
 L'accélération~$\vec{a}$ d'un objet de masse~$m$ sous l'action des forces~$\vec{F}$ vérifie la seconde loi de Newton~$m \vec{a} = \Sigma \vec{F}$. L'objet subit de la part d'un corps attracteur de masse~$M$ la force de gravitation
@@ -16,8 +18,14 @@ L'accélération est nulle en tout point de l'orbite, il y a équilibre entre fo
 
 \sk
 L'action des marées se comprend en considérant que l'objet n'est pas un point matériel mais, par exemple, une planète de rayon~$R$. Au centre de masse~O de l'objet, fixe dans le référentiel tournant, l'équilibre entre force de gravitation et force centrifuge s'écrit
-\[ \mathcal{E}(r) = -\mathcal{G} \frac{M\,m}{r^2} + m \, \Omega^2 r = 0 \]
-Sur le lobe de l'objet le plus proche du corps attracteur (subplanétaire S), la force de gravitation domine la force centrifuge, attirant ledit lobe vers le corps attracteur : $\mathcal{E}(r-R) < 0$. Sur le lobe de l'objet le plus éloigné du corps attracteur (antiplanétaire A), l'inverse se produit, éloignant ledit lobe du corps attracteur : $\mathcal{E}(r+R) > 0$. Les forces de marées ont donc tendance à allonger le corps en lui conférant une forme avec deux lobes qui donne la périodicité semi-diurne des marées. Plus le corps attracteur est gros, plus l'effet est marqué, pouvant conduire jusqu'à la destruction du corps.
+\[ \mathcal{F}(r) = -\mathcal{G} \frac{M\,m}{r^2} + m \, \Omega^2 r = 0 \]
+Sur le lobe de l'objet le plus proche du corps attracteur (subplanétaire S), la force de gravitation domine la force centrifuge, attirant ledit lobe vers le corps attracteur : $\mathcal{F}(r-R) < 0$. Sur le lobe de l'objet le plus éloigné du corps attracteur (antiplanétaire A), l'inverse se produit, éloignant ledit lobe du corps attracteur : $\mathcal{F}(r+R) > 0$. Les forces de marées ont donc tendance à allonger le corps en lui conférant une forme avec deux lobes qui donne la périodicité semi-diurne des marées. Plus le corps attracteur est gros, plus l'effet est marqué, pouvant conduire jusqu'à la destruction du corps.
+
+%% AlexBarbo: On peut aussi dire  directement qu'il s'agit du développement de Taylor de la force de gravité de l'astre attracteur en r+/-R, non? Je trouve juste l'interprétation plus physique, d'autant qu'elle donne directement la dépendance en r^-3
+%\[ 
+%-\mathcal{G} \frac{M\,m}{(r \pm R)^2} = 
+%-\mathcal{G} \frac{M\,m}{R^2} \frac{1}{1 \pm (\frac{R}{r}})^2}
+%\]
 
 \sk
 L'accélération résultante au point S est
