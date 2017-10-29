@@ -1,15 +1,15 @@
 \sk
-La présence d'une surface et une hypothèse d'équilibre radiatif imposent donc que le chauffage de la surface conduit inévitablement à de la convection. Que se passe-t-il sur les planètes géantes dépourvues de surface ? L'équilibre radiatif y prévaut également, car à partir d'une certaine profondeur, le gradient radiatif est instable -- et ce, même en l'absence d'une surface qui absorbe le rayonnement solaire. Pour formuler la stabilité de l'équilibre radiatif, on calcule le profil~$\dd T / \dd p$ et on le compare au gradient adiabatique sec ou humide dans l'atmosphère considérée. En dérivant le profil radiatif obtenu dans le cas du modèle à deux faisceaux
-\[ T(\tau) = \sqrt[4]{\frac{OLR\,(1+\tau)}{2\,\sigma\,\epsilon}} \]
+La présence d'une surface et une hypothèse d'équilibre radiatif imposent donc que le chauffage de la surface conduit inévitablement à de la convection. Que se passe-t-il sur les planètes géantes dépourvues de surface ? L'équilibre radiatif y prévaut également, car à partir d'une certaine profondeur, le gradient radiatif est instable -- et ce, même en l'absence d'une surface qui absorbe le rayonnement solaire. Pour formuler la stabilité de l'équilibre radiatif, on calcule le profil~$\dd T / \dd p$ et on le compare au gradient adiabatique sec ou humide dans l'atmosphère considérée. En dérivant le profil radiatif obtenu dans le cas du modèle à deux faisceaux (avec~$\epsilon=1$)
+\[ T(\tau) = \sqrt[4]{\frac{OLR\,(1+\tau)}{2\,\sigma}} \]
 \noindent par rapport à l'épaisseur optique~$\tau$, nous obtenons
 \[ 8 \, \sigma \, T^3 \, \ddf{T}{\tau} = OLR \]
 \noindent soit, en utilisant~$\ddf{~}{p} = \ddf{\tau}{p} \ddf{~}{\tau}$
-\[ \ddf{T}{\ln p} = \frac{T}{4\,(1+\tau)} \, p \, \ddf{\tau}{p} \]
+\[ \ddf{\ln T}{\ln p} = \frac{1}{4\,(1+\tau)} \, p \, \ddf{\tau}{p} \]
 Ainsi la stabilité de la couche s'écrit
 \[ \frac{R}{c_p} \ge \frac{1}{4\,(1+\tau)} \, p \, \ddf{\tau}{p} \]
 
 \sk
-Le terme en~$p$ dans ce qui précède guarantit (à moins d'une variation énorme de $\ddf{\tau}{p}$ en~$1/p$ ou plus rapide quand~$p \rightarrow 0$) que les hautes atmosphères planétaires sont toujours stables. De plus, les atmosphères optiquement fines sont toujours stables sur l'intégralité de leur épaisseur, puisque~$-p \, \ddf{\tau}{p} < \tau_\infty \ll 1$. 
+Le terme en~$p$ dans ce qui précède garantit (à moins d'une variation énorme de $\ddf{\tau}{p}$ en~$1/p$ ou plus rapide quand~$p \rightarrow 0$) que les hautes atmosphères planétaires sont toujours stables. De plus, les atmosphères optiquement fines sont toujours stables sur l'intégralité de leur épaisseur, puisque~$-p \, \ddf{\tau}{p} < \tau_\infty \ll 1$. 
 
 \sk
 Dans le cas d'un coefficient d'absorption~$\kappa$ constant, nous pouvons même écrire la condition de stabilité

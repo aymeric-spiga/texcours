@@ -1,10 +1,10 @@
 \sk
 Considérons une parcelle en ascension adiabatique saturée (et non plus sèche comme dans la section~\ref{adiabsec}). Pour une parcelle saturée, c'est-à-dire à l'équilibre liquide/vapeur, l'équation qui précède peut s'écrire, en utilisant l'équilibre hydrostatique
-\[ C_P \, \dd T + g \, \dd z + L \, \dd r = 0 \]
+\[ c_p \, \dd T + g \, \dd z + L \, \dd r = 0 \]
 Or, puisque la parcelle est saturée, on a~$r = r\e{sat}(T)$ et on peut écrire $\dd r\e{sat} = \ddf{r\e{sat}}{T} \, \dd T$. On a alors
-\[ \left( C_P + L \, \ddf{r\e{sat}}{T} \right) \dd T + g \, \dd z = 0\]
+\[ \left( c_p + L \, \ddf{r\e{sat}}{T} \right) \dd T + g \, \dd z = 0\]
 Cette expression est similaire au cas sec, à l'exception notable du terme supplémentaire~$L \, \ddf{r\e{sat}}{T}$ lié aux échanges latents. On peut alors obtenir le profil vertical adopté dans l'atmosphère saturée par une parcelle ne subissant pas d'échange de chaleur avec l'extérieur autre que les échanges de chaleur latente
-\[  \ddf{T}{z}  = \Gamma\e{saturé} \qquad \text{avec} \qquad \Gamma\e{saturé} = \frac{-g}{C_P+L \, \ddf{r\e{sat}}{T} } \]
+\[  \ddf{T}{z}  = \Gamma\e{saturé} \qquad \text{avec} \qquad \Gamma\e{saturé} = \frac{-g}{c_p+L \, \ddf{r\e{sat}}{T} } \]
 On a vu que $\ddf{r\e{sat}}{T}$ est toujours positif, on en déduit donc
 \[ \boxed{ \Gamma\e{saturé} > \Gamma\e{sec} \qquad \text{ou} \qquad |\Gamma\e{saturé}| < |\Gamma\e{sec}| } \]
 A cause du dégagement de chaleur latente, la température diminue moins vite pour une parcelle saturée en ascension que pour une parcelle non saturée. Le calcul pour l'atmosphère terrestre montre que
@@ -14,7 +14,7 @@ ce qui correspond à la valeur observée dans la troposphère sur Terre. %[Figur
 \sk
 La constatation que~$\Gamma\e{saturé}$ correspond au profil d'environnement effectivement mesuré dans la troposphère appelle un commentaire important. Les profils verticaux secs ou saturés sont ceux suivis par une parcelle en ascension~: autrement dit, ils donnent les variations de~$T\e{p}$ avec l'altitude~$z$. D'un point de vue instantané, ils ne correspondent pas aux profils d'environnement~$T\e{e}$ tels qu'ils peuvent être par exemple mesurés par des ballons-sonde lâchés dans l'atmosphère. La parcelle n'est pas nécessairement à l'équilibre thermique avec l'environnement. On peut néanmoins constater sur la figure~\ref{fig:tempvert} que la température de l'environnement diminue avec une pente très proche de~$\Gamma\e{saturé}$. Ceci s'explique par le fait que cette figure montre une moyenne sur tout le globe à toutes les saisons. La situation moyenne ainsi décrite correspond aux mouvements d'une multitude de parcelles en ascension qui finissent par définir l'environnement atmosphérique\footnote{Ce phénomène porte le nom d'ajustement convectif.}. Pour comprendre la formation des nuages, et plus généralement les mouvements atmosphériques, il faut néanmoins se placer dans le cas local où l'équilibre thermique n'est pas vérifié. C'est l'objet de la section suivante.
 %Comme pour le cas adiabatique, on peut aussi intégrer l'équation pour obtenir:
-%\begin{equation} e_h=C_PT+gz+Lr=cste \label{estath} \end{equation}  
+%\begin{equation} e_h=c_pT+gz+Lr=cste \label{estath} \end{equation}  
 %La quantité $e_h$ est appelée {\em énergie statique humide} et est conservée
 %pour des mouvements adiabatiques ($r$ et $e_s$ sont séparément conservés) ou
 %saturés (pseudo-adiabatiques).
