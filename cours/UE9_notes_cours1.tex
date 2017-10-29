@@ -9,7 +9,7 @@
 \newcommand{\zcode}{UE9}
 \newcommand{\zuniversity}{UPMC}
 \newcommand{\zlevel}{M2 Planétologie}
-\newcommand{\zsubtitle}{Fiches complémentaires de cours}
+\newcommand{\zsubtitle}{Fiches complémentaires du cours 1}
 \newcommand{\zlogo}{\includegraphics[height=1.5cm]{decouverte/cours_meteo/UPMC_cart-blanc-Q_7504-703-3.png}}
 \newcommand{\zrights}{Copie et usage interdits sans autorisation explicite de l'auteur}
 \newcommand{\zdate}{\today}
@@ -34,6 +34,18 @@
 \newpage
 \section{\'Echelle de hauteur}
 \input{echelle_hauteur.tex}
+\mk\mk\mk\mk\mk
+\begin{detail}
+\input{pression_pascal.tex}
+\end{detail}
+
+\newpage
+\section{\'Equation hypsométrique}
+\input{equation_hypsometrique.tex}
+
+\newpage
+\section{Circulations thermiques directes}
+\input{circulations_thermiques_directes.tex}
 
 \newpage
 \section{Premier principe de la thermodynamique}
@@ -42,26 +54,39 @@
 \newpage
 \section{Premier principe de la thermodynamique (application)}
 \input{premier_principe_atmosphere.tex}
+\section{Transformations non adiabatiques}
+\input{transformations_non_adiabatiques.tex}
 
 \newpage
-\section{Types de transformations : adiabatiques}
+\section{Transformation adiabatique et température potentielle}
 \input{transformations_adiabatiques.tex}
-
-\newpage
 \section{Gradient adiabatique sec}
 \input{gradient_adiabatique_sec.tex}
 
 \newpage
 \section{Force de flottaison}
 \input{flottaison.tex}
+%%% CAPE?
 
 \newpage
 \section{(In)stabilité}
 \input{stabilite.tex}
 
 \newpage
-\section{Types de transformations : non adiabatiques}
-\input{transformations_non_adiabatiques.tex}
+\section{Transformations pseudo-adiabatiques}
+\input{transformations_pseudoadiabatiques.tex}
+
+\newpage
+\section{Gradient adiabatique humide}
+\input{gradient_adiabatique_humide.tex}
+
+\newpage
+\section{Formation d'un cumulonimbus sur Terre}
+\input{emagramme_cumulonimbus.tex}
+
+%\newpage
+%\section{Formation d'un cumulonimbus sur Terre (compléments)}
+%\input{emagramme_cumulonimbus_complements.tex}
 
 \newpage
 \section{Rayonnement thermique et corps noir}
@@ -83,8 +108,6 @@
 \newpage
 \section{Loi de Stefan-Boltzmann du corps noir}
 \input{corps_noir_loi_stefan.tex}
-
-\newpage
 \section{Corps gris et émissivité}
 \input{corps_noir_emissivite.tex}
 
@@ -104,9 +127,6 @@
 \newpage
 \section{Bilan simple : température équivalente}
 \input{bilan_radiatif_temperature_equivalente.tex}
-
-\newpage
-\section{Applications de la température équivalente}
 \input{bilan_radiatif_temperature_equivalente_applications.tex}
 
 \newpage
@@ -125,8 +145,9 @@
 \section{Modèle à deux faisceaux : résolution 2}
 \input{modele_deux_faisceaux_resolution2.tex}
 
-%\newpage
-%\section{Profil radiatif convectif}
-%\input{atmosphere_profil_radiatif_convectif.tex}
+\newpage
+\section{Profil radiatif convectif (telluriques)}
+\input{atmosphere_profil_radiatif_convectif_telluriques.tex}
+
 
 \end{document}

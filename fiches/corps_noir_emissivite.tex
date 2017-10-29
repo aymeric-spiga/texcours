@@ -1,36 +1,28 @@
 \sk
-Le corps noir est un modèle idéal d'absorbant qu'en pratique on ne rencontre pas dans la nature. Par exemple, le charbon noir est un absorbant parfait, mais seulement dans les longueurs d'onde visible. La plupart des objets ressemblent néanmoins au corps noir, au moins à certaines températures et pour certaines longueurs d'onde considérées en pratique. Dans le cas d'un corps qui n'est pas un absorbant parfait, on parle d'un \voc{corps gris}. A température égale, un corps gris n'émet pas autant qu'un corps noir dans les mêmes conditions. Pour évaluer l'énergie émise par un corps gris par comparaison à celle qu'émettrait le corps noir dans les mêmes conditions, on définit un coefficient appelé \voc{émissivité} $\epsilon_\lambda$ compris entre~$0$ et~$1$ et égal au rapport entre la luminance spectrale du corps~$L_\lambda$ et celle du corps noir~$B_\lambda$ $$ \epsilon_\lambda=\frac{L_\lambda}{B_\lambda(T)} $$ En toute généralité, l'émissivité~$\epsilon_{\lambda}$ d'une surface à une longueur d'onde~$\lambda$ dépend de ses propriétés physico-chimiques, de sa température et de la direction d'émission\footnote{Par exemple, les métaux, matériaux conducteurs de l'électricité, ont une émissivité faible (sauf dans les directions rasantes) qui croît lentement avec la température et décroît avec la longueur d'onde ; au contraire, les diélectriques, matériaux isolant de l'électricité, ont une émissivité élevée qui augmente avec la longueur d'onde et se révèlent lambertiens sauf pour les directions rasantes où l'émissivité décroît significativement.}.
+Le corps noir est un modèle idéal d'absorbant qu'en pratique on ne rencontre pas dans la nature. Par exemple, le charbon noir est un absorbant parfait, mais seulement dans les longueurs d'onde visible. La plupart des objets ressemblent néanmoins au corps noir, au moins à certaines températures et pour certaines longueurs d'onde considérées en pratique. Dans le cas d'un corps qui n'est pas un absorbant parfait, on parle d'un \voc{corps gris}. A température égale, un corps gris n'émet pas autant qu'un corps noir dans les mêmes conditions. Pour évaluer l'énergie émise par un corps gris par comparaison à celle qu'émettrait le corps noir dans les mêmes conditions, on définit un coefficient appelé \voc{émissivité} $\epsilon_\lambda$ compris entre~$0$ et~$1$ et égal au rapport entre la luminance spectrale du corps~$L_\lambda$ et celle du corps noir~$B_\lambda$: $ \epsilon_\lambda=L_\lambda / B_\lambda(T)$ En toute généralité, l'émissivité~$\epsilon_{\lambda}$ d'une surface à une longueur d'onde~$\lambda$ dépend de ses propriétés physico-chimiques, de sa température et de la direction d'émission\footnote{Par exemple, les métaux, matériaux conducteurs de l'électricité, ont une émissivité faible (sauf dans les directions rasantes) qui croît lentement avec la température et décroît avec la longueur d'onde ; au contraire, les diélectriques, matériaux isolant de l'électricité, ont une émissivité élevée qui augmente avec la longueur d'onde et se révèlent lambertiens sauf pour les directions rasantes où l'émissivité décroît significativement.}.
 
 \sk
-On peut également définir une émissivité totale intégrée~$\epsilon$ qui permet d'exprimer l'émittance~$M$ d'un corps gris $$ \boxed{\SB} $$ Des valeurs de l'émissivité totale~$\epsilon$ pour certains matériaux sont données dans le tableau~\ref{tab:emiss}~: l'eau, la neige, les roches basaltiques ont des émissivités proches de~$1$ et peuvent être considérées comme des corps noirs en bonne approximation. 
+On peut définir une émissivité totale intégrée~$\epsilon$ qui permet d'exprimer l'émittance~$M$ d'un corps gris $$ \boxed{\SB} $$ Des valeurs de l'émissivité totale~$\epsilon$ pour certains matériaux sont données dans le tableau~\ref{tab:emiss}~: l'eau, la neige, les roches basaltiques ont des émissivités proches de~$1$ et sont donc des corps noirs en bonne approximation. 
 
-\begin{table}\label{tab:emiss}
+
+\begin{table}[h!]
+\label{tab:emiss}
 \begin{center}
-\begin{tabular}{|c|c|}
+\footnotesize
+\begin{tabular}{||c|c||c|c||c|c||}
 \hline
-Matériau & Emissivité~$\epsilon$ \\
+Matériau & Emissivité~$\epsilon$ & Matériau & Emissivité~$\epsilon$ & Matériau & Emissivité~$\epsilon$ \\
 \hline
-Aluminium & 0.02 \\
-Cuivre poli & 0.03 \\
-Nuages type cirrus & 0.10 à 0.90 \\
-Nuages type cumulus & 0.25 à 0.99 \\
-Cuivre oxydé & 0.5 \\
-Béton & 0.7 à 0.9 \\
-Carbone & 0.8 \\
-Lave (volcan actif) & 0.8 \\
-Neige âgée & 0.8 \\
-Ville & 0.85 \\
-Désert & 0.85 à 0.9 \\
-Peinture blanche & 0.87 \\
-Brique rouge & 0.9 \\
-Herbe & 0.9 à 0.95 \\
-Eau & 0.92 à 0.97 \\
-Peinture noire & 0.94 \\
-Forêt & 0.95 \\
-Suie & 0.95 \\
-Neige fraîche & 0.99 \\
+Cuivre poli & 0.03 		& Cuivre oxydé & 0.5 		& Béton & 0.7 à 0.9 	\\
+Carbone & 0.8 			& Lave (volcan actif) & 0.8 	& Suie & 0.95		\\
+Ville & 0.85 			& Peinture blanche & 0.87 	& Peinture noire & 0.94 \\
+Désert & 0.85 à 0.9 		& Herbe & 0.9 à 0.95		& Forêt & 0.95 		\\
+Nuages cirrus & 0.10 à 0.90 	& Nuages cumulus & 0.25 à 0.99	& Eau & 0.92 à 0.97  	\\
+Neige âgée & 0.8 		& Neige fraîche & 0.99		& &			\\
 \hline
 \end{tabular}
+\normalsize
 \caption{\emph{Quelques valeurs usuelles d'émissivité à la température ambiante (pour un rayonnement infrarouge). Source~: Hecht, Physique, 1999 -- avec quelques ajouts d'après site CNES}}
 \end{center}
 \end{table}
+
