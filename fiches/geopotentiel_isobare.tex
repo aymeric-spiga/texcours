@@ -1,0 +1,33 @@
+\sk
+\paragraph{Coordonnées isobares} On note~$x$ la coordonnée sur l'axe est-ouest (axe zonal), $y$ la coordonnée sur l'axe sud-nord (axe méridional), $P$ la pression atmosphérique. On commence tout d'abord par considérer que la pression atmosphérique~$P$ remplace l'altitude comme coordonnée verticale~: on raisonne donc sur des surfaces isobares. La pression~$P$ peut être utilisée comme coordonnée verticale car monotone en vertu de l'équilibre hydrostatique. Le vent géostrophique zonal~$u$ s'exprime comme une fonction de~$x$, $y$, $P$, tout comme la température atmosphérique~$T$ et la masse volumiquede l'air~$\rho$. Les dérivées partielles (notées~$\partial$) de ces fonctions de trois variables se comprennent comme les dérivées selon la coordonnée indiquée avec les deux autres fixées. Par exemple $\frac{\partial T}{\partial y}$ est la dérivée de~$T$ uniquement selon la coordonnée~$y$, en considérant que~$x$ et~$P$ ne varient pas ; $\frac{\partial u}{\partial P}$ est la dérivée de~$u$ uniquement selon la coordonnée~$P$, avec les deux autres coordonnées fixées.
+
+\sk
+\paragraph{Géopotentiel} On définit le géopotentiel~$\Phi$ comme une fonction des coordonnées~$x$, $y$ et~$P$ qui s'écrit simplement
+\[ \Phi(x,y,P)=g \, z(x,y,P) \] 
+\noindent avec~$z$ l'altitude (également fonction des coordonnées~$x$, $y$ et~$P$) et~$g$ l'accélération de la gravité (supposée ici ne pas varier avec~$z$). 
+%On rappelle que les dérivées partielles commutent, c'est-à-dire par exemple 
+%\[ \frac{\partial}{\partial P} \frac{\partial \Phi}{\partial y} = \frac{\partial}{\partial y} \frac{\partial \Phi}{\partial P} \]
+
+\sk
+\paragraph{Dérivée verticale du géopotentiel} On utilise tout d'abord l'équilibre hydrostatique pour exprimer très simplement la dérivée du géopotentiel~$\Phi$ en fonction de la coordonnée verticale~$P$
+\[ \frac{\partial \Phi}{\partial P} = g \, \frac{\partial z}{\partial P} = -\f{1}{\rho} \] 
+\noindent ce qui permet de relier simplement les variations verticales de géopotentiel (sur les lignes isobares) au champ de masse. 
+
+\sk
+\paragraph{Dérivée horizontale du géopotentiel} On utilise une propriété de changement de coordonnée dans les dérivées partielles
+\[ 
+\left[ \frac{\partial P}{\partial y} \right]_z
+\simeq
+\left[ \frac{(P_0 + \delta p) - P_0}{\delta y} \right]_z 
+=
+\left[ \frac{(P_0 + \delta p) - P_0}{\delta z} \right]_y
+\left[ \frac{\delta z}{\delta y} \right]_P
+\simeq
+-\left[ \frac{\partial P}{\partial z} \right]_y \left[ \frac{\partial z}{\partial y} \right]_P
+\]
+(le signe moins apparaît car~$P$ décroît avec l'altitude~$z$) pour exprimer très simplement la force de pression comme la dérivée spatiale du géopotentiel (en utilisant à nouveau au passage l'équilibre hydrostatique)
+\[ -\frac{1}{\rho} \left[ \frac{\partial P}{\partial y} \right]_z
+= \frac{1}{\rho} \left[ \frac{\partial P}{\partial z} \right]_y \left[ \frac{\partial z}{\partial y} \right]_P
+= -g \left[ \frac{\partial z}{\partial y} \right]_P
+= -\left[ \frac{\partial \Phi}{\partial y} \right]_P
+\]

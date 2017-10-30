@@ -1,10 +1,31 @@
 \sk
-Dans toutes les atmosphères connues, à grande échelle, un quasi-équilibre s'établit entre le champ de masse atmosphérique et la composante horizontale de la force centrifuge, liée au vent zonal (Figure~\ref{fig:vg}). Il s'agit de l'\voc{équilibre du vent gradient}, vrai en moyenne zonale. L'advection de l'air devient de moins en moins efficace quand on s'éloigne de l'équateur : finalement un quasi-équilibre s'établit entre le gradient de pression et la composante horizontale de la force centrifuge, prépondérantes dans l'équation du mouvement méridien. Plus la planète tourne vite, plus cet effet de frein est prépondérant. 
+Dans toutes les atmosphères connues, à grande échelle, un quasi-équilibre s'établit entre le champ de masse atmosphérique (lié au gradient de pression) et la composante horizontale de la force centrifuge (entraînement + Coriolis), liée au vent zonal~$u$ et 
+\[
+\v F\e{e} = - m \, \left( 2\,\Omega\,\sin\varphi\,u + \f{u^2\,\tan\varphi}{a} \right) \v j
+\]
+%% $F\e{e}$ s'oppose au gradient de pression pour un vent prograde~$u > 0$
+\noindent Il s'agit de l'\voc{équilibre du vent gradient}, vrai en moyenne zonale (Figure~\ref{fig:vg}). 
+\[
+\boxed{\dfrac{u^2\tan\phi}{a} + 2\Omega\sin\phi u = -\dfrac{1}{\rho}\Dp{p}{y}}
+\]
 %\sk Le vent gradient est un équilibre diagnostic alors que les équilibres géostrophiques et cyclostrophiques sont des équations prognostiques
 
-\[
-\boxed{\dfrac{u^2\tan\phi}{a} + \fcoriolis u = -\dfrac{1}{\rho}\der{p}{y}}
-\]
+\figsup{0.35}{0.15}{decouverte/cours_dyn/td2_pression.png}{decouverte/cours_dyn/td2_centrifuge.png}{Gradient de pression (haut). Force centrifuge (bas).}{fig:vg}
 
-\figsup{0.5}{0.25}{decouverte/cours_dyn/td2_pression.png}{decouverte/cours_dyn/td2_centrifuge.png}{Gradient de pression (haut). Force centrifuge (bas).}{fig:vg}
+\sk
+L'advection de l'air liée à la force de pression devient de moins en moins efficace quand on s'éloigne de l'équateur : l'équilibre du vent gradient provient d'un effet de frein exercé par la composante horizontale de la force centrifuge. Plus la planète tourne vite, plus cet effet de frein est prépondérant. Ainsi, la rotation de la planète contrôle l'extension en latitude des cellules de Hadley -- tout comme le déplacement en latitude du maximum saisonnier de température la contrôle~: 
+\begin{finger}
+\item L'extension limitée des cellules de Hadley sur Terre est majoritairement causée par la position du maximum saisonnier de température (qui reste confinée aux tropiques en raison de l'inertie thermique élevée des océans), alors que leur extension limitée sur les planètes géantes est le fait de leur rotation rapide.
+\item L'extension des cellules de Hadley vers les pôles sur Mars est majoritairement causée par les effets de position du maximum saisonnier de température\footnote{Aux solstices, sous l'effet de la faible inertie thermique de la surface martienne et des constantes de temps radiatifs réduits dans l'atmosphère, la structure thermique de l'atmosphère martienne est composée d'un gradient de température d'un pôle à l'autre et conduit à une circulation de Hadley interhémisphérique. La circulation méridienne est particulièrement intense en raison du forçage diabatique des poussières en suspension dans l'atmosphère, surtout au solstice d'hiver nord où l'opacité moyenne des poussières atteint $1$ et l'insolation est maximale.}, alors que la grande extension vers les pôles des cellules de Hadley sur Vénus est avant tout reliée à la rotation lente de ce corps qui limite l'effet de frein de~$F\e{e}$.
+\end{finger}
+
+\sk 
+Dans certains cas particuliers, notamment si~$u<0$ et~$u<2 \, \Omega \, a \, \cos \varphi$ (autrement dit, pour un courant-jet prograde dans le cas où la force de Coriolis domine la force d'entraînement), la force~$\v F\e{e}$ induit une accélération vers le pôle et non un frein. Cet effet peut favoriser l'extension vers les pôles des cellules de Hadley dans le cas de planètes à rotation rapide comme Mars. Exemple, au solstice d'hiver nord, une particule de vitesse zonale nulle partant d'un point de l'hémisphère sud de latitude $-\varphi_0$ (typiquement $60^{\circ}S$) et parcourant la branche haute de la cellule de Hadley adopte un mouvement rétrograde $u<0$ jusque la latitude opposée $\varphi_0$ par conservation du moment cinétique $\mathcal{M}$. Contrairement au cas terrestre, la résultante des forces d'entraînement~$\v F\e{e}$ s'ajoute entre les latitudes $0$ et $\varphi_0$ au gradient de pression et la circulation méridienne s'intensifie jusqu'à la latitude $\varphi_0$, rejetant la limite des cellules de Hadley beaucoup plus loin que sur Terre. Entre les latitudes $-\varphi_0$ et $\varphi_0$, les isolignes du transport méridien de masse se confondent donc avec les isolignes du moment cinétique. Aux plus hautes latitudes $\varphi > \varphi_0$, dès que la vitesse zonale devient négative, le jet d'ouest se forme et la résultante~$\v F\e{e}$ s'oppose aux gradients de pression comme sur Terre.
+%Seules les cellules de Hadley autour des équinoxes martiens, symétriques entre les deux hémisphères, ressemblent aux équivalents terrestres.
+
+
+
+
+
+
 
