@@ -1,8 +1,10 @@
 
 \sk
 Les ondes de gravité sont des oscillations atmosphériques
-causés par le rappel de la force de flottaison.
-%On se place pour simplifier dans un cas bidimensionnel~$(x,z)$.
+causés par le rappel de la force de flottaison
+-- les sources pouvant être 
+l'interaction entre un écoulement et la topographie,
+un front météorologique, ou des mouvements convectifs.
 L'approximation de Boussinesq est respectée.
 L'écoulement est supposé adiabatique.
 On réalise une analyse linéaire
@@ -27,7 +29,7 @@ Les équations primitives se réduisent à
 \[ 
 \Dp{u'}{t} 
 + \moyenne{u} \Dp{u'}{x} 
-+ \moyenne{v} \Dp{u'}{x} 
++ \moyenne{v} \Dp{u'}{y} 
 \textcolor{lightgray}{+ w' \Dp{\moyenne{u}}{z}}
 - f v' 
 + \f{1}{\rho_0} \Dp{p'}{x}
@@ -36,7 +38,7 @@ Les équations primitives se réduisent à
 \[ 
 \Dp{v'}{t} 
 + \moyenne{u} \Dp{v'}{x} 
-+ \moyenne{v} \Dp{v'}{x} 
++ \moyenne{v} \Dp{v'}{y} 
 \textcolor{lightgray}{+ w' \Dp{\moyenne{v}}{z}}
 + f u' 
 + \f{1}{\rho_0} \Dp{p'}{y}
@@ -45,7 +47,7 @@ Les équations primitives se réduisent à
 \[ 
 \Dp{w'}{t} 
 + \moyenne{u} \Dp{w'}{x} 
-+ \moyenne{v} \Dp{w'}{x} 
++ \moyenne{v} \Dp{w'}{y} 
 + \f{1}{\rho_0} \Dp{p'}{z}
 - g \f{\theta'}{\moyenne{\theta}}
 = 0
