@@ -1,0 +1,67 @@
+\sk
+Un fluide de Boussinesq est un fluide pour lequel les variations de densité peuvent être négligées 
+sauf lorsqu'elles apparaissent dans des termes dont $g$, l'accélération de la gravité, est facteur.
+La plupart des phénomènes atmosphériques, 
+qu'ils soient de grande échelle (mouvement quasi-géostrophique),
+de méso-échelle (fronts météorologiques, vents catabatiques, ondes de gravité)
+ou 
+de micro-échelle (convection de couche limite)
+peuvent être considérés comme des mouvements
+d'un fluide de Boussinesq, pour lequel $\rho=\cte$
+sauf dans le terme de flottabilité verticale.
+En d'autres termes, on ne retient que l'impact sous l'action de la gravité
+de la stratification en densité du fluide sur les mouvements verticaux.
+L'équation de continuité s'écrit alors
+\[ \v \nabla \cdot \v v = 0 \]
+\noindent Cette approximation est valable dans le cas de mouvements  
+verticaux relativement confinés (d'extension verticale de l'ordre de $H$).
+
+\sk
+On se place dans le cadre d'une analyse linéaire de perturbations
+autour d'un état de base moyen qui vérifie l'équilibre hydrostatique.
+\[ \rho = \rho_0 + \rho' \qquad p = \moyenne{p}(z) + p' \]
+L'approximation de Boussinesq permet 
+de remplacer~$\rho$ par~$\rho_0$ partout, sauf 
+lorsqu'on considère les deux termes dominants 
+de l'équation du mouvement vertical -- car ils font apparaître la force de flottaison.
+\[ 
+\f{1}{\rho} \Dp{p}{z} + g 
+= 
+\f{1}{\rho_0 + \rho'} \left( \Dp{\moyenne{p}}{z} + \Dp{p'}{z} \right) + g  
+\]
+\noindent Au premier ordre
+\[ 
+\f{1}{\rho_0 + \rho'} 
+= 
+\f{1}{\rho_0 \left( 1 + \f{\rho'}{\rho_0} \right) } 
+\simeq 
+\f{1}{\rho_0} \left( 1 - \f{\rho'}{\rho_0} \right)
+\]
+\noindent De plus, l'état de base vérifie l'équilibre hydrostatique
+\[ 
+\f{1}{\rho_0} \Dp{\moyenne{p}}{z} + g = 0
+\]
+\noindent Ainsi on parvient à
+\[ 
+\f{1}{\rho} \Dp{p}{z} + g 
+= 
+\f{1}{\rho_0} \Dp{p'}{z} - g \f{\rho'}{\rho_0}
+\]
+\noindent Le second terme est l'expression de la force de flottaison (la poussée d'Archimède).
+En utilisant l'équation d'état, et en introduisant le température
+potentielle~$\theta = \moyenne{\theta} + \theta'$, on a
+\[
+\rho' \simeq - \rho_0 \f{\theta'}{\moyenne{\theta}} + \f{p'}{c_s^2}
+\]
+\noindent avec~$c_s$ la célérité du son, bien plus rapide que
+l'écrasante majorité des mouvements atmosphériques, ce qui donne
+une autre expression de la force de flottaison
+\[
+-\f{\rho'}{\moyenne{\rho}} = \f{\theta'}{\moyenne{\theta}}
+\]
+\noindent Ce qui montre qu'on peut raisonner indifféremment
+sur les perturbations de densité ou de température potentielle.
+Les premières sont plutôt utilisées en océanographie,
+les secondes en météorologie.
+
+%force de flottaison est une perturbation de l'équilibre hydrostatique.

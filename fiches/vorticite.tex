@@ -1,0 +1,84 @@
+\sk
+La vorticité est définie généralement par le rotationnel du champ de vent
+\[ \v \zeta = \v \nabla \wedge \v V \]
+\noindent La composante verticale de la vorticité~$\zeta$
+quantifie la rotation du fluide dans le plan horizontal
+\[ \v k \cdot \left( \v \nabla \wedge \v u \right) \]
+
+\sk
+Considérons les équations primitives pour le mouvement horizontal,
+en négligeant les termes de sphéricité pour plus de simplicité.
+\[ \ddf{u}{t} - f\,v = -\frac{1}{\rho} \Dp{p}{x} \]
+\[ \ddf{v}{t} + f\,u = -\frac{1}{\rho} \Dp{p}{y} \]
+\noindent Comme la vorticité relative selon la verticale s'écrit
+\[ \zeta = \Dp{v}{x} - \Dp{u}{y} \]
+\noindent son évolution peut être obtenue simplement en
+dérivant selon~$y$ l'équation du mouvement selon~$x$
+(et vice versa) puis en soustrayant les deux termes.
+L'on obtient alors l'\voc{équation de la vorticité}
+\[
+\ddf{\zeta}{t} + (\zeta+f) \, \v \nabla \cdot \vec v + \textcolor{red}{v \ddf{f}{y}}
+= \frac{1}{\rho^2} \left( \Dp{\rho}{x} \Dp{p}{y} - \Dp{\rho}{y} \Dp{p}{x} \right)
+\]
+\noindent en notant que l'on a négligé les termes
+$\Dp{w}{x}$ et $\Dp{w}{y}$ en se limitant au mouvement quasi-horizontal.
+Le terme en \textcolor{red}{rouge} est en réalité égal à~$\ddf{f}{t}$
+et correspond à l'\voc{effet~$\beta$} c'est-à-dire
+l'effet sur l'écoulement de la variation avec la
+latitude du paramètre de Coriolis.
+Ainsi on obtient la notation plus compacte
+\[
+\ddf{(\zeta + f)}{t} + (\zeta+f) \, \v \nabla \cdot \vec v
+= \frac{1}{\rho^2} \left( \Dp{\rho}{x} \Dp{p}{y} - \Dp{\rho}{y} \Dp{p}{x} \right)
+\]
+\noindent Le terme de droite est la projection verticale
+du terme $\v \nabla p \wedge \v \nabla \rho$
+appelé solénoïdal ou, plus classiquement, terme de production barocline.
+Un fluide est appelé \voc{barocline} lorsque
+ses surfaces d'égale masse volumique
+ne sont pas alignées avec ses surfaces d'égale pression.
+En pratique, un fluide est barocline
+lorsqu'il y a des variations verticales de température
+et de vent; sinon il est appelé \voc{barotrope}.
+
+
+\sk
+Un écoulement barotrope peut être considéré comme bi-dimensionnel (quasi-horizontal).
+Alors l'équation de la vorticité s'écrit plus simplement
+\[
+\ddf{\xi}{t}
+=
+\Dp{\xi}{t} + u \Dp{\xi}{x} + v \Dp{\xi}{y}
+=
+- \xi \, \left( \Dp{u}{x} + \Dp{v}{y} \right)
+\]
+\noindent avec la vorticité absolue~$\xi = \zeta + f$
+(rappelons qu'il s'agit de composantes verticales). 
+Cette quantité se comprend comme une \og composée de vorticité \fg~entre
+vorticité relative~$\zeta$ (calculée via le mouvement dans le référentiel tournant)
+et vorticité planétaire~$f = 2\,\Omega\,\sin\phi$ (correspondant à la rotation de la planète).
+Dans le cas d'un écoulement non-divergent, on obtient alors
+\[
+\Dp{\xi}{t} + u \Dp{\xi}{x} + v \Dp{\xi}{y}
+=
+0
+\]
+\noindent Il y a donc conservation de la vorticité totale~$\xi$
+dans le cas d'un écoulement barotrope non-divergent.
+Ce modèle très simplifié de l'évolution du fluide atmosphérique
+est à la base des premiers modèles de prévision numérique du temps.
+Par ailleurs, ce modèle très simple permet d'illustrer aisément
+l'apparition d'ondes de Rossby dans l'écoulement 
+sous l'effet de la conservation de la vorticité.
+
+\sk
+L'approche peut se généraliser au cas barocline, 
+moyennant des calculs plus élaborés.
+La quantité qui se conserve dans le cas général
+est la \voc{vorticité potentielle d'Ertel} notée~$PV$
+\[
+PV = \left( \zeta_{\theta} + f \right) \left( -g \Dp{\theta}{p} \right)
+\]
+\noindent avec~$\zeta_{\theta}$ vorticité relative
+calculée sur une surface isentrope (à~$\theta = \cte$).
+

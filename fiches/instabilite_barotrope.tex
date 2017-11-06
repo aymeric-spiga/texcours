@@ -1,0 +1,69 @@
+\sk
+Pour aborder l'instabilité barotrope de manière simplifiée,
+on reprend l'équation de la vorticité barotrope 
+linéarisée pour un écoulement quasi-horizontal,
+employée pour décrire les ondes de Rossby barotropes
+\[
+\left( \Dp{}{t} + \moyenne{u} \Dp{}{x} \right) \zeta' + v' \Dp{f}{y} = 0
+\]
+\noindent L'unique différence est néanmoins que l'on considère ici
+que le vent zonal de base~$\moyenne{u}$ a une dépendance latitudinale,
+comme dans un courant-jet réel, ce qui conduit à une vorticité relative
+de base non nulle~$\moyenne{\zeta}$, donc l'équation de la vorticité suivante
+\[
+\left( \Dp{}{t} + \moyenne{u} \Dp{}{x} \right) \zeta' + v' \Dp{(\moyenne{\zeta}+f)}{y} = 0
+\]
+En utilisant~$\Dp{\moyenne{\zeta}}{y} = -\DDp{u}{y}$,
+et en définissant le potentiel~$\Psi'$ 
+tel que~$u'=-\Dp{\Psi'}{y}$
+et~$v'=\Dp{\Psi'}{x}$, on parvient à
+\[
+\left( \Dp{}{t} + \moyenne{u} \Dp{}{x} \right) \nabla^2 \Psi' + \left( \beta - \DDp{\moyenne{u}}{y} \right) \Dp{\Psi'}{x} = 0
+\]
+
+\sk
+Considérons une solution monochromatique se propageant uniquement
+selon la longitude (axe~$x$) et le temps
+\[
+\Psi'(x,y) = Re \left[ \hat{\Psi}(y) \, \exi{(k(x-c\,t)} \right]
+\]
+\noindent avec~$c$ une vitesse de phase complexe. Si la partie
+imaginaire~$c_i$ de la vitesse de phase~$c$ est positive, l'onde
+croît exponentiellement avec le temps, dénotant l'instabilité de l'écoulement.
+On obtient alors une équation différentielle du second degré
+\[
+\left[ \moyenne{u} - c \right] \left( \ddf{^2\hat{\Psi}}{y^2} - k^2 \, \hat{\Psi} \right) + \left( \beta - \DDp{\moyenne{u}}{y} \right) \hat{\Psi} = 0
+\]
+
+\sk
+Supposons que l'onde est confinée dans un canal entre $y=0$ et $y=L$ avec~$\hat{\Psi}=0$
+(situation plutôt réaliste si l'on considère l'instabilité d'un jet).
+En multipliant par le complexe conjugué~$\hat{\Psi}^*$ et en divisant par~$\moyenne{u}-c$,
+la partie imaginaire de l'intégrale suivant~$y$ des termes ci-dessus
+s'annule pour le premier terme, ce qui conduit à
+\[
+c_i \int_0^L \left( \beta - \DDp{\moyenne{u}}{y} \right) \f{|\hat{\Psi}|^2}{|\moyenne{u}-c|^2} \dd y = 0
+\]
+Une instabilité ne peut se développer ($c_i > 0$) que
+si l'intégrale est nulle, ce qui n'est possible que si
+\[
+\boxed{
+\beta - \DDp{\moyenne{u}}{y} \quad \textrm{change de signe dans le canal } [0,L]
+}
+\]
+\noindent Le critère ci-dessus est le critère d'instabilité barotrope de Rayleigh-Kuo.
+Un courant-jet barotrope peut ainsi devenir instable 
+si sa courbure selon la latitude est particulièrement marquée.
+L'instabilité barotrope peut survenir
+sous les tropiques terrestres,
+dans les moyennes latitudes sur Vénus,
+ou le courant circumpolaire martien.
+Dans les courants-jets des planètes géantes,
+l'instabilité barotrope est également probable,
+notamment dans les jets dirigés vers l'ouest.
+Elle pourrait jouer un rôle également
+dans le développement de la forme hexagonale de l'hexagone de Saturne.
+
+
+
+

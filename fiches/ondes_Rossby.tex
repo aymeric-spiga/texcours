@@ -1,0 +1,111 @@
+\sk
+Les ondes de Rossby sont des ondes atmosphériques planétaires qui
+naissent du fait de la variation du paramètre de Coriolis avec la latitude,
+sous la contrainte de conservation de la vorticité totale~$\xi = \zeta + f$
+avec~$f=2\Omega\sin\phi$ la vorticité planétaire.
+
+\sk
+Considérons une parcelle d'air à l'équateur, de vorticité relative~$\zeta = 0$.
+Admettons qu'une perturbation déplace légèrement cette parcelle vers le nord.
+La vorticité planétaire~$f$ de cette parcelle augmente.
+La conservation de~$\xi = \zeta + f$ impose donc
+que la vorticité relative~$\zeta$ de la parcelle devienne négative,
+ce qui impose un mouvement tournant de sens des aiguilles d'une montre
+au voisinage de la parcelle.
+A gauche de la parcelle, un déplacement vers le nord se fait
+donc sentir, donnant naissance à une nouvelle perturbation~$\zeta < 0$ par conservation de~$\xi$.
+A droite de la parcelle, un déplacement vers le sud se fait
+donc sentir, donnant naissance à une nouvelle perturbation~$\zeta > 0$ par conservation de~$\xi$.
+Il en résulte ainsi une propagation conjointe vers l'ouest 
+des perturbations~$\zeta > 0$ et~$\zeta < 0$,
+caractérisant les \voc{ondes de Rossby}.
+
+\sk
+Ce résultat qualitatif peut se retrouver quantitativement
+dans un contexte barotrope quasi-horizontal non-divergent,
+en utilisant la composante verticale de la vorticité absolue~$\xi = \zeta + f$
+qui est conservée en suivant le mouvement horizontal
+\[ 
+\ddf{\xi}{t} = 0 
+\qquad
+\textrm{avec}
+\qquad
+\ddf{}{t} = \Dp{}{t} + u \Dp{}{x} + v \Dp{}{y}
+\]
+Pour illustrer aisément l'effet de~$\beta = \Dp{f}{y}$,
+on se place dans un plan~$\beta$ tangent à la sphère localement
+et pour lequel~$\beta = \cte$ (ainsi $f = f_0 + \beta\,y$).
+On considère, pour réaliser une analyse linéaire,
+un état de base~$\moyenne{\cdot}$ (écoulement zonal)
+et une perturbation horizontale~$\cdot'$
+\[
+u = \moyenne{u} + u' 
+\qquad 
+v = v' 
+\qquad 
+\zeta = \Dp{v'}{x} - \Dp{u'}{y} = \zeta'
+\]
+\noindent L'équation barotrope de la vorticité s'écrit ainsi en version linéarisée
+\[ 
+\left( \Dp{}{t} + u \Dp{}{x} + v \Dp{}{y} \right) \zeta + \beta v = 0
+\qquad
+\Rightarrow
+\qquad
+\left( \Dp{}{t} + \moyenne{u} \Dp{}{x} \right) \zeta' + \beta v' = 0
+\]
+
+\sk
+Dans le cas d'un écoulement bidimensionnel non divergent,
+il est possible d'exprimer les coordonnées de la vitesse
+à l'aide d'une fonction de courant~$\Psi'$ telle que
+\[
+u' = - \Dp{\Psi'}{y} \qquad v' = \Dp{\Psi'}{x}
+\]
+\noindent possédant la propriété intéressante suivante
+\[
+\zeta' = \nabla^2 \Psi'
+\qquad
+\textrm{avec}
+\qquad
+\nabla^2 \equiv \DDp{}{x} + \DDp{}{y}
+\]
+\noindent ce qui permet d'exprimer l'équation linéarisée de la vorticité barotrope
+en fonction de la seule variable~$\Psi'$
+\[
+\left( \Dp{}{t} + \moyenne{u} \Dp{}{x} \right) \nabla^2 \Psi' + \beta \Dp{\Psi'}{x} = 0
+\]
+\noindent On cherche des solutions harmoniques 
+de type onde monochromatique 
+de vecteur d'onde horizontal~$(k,l)$ 
+et de fréquence absolue $\omega$
+s'écrivant
+\[
+\Psi' = Re \left[ \hat{\Psi} \, \exi{(kx+ly-\omega t)} \right]
+\]
+\noindent D'après l'équation linéarisée, les ondes
+qui se propagent vérifient ainsi
+\[
+- \left( \omega + k \moyenne{u} \right) \left( - k^2 - l^2 \right) + k\,\beta = 0
+\]
+et donc leur fréquence intrinsèque~$\tilde{\omega} = \omega - k\moyenne{u}$ 
+dans le référentiel attaché à l'écoulement de base est
+\[
+\boxed{
+\tilde{\omega} = - \beta \, \f{k}{k^2+l^2}
+}
+\]
+\noindent La relation de dispersion ainsi obtenue pour
+les ondes de Rossby traduit à la fois leur
+propagation systématique vers l'ouest
+et l'importance centrale de l'effet~$\beta$ 
+de variation du paramètre de Coriolis avec la latitude.
+
+
+\sk
+Les ondes de Rossby se développent sur Terre
+dans les moyennes latitudes avec un nombre d'onde~$4-6$.
+Elles peuvent également être responsables de structures 
+sur les planètes géantes, telles l'hexagone sur Saturne par exemple.
+La forme en Y du nuage global de Vénus pourrait être liée
+à une onde de Rossby, mais d'autres types d'ondes 
+(par exemple, ondes de Kelvin) pourrait être impliquées.

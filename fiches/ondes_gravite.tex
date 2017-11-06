@@ -1,0 +1,138 @@
+
+\sk
+Les ondes de gravité sont des oscillations atmosphériques
+causés par le rappel de la force de flottaison.
+%On se place pour simplifier dans un cas bidimensionnel~$(x,z)$.
+L'approximation de Boussinesq est respectée.
+L'écoulement est supposé adiabatique.
+On réalise une analyse linéaire
+\[
+\rho =\rho_0 + \rho' 
+\qquad
+p = \moyenne{p}(z) + p' 
+\qquad
+\theta = \moyenne{\theta}(z) + \theta'
+\qquad
+u = \moyenne{u}(z) + u'
+\qquad
+v = \moyenne{v}(z) + v'
+\qquad
+w = w'
+\]
+\noindent où l'état de base vérifie les équations du mouvement.
+L'écoulement moyen est supposé purement horizontal, avec~$\moyenne{w}=0$.
+
+\sk
+Les équations primitives se réduisent à
+\[ 
+\Dp{u'}{t} 
++ \moyenne{u} \Dp{u'}{x} 
++ \moyenne{v} \Dp{u'}{x} 
+\textcolor{lightgray}{+ w' \Dp{\moyenne{u}}{z}}
+- f v' 
++ \f{1}{\rho_0} \Dp{p'}{x}
+= 0
+\]
+\[ 
+\Dp{v'}{t} 
++ \moyenne{u} \Dp{v'}{x} 
++ \moyenne{v} \Dp{v'}{x} 
+\textcolor{lightgray}{+ w' \Dp{\moyenne{v}}{z}}
++ f u' 
++ \f{1}{\rho_0} \Dp{p'}{y}
+= 0
+\]
+\[ 
+\Dp{w'}{t} 
++ \moyenne{u} \Dp{w'}{x} 
++ \moyenne{v} \Dp{w'}{x} 
++ \f{1}{\rho_0} \Dp{p'}{z}
+- g \f{\theta'}{\moyenne{\theta}}
+= 0
+\]
+\[ 
+\Dp{u'}{x} 
++ \Dp{v'}{y}
++ \Dp{w'}{z}
+= 0
+\]
+%% dernier: terme en D/Dt (rho'/rho_0) ??
+\[ 
+\Dp{\theta'}{t} 
++ \moyenne{u} \Dp{\theta'}{x} 
++ \moyenne{v} \Dp{\theta'}{x} 
++ w' \Dp{\moyenne{\theta}}{z}
+= 0
+\]
+\noindent Les termes en grisé sont ici négligés pour simplifier. 
+Ils représentent la possibilité d'avoir un vent d'environnement
+variant avec l'altitude~$z$.
+
+
+\sk
+Pour déterminer les propriétés des ondes de gravité 
+qui apparaissent dans l'atmosphère,
+on poursuit l'analyse linéaire en substituant
+aux perturbations une solution
+de type onde monochromatique 
+de vecteur d'onde 
+$(k=\f{2\pi}{\lambda_x},l=\f{2\pi}{\lambda_y},m=\f{2\pi}{\lambda_z})$ 
+et de fréquence absolue $\omega$, 
+(autrement dit, un élément harmonique d'un développement de Fourier)
+\[
+\mathcal{F}'
+= 
+Re \left[ 
+\hat{\mathcal{F}} \, \exi{(kx+ly+mz-\omega t)} 
+\right]
+\quad \textrm{avec} \quad 
+\mathcal{F}' \equiv u', v', w', \f{p'}{\rho_0}, \f{\theta'}{\moyenne{\theta}}
+\]
+\noindent Ainsi les équations ci-dessus deviennent 
+des équations dites de polarisation 
+(5 équations pour 5 inconnues $\hat{u} \, \hat{v} \, \hat{w} \, \hat{p} \, \hat{\theta}$), 
+où~$\tilde{\omega} = \omega - k \moyenne{u} - l \moyenne{v}$
+est la \voc{fréquence intrinsèque} de l'onde considérée
+dans un référentiel attaché à l'écoulement moyen
+de composantes $\moyenne{u}$ et~$\moyenne{v}$
+
+\begin{minipage}{.32\linewidth}
+\begin{equation}\label{polau}
+- \ir \, \tilde{\omega} \, \hat{u}
+- f \hat{v}
++ \ir \, k \, \hat{p} 
+= 0
+\end{equation}
+\begin{equation}\label{polav}
+- \ir \, \tilde{\omega} \, \hat{v}
++ f \hat{u}
++ \ir \, l \, \hat{p} 
+= 0
+\end{equation}
+\end{minipage}
+\begin{minipage}{.32\linewidth}
+\begin{equation}\label{polaw} 
+- \ir \, \tilde{\omega} \, \hat{w}
++ \ir \, m \, \hat{p} 
+- g \hat{\theta}
+= 0
+\end{equation}
+\begin{equation}\label{poladiv}
+\ir \, k \, \hat{u}
++ \ir \, l \, \hat{v}
++ \ir \, m \, \hat{w}
+= 0
+\end{equation}
+\end{minipage}
+\begin{minipage}{.32\linewidth}
+\begin{equation}\label{polat}
+- \ir \, \tilde{\omega} \, g \, \hat{\theta}
++ N^2 \, \hat{w}
+= 0
+\end{equation}
+$$ \qquad \textrm{avec} \quad N^2 = \f{g}{\moyenne{\theta}} \Dp{\moyenne{\theta}}{z}$$ % = g \Dp{\ln\theta}{z} $$
+\end{minipage}
+
+\sk
+$N^2$ est appelée la fréquence de Brunt-V{\"a}is{\"a}l{\"a}.
+

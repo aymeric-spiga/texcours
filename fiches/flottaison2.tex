@@ -1,0 +1,38 @@
+\sk
+La force de flottaison peut s'écrire de diverses manières,
+(p désignant la parcelle et e l'environnement)
+\[ F_z = g \, \frac{\rho\e{e}-\rho\e{p}}{\rho\e{p}} = g \, \frac{T\e{p}-T\e{e}}{T\e{e}}  \]
+\noindent ou encore
+\[ F_z = g \, \frac{\Gamma\e{p}-\Gamma\e{e}}{T\e{e}} \, \delta z \]
+
+\sk
+Si l'on se place dans un contexte d'une perturbation d'altitude~$z'$
+pour la parcelle
+\[ T' = T_0 - \Gamma_d \, z' \]
+alors que pour l'environnement
+\[ T = T_0 - \Gamma \, z' \qquad \textrm{avec} \qquad \Gamma = \ddf{T}{z} \]
+\noindent D'après les expressions du paragraphe précédent,
+on peut ainsi écrire l'effet de la force ascensionnelle
+sur l'accélération comme
+\[ \ddf{^2 z'}{t^2} = g \left( \f{T'}{T} - 1 \right) \]
+\noindent ou encore
+\[ 
+\ddf{^2 z'}{t^2} + \left[ \f{g}{T} \, \left( \ddf{T}{z} + \f{g}{c_p} \right)  \right] \, z' = 0
+\]
+\noindent Nous avons donc un système qui
+peut causer des oscillations de la parcelle sous l'effet de la force de flottaison.
+Par analogie avec l'équation du second ordre d'un
+oscillateur harmonique, on définit le terme en
+facteur de $z'$ comme une fréquence au carré, 
+nommée fréquence de Brunt-V{\"a}is{\"a}l{\"a}~$N$
+exprimée comme
+\[ N^2 = \f{g}{T} \, \left( \ddf{T}{z} + \f{g}{c_p} \right) \]
+\noindent ou encore en utilisant la température potentielle
+\[ N^2 = \f{g}{\theta} \, \ddf{\theta}{z} = g \, \ddf{\ln\theta}{z} \]
+\noindent La fréquence de Brunt-V{\"a}is{\"a}l{\"a}~$N$
+traduit l'instabilité convective si~$N<0$
+et la stabilité convective si~$N>0$ -- avec dans ce cas,
+les oscillations de la parcelle comme mécanisme de rappel.
+
+\sk
+Nous voyons ici un cas très particulier d'un effet plus général appelé onde de gravité.

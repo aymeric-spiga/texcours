@@ -1,0 +1,74 @@
+\sk
+Nous allons résoudre ce système 
+en tentant d'obtenir une relation entre~$\tilde{\omega},k,l,m$.
+Pour cela, obtenons une équation contenant uniquement~$\hat{w}$
+Une manipulation type~$k \ref{polau} + l \ref{polav}$ donne
+\[
+- \ir \, k \, \tilde{\omega} \, \hat{u}
+- f \, k \, \hat{v}
++ \ir \, k^2 \, \hat{p} 
+- \ir \, l \, \tilde{\omega} \, \hat{v}
++ f \, l \, \hat{u}
++ \ir \, l^2 \, \hat{p} 
+= 0
+\]
+\noindent Les deux termes inertiels $\ir \, k \, \tilde{\omega} \, \hat{u}$ et~$\ir \, k \, \tilde{\omega} \, \hat{v}$ 
+se rassemblent en utilisant l'équation~\ref{poladiv} liée à la divergence
+\[
+\ir \, m \, \tilde{\omega} \, \hat{w}
+- f \, k \, \hat{v}
++ f \, l \, \hat{u}
++ \ir \, (k^2 + l^2) \, \hat{p}
+= 0
+\]
+\noindent Le terme en pression peut être lié à~$\hat{w}$ et~$\hat{\theta}$ grâce à l'équation~\ref{polaw}
+\[
+\ir \, m \, \tilde{\omega} \, \hat{w}
+- f \, k \, \hat{v}
++ f \, l \, \hat{u}
++ \frac{k^2 + l^2}{m} \left( g \hat{\theta} + \ir \, \tilde{\omega} \, \hat{w} \right)
+= 0
+\]
+\noindent Par ailleurs, $\hat{w}$ et~$\hat{\theta}$ sont liés par l'équation~\ref{polat} qui s'écrit également $g \, \hat{\theta} = - \ir \frac{N^2}{\tilde{\omega}} \, \hat{w}$. En multiplant par~$- \ir \tilde{\omega} / m$, on obtient
+\[
+\tilde{\omega}^2 \, \hat{w}
++ f \, \f{k}{m} \, \ir \, \tilde{\omega} \, \hat{v}
+- f \, \f{l}{m} \, \ir \, \tilde{\omega} \, \hat{u}
+- \frac{k^2 + l^2}{m^2} \, \hat{w} \, \left( N^2 - \tilde{\omega}^2 \right)
+= 0
+\]
+\noindent Il ne reste plus qu'à transformer les termes inertiels restant, contenant $\ir \, \tilde{\omega} \, \hat{u}$ et~$\ir \, \tilde{\omega} \, \hat{v}$, en utilisant les équations~\ref{polau} et~\ref{polav}
+\[
+\tilde{\omega}^2 \, \hat{w}
++ f \, \f{k}{m} \, \left( + f \hat{u} + \ir \, l \, \hat{p} \right)
+- f \, \f{l}{m} \, \left( - f \hat{v} + \ir \, k \, \hat{p} \right) 
+- \frac{k^2 + l^2}{m^2} \, \hat{w} \, \left( N^2 - \tilde{\omega}^2 \right)
+= 0
+\]
+\noindent En remarquant que les termes en~$\hat{p}$ se compensent, on parvient à
+\[
+\tilde{\omega}^2 \, \hat{w}
++ \frac{f^2}{m} \, \left( k \, \hat{u} + l \, \hat{v} \right)
+- \frac{k^2 + l^2}{m^2} \, \hat{w} \, \left( N^2 - \tilde{\omega}^2 \right)
+= 0
+\]
+\noindent puis l'équation~\ref{polaw} peut à nouveau être utilisée pour éliminer~$\hat{u}$ et~$\hat{v}$
+pour finalement obtenir 
+\[
+\left[
+\tilde{\omega}^2 - f^2
+- \frac{k^2 + l^2}{m^2} \, \left( N^2 - \tilde{\omega}^2 \right)
+\right] \hat{w}
+= 0
+\]
+\noindent donc la \voc{relation de dispersion} des ondes de gravité
+\[ \boxed{
+\tilde{\omega}^2 - f^2 = \frac{k^2 + l^2}{m^2} \, \left( \tilde{\omega}^2 - N^2 \right)
+} \]
+
+\sk
+La relation de dispersion indique que les ondes de gravité
+\begin{finger}
+\item se propagent horizontalement et verticalement, avec longueurs d'onde horizontale et verticale intimement liées;
+\item ont une fréquence intrinsèque telle que~$N^2 < \tilde{\omega} < f^2$.
+\end{finger}
