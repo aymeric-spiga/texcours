@@ -1,0 +1,189 @@
+%\documentclass[a4paper,DIV16,10pt]{scrartcl}
+\documentclass[
+        a4paper,
+        DIV16,
+        10pt,
+        cleardoublepage=empty,
+        twoside=yes,
+        BCOR=8.25mm
+        ]{scrbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{texcours}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\zauthor}{Aymeric SPIGA}
+\newcommand{\zaffil}{Laboratoire de Météorologie Dynamique}
+\newcommand{\zemail}{aymeric.spiga@upmc.fr}
+\newcommand{\zcourse}{Planétologie}
+\newcommand{\zcode}{GQE}
+\newcommand{\zuniversity}{UPMC}
+\newcommand{\zlevel}{M1 SDUEE}
+\newcommand{\zsubtitle}{Fiches complémentaires de cours}
+\newcommand{\zlogo}{\includegraphics[height=1.5cm]{decouverte/cours_meteo/UPMC_cart-blanc-Q_7504-703-3.png}}
+\newcommand{\zrights}{Copie et usage interdits sans autorisation explicite de l'auteur}
+\newcommand{\zdate}{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document} \inibook %\inidoc
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section{Fil rouge}
+\begin{itemize}
+\item approche analytique: choix d'un aspect lié au climat
+\item calculs les plus aisés à comprendre (retenir les principes)
+\item exemple de question : habitabilité et Mars vs. Terre vs. Vénus
+\end{itemize}
+
+\chapter{Caractérisation de l'atmosphère}
+
+\newpage
+\section{Parcelle}
+\input{atmosphere_parametres.tex}
+\input{parcelle.tex}
+\input{parcelle_equilibre.tex}
+
+\newpage
+\section{Gaz parfait}
+\input{thermo_gaz_parfait.tex}
+
+\newpage
+\section{Equilibre hydrostatique}
+\input{equilibre_hydrostatique.tex}
+
+\newpage
+\section{\'Echelle de hauteur}
+\input{echelle_hauteur.tex}
+
+\newpage
+\section{Echappement}
+\input{echappement.tex}
+
+%\newpage
+%\section{Echappement (autre)}
+%\input{echappement_autre.tex}
+
+\chapter{Thermodynamique}
+
+\newpage
+\section{Premier principe de la thermodynamique}
+\input{premier_principe.tex}
+
+\newpage
+\section{Premier principe de la thermodynamique (application)}
+\input{premier_principe_atmosphere.tex}
+
+\newpage
+\section{Types de transformations : adiabatiques}
+\input{transformations_adiabatiques.tex}
+
+\newpage
+\section{Gradient adiabatique sec}
+\input{gradient_adiabatique_sec.tex}
+
+%\newpage
+%\section{Force de flottaison}
+%\input{flottaison.tex}
+%
+%\newpage
+%\section{(In)stabilité}
+%\input{stabilite.tex}
+
+\newpage
+\section{Types de transformations : non adiabatiques}
+\input{transformations_non_adiabatiques.tex}
+
+%\newpage
+%\section{Transformations pseudo-adiabatiques}
+%\input{transformations_pseudoadiabatiques.tex}
+
+\chapter{Radiatif}
+
+\newpage
+\section{Rayonnement thermique et corps noir}
+\input{rayonnement_thermique_simple.tex}
+\input{corps_noir_definition.tex}
+
+\newpage
+\section{Loi de Planck}
+\input{corps_noir_loi_planck.tex}
+
+\newpage
+\section{Loi de Wien du corps noir}
+\input{corps_noir_loi_wien.tex}
+
+\newpage
+\section{Domaine de l'énergie solaire}
+\input{energie_solaire_domaine.tex}
+
+\newpage
+\section{Loi de Stefan-Boltzmann du corps noir}
+\input{corps_noir_loi_stefan.tex}
+
+%\newpage
+%\section{Corps gris et émissivité}
+%\input{corps_noir_emissivite.tex}
+
+\newpage
+\section{Constante solaire}
+\input{constante_solaire.tex}
+\input{constante_solaire_calcul.tex}
+
+\newpage 
+\section{Albédo} 
+\input{albedo.tex}
+
+\newpage
+\section{\'Equilibre TOA}
+\input{bilan_radiatif_flux_simple.tex}
+
+\newpage
+\section{Bilan simple : température équivalente}
+\input{bilan_radiatif_temperature_equivalente.tex}
+
+\newpage
+\section{Applications de la température équivalente}
+\input{bilan_radiatif_temperature_equivalente_applications.tex}
+
+\newpage
+\section{\'Epaisseur optique}
+\input{epaisseur_optique.tex}
+
+%\newpage
+%\section{Modèle à deux faisceaux : écriture}
+%\input{modele_deux_faisceaux_hypotheses.tex}
+%
+%\newpage
+%\section{Modèle à deux faisceaux : résolution 1}
+%\input{modele_deux_faisceaux_resolution1.tex}
+%
+%\newpage
+%\section{Modèle à deux faisceaux : résolution 2}
+%\input{modele_deux_faisceaux_resolution2.tex}
+%
+%%\newpage
+%%\section{Profil radiatif convectif}
+%%\input{atmosphere_profil_radiatif_convectif.tex}
+
+\newpage
+\section{Effet de serre : déplacement d'équilibre}
+\input{effet_serre_chgt.tex}
+
+\newpage
+\section{Effet de serre divergent}
+\input{effet_serre_divergent.tex}
+
+\newpage
+\section{Rétroactions}
+\input{retroactions.tex}
+
+\chapter{Dynamique (avec les mains)}
+
+\newpage
+\section{\'Equation hypsométrique}
+\input{equation_hypsometrique.tex}
+
+\newpage
+\section{Cellules de Hadley et Jets}
+\input{hadley.tex}
+
+
+\end{document}
