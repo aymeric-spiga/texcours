@@ -364,7 +364,8 @@ en plus gde qte a cause eclairs et ascendances?
 * Même taille que Mercure environ
 * Atterrisseur Huygens en 2004 puis nombreuses observations de la sonde Cassini
 * A l'atmosphère épaisse de diazote, qq % de CH4 et H2
-* Cycle du méthane très actif (nuages, lacs, précipitations)
+* Cycle du méthane très actif (nuages, lacs, précipitations) [Raulin et al. 2008]
+* lacs de méthane et d'éthane, un peu d'hydrocarbures aussi
 * Photochimie des hydrocarbures, brume photochimique obscurcissant la surface
 * Production continue par destruction de méthane de composés organiques s'accumulant à la surface depuis ~1000-10^6 ans
 <!--
@@ -399,9 +400,11 @@ asymétrie NS de la brume, enrichissement de certains composés aux hautes latit
 
 ### Encelade (Saturne)
 
+* Dix fois plus petit que Titan, activité surprenante
 * Activité éruptive de cryovolcanisme depuis des failles actives au pôle sud
+* Geysers riches en eau et en matière organique
 * Chauffage par les marées de Saturne, avec un contrôle par l'orbite excentrique d'Encelade autour de Saturne
-* Signe(s) de plus en plus concordant d'un océan d'eau enfoui sous la surface
+* Signe(s) de plus en plus concordant d'un océan d'eau enfoui sous la surface (reposant sur roche)
 
 ### Iapetus ou Japet (Saturne)
 
@@ -426,30 +429,54 @@ asymétrie NS de la brume, enrichissement de certains composés aux hautes latit
 
 ### Pluton
 
-* Découverte en 1930, désormais planète naine, diamètre 2370 km
-    * Système double avec Charon de rayon 600 km (a pu se former par l'effet d'un impact sur Pluton) + 5 petites lunes
-    * Atmosphère composée 99% N2 (équilibre de sublimation avec surface) 1% CO traces CH4
+* Découverte en 1930, 30-50 UA, désormais planète naine, diamètre 2370 km
+    * Système double avec Charon de rayon 600 km (découerte en 1978, a pu se former par l'effet d'un impact sur Pluton) + 5 petites lunes
+    * Atmosphère composée 99% N2 (équilibre de sublimation avec surface, pression variable 0.1-1 Pa) 1% CO traces CH4
     * Composition interne inconnue (noyau rocheux ?)
+    * Spectro: glaces nitrogen-rich, methane-rich, water-rich
 
 * Survol de New Horizons en juillet 2015 : révolution de notre vision de ce corps
-    * Distinctions entre zones sombres craterisées (Cthulhu, tholins?) et lisses très brillantes (Tombaugh)
+    * Geology (map White et al. 2017) Distinctions entre zones
+        - sombres craterisées (Cthulhu, tholins? polymères organiques) 
+        - lisses très brillantes (Tombaugh Regio)
     * geologically active throughout the epochs Sputnik Planum -10Myr, East Tombaugh ~1Gyr, Cthulu and highlands ~4Gyr (and Charon)
-    * glaces: nitrogen-rich, methane-rich, water-rich 
+    * 1/3 manteau glace d'eau. glaces volatiles reposent dessus: N2 CH4 CO. mélange des glaces à l'échelle du grain Schmitt 2017
     * volcanic summits?
+    * atmosphère: brume organique
 
 * "Coeur" (Tombaugh Regio) surface glacée
-    * sans cratères, âge: 100 millions d'années maximum
-    * glaciers Sputnik (dépression topo) remplie de glace molle d'azote et monoxyde de carbone (+ méthane)
-    * low-viscosity: solid-state convective motions and currents (N2 and CO)
+    * sans cratères, glacial flows, sublimation pits, âge: 100 millions d'années maximum
+    * glaciers Sputnik (dépression topo 3km sous surface moyenne) remplie de glace molle d'azote (surtout) et monoxyde de carbone (+ méthane)
+    * low-viscosity: solid-state convective motions and currents (N2 and CO) renouvellement 500.000 ans
     * montagnes de glace d'eau "dure" de 3.5km de haut (et glace eau flotte sur glace azote?)
+    * simu Bertrand & Forget 2016: higher Ps, warmer N2 frost point, stronger cooling, increased condensation rate
+    * simu paleo (obliquity cycle 2.8 my): north may be ablating, south accumulating, corresponds to geology
 
-* actual rate of loss is similar to the Earth's atmosphere, slow Jeans escape 
-    * pre-New Horizons estimates wildly overestimated the loss of material from Pluto’s atmosphere and thought it was like a comet
+* glaciers de N2 et de CH4 ailleurs de Sputnik, dans les régions équatoriales. N2 pas stable aux pôles, CH4 possible givre saisonnier. tout cela très sensible à topo, inertie thermique, albedo
 
-* puzzling thermal structure. what is the coolant?
+<!--
+* global circulation très sensible à la glace d'azote
+    - intense N2 condensation flux: rétro-rotation (Toigo et al. 2015)
+    - moderate: super-rotation, because waves
+    - no condensation flux, weak thermally induced winds
+la première semble être la bonne mais en raison de sputnik planitia
+courant de condensation, avec en plus un courannt de bord ouest
 
-* Charon: evidence of atmospheric transfer to Charon (polar stain), surface ages: all old, no detectable atmospheres
-* satellites ages ~3-4+ Gyr, old surfaces, uniformly high albedos, all rapid rotators (not tidally locked), crystalline H2O ice!
+* inversion near-surface: couche limite avec sublimation de l'azote, cold air brought by horizontal winds, ou confinement par les catabatiques
+-->
+
+* Atmosphere
+    - actual rate of loss is similar to the Earth's atmosphere, slow Jeans escape 
+        * pre-New Horizons estimates wildly overestimated the loss of material from Pluto’s atmosphere and thought it was like a comet
+    - puzzling thermal structure. what is the coolant?
+    - atmosphère à la limite de l'équilibre thermique local
+    - brume organique très étendue de l'ordre de 500 km
+    - methane clouds au-dessus des dépôts d'azote? (où air refroidit à cause sublimation)
+    - circulations driven by condensation flow (e.g. retrorotation) especially over SP
+
+* Autres corps
+    - Charon: evidence of atmospheric transfer to Charon (polar stain), surface ages: all old, no detectable atmospheres
+    - satellites (discovered 2005) ages ~3-4+ Gyr, old surfaces, uniformly high albedos, all rapid rotators (not tidally locked), crystalline H2O ice!
 <!--
 UV, RS, plasma, dust counter, camera, color imaging
 au nord: glace de méthane plus épaisse au nord (car on ne voit pas la glace d'eau
