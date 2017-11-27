@@ -204,3 +204,26 @@ H. Cottin: exobio, est-elle une affaire d'astrophysiciens, de microbiologistes, 
 * lien entre climat et biologie
 
 * Titan, Mars, Vénus : exemple de ce que la Terre aurait donné
+
+
+<!--
+François Raulin
+Titan: atmosphère riche en composés organiques (découverte par Voyager)
+Niemann et al. Nature 2005 GC-MS
+Israël et al. Nature 2005 2006 composition chimique des aérosols
+incorpore du N, va dans le sens du modèle des tholins
+
+Cassini INMS data, hydrocarbures, azotés, complexité à une altitude très élevée
+chimie organique commence dès les plus hauts niveaux
+CAPS a mis en évidence la présence d'ions positifs et négatifs (Waite et al. Science 2007)
+
+hydrolyse de tholins conduit à la formation de nombreux composés d'intérêt astrobiologiques (Brassé et al. Astrobiology 2017)
+produit le plus abondant, l'urée
+
+
+Terre, lyse organique avec oxygène
+Titan, croissance organique car pas d'oxygène, création d'aérosols photochimiques
+
+découverte de formation des aérosols très haut dans l'atmosphère
+z > 1000 km, ionosphère
+-->
