@@ -157,6 +157,12 @@ water played a critical role
 * parfois en *meteor showers* / ex: Perséides au pic d'activité en août
 * beaucoup de larges météorites causent des destructions majeures (+ formation de cratères)
 
+<!--
+Yet, Lellouch et al. (1995) and Feuchtgruber et al. (1997) have discovered that a number of species,
+including H 2 O, are delivered to the Giant Planets by external sources, like interplanetary dust particles
+(IDP), icy rings/satellites, and large comet impacts.
+-->
+
 ### Comètes
 
 * comète = glaces + poussière
@@ -381,7 +387,7 @@ asymétrie NS de la brume, enrichissement de certains composés aux hautes latit
 
 ### Europe (Jupiter)
 
-* Glace d'eau en surface sur un océan global d'eau liquide (habitabilité ?)
+* Glace d'eau en surface (1-3 km) sur un océan global d'eau liquide (habitabilité ?)
 * Structure de surface caractéristique de plaques de glace dérivant ?
 * Terrains enrichis en sels corrélés avec les structures tectoniques
 * Noyau riche en fer, enveloppe rocheuse, puis océan eau surmontée d'une épaisse couche gelée
@@ -403,8 +409,10 @@ asymétrie NS de la brume, enrichissement de certains composés aux hautes latit
 * Dix fois plus petit que Titan, activité surprenante
 * Activité éruptive de cryovolcanisme depuis des failles actives au pôle sud
 * Geysers riches en eau et en matière organique
-* Chauffage par les marées de Saturne, avec un contrôle par l'orbite excentrique d'Encelade autour de Saturne
-* Signe(s) de plus en plus concordant d'un océan d'eau enfoui sous la surface (reposant sur roche)
+* Chauffage par les marées de Saturne (contrôle éruptions), avec un contrôle par l'orbite excentrique d'Encelade autour de Saturne
+* differences in shell thickness and viscosity could account for reduced stress limited fracturing at north pole
+* Signe(s) de plus en plus concordant d'un océan d'eau enfoui sous la surface (reposant sur roche, ~ Europe)
+
 
 ### Iapetus ou Japet (Saturne)
 

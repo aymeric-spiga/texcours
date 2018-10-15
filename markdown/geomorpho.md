@@ -361,4 +361,5 @@ review: Olkin et al. Nature Astronomy 2017
     - photolyse : par les rayons UV
 * Mimas
     - forme de Pac-Man: diffère de ce qui est attendu
-    - présence de matériaux de conductivités thermiques différentes? à expliquer?
+    - présence de matériaux de conductivités thermiques différentes? à expliquer? It may be due to the alteration of their leading face  by  a  focused  bombardment  of highly  energetic electrons. This  is  thought  to  increase  the  contact  between regolith grains  by  gluing  them, improving thus the thermal conductivity or decreasing porosity
+
