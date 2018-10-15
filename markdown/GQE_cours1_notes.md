@@ -288,7 +288,7 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
     * sites avec des lava flows, exemple Idunn Mons
 * Intérieur
     * coeur de fer de 3000 km de rayon
-    * tectonique des plaques (a priori)
+    * pas tectonique des plaques (a priori) ou mono-plaque
     * rotation propre trop lente pour générer un champ magnétique
 
 ## Planètes géantes
@@ -409,7 +409,7 @@ asymétrie NS de la brume, enrichissement de certains composés aux hautes latit
 ### Iapetus ou Japet (Saturne)
 
 * 3ème plus grand satellite de Saturne
-* Un hémisphère très brillant, l'autre très sombre
+* Un hémisphère très brillant, l'autre très sombre (sûrement origine de débris poussiéreux venant de Phoebe, plusieurs indices)
 * Forme étrange en coquille de noix : impact récent responsable de la crête équatoriale ?
 
 <!--
