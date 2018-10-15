@@ -28,6 +28,21 @@ Rappel formation système solaire
 * effondrement catastrophique, conservation du moment cinétique : formation d'un disque protosolaire (HR Tauri par Alma) et d'une protoétoile
 * planétésimaux
 
+<! HDR Cavalié
+The variety found in these distant worlds raises the question of how planetary systems form. Plan-
+etary formation is currently explained by two competing models: the core accretion model (Mizuno,
+1980; Pollack et al., 1996) and the gravitational instability model (Boss, 1997, 2002). In the first model,
+a planetary core forms from the accretion of planetesimals. When its mass reaches a critical mass of
+„10-15 Earth masses, it captures the surrounding gas from the protoplanetary nebula which is mainly
+composed of hydrogen and helium. In the gravitational instability model, a giant planet forms after
+the local collapse of the gas in the protoplanetary disk. These two scenarios can be differentiated by
+measuring the abundances of heavy elements (Z ą 2) in the planets. In the gravitational instability
+model, the heavy element abundances should be protostellar unless photoevaporation occurred due to a
+nearby OB star. The latter effect would result in a uniform enrichment factor with respect to protostellar
+abundances (Boss et al., 2002). In the core accretion model, the heavy element abundances primarily
+depend on the way protoplanetary ices condensed and trapped the volatiles bearing the heavy elements.
+-->
+
 A. Sources
 
 1. (initial) formation du système solaire et des éléments (gaz nébulaire premiers 1 à 10 millions d'années)
