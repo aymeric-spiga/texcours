@@ -1,0 +1,33 @@
+%% AlexBarbo: Faire un récapitulatif de toutes les notations ? Notamment à cause des risques de confusion M/m, R/r/a, surtout dans la partie limite de Roche
+
+\sk
+La formulation mathématique des marées en terme d'équilibre entre gravité et force centrifuge date de 1687 par Isaac Newton. L'accélération~$\vec{A}$ d'un objet de masse~$m$ sous l'action des forces~$\vec{F}$ vérifie la seconde loi de Newton~$m \vec{A} = \Sigma \vec{F}$. L'objet subit de la part d'un corps attracteur de masse~$M$ la force de gravitation
+\[ \vec{F_g} = -\mathcal{G} \frac{M\,m}{a^2} \vec{u_r} \]
+\noindent où~$\mathcal{G}$ est la constante de gravitation, $\vec{u_r}$ est le vecteur unitaire reliant les deux corps. 
+\sk
+L'objet ainsi dans le champ de gravitation du corps attracteur, à supposer que sa trajectoire soit fermée, décrit une ellipse d'excentricité~$e$ avec une certaine fréquence de rotation~$\Omega$. Dans le référentiel tournant (autour du corps attracteur), en interprétant les termes cinématiques liés au changement de référentiel comme des forces apparentes, on montre que l'objet de masse~$m$ subit une force d'entraînement (appelé communément, de manière un peu abusive, force centrifuge)
+\[ \vec{F_e} = m \, \Omega^2 \, a \, \vec{u_r} \]
+
+\sk
+L'accélération est nulle en tout point de l'orbite, il y a équilibre entre force de gravitation et force centrifuge, ce qui permet de retrouver la troisième loi de Kepler
+\[ \Omega^2 \, a^3 = \mathcal{G} \, M  \]
+
+\sk
+L'action des marées se comprend en considérant que l'objet n'est pas un point matériel mais, par exemple, une planète de rayon~$r$. Au centre de masse~O de l'objet, fixe dans le référentiel tournant, l'équilibre entre force de gravitation et force centrifuge s'écrit
+\[ \mathcal{F}(a) = -\mathcal{G} \frac{M\,m}{a^2} + m \, \Omega^2 a = 0 \]
+Sur le lobe de l'objet le plus proche du corps attracteur (subplanétaire S), la force de gravitation domine la force centrifuge, attirant ledit lobe vers le corps attracteur : $\mathcal{F}(a-r) < 0$. Sur le lobe de l'objet le plus éloigné du corps attracteur (antiplanétaire A), l'inverse se produit, éloignant ledit lobe du corps attracteur : $\mathcal{F}(a+r) > 0$. Les forces de marées ont donc tendance à allonger le corps en lui conférant une forme avec deux lobes qui donne la périodicité semi-diurne des marées. Plus le corps attracteur est gros, plus l'effet est marqué, pouvant conduire jusqu'à la destruction du corps.
+
+%% AlexBarbo: On peut aussi dire  directement qu'il s'agit du développement de Taylor de la force de gravité de l'astre attracteur en r+/-R, non? Je trouve juste l'interprétation plus physique, d'autant qu'elle donne directement la dépendance en r^-3
+%\[ 
+%-\mathcal{G} \frac{M\,m}{(r \pm R)^2} = 
+%-\mathcal{G} \frac{M\,m}{R^2} \frac{1}{1 \pm (\frac{R}{r}})^2}
+%\]
+
+\sk
+L'accélération résultante au point S est
+\[ -\mathcal{G} \frac{M}{(a-r)^2} + \Omega^2 (a-r) = -\mathcal{G} \frac{M}{(a-r)^2} + \mathcal{G} \, \frac{M}{a^3} \, (a-r) \]
+\noindent en notant~$\epsilon = r/a \ll 1$ et réalisant un développement limité au premier ordre
+\[ -\frac{\mathcal{G}\,M}{a^2} \left[ \frac{-1}{(1-\epsilon)^2} + 1-\epsilon \right] \sim - 3 \, \frac{\mathcal{G}\,M}{a^2} \,\epsilon \]
+La force de marée~$f_m$ exercée par unité de masse est donc
+\[ f_m = - 3 \, \frac{\mathcal{G}\,M\,r}{a^3} = \frac{-3\,\mathcal{G}}{a^2} \, \textcolor{blue}{ M \, \left[ \frac{r}{a} \right]^3 } \]
+\noindent Le terme en couleur, qui inclut à la fois la masse~$M$ de l'objet attracteur et le rapport~$r/a$ entre rayon planétaire et distance au corps attracteur, détermine l'intensité des forces de marées. Noter la puissance trois en le rapport~$r/a$ qui rend ce terme souvent prépondérant sur le terme~$M$. La Terre subit ainsi des forces de marée de la Lune bien plus intenses que de la part du Soleil bien que ce dernier soit plus massif.
