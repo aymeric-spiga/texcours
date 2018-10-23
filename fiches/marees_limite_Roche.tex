@@ -2,20 +2,20 @@
 Les forces de marée peuvent être si intenses qu'elles peuvent affecter les caractéristiques physiques des corps au point de les détruire, particulièrement si le corps est fluide ou faiblement agrégé. La comète Shoemaker-Levy 9 a ainsi été détruite en 1994 lors d'une rencontre proche avec Jupiter -- avant que ses débris n'impactent la planète. Ceci a montré que l'agrégat de glaces et roches qui formait Shoemaker-Levy 9 était peu compact et peu dense. On appelle \voc{limite de Roche} la distance orbitale en deçà de laquelle des lunes d'une taille non négligeable ne peuvent se former par accrétion, en raison d'une prédominance des forces de marée sur les forces de cohésion du corps. Entre un corps attracteur et sa limite de Roche, des anneaux se forment plutôt que des satellites (exemple le plus célèbre, Saturne).
 
 \sk
-\paragraph{Approche 1} Une première approche est de considérer que les forces de cohésion sont purement gravitationnelles. La \voc{sphère d'influence de Hill} est telle qu'au delà d'un rayon~$R_H$ de la planète, la force de marée exercée par le corps attracteur sur un point de la planète devient plus importante que l'attraction gravitationnelle de la planète elle-même. Cela s'écrit pour des forces massiques:
-\[ |f_m| \geq \mathcal{G} \frac{m}{R^2} \qquad \Rightarrow \qquad R \geq R_H = r \, \sqrt[3]{ \frac{m}{3\,M} } \]
-\noindent où~$m$ est la masse de l'objet et~$M$ est la masse du corps attracteur.
+\paragraph{Approche 1} Une première approche est de considérer que les forces de cohésion sont purement gravitationnelles (hypothèse loin de la réalité mais offrant une manière simple de mener le calcul). La \voc{sphère d'influence de Hill} est telle qu'au delà d'un rayon~$r_H$ de la planète, la force de marée exercée par le corps attracteur sur un point de la planète devient plus importante que l'attraction gravitationnelle de la planète elle-même. Cela s'écrit pour des forces massiques:
+\[ |f_m| \geq \mathcal{G} \frac{m}{r^2} \qquad \Rightarrow \qquad r \geq r_H = a \, \sqrt[3]{ \frac{m}{3\,M} } \]
+%\noindent où~$m$ est la masse de l'objet et~$M$ est la masse du corps attracteur.
 
 \sk
-La sphère de Hill indique la région dans laquelle des corps peuvent orbiter autour d'une planète. Pour obtenir une première approximation de la limite de Roche, en fixant au contraire le rayon~$R$ de l'objet, et en introduisant sa masse volumique~$\rho$ ainsi que rayon~$R_{\star}$ et masse volumique~$\rho_{\star}$ du corps attracteur, nous obtenons
-\[ R = r \, \sqrt[3]{ \frac{\rho \, R^3}{3\, \rho_{\star} \, {R_{\star}}^3} } \]
-d'où la distance orbitale limite~$r_R$ en deçà de laquelle les forces de marées dominent
-\[ \frac{r_R}{R_{\star}} = 1.44 \, \sqrt[3]{ \frac{\rho_{\star}}{\rho} } \]
+La sphère de Hill indique la région dans laquelle des corps peuvent orbiter autour d'une planète. Pour obtenir une première approximation de la limite de Roche, en fixant au contraire le rayon~$r$ de l'objet, et en introduisant sa masse volumique~$\rho$ ainsi que la masse volumique~$\rho_{\star}$ du corps attracteur, nous obtenons
+\[ r = a \, \sqrt[3]{ \frac{\rho \, r^3}{3\, \rho_{\star} \, R^3} } \]
+d'où la distance orbitale limite~$a_H$ en deçà de laquelle les forces de marées dominent
+\[ \frac{a_H}{R} = 1.44 \, \sqrt[3]{ \frac{\rho_{\star}}{\rho} } \]
 
 \sk
 \paragraph{Approche 2} Une seconde approche, plus réaliste que l'approche de Hill ci-dessus, est de considérer que les forces de cohésion sont en lien avec la résistance du matériau et les forces de friction dans l'objet considéré. Un calcul avec un corps liquide (complètement déformable) permet d'obtenir une estimation raisonnable de la limite de Roche
-\[ \frac{r_R}{R_{\star}} = 2.456 \, \sqrt[3]{ \frac{\rho_{\star}}{\rho} } \]
-\noindent Dans le cas où le corps est résistant à la déformation, il peut être stable même à l'intérieur de la limite de Roche. Les particules formant les anneaux des planètes sont si petites que les forces de marée ne peuvent être assez puissantes pour dominer les forces de cohésion. Si les masses volumiques des deux corps sont proches, la limite de Roche est simplement située à~$r_R \simeq 2.456 \, R_{\star}$.
+\[ \frac{a_R}{R} = 2.456 \, \sqrt[3]{ \frac{\rho_{\star}}{\rho} } \]
+\noindent Dans le cas où le corps est résistant à la déformation, il peut être stable même à l'intérieur de la limite de Roche. Les particules formant les anneaux des planètes sont si petites que les forces de marée ne peuvent être assez puissantes pour dominer les forces de cohésion. Si les masses volumiques des deux corps sont proches, la limite de Roche est simplement située à~$a_R \simeq 2.456 \, R$.
 
 \sk
 La limite de Roche permet qualitativement (et, dans une certaine mesure, quantitativement) d'expliquer l'observation typique autour des planètes géantes d'une configuration~: planète -- anneaux -- petites lunes -- larges lunes. Un modèle de niveau de sophistication supérieure doit bien souvent être invoqué, puisque des petites lunes cohabitent à proximité d'anneaux (\emph{shepherding}).

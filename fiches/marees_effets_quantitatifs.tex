@@ -1,13 +1,11 @@
 
 \sk
-\paragraph{Synchronisation et modification d'orbites: rotation propre~$a$} En plus d'elle-même se synchroniser, la Lune elle-même ralentit la rotation propre de la Terre (2 millisecondes en plus par siècle) pour tendre virtuellement (à très long terme \ldots) vers une synchronisation. Ce lent ralentissement de la rotation propre de la Terre implique donc que la Terre perd du moment angulaire, qui est transféré à la Lune. Comme cette dernière voit sa rotation synchronisée plus rapidement, l'ajustement se fait via une augmentation de la distance orbitale Terre-Lune.
+\paragraph{Synchronisation et modification d'orbites: demi-grand axe~$a$} En plus d'elle-même se synchroniser, la Lune elle-même ralentit la rotation propre de la Terre (2 millisecondes en plus par siècle) pour tendre virtuellement (à très long terme \ldots) vers une synchronisation. Ce lent ralentissement de la rotation propre de la Terre implique donc que la Terre perd du moment angulaire, qui est transféré à la Lune. Comme cette dernière voit sa rotation synchronisée plus rapidement, l'ajustement se fait via une augmentation de la distance orbitale Terre-Lune.
 %\footnote{Autre exemple d'ajustement (inspiré par Tristan Guillot), lorsque le Soleil aura consommé son hydrogène dans~$\sim 5$~milliards d'années et sera devenu une géante rouge (pouvant s'étendre potentiellement jusque l'orbite de Mars). Le Soleil perdra de la masse, donc du moment angulaire, et comme la Lune par rapport à la Terre, la Terre s'éloignera du corps attracteur responsable des marées, ici le Soleil. A moins que les marées exercées par la Terre sur l'enveloppe du Soleil ne la conduisent au contraire à se rapprocher du Soleil.}.
 
-%% peut-être détailler : Etot = Egrav + Ecin L0= m*v*a Et on a Egrav avec Fgrav=-grad(E)
-
 \sk
-\paragraph{Modification d'orbites (quantitatif)} Pour un objet de masse~$m$ suivant une orbite elliptique d'excentricité~$e$ et de demi grand axe~$a$ sous l'effet de l'attraction d'un corps de masse~$M$, l'énergie totale~$E = - \frac{\mathcal{G}\,m\,M}{2\,a}$ et le moment angulaire~$L_0 = m \, \sqrt{\mathcal{G}\,M\,a\,(1-e^2)}$ sont conservés et s'écrivent\footnote{L'énergie totale~$E$ correspond à l'énergie cinétique
-plus l'énergie potentielle de gravitation.
+\paragraph{Modification d'orbites (quantitatif)} Pour un objet de masse~$m$ suivant une orbite elliptique d'excentricité~$e$ et de demi grand axe~$a$ sous l'effet de l'attraction d'un corps de masse~$M$, l'énergie totale~$E = - \frac{\mathcal{G}\,m\,M}{2\,a}$ et le moment angulaire~$L_0 = m \, \sqrt{\mathcal{G}\,M\,a\,(1-e^2)}$ sont conservés\footnote{L'énergie totale~$E$ correspond à l'énergie cinétique
+plus l'énergie potentielle de gravitation. %% Etot = Egrav + Ecin L0= m*v*a Et on a Egrav avec Fgrav=-grad(E)
 Le moment angulaire~$L_0$ se conserve car la force est centrale; 
 il s'obtient simplement à l'apoastre (point 2) et périastre (point 1)
 $L_0 = m v_1 d_1 = m v_2 d_2$, puis en utilisant
@@ -20,21 +18,21 @@ En éliminant~$m$ dans les deux équations qui précèdent, on obtient une relat
 \[ E = - \frac{\mathcal{G}\,M}{2\,a\,\sqrt{\mathcal{G} \, M \, a \, (1-e^2)}} \,L_0 \qquad \Rightarrow \qquad \ddf{E}{L_0} = \frac{E}{L_0} = - \frac{1}{2} \sqrt{ \frac{\mathcal{G}\,M}{a^3 \, (1-e^2)} } \]
 En introduisant~$\Gamma_m = \ddf{L_0}{t}$, le couple exercé par les forces de marée, on obtient la variation temporelle d'énergie orbitale par les forces de marée
 \[ \ddf{E}{t} = \ddf{E}{L_0} \ddf{L_0}{t} = - \frac{\Gamma_m}{2} \, \sqrt{ \frac{\mathcal{G}\,M}{a^3 \, (1-e^2) } } \]
-\noindent En exprimant par ailleurs la dérivée~$\ddf{E}{t}$
-\[
-\ddf{a}{t} \frac{\mathcal{G}\,m\,M}{2\,a^2} = \Gamma_m \, \sqrt{ \frac{\mathcal{G}\,M}{a^3 \, (1-e^2) } }
-\qquad \Rightarrow \qquad
-\ddf{a}{t} = \Gamma_m \, \frac{2\,\mathcal{G}^{-1/2}\,m^{-1/2}}{M \, a^{-1/2} \, (1-e^2) }
-\]
+\noindent En exprimant par ailleurs la dérivée~$\ddf{E}{t} = \ddf{a}{t} \dfrac{\mathcal{G}\,m\,M}{2\,a^2}$, on parvient à
+%% = \Gamma_m \, \sqrt{ \frac{\mathcal{G}\,M}{a^3 \, (1-e^2) } }
+\[ \ddf{a}{t} = \Gamma_m \, \frac{2\,\mathcal{G}^{-1/2}\,m^{-1/2}}{M \, a^{-1/2} \, (1-e^2) } \]
 \noindent En remplaçant par l'expression du couple des marées 
-\[ \Gamma_m = \frac{3}{2} \, \frac{k_T}{Q} \, \frac{\mathcal{G}\,M^2\,r^5}{a^6} \, \textrm{sgn}(\omega-\Omega) \]
-et en supposant une orbite de faible excentricité~$r \simeq a$ et~$e \ll 1$, le changement de rayon orbital (contraction ou expansion) s'écrit
+%\[ \Gamma_m = \frac{3}{2} \, \frac{k_T}{Q} \, \frac{\mathcal{G}\,M^2\,r^5}{a^6} \, \textrm{sgn}(\omega-\Omega) \]
+et en supposant une orbite de faible excentricité~$e \ll 1$, le changement de rayon orbital (contraction ou expansion) s'écrit
 \[
 \ddf{a}{t} = 3 \, \frac{k_T}{Q} \, \frac{\mathcal{G}^{1/2}\,M\,r^5}{m^{1/2} \, a^{11/2} } \, \textrm{sgn}(\omega-\Omega)
 \]
 Ce type de formule permet de déterminer que la Lune s'éloigne de la Terre à une vitesse d'environ 4~cm~an$^{-1}$.
+Elle peut permettre de comprendre pourquoi une exoplanète géante ($r$ grand) si près de son étoile ($a$ petit),
+comme l'était 51 Peg b première exoplanète découverte en 1995, était considérée comme 
+improbable (car instable) avant sa découverte. D'où la nécessité d'adopter des modèles plus sophistiqués.
 
 \sk
 \paragraph{Circularisation} Les forces de marée ont également pour effet de rendre les orbites circulaires en faisant tendre l'excentricité~$e$ vers~$0$. Si la révolution du corps autour du corps attracteur est excentrique, en supposant la rotation synchrone, la différence de vitesse orbitale entre le passage au périastre plus rapide que le passage à l'apoastre fait qu'un couple de force va s'exercer pour repousser le corps au périastre et l'attirer à l'apoastre, rendant ainsi l'orbite plus circulaire. La littérature (e.g. Peale 2003) fournit une formule quantitative
-\[ \ddf{e}{t} = - \frac{21}{2} \, \frac{k_T}{Q} \, \frac{M}{m} \, \left( \frac{R}{a} \right)^5 \, e  \]
-\noindent ce qui indique que l'échelle de temps caractéristique~$\tau = \frac{-e}{\ddf{e}{t}} $ de la circularisation varie en~$\left( \frac{a}{R} \right)^5$, donc très abruptement avec le demi-grand axe~$a$. Ceci explique que les orbites des satellites des planètes géantes ont une faible excentricité, et que la plupart des exoplanètes telles que~$a < 0.07$~UA ont des orbites circulaires.
+\[ \ddf{e}{t} = - \frac{21}{2} \, \frac{k_T}{Q} \, \frac{M}{m} \, \left( \frac{r}{a} \right)^5 \, e  \]
+\noindent ce qui indique que l'échelle de temps caractéristique~$\tau = \frac{-e}{\ddf{e}{t}} $ de la circularisation varie en~$\left( \frac{a}{r} \right)^5$, donc très abruptement avec le demi-grand axe~$a$. Ceci explique que les orbites des satellites des planètes géantes ont une faible excentricité, et que la plupart des exoplanètes telles que~$a < 0.07$~UA ont des orbites circulaires.
