@@ -5,7 +5,7 @@ sous la contrainte de conservation de la vorticité totale~$\xi = \zeta + f$
 avec~$f=2\Omega\sin\phi$ la vorticité planétaire.
 
 \sk
-Considérons une parcelle d'air à l'équateur, de vorticité relative~$\zeta = 0$.
+\paragraph{Approche qualitative} Considérons une parcelle d'air à l'équateur, de vorticité relative~$\zeta = 0$.
 Admettons qu'une perturbation déplace légèrement cette parcelle vers le nord.
 La vorticité planétaire~$f$ de cette parcelle augmente.
 La conservation de~$\xi = \zeta + f$ impose donc
@@ -21,6 +21,7 @@ des perturbations~$\zeta > 0$ et~$\zeta < 0$,
 caractérisant les \voc{ondes de Rossby}.
 
 \sk
+\paragraph{Approche quantitative}
 Ce résultat qualitatif peut se retrouver quantitativement
 dans un contexte barotrope quasi-horizontal non-divergent,
 en utilisant la composante verticale de la vorticité absolue~$\xi = \zeta + f$
@@ -35,7 +36,7 @@ qui est conservée en suivant le mouvement horizontal
 Pour illustrer aisément l'effet de~$\beta = \Dp{f}{y}$,
 on se place dans un plan~$\beta$ tangent à la sphère localement
 et pour lequel~$\beta = \cte$ (ainsi $f = f_0 + \beta\,y$).
-On considère, pour réaliser une analyse linéaire,
+On considère, pour réaliser une \voc{analyse linéaire},
 un état de base~$\moyenne{\cdot}$ (écoulement zonal)
 et une perturbation horizontale~$\cdot'$
 \[
@@ -57,10 +58,11 @@ v = v'
 \sk
 Dans le cas d'un écoulement bidimensionnel non divergent,
 il est possible d'exprimer les coordonnées de la vitesse
-à l'aide d'une fonction de courant~$\Psi'$ telle que
-\[
-u' = - \Dp{\Psi'}{y} \qquad v' = \Dp{\Psi'}{x}
-\]
+à l'aide d'une \voc{fonction de courant}~$\Psi'$ telle que
+%\[
+%u' = - \Dp{\Psi'}{y} \qquad v' = \Dp{\Psi'}{x}
+%\]
+$u' = - \partial \Psi' / \partial y$ et $v' = \partial \Psi' / \partial x$
 \noindent possédant la propriété intéressante suivante
 \[
 \zeta' = \nabla^2 \Psi'
@@ -74,7 +76,7 @@ en fonction de la seule variable~$\Psi'$
 \[
 \left( \Dp{}{t} + \moyenne{u} \Dp{}{x} \right) \nabla^2 \Psi' + \beta \Dp{\Psi'}{x} = 0
 \]
-\noindent On cherche des solutions harmoniques 
+\noindent On cherche des \voc{solutions harmoniques}
 de type onde monochromatique 
 de vecteur d'onde horizontal~$(k,l)$ 
 et de fréquence absolue $\omega$

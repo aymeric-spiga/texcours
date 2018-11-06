@@ -6,7 +6,7 @@ quantifie la rotation du fluide dans le plan horizontal
 \[ \v k \cdot \left( \v \nabla \wedge \v u \right) \]
 
 \sk
-Considérons les équations primitives pour le mouvement horizontal,
+Considérons les équations quasi-géostrophiques pour le mouvement horizontal,
 en négligeant les termes de sphéricité pour plus de simplicité.
 \[ \ddf{u}{t} - f\,v = -\frac{1}{\rho} \Dp{p}{x} \]
 \[ \ddf{v}{t} + f\,u = -\frac{1}{\rho} \Dp{p}{y} \]
@@ -59,6 +59,10 @@ vorticité relative~$\zeta$ (calculée via le mouvement dans le référentiel to
 et vorticité planétaire~$f = 2\,\Omega\,\sin\phi$ (correspondant à la rotation de la planète).
 Dans le cas d'un écoulement non-divergent, on obtient alors
 \[
+\ddf{\xi}{t} = 0
+\qquad
+\Rightarrow
+\qquad
 \Dp{\xi}{t} + u \Dp{\xi}{x} + v \Dp{\xi}{y}
 =
 0

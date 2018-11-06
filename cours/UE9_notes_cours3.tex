@@ -7,10 +7,10 @@
 \newcommand{\zemail}{aymeric.spiga@upmc.fr}
 \newcommand{\zcourse}{Physique des atmosphères planétaires}
 \newcommand{\zcode}{UE9}
-\newcommand{\zuniversity}{UPMC}
+\newcommand{\zuniversity}{Sorbonne Université (Faculté des Sciences)}
 \newcommand{\zlevel}{M2 Planétologie}
-\newcommand{\zsubtitle}{Fiches complémentaires de cours 3}
-\newcommand{\zlogo}{\includegraphics[height=1.5cm]{decouverte/cours_meteo/UPMC_cart-blanc-Q_7504-703-3.png}}
+\newcommand{\zsubtitle}{Fiches complémentaires du cours 3}
+\newcommand{\zlogo}{\includegraphics[height=1.5cm]{/home/aspiga/images/logo/LOGO_SU_HORIZ_SIGNATURE_CMJN_JPEG.jpg}}
 \newcommand{\zrights}{Copie et usage interdits sans autorisation explicite de l'auteur}
 \newcommand{\zdate}{\today}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -18,8 +18,39 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
+\section{Expression des forces en coordonnées sphériques}
+\input{dynamique_forces_spheriques.tex}
+
+\newpage
+\section{Passage aux coordonnées sphériques}
+\input{dynamique_passage_spheriques.tex}
+
+\newpage
+\section{Eulérien vs. Lagrangien}
+\input{dynamique_eulerien_lagrangien.tex}
+\section{Equations complètes du mouvement}
+\input{dynamique_equations_spheriques_termes.tex}
+
+%\newpage 
+%\section{\'Echelles}
+%\input{dynamique_echelles.tex}
+%
+%\newpage 
+%\section{\'Echelles (évaluation)}
+%
+%	\sk \subsection{\'Echelles (mouvement vertical)}
+%	\input{dynamique_echelles_vertical.tex}
+%
+%	\sk \subsection{\'Echelles (mouvement horizontal)}
+%	\input{dynamique_echelles_horizontal.tex}
+
+\newpage
 \section{Grands équilibres}
 \input{dynamique_equations_spheriques_equilibres.tex}
+
+\newpage
+\section{\'Equilibre géostrophique}
+\input{dynamique_equilibre_geostrophique_principe.tex}
 
 \newpage
 \section{Vent gradient}
@@ -45,21 +76,19 @@
 \section{Ondes de Rossby}
 \input{ondes_Rossby.tex}
 
-\newpage
-\section{Note importante}
-\Huge
-Ce qui suit a été abordé rapidement
-(Boussinesq, ondes de gravité)
-ou n'a pas été abordé du tout.
-\normalsize
+%\newpage
+%\section{Note importante}
+%\Huge
+%Ce qui suit a été abordé rapidement
+%(Boussinesq, ondes de gravité)
+%ou n'a pas été abordé du tout.
+%\normalsize
 
 \newpage
 \section{Instabilité barotrope}
 \input{instabilite_barotrope.tex}
 
-\newpage
-\section{Oscillations de flottaison et fréquence de Brunt-V{\"a}is{\"a}l{\"a}}
-\input{flottaison2.tex}
+\end{document}
 
 \newpage
 \section{Approximation de Boussinesq et force de flottaison}
@@ -68,8 +97,6 @@ ou n'a pas été abordé du tout.
 \newpage
 \section{Système complet pour la modélisation}
 \input{dynamique_equations_bjerknes.tex}
-\section{Remarque: chauffage adiabatique}
-\input{vertical_adiabatique.tex}
 
 \newpage
 \section{Ondes de gravité}
