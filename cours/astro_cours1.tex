@@ -4,11 +4,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\zauthor}{Aymeric SPIGA}
 \newcommand{\zaffil}{Laboratoire de Météorologie Dynamique}
-\newcommand{\zemail}{aymeric.spiga@upmc.fr}
-\newcommand{\zcourse}{Physique des atmosphères planétaires}
-\newcommand{\zcode}{UE9}
+\newcommand{\zemail}{aymeric.spiga@sorbonne-universite.fr}
+\newcommand{\zcourse}{Atmosphères planétaires}
+\newcommand{\zcode}{T02}
 \newcommand{\zuniversity}{Sorbonne Université (Faculté des Sciences)}
-\newcommand{\zlevel}{M2 Planétologie}
+\newcommand{\zlevel}{M2 Astronomie-Astrophysique}
 \newcommand{\zsubtitle}{Fiches complémentaires du cours 1}
 \newcommand{\zlogo}{\includegraphics[height=1.5cm]{/home/aspiga/images/logo/LOGO_SU_HORIZ_SIGNATURE_CMJN_JPEG.jpg}}
 \newcommand{\zrights}{Copie et usage interdits sans autorisation explicite de l'auteur}
@@ -17,22 +17,30 @@
 \begin{document} \inidoc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%% point de vue du cours: météorologie
+%% approche physique et non phénoménologique !
 
 \newpage \section{Parcelle} \input{atmosphere_parametres.tex} \input{parcelle.tex} \input{parcelle_equilibre.tex} %\input{parcelle_rappels.tex}
 
 \newpage \section{Gaz parfait} \input{thermo_gaz_parfait.tex}
 
+\newpage \section{Homosphère vs. hétérosphère} \input{atmcomposition_terre_minoritaires.tex}
+
+%%%%%%%%%%
+
 \newpage \section{Equilibre hydrostatique} \input{equilibre_hydrostatique.tex}
 
 \newpage \section{\'Echelle de hauteur} \input{echelle_hauteur.tex}
-%\mk\mk\mk\mk\mk \begin{detail} \input{pression_pascal.tex} \end{detail}
 
 \section{\'Equation hypsométrique} \input{equation_hypsometrique.tex}
 
+%%%%%%%%%%
+
 \newpage \section{Circulations thermiques directes} \input{circulations_thermiques_directes.tex}
 
-\newpage \section{Inertie thermique} \input{inertie_thermique.tex}
-\section{Constante de temps radiative} \input{constante_temps_radiatif.tex}
+%\newpage \section{Conduction} \input{conduction.tex}
+
+\section{Inertie thermique} \input{inertie_thermique.tex}
 
 %%%%%%%%%%
 
@@ -53,6 +61,14 @@
 
 \newpage \section{Oscillations de flottaison et fréquence de Brunt-V{\"a}is{\"a}l{\"a}} \input{flottaison2.tex}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
+
+\newpage \section{Nuages, classification physique} \input{nuages_classphys.tex}
+
+\newpage \section{Grandeurs saturantes} \input{humide_saturation.tex}
+
+\newpage \section{Déplacement d'équilibre et application aux gouttelettes nuageuses} \input{humide_equilibre.tex}
+
 \newpage \section{Transformations pseudo-adiabatiques} \input{transformations_pseudoadiabatiques.tex}
 
 \newpage \section{Gradient adiabatique humide} \input{gradient_adiabatique_humide.tex}
@@ -60,6 +76,92 @@
 \newpage \section{Formation d'un cumulonimbus sur Terre} \input{emagramme_cumulonimbus.tex}
 
 \newpage \section{Formation d'un cumulonimbus sur Terre (compléments)} \input{emagramme_cumulonimbus_complements.tex}
+
+\newpage \section{Nuages (microphysique)} \input{nuages_simple.tex}
+
+\newpage \section{Nuages (microphysique 2)} \input{nuages_kelvin.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
+
+\end{document}
+
+
+%\newpage
+%\section{Processus humides (définitions)}
+%\input{humide_def.tex}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\newpage
+%\section{{\'E}nergie interne}
+%\input{energie_gravitationnelle.tex}
+
+
+%%%% PIEGE FROID
+%%%% slide 4 cours 3 Bezard
+
+
+
+
+
+
+
+
+%%% dans les applications donner les GES responsables
+%%% voir Bezard III-4
+
+
+%\newpage
+%\section{Couches atmosphériques sur Terre}
+%\input{couches_atmospheriques.tex}
+%\newpage
+%\section{Couches atmosphériques sur Terre -- haute atmosphère}
+%\input{couches_atmospheriques_hautes.tex}
+
+%% MANQUE QQCH SUR STRATOSPHERE
+%% critère pour stratosphère
+
+
+
+%% COURS 2
+%\newpage
+
+%%% paramètres planétaires
+
+%\section{Structures thermiques}
+%\input{couches_atmospheriques_planetes.tex}
+
+
+
+
+
+
+%fiches/bilan_radiatif_Terre_geographique.tex
+
+%%% schéma Jérémy sur origine des atmosphères --> après cours 4
+%%% sources de matière etc... Bruno
+
+%% COURS 3
+%\newpage \section{Oscillations de flottaison et fréquence de Brunt-V{\"a}is{\"a}l{\"a}} \input{flottaison2.tex}
+
+
+%%% exo géantes à CO --> car équilibre thermochimique CH4 se transpose à CO
+%%% du coup pas de stratosphère
+%%% ---> faire le lien avec Catling et Robinson (même chose que la condition Bezard cours 3 slide 8
+%%% --> lien pour exoplanètes
+
+
 
 \end{document}
 

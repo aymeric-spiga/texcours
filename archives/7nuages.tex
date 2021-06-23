@@ -11,18 +11,8 @@ Lorsqu'il souhaite se représenter l'atmosphère, l'homme songe naturellement au
 
 \sk
 \subsection{Composition}
+	\input{nuages_simple.tex}
 
-Un \voc{nuage} se définit comme un regroupement localisé de gouttelettes d'eau et/ou de cristaux de glace ou de neige en suspension dans l'atmosphère. 
-
-\figside{0.5}{0.2}{decouverte/cours_meteo/gouttes.png}{Vue schématique des composants d'un nuage pluvieux chaud. Les tailles indicatives sont précisées afin de donner une idée des quelques ordres de grandeur en taille qui séparent une gouttelette nuageuse d'une goutte de pluie. La traduction des termes est la suivante: \emph{cloud-condensation nuclei} \donc~noyaux de condensation, \emph{moisture droplets} \donc~gouttelettes nuageuses, \emph{typical raindrop} \donc~goutte de pluie. Les diamètres sont indiqués en microns (10$^{-6}$~m). Source: à partir de MacDonald Adv. Geophys. 1958.}{fig:cloud}
-
-\begin{finger}
-\item Dans les nuages chauds, la vapeur d'eau condense en gouttelettes nuageuses dont la taille est de quelques microns. Les conditions locales de saturation (autrement dit, l'équilibre liquide-vapeur) déterminent le taux de condensation et de croissance des gouttes. Même si cela n'est pas l'objet du présent cours, il convient de noter que l'interface courbée des gouttes a un certain coût énergétique~: il est difficile de former des gouttes à moins d'atteindre une sursaturation très élevée (c'est-à-dire une humidité très supérieure à~$1$). La formation des gouttelettes nuageuses par condensation est par contre facilitée par la présence de \voc{noyaux de condensation} (par exemple, les poussières atmosphériques). Ensuite, les gouttelettes nuageuses peuvent, par collision ou coalescence, croître de plusieurs ordres de grandeurs en taille pour donner naissance à des gouttes de pluie de plusieurs millimètres de large qui donnent lieu à des précipitations. La figure~\ref{fig:cloud} donne un aperçu très schématique de l'intérieur d'un nuage pluvieux chaud.
-\item Dans les nuages froids, i.e. ceux qui se trouvent dans une zone où la température est plus faible que 0 degrés celsius, règne un équilibre à trois phases (solide, liquide, gaz). Les gouttelettes nuageuses et cristaux de glace peuvent se former par condensation directe (des phénomènes de surfusion expliquent que les gouttelettes d'eau restent à l'état liquide). La neige se forme par agrégation de cristaux de glace. Par accrétion, plus précisément coalescence liquide sur glace, la grêle peut apparaître dans un nuage froid et exceptionnellement former des espèces précipitantes d'un diamètre important.
-\end{finger}
-
-\sk
-La formation des gouttes et cristaux dans un nuage obéit à un ensemble de lois dites microphysiques dont la complexité dépasse le présent cours. Pour simplifier la description, on s'intéresse aux nuages chauds uniquement. De plus, on se place dans le cas d'un équilibre thermodynamique liquide-vapeur pour une interface plane, pour laquelle la valeur maximum de l'humidité est~$1$ et suffit à déclencher la formation d'un nuage dans l'atmosphère.
  
 \sk
 \subsection{Généralités à partir d'images satellite}
@@ -66,25 +56,7 @@ Il existe un type de nuage très important qui échappe à cette classification~
 
 \sk
 \subsection{Classification physique des nuages} \label{classphys}
-
-\sk
-La cause générale de la formation d'un nuage est le refroidissement d'une masse d'air. Dans la grande majorité des cas, les transformations qui provoquent ce refroidissement sont soit isobares, soit adiabatiques. Ceci est illustré par la formulation du premier principe adoptée dans les chapitre précédents
-\[ \underbrace{\textcolor{white}{\frac{R^2}{C_P}} \dd T \textcolor{white}{\frac{R}{C_P}}}_{\text{variation de température de la parcelle}} = \underbrace{\frac{R}{C_P} \, \frac{T}{P} \, \dd P}_{\text{travail expansion/compression}} + \underbrace{\frac{1}{C_P} \, \delta q}_{\text{chauffage diabatique}} \]
-
-\sk
-Suivant la transformation qui va donner naissance au nuage, la morphologie de ce dernier est très différente. Par opposition à la classification phénoménologique donnée en début de chapitre, on peut alors établir une classification physique des nuages en fonction de la transformation thermodynamique qui leur donne naissance.
-\begin{finger}
-\item Si la transformation est isobare, cela signifie que le nuage se forme sans que la pression ne varie significativement dans la parcelle d'air considérée. D'après l'équilibre hydrostatique, et le fait que les variations de pression selon l'horizontale sont négligeables par rapport aux variations de pression selon la verticale, un tel phénomène ne peut exister que si l'altitude de la parcelle varie peu. La parcelle subit un refroidissement diabatique, qui peut être provoqué par exemple par les pertes radiatives (comme le brouillard nocturne cité au chapitre précédent) ou par un déplacement horizontal par les vents vers une région plus froide de l'atmosphère. Les nuages obtenus ne présentent pas de développement selon la verticale et sont même souvent particulièrement étendus selon l'horizontale. Il s'agit des nuages de type cirrus et stratus. Ces nuages étant organisés en strates, puisque non étendus selon la verticale, on dit qu'ils sont \voc{stratiformes}.
-\item Si la transformation est adiabatique, le nuage se forme par le biais de parcelles d'air qui n'échangent pas de chaleur avec l'air environnant (ou, du moins, pour lesquelles les échanges diabatiques sont négligeables par rapport au terme de travail d'expansion/compression). Cette condition n'est réalisée que pour des parcelles subissant une variation de pression significative donc, selon l'équilibre hydrostatique, une variation d'altitude importante. Les nuages obtenus ne présentent donc pas d'étendue horizontale et sont au contraire très développés selon la verticale. Il s'agit des nuages de type cumulus et cumulonimbus. On les qualifie de nuages \voc{cumuliformes}.
-\end{finger}
-%%Ces nuages sont gouvernés par la convection~: la parcelle d'air plus chaude que son environnement a plus de facilité à refroidir en s'élevant qu'en échangeant de la chaleur avec son environnement.
-
-\sk
-La plupart des nuages se forment ainsi par refroidissement (isobare ou adiabatique) d'une masse d'air. Il est cependant à noter que le brassage d'une masse d'air chaude d'humidité voisine de~$100\%$ avec une masse d'air froide relativement sèche peut également donner naissance à des nuages de type stratiforme. %% avions. %% brise de terre.
-
-%Quelques remarques sur les processus de formation: la plupart des nuages stratiforme se forment aussi au départ par refroidissement adiabatique -- même si le chauffage / refroidissement radiatif joue ensuite un rôle important dans le cycle de vie, en particulier dans les transitions type stratus -> strato-cumulus.
-%Pour les nuages de couche limite, c'est le refroidissement lors du transport vertical turbulent ; pour les nuages type cirrus / altostratus / nimbi-stratus c'est le soulèvement en bloc de couches, dans les zones frontales par exemple. En fait, il n'y a guère que le brouillard radiatif ou d'advection qui soit vraiment d'origine adiabatique...
-%Sinon, il y a un type un peu particulier qu'on appelle nuage de mélange, qu'on voit par exemple dans l'haleine qui condense en hiver. C'est ici le mélange de 2 masses d'air humides (mais non saturées) qui donne de l'air à une température intermédiaire mais saturé cette fois à cause de la forme de la courbe rsat(T).
+	\input{nuages_classphys.tex}
 
 \sk
 \subsection{Développement d'un nuage cumuliforme}

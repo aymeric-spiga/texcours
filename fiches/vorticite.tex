@@ -1,18 +1,22 @@
 \sk
 La vorticité est définie généralement par le rotationnel du champ de vent
-\[ \v \zeta = \v \nabla \wedge \v V \]
-\noindent La composante verticale de la vorticité~$\zeta$
+$\v \zeta = \v \nabla \wedge \v V$. La composante verticale de la vorticité~$\zeta$
 quantifie la rotation du fluide dans le plan horizontal
-\[ \v k \cdot \left( \v \nabla \wedge \v u \right) \]
+\[ 
+\zeta = \v k \cdot \left( \v \nabla \wedge \v u \right) 
+\qquad\qquad \Rightarrow \qquad\qquad
+\zeta = \Dp{v}{x} - \Dp{u}{y}
+\]
 
 \sk
 Considérons les équations quasi-géostrophiques pour le mouvement horizontal,
 en négligeant les termes de sphéricité pour plus de simplicité.
 \[ \ddf{u}{t} - f\,v = -\frac{1}{\rho} \Dp{p}{x} \]
 \[ \ddf{v}{t} + f\,u = -\frac{1}{\rho} \Dp{p}{y} \]
-\noindent Comme la vorticité relative selon la verticale s'écrit
-\[ \zeta = \Dp{v}{x} - \Dp{u}{y} \]
-\noindent son évolution peut être obtenue simplement en
+\noindent L'évolution 
+de la vorticité relative 
+selon la verticale
+peut être obtenue simplement en
 dérivant selon~$y$ l'équation du mouvement selon~$x$
 (et vice versa) puis en soustrayant les deux termes.
 L'on obtient alors l'\voc{équation de la vorticité}

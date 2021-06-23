@@ -117,6 +117,8 @@ Astéroïdes remarquables
     * *bright spots* dans le cratère Occator, dépôts récents : glace ? sels ? 
     * débat dans la communauté sur la présence ou non de vapeur d'eau
 
+* Ryugu visitée par Hayabusa 2
+
 <!--
 density 3.5 vs 2.2 g/cm3
 vesta basaltic differentiated
@@ -153,7 +155,8 @@ water played a critical role
     * 99.8% sont des astéroïdes (également trouvé sur Mars par les rovers!)
     * 0.2% sont formés de croûte de Mars ou La Lune arrachée par impact de météorites
         * (une différence de cristallisation magmatique donne une différence de composition qui permet l'identification) 
-* extérieur fond à cause de la friction dans l'atmosphère
+        * et les bulles d'air emprisonnées
+* extérieur fond à cause de la friction dans l'atmosphère (croûte de fusion)
 * parfois en *meteor showers* / ex: Perséides au pic d'activité en août
 * beaucoup de larges météorites causent des destructions majeures (+ formation de cratères)
 
@@ -301,9 +304,17 @@ mais... Tchouri... 3 fois le rapport D/H de la Terre
 
 * Atmosphère en majorité composée de H2 et He
 * Pas de surface : transition haute pression vers un liquide métallique conducteur de H2. Petit noyau ? 
+    * core+composition --> formation processes
+    * Juno: fuzzy interior
+    * molecular to metallic transition at ~1Mbar for hydrogen
+    * hydrogen-helium mixtures (helium rain)
+    * Helled et al 2020, voir diagramme de phase
+
 * Nuages profonds d'ammoniac et composés + eau?
 * Vents très puissants (super-rotation de l'atmosphère de 500 m/s à l'équateur pour Saturne)
 * Champ magnétique très intense (facteur 1000), aurores boréales
+
+* Debras & Chabrier 2019
 
 ### Jupiter
 

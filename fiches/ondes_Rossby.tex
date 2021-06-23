@@ -1,10 +1,10 @@
 \sk
-Les ondes de Rossby sont des ondes atmosphériques planétaires qui
-naissent du fait de la variation du paramètre de Coriolis avec la latitude,
-sous la contrainte de conservation de la vorticité totale~$\xi = \zeta + f$
-avec~$f=2\Omega\sin\phi$ la vorticité planétaire.
+Les ondes de Rossby sont des ondes atmosphériques planétaires causées par 
+le paramètre de Coriolis variant avec la latitude,
+sous contrainte de conservation de la vorticité totale~$\xi = \zeta + f$
+($f=2\Omega\sin\phi$ la vorticité planétaire).
 
-\sk
+%\sk
 \paragraph{Approche qualitative} Considérons une parcelle d'air à l'équateur, de vorticité relative~$\zeta = 0$.
 Admettons qu'une perturbation déplace légèrement cette parcelle vers le nord.
 La vorticité planétaire~$f$ de cette parcelle augmente.
@@ -20,7 +20,7 @@ Il en résulte ainsi une propagation conjointe vers l'ouest
 des perturbations~$\zeta > 0$ et~$\zeta < 0$,
 caractérisant les \voc{ondes de Rossby}.
 
-\sk
+%\sk
 \paragraph{Approche quantitative}
 Ce résultat qualitatif peut se retrouver quantitativement
 dans un contexte barotrope quasi-horizontal non-divergent,
@@ -64,14 +64,13 @@ il est possible d'exprimer les coordonnées de la vitesse
 %\]
 $u' = - \partial \Psi' / \partial y$ et $v' = \partial \Psi' / \partial x$
 \noindent possédant la propriété intéressante suivante
-\[
-\zeta' = \nabla^2 \Psi'
-\qquad
-\textrm{avec}
-\qquad
-\nabla^2 \equiv \DDp{}{x} + \DDp{}{y}
-\]
-\noindent ce qui permet d'exprimer l'équation linéarisée de la vorticité barotrope
+$\zeta' = \nabla^2 \Psi'$ avec 
+$\nabla^2 \equiv 
+\partial^2 / \partial x^2 
++
+\partial^2 / \partial y^2$
+%\noindent 
+ce qui permet d'exprimer l'équation linéarisée de la vorticité barotrope
 en fonction de la seule variable~$\Psi'$
 \[
 \left( \Dp{}{t} + \moyenne{u} \Dp{}{x} \right) \nabla^2 \Psi' + \beta \Dp{\Psi'}{x} = 0
@@ -86,9 +85,7 @@ s'écrivant
 \]
 \noindent D'après l'équation linéarisée, les ondes
 qui se propagent vérifient ainsi
-\[
-- \left( \omega + k \moyenne{u} \right) \left( - k^2 - l^2 \right) + k\,\beta = 0
-\]
+$ \left( - \omega + k \moyenne{u} \right) \left( - k^2 - l^2 \right) + k\,\beta = 0 $
 et donc leur fréquence intrinsèque~$\tilde{\omega} = \omega - k\moyenne{u}$ 
 dans le référentiel attaché à l'écoulement de base est
 \[
@@ -101,9 +98,7 @@ les ondes de Rossby traduit à la fois leur
 propagation systématique vers l'ouest
 et l'importance centrale de l'effet~$\beta$ 
 de variation du paramètre de Coriolis avec la latitude.
-
-
-\sk
+%
 Les ondes de Rossby se développent sur Terre
 dans les moyennes latitudes avec un nombre d'onde~$4-6$.
 Elles peuvent également être responsables de structures 

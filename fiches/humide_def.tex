@@ -1,0 +1,36 @@
+\sk
+L'eau est présente dans l'atmosphère sous trois phases différentes, de la moins à la plus ordonnée~: gazeuse (vapeur d'eau), liquide (fines gouttelettes en suspension formant les nuages, précipitations pluvieuses), solide (cristaux de glace dans les fins nuages de haute altitude, intempéries de type neige et grêle). On s'intéresse principalement aux phases liquide et gazeuse afin de préfigurer l'étude des nuages sur Terre. Des raisonnements similaires sont possibles, avec quelques subtilités, pour la phase solide afin de décrire les nuages formés de cristaux de glace lorsque la température de l'atmosphère est suffisamment basse.
+
+\sk
+\subsection{Quantification de la vapeur d'eau dans l'atmosphère}\label{rappmel}
+
+\sk
+Soit une parcelle contenant un mélange de gaz parfaits notés~$i$, dont un est la vapeur d'eau. On a défini la \voc{pression partielle}~$P_i$ et le \voc{rapport de mélange massique}~$r_i = \frac{m\e{gaz i}}{m\e{air}}$ dans le chapitre introductif. Ces deux quantités peuvent servir à définir la quantité de vapeur d'eau présente dans la parcelle d'air. Pour simplifier, on note
+\[ P\e{vapeur d'eau} = e \qquad \text{et} \qquad r\e{vapeur d'eau} = \frac{m\e{vapeur d'eau}}{m\e{air}} = r \] 
+%La quantité~$q$ est également appelée \voc{humidité spécifique}. 
+Le rapport de mélange en vapeur d'eau~$r$ est conservé dans la parcelle si il n'y a pas de changement de phase.
+
+\sk
+La pression partielle de l'air sec est~$P - e$. Comme mentionné dans le chapitre d'introduction, la vapeur d'eau vérifie l'équation d'état des gaz parfaits tout comme l'air sec, mélange de gaz parfaits, d'où
+\[  e \, V = \frac{m\e{vapeur d'eau}}{M\e{vapeur d'eau}} \, R^* \, T  \qquad \qquad \qquad (P-e) \, V = \frac{m\e{air sec}}{M\e{air sec}} \, R^* \, T  \]
+On forme le rapport des deux expressions pour obtenir une expression en fonction de paramètres intensifs et ne dépendant pas de la température
+\[ \frac{e}{P-e} = \frac{m\e{vapeur d'eau}}{m\e{air sec}} \, \frac{M\e{air sec}}{M\e{vapeur d'eau}} \]
+
+\sk
+L'expression ci-dessus peut être grandement simplifiée. L'eau est un composant minoritaire dans l'atmosphère terrestre~: l'ordre de grandeur de~$r$ est de l'ordre de~$0$ à~$20$~g~kg$^{-1}$. On a donc toujours~$r \ll 1$ et~$e \ll P$, soit~$P-e \simeq P$. Ainsi la masse d'air sec~$m\e{air sec}$ dans la parcelle est en très bonne approximation égale à la masse d'air~$m\e{air}$ dans la parcelle, ce qui vaut également pour la masse molaire. Le rapport de mélange en vapeur d'eau s'écrit alors~$r = \frac{m\e{vapeur d'eau}}{m\e{air}} \simeq \frac{m\e{vapeur d'eau}}{m\e{air sec}}$. L'expression ci-dessus se simplifie donc en
+\[ r = \frac{M\e{vapeur d'eau}}{M\e{air}} \, \frac{e}{P} \qquad \Rightarrow \qquad \boxed{ r \simeq 0.622 \, \frac{e}{P} } \]
+Cette équation signifie que, pour une pression~$P$ donnée, le rapport de mélange de vapeur d'eau~$r$ est en bonne approximation proportionnel à la pression partielle de vapeur d'eau~$e$.
+
+\sk
+%\subsection{Évaporation, Saturation}
+\subsection{Equilibre liquide / vapeur}
+
+\sk
+L'\voc{évaporation} est l'échappement de molécules d'eau depuis une phase liquide vers une phase gazeuse. A l'interface liquide-gaz, sous l'effet de l'agitation thermique, certaines molécules d'eau dans le liquide vont voir les liaisons hydrogène rompues avec leurs plus proches voisins. L'échappement est ainsi plus facile pour des molécules ayant une énergie cinétique importante~: le taux d'évaporation~$\mathcal{E}$ à partir d'une surface dépend donc de la température de l'eau. 
+
+\sk
+La \voc{condensation} est le passage de molécules d'eau de la phase gazeuse à la phase liquide. A l'interface liquide-gaz, certaines molécules d'eau dans le gaz vont se lier à des molécules d'eau dans le liquide par le biais de liaisons hydrogène. Le taux de condensation~$\mathcal{C}$ dépend de la pression de la phase gazeuse, à savoir~$e$ dans le cas de la vapeur d'eau. 
+
+\sk
+Soit une enceinte remplie d'air totalement sec, c'est-à-dire qui ne contient aucune molécule d'eau sous forme vapeur. On introduit dans cette enceinte une quantité donnée d'eau liquide. Comme décrit ci-dessus, il va y avoir spontanément évaporation avec un taux d'évaporation~$\mathcal{E}$ (supposé constant) à la surface du liquide, d'autant plus que la température de l'eau est élevée. Des molécules d'eau s'échappent donc dans l'espace au-dessus du liquide et forment une phase gazeuse dont la pression partielle~$e$ augmente peu à peu. Des molécules de cette phase gazeuse subissent à leur tour un phénomène de condensation et repassent en phase liquide. Le taux de condensation~$\mathcal{C}$ est, au début de l'expérience, très petit devant~$\mathcal{E}$ car la pression partielle~$e$ est extrêmement faible. Puisque l'évaporation domine la condensation, le bilan est donc en faveur d'une augmentation des molécules sous forme gazeuse. Néanmoins, plus le nombre de molécules d'eau sous forme gazeuse augmente, plus la pression partielle~$e$ augmente, donc plus le taux de condensation~$\mathcal{C}$ augmente. Ce phénomène va continuer jusqu'à atteindre un équilibre stationnaire où les taux de condensation~$\mathcal{C}$ et~$\mathcal{E}$ se compensent. Cet équilibre est appelé \voc{équilibre liquide-vapeur}, on parle également souvent, par abus de langage, de \voc{\ofg{saturation}}.% ou de \voc{\ofg{conditions saturées}}. 
+

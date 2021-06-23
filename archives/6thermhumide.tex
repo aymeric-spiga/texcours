@@ -7,102 +7,16 @@ Le cycle de l'eau est une composante essentielle du système climatique terrestr
 
 \mk
 \section{Air humide, air saturé}
-
-\sk
-L'eau est présente dans l'atmosphère sous trois phases différentes, de la moins à la plus ordonnée~: gazeuse (vapeur d'eau), liquide (fines gouttelettes en suspension formant les nuages, précipitations pluvieuses), solide (cristaux de glace dans les fins nuages de haute altitude, intempéries de type neige et grêle). On s'intéresse principalement aux phases liquide et gazeuse afin de préfigurer l'étude des nuages sur Terre. Des raisonnements similaires sont possibles, avec quelques subtilités, pour la phase solide afin de décrire les nuages formés de cristaux de glace lorsque la température de l'atmosphère est suffisamment basse.
-
-\sk
-\subsection{Quantification de la vapeur d'eau dans l'atmosphère}\label{rappmel}
-
-\sk
-Soit une parcelle contenant un mélange de gaz parfaits notés~$i$, dont un est la vapeur d'eau. On a défini la \voc{pression partielle}~$P_i$ et le \voc{rapport de mélange massique}~$r_i = \frac{m\e{gaz i}}{m\e{air}}$ dans le chapitre introductif. Ces deux quantités peuvent servir à définir la quantité de vapeur d'eau présente dans la parcelle d'air. Pour simplifier, on note
-\[ P\e{vapeur d'eau} = e \qquad \text{et} \qquad r\e{vapeur d'eau} = \frac{m\e{vapeur d'eau}}{m\e{air}} = r \] 
-%La quantité~$q$ est également appelée \voc{humidité spécifique}. 
-Le rapport de mélange en vapeur d'eau~$r$ est conservé dans la parcelle si il n'y a pas de changement de phase.
-
-\sk
-La pression partielle de l'air sec est~$P - e$. Comme mentionné dans le chapitre d'introduction, la vapeur d'eau vérifie l'équation d'état des gaz parfaits tout comme l'air sec, mélange de gaz parfaits, d'où
-\[  e \, V = \frac{m\e{vapeur d'eau}}{M\e{vapeur d'eau}} \, R^* \, T  \qquad \qquad \qquad (P-e) \, V = \frac{m\e{air sec}}{M\e{air sec}} \, R^* \, T  \]
-On forme le rapport des deux expressions pour obtenir une expression en fonction de paramètres intensifs et ne dépendant pas de la température
-\[ \frac{e}{P-e} = \frac{m\e{vapeur d'eau}}{m\e{air sec}} \, \frac{M\e{air sec}}{M\e{vapeur d'eau}} \]
-
-\sk
-L'expression ci-dessus peut être grandement simplifiée. L'eau est un composant minoritaire dans l'atmosphère terrestre~: l'ordre de grandeur de~$r$ est de l'ordre de~$0$ à~$20$~g~kg$^{-1}$. On a donc toujours~$r \ll 1$ et~$e \ll P$, soit~$P-e \simeq P$. Ainsi la masse d'air sec~$m\e{air sec}$ dans la parcelle est en très bonne approximation égale à la masse d'air~$m\e{air}$ dans la parcelle, ce qui vaut également pour la masse molaire. Le rapport de mélange en vapeur d'eau s'écrit alors~$r = \frac{m\e{vapeur d'eau}}{m\e{air}} \simeq \frac{m\e{vapeur d'eau}}{m\e{air sec}}$. L'expression ci-dessus se simplifie donc en
-\[ r = \frac{M\e{vapeur d'eau}}{M\e{air}} \, \frac{e}{P} \qquad \Rightarrow \qquad \boxed{ r \simeq 0.622 \, \frac{e}{P} } \]
-Cette équation signifie que, pour une pression~$P$ donnée, le rapport de mélange de vapeur d'eau~$r$ est en bonne approximation proportionnel à la pression partielle de vapeur d'eau~$e$.
-
-\sk
-%\subsection{Évaporation, Saturation}
-\subsection{Equilibre liquide / vapeur}
-
-\sk
-L'\voc{évaporation} est l'échappement de molécules d'eau depuis une phase liquide vers une phase gazeuse. A l'interface liquide-gaz, sous l'effet de l'agitation thermique, certaines molécules d'eau dans le liquide vont voir les liaisons hydrogène rompues avec leurs plus proches voisins. L'échappement est ainsi plus facile pour des molécules ayant une énergie cinétique importante~: le taux d'évaporation~$\mathcal{E}$ à partir d'une surface dépend donc de la température de l'eau. 
-
-\sk
-La \voc{condensation} est le passage de molécules d'eau de la phase gazeuse à la phase liquide. A l'interface liquide-gaz, certaines molécules d'eau dans le gaz vont se lier à des molécules d'eau dans le liquide par le biais de liaisons hydrogène. Le taux de condensation~$\mathcal{C}$ dépend de la pression de la phase gazeuse, à savoir~$e$ dans le cas de la vapeur d'eau. 
-
-\sk
-Soit une enceinte remplie d'air totalement sec, c'est-à-dire qui ne contient aucune molécule d'eau sous forme vapeur. On introduit dans cette enceinte une quantité donnée d'eau liquide. Comme décrit ci-dessus, il va y avoir spontanément évaporation avec un taux d'évaporation~$\mathcal{E}$ (supposé constant) à la surface du liquide, d'autant plus que la température de l'eau est élevée. Des molécules d'eau s'échappent donc dans l'espace au-dessus du liquide et forment une phase gazeuse dont la pression partielle~$e$ augmente peu à peu. Des molécules de cette phase gazeuse subissent à leur tour un phénomène de condensation et repassent en phase liquide. Le taux de condensation~$\mathcal{C}$ est, au début de l'expérience, très petit devant~$\mathcal{E}$ car la pression partielle~$e$ est extrêmement faible. Puisque l'évaporation domine la condensation, le bilan est donc en faveur d'une augmentation des molécules sous forme gazeuse. Néanmoins, plus le nombre de molécules d'eau sous forme gazeuse augmente, plus la pression partielle~$e$ augmente, donc plus le taux de condensation~$\mathcal{C}$ augmente. Ce phénomène va continuer jusqu'à atteindre un équilibre stationnaire où les taux de condensation~$\mathcal{C}$ et~$\mathcal{E}$ se compensent. Cet équilibre est appelé \voc{équilibre liquide-vapeur}, on parle également souvent, par abus de langage, de \voc{\ofg{saturation}}.% ou de \voc{\ofg{conditions saturées}}. 
+	\input{humide_def.tex}	
 
 \sk
 \subsection{Grandeurs saturantes}
-
-\sk
-\subsubsection{Définition}
-
-\sk
-La pression partielle~$e$ pour laquelle l'équilibre liquide-vapeur est atteint est appelée \voc{pression de vapeur saturante} que l'on note~$e\e{sat}$. Tant que~$e<e\e{sat}$, les échanges par évaporation dominent les échanges par condensation et $e$ augmente jusqu'à atteindre~$e\e{sat}$. Lorsque~$e=e\e{sat}$, la quantité de vapeur d'eau dans l'enceinte n'augmente plus\footnote{Il est important de noter que cet état stationnaire n'est pas dénué d'échanges entre les phases liquide et gaz par condensation et évaporation. Par analogie, on peut penser au remplissage d'une baignoire équipée d'un siphon~: le niveau de l'eau est constant à l'état stationnaire bien qu'il y ait en permanence un apport d'eau par le robinet et une perte d'eau par le siphon -- l'état stationnaire signifie juste que ces échanges se compensent.}. Ainsi, si l'on considère une enceinte avec de l'eau sous forme vapeur et liquide
-\begin{citemize}
-\item si la pression partielle de vapeur d'eau~$e$ dans l'enceinte est supérieure à la pression de vapeur saturante~$e\e{sat}$, il y a condensation jusqu'à ce que~$e=e\e{sat}$.
-\item si la pression partielle de vapeur d'eau~$e$ dans l'enceinte est inférieure à la pression de vapeur saturante~$e\e{sat}$, il y a évaporation jusqu'à ce que~$e=e\e{sat}$.
-\end{citemize}
-Si l'on considère une enceinte contenant de l'eau sous forme vapeur uniquement, le premier point est toujours valable alors que le second point n'est pas vrai~: si la pression partielle de vapeur d'eau~$e$ dans l'enceinte est inférieure à la pression de vapeur saturante~$e\e{sat}$, rien ne se passe, car aucune phase liquide ne peut être évaporée. La pression partielle de vapeur d'eau~$e$ est donc toujours inférieure ou égale à la pression de vapeur saturante~$e\e{sat}$. 
-
-\sk
-Le rapport de mélange~$r\e{sat}$ correspondant à l'équilibre liquide/vapeur où $e=e\e{sat}$ est appelé \voc{rapport de mélange saturant}. D'après l'équation encadrée à la section précédente, on a 
-\[ r\e{sat} \simeq 0.622 \, \frac{e\e{sat}}{P} \]
-Les mêmes raisonnements qu'avec les pressions partielles~$e$ et~$e\e{sat}$ peuvent être faits avec les rapports de mélange~$r$ et~$r\e{sat}$. Ces quantités servent à définir l'\voc{humidité relative}~$H$
-\[ \boxed{ H = \frac{e}{e\e{sat}} = \frac{r}{r\e{sat}} } \]
-De ce qui précède, on déduit que l'humidité~$H$ est toujours inférieure à~$1$ ($100\%$) et que, lorsqu'il y a équilibre liquide/vapeur (\ofg{conditions saturées}), $H$ vaut~$1$ ($100\%$).
-
-\sk
-\subsubsection{Variation avec la température}
-
-\sk
-La pression de vapeur saturante~$e\e{sat}$ augmente exponentiellement avec la température~$T$ du gaz d'après la \voc{relation de Clausius-Clapeyron}\footnote{La pression de vapeur saturante est proportionnelle à la probabilité de rupture d'une liaison, elle-même variant exponentiellement suivant la température.}. Ainsi elle double pour une élévation de température de~$10$~K. Plus le gaz dans l'enceinte est chaud, plus la quantité de vapeur d'eau au terme de l'expérience est élevée. En pratique, le terme~$e\e{sat}$, qui varie exponentiellement avec la température~$T$, domine très fréquemment les variations de pression~$P$. Ainsi, en bonne approximation, le rapport de mélange saturant~$r\e{sat}$ varie également exponentiellement avec la température~$T$. 
-
-\sk
-La dépendance de~$e\e{sat}$ avec~$T$ permet par ailleurs de définir la \voc{température de rosée}~$T\e{rosée}$ associée à une valeur donnée de la pression partielle~$e$ de l'eau. Il s'agit de la température~$T\e{rosée}$ à laquelle la pression partielle~$e$ devient saturante, c'est-à-dire qui vérifie
-\[ \boxed{ e\e{sat}(T\e{rosée}) = e } \]
-
-%\subsection{Ébullition} L'ébullition est un cas particulier: des bulles de gaz se forment à l'{\em intérieur} du liquide bouillant. Dans le cas de l'eau, ce gaz est donc de la vapeur d'eau. La pression dans ces bulles est égale à celle du liquide, soit à peu près la pression atmosphérique si le liquide est en contact avec l'air. Les bulles sont d'autre part stables si leur pression est supérieure à la pression saturante. L'ébullition se produit donc à une température $T_b$ telle que \[e_{sat}(T_b)=P_{atm}\]
+	\input{humide_saturation.tex}
 
 \sk
 \subsection{Déplacement d'équilibre et application aux gouttelettes nuageuses}
+	\input{humide_equilibre.tex}
 
-\sk
-On applique ici les raisonnements de la section précédente pour une interface plane liquide/vapeur à une goutte sphérique comme rencontrée dans les brouillards ou les nuages. La réalité est un peu plus complexe et fait intervenir les concepts de noyaux de condensation et de sursaturation, qui ne sont pas abordés dans ce cours. Les raisonnements présentés ci-dessous restent cependant valables au premier ordre.
-%%Dans l'atmosphère, loin de la surface, il n'y a pas d'interface liquide/gaz permanente. Si $e<e_{sat}$, il n'y a ni condensation ni évaporation. Si $e$ devient supérieure à $e_{sat}$, il y a condensation sous forme de gouttes d'eau liquide (qui se forment plus vite qu'elles ne s'évaporent). Ces gouttes s'évaporent dès que $e<e_{sat}$
-
-\sk
-Soit une parcelle d'air à la température~$T_0$ et à la pression~$P$. Elle contient de la vapeur d'eau en équilibre avec des gouttelettes d'eau en suspension, en pratique cela correspond à une parcelle dans laquelle des gouttelettes nuageuses se sont formées. A l'équilibre liquide-vapeur, la pression partielle de vapeur d'eau dans la parcelle vaut~$e=e\e{sat}(T_0)$, le rapport de mélange de vapeur d'eau vaut~$r=r\e{sat}(T_0)$ et l'humidité~$H$ vaut~$100\%$. Si la température de la parcelle change, il y a déplacement de l'équilibre liquide/vapeur\footnote{Par abus de langage, on dit parfois que \ofg{l'air chaud peut contenir plus de vapeur d'eau que l'air froid}. Il est autorisé de garder cette phrase en tête en tant que moyen mnémotechnique, cependant elle est incorrecte physiquement car elle ne rend pas compte de l'équilibre liquide/vapeur.}.
-\begin{finger}
-\item
-Supposons que l'on \underline{chauffe la parcelle} à une température~$T\e{c}>T_0$. Sa pression partielle en vapeur d'eau~$e$ est toujours proche de~$e\e{sat}(T_0)$, mais la pression de vapeur saturante~$e\e{sat}$ a augmenté de façon exponentielle de~$e\e{sat}(T_0)$ à~$e\e{sat}(T\e{c})$. On est alors dans la situation où~$e < e\e{sat}(T\e{c})$, donc~$H < 1$. Il y a alors évaporation d'eau liquide jusqu'à ce qu'un nouvel équilibre liquide/vapeur soit atteint, où~$e = e\e{sat}(T\e{c})$. Une façon équivalente de décrire ce déplacement d'équilibre est de dire que, lorsque la parcelle chauffe, la quantité de vapeur d'eau~$r=r\e{sat}(T_0)$ devient très inférieure à la quantité de vapeur d'eau à saturation~$r\e{sat}(T\e{c})$. De l'eau liquide doit passer sous forme gazeuse par évaporation pour compenser ce déséquilibre, de manière à ce que la quantité de vapeur d'eau~$r$ dans la parcelle augmente à~$r\e{sat}(T\e{c})$. Ainsi lorsque l'on chauffe la parcelle, des gouttelettes nuageuses disparaissent, le nuage se dissipe.
-\item
-Supposons à l'inverse que l'on \underline{refroidisse la parcelle} à une température~$T\e{f}<T_0$. La pression de vapeur saturante~$e\e{sat}$ a diminué de façon exponentielle de~$e\e{sat}(T_0)$ à~$e\e{sat}(T\e{f})$. On est alors dans la situation où~$e > e\e{sat}(T\e{f})$, donc~$H > 1$, qui est impossible. Il y a alors condensation d'eau liquide jusqu'à ce qu'un nouvel équilibre liquide/vapeur soit atteint, où~$e = e\e{sat}(T\e{f})$. Autrement dit, lorsque la parcelle refroidit, la quantité de vapeur d'eau~$r=r\e{sat}(T_0)$ devient très supérieure à la quantité de vapeur d'eau à saturation~$r\e{sat}(T\e{f})$. De l'eau sous forme gazeuse doit passer sous forme liquide par condensation pour compenser ce déséquilibre, de manière à ce que la quantité de vapeur d'eau~$r$ dans la parcelle diminue à~$r\e{sat}(T\e{f})$. Ainsi lorsque l'on refroidit la parcelle, de nouvelles gouttelettes nuageuses apparaissent, le nuage s'épaissit.
-\end{finger}
-
-\sk
-Le second point s'applique également au cas d'une parcelle d'air ne contenant pas initialement de gouttelettes nuageuses. 
-
-\sk
-Le chapitre précédent a proposé une expression du premier principe qui distingue deux manières de faire varier la température d'une parcelle atmosphérique d'air sec~: transformations isobares et transformations adiabatiques. On peut désormais illustrer la formation de nuages associée à chacune des transformations appliquée à une parcelle de rapport de mélange en vapeur d'eau~$r \neq 0$ qui reste constant au cours de la transformation.
-\begin{finger}
-\item Lorsqu'une parcelle d'air proche de la surface subit un refroidissement isobare à la tombée de la nuit, sous l'influence du flux radiatif infrarouge, des gouttelettes nuageuses se forment car le rapport de mélange saturant~$r\e{sat}$ diminue jusqu'à devenir plus faible que~$r$. Il s'agit du brouillard nocturne~; la formation de rosée obéit à un principe similaire. La température de rosée~$T\e{rosée}$ peut ainsi être définie comme la température à laquelle la condensation se produit suite à un refroidissement isobare. 
-\item Lorsqu'une parcelle d'air subit une élévation adiabatique, à cause par exemple de la présence d'une montagne, elle se refroidit et le rapport de mélange saturant~$r\e{sat}$ diminue. Le rapport de mélange~$r$ peut alors éventuellement devenir supérieur à~$r\e{sat}$ et des gouttelettes se forment pour que~$r=r\e{sat}$. Ceci explique par exemple que les montagnes soient souvent couvertes de nuages.
-\end{finger}
-Le chapitre suivant se propose de reprendre avec plus de précisions la formation des nuages.
 
 \mk \section{Evolution hors équilibre d'une parcelle d'air}
 

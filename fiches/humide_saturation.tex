@@ -1,0 +1,32 @@
+%\sk
+%\subsubsection{Définition}
+
+\sk
+La pression partielle~$e$ pour laquelle l'équilibre liquide-vapeur est atteint est appelée \voc{pression de vapeur saturante} que l'on note~$e\e{sat}$. Tant que~$e<e\e{sat}$, les échanges par évaporation dominent les échanges par condensation et $e$ augmente jusqu'à atteindre~$e\e{sat}$. Lorsque~$e=e\e{sat}$, la quantité de vapeur d'eau dans l'enceinte n'augmente plus\footnote{Il est important de noter que cet état stationnaire n'est pas dénué d'échanges entre les phases liquide et gaz par condensation et évaporation. Par analogie, on peut penser au remplissage d'une baignoire équipée d'un siphon~: le niveau de l'eau est constant à l'état stationnaire bien qu'il y ait en permanence un apport d'eau par le robinet et une perte d'eau par le siphon -- l'état stationnaire signifie juste que ces échanges se compensent.}. Ainsi, si l'on considère une enceinte avec de l'eau sous forme vapeur et liquide
+\begin{citemize}
+\item si la pression partielle de vapeur d'eau~$e$ dans l'enceinte est supérieure à la pression de vapeur saturante~$e\e{sat}$, il y a condensation jusqu'à ce que~$e=e\e{sat}$.
+\item si la pression partielle de vapeur d'eau~$e$ dans l'enceinte est inférieure à la pression de vapeur saturante~$e\e{sat}$, il y a évaporation jusqu'à ce que~$e=e\e{sat}$.
+\end{citemize}
+Si l'on considère une enceinte contenant de l'eau sous forme vapeur uniquement, le premier point est toujours valable alors que le second point n'est pas vrai~: si la pression partielle de vapeur d'eau~$e$ dans l'enceinte est inférieure à la pression de vapeur saturante~$e\e{sat}$, rien ne se passe, car aucune phase liquide ne peut être évaporée. La pression partielle de vapeur d'eau~$e$ est donc toujours inférieure ou égale à la pression de vapeur saturante~$e\e{sat}$. 
+
+\sk
+Le rapport de mélange~$r\e{sat}$ correspondant à l'équilibre liquide/vapeur où $e=e\e{sat}$ est appelé \voc{rapport de mélange saturant}. D'après l'équation encadrée à la section précédente, on a 
+\[ r\e{sat} \simeq 0.622 \, \frac{e\e{sat}}{P} \]
+Les mêmes raisonnements qu'avec les pressions partielles~$e$ et~$e\e{sat}$ peuvent être faits avec les rapports de mélange~$r$ et~$r\e{sat}$. Ces quantités servent à définir l'\voc{humidité relative}~$H$
+\[ \boxed{ H = \frac{e}{e\e{sat}} = \frac{r}{r\e{sat}} } \]
+De ce qui précède, on déduit que l'humidité~$H$ est toujours inférieure à~$1$ ($100\%$) et que, lorsqu'il y a équilibre liquide/vapeur (\ofg{conditions saturées}), $H$ vaut~$1$ ($100\%$).
+
+%\sk
+%\subsubsection{Variation avec la température}
+
+\sk
+La pression de vapeur saturante~$e\e{sat}$ augmente exponentiellement avec la température~$T$ du gaz à l'équilibre liquide-vapeur d'après la \voc{relation de Clausius-Clapeyron}\footnote{La pression de vapeur saturante est proportionnelle à la probabilité de rupture d'une liaison, elle-même variant exponentiellement suivant la température.} 
+\[ \ddf{P\e{sat}}{T} = \frac{L\,P\e{sat}}{R\,T^2} \qquad \Rightarrow \qquad P\e{sat}(T) = P_0 \, \exp{ \left[ -\frac{L}{R\,T} \right] } \]
+%\noindent où~$\ell > 0$ est la chaleur latente de vaporisation.
+\noindent où la chaleur latente de vaporisation est supposée constante avec la température pour simplifier. Ainsi elle double pour une élévation de température de~$10$~K. Plus le gaz dans l'enceinte est chaud, plus la quantité de vapeur d'eau au terme de l'expérience est élevée. En pratique, le terme~$e\e{sat}$, qui varie exponentiellement avec la température~$T$, domine très fréquemment les variations de pression~$P$. Ainsi, en bonne approximation, le rapport de mélange saturant~$r\e{sat}$ varie également exponentiellement avec la température~$T$. 
+
+\sk
+La dépendance de~$e\e{sat}$ avec~$T$ permet par ailleurs de définir la \voc{température de rosée}~$T\e{rosée}$ associée à une valeur donnée de la pression partielle~$e$ de l'eau. Il s'agit de la température~$T\e{rosée}$ à laquelle la pression partielle~$e$ devient saturante, c'est-à-dire qui vérifie
+\[ \boxed{ e\e{sat}(T\e{rosée}) = e } \]
+
+%\subsection{Ébullition} L'ébullition est un cas particulier: des bulles de gaz se forment à l'{\em intérieur} du liquide bouillant. Dans le cas de l'eau, ce gaz est donc de la vapeur d'eau. La pression dans ces bulles est égale à celle du liquide, soit à peu près la pression atmosphérique si le liquide est en contact avec l'air. Les bulles sont d'autre part stables si leur pression est supérieure à la pression saturante. L'ébullition se produit donc à une température $T_b$ telle que \[e_{sat}(T_b)=P_{atm}\]

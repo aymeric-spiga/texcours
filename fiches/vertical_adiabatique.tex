@@ -1,7 +1,7 @@
 \sk
 Dans un point de vue lagrangien, on peut aisément déterminer
-qu'un mouvement vertical ascendant ($w>0$) induit un chauffage adiabatique
-et qu'un mouvement vertical descendant ($w<0$) induit un refroidissement adiabatique.
+qu'un mouvement vertical ascendant ($w>0$) induit un refroidissement adiabatique ($\dd T<0$)
+et qu'un mouvement vertical descendant ($w<0$) induit un chauffage adiabatique ($\dd T>0$).
 Il suffit de combiner l'équilibre hydrostatique,
 ou plutôt sa variante, l'équation hypsométrique
 \[ 
@@ -12,12 +12,12 @@ ou plutôt sa variante, l'équation hypsométrique
 \ddf{p}{t} = - \f{p}{R\,T} \, g \, w
 \]
 \noindent avec le premier principe dans le cas
-adiabatique
+adiabatique %\ddf{\theta}{t} = 0
 \[
-\ddf{\theta}{t} = 0
+c_p \, \dd T = \f{\dd p}{\rho} \qquad\qquad \Rightarrow \qquad\qquad \boxed{\ddf{T}{t} = - \f{g}{c_p} \, w}
 \]
-\noindent pour obtenir
-\[
-\ddf{T}{t} = - \f{g}{c_p} \, w
-\]
+%\noindent pour obtenir
+%\[
+%\ddf{T}{t} = - \f{g}{c_p} \, w
+%\]
 
